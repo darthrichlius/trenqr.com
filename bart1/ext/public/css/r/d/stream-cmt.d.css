@@ -1,0 +1,98 @@
+.cmt-header {
+    display: block;
+    border: 1px solid black;
+    border-radius: 6px 6px 0 0;
+    background-color: rgb(240,240,240);
+    margin: 10px 0 0 50px;
+    padding: 0;
+    height: 35px;
+    width: 650px;
+    box-shadow: 0px 0px 10px rgba(30,30,30,0.5) ;
+    
+    text-decoration: none;
+    outline: 0;
+    line-height: 35px;
+    color: black;
+    font-weight: bold;
+    font-family: calibri;
+    font-style: italic;
+    text-align: center;
+}
+
+.cmt-header:active {
+    background-color: white;
+    
+    color: black;
+}
+    
+.cmt-header:hover {
+    background-color: black;
+    
+    color: white;
+}
+
+.bash {
+    font-size: 11px !important;
+    color: blue;
+}
+
+/************************************* LIST ******************************/
+.s-s-p-cmnts {
+    /*border: 1px solid black;*/
+    padding: 0;
+    width: 550px !important;
+    margin: 5px 0 10px 105px;
+    /*overflow: auto;*/
+    /*display: none;*/
+}
+
+.s-s-p-cmnts > li {
+    padding: 10px;
+}
+
+.s-s-p-filters {
+    /*border: 1px solid red;*/
+    height: 22px;
+    width: 530px !important;
+    padding: 0;
+    margin: 5px 0px 15px 103px;
+    overflow: auto;
+    
+}
+
+.s-s-p-filters li {
+    border: 1px solid black;
+    border-radius: 6px;
+    float: left;
+    width: 65px;
+    
+    text-align: center;
+    display: none;
+}
+
+.s-s-p-filters li a {
+    display: block;
+    font-family: Arial, calibri;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+}
+
+.s-s-p-fil1 {
+    
+}
+
+.s-s-p-fil2 {
+    margin-left: 10px;
+}
+
+.s-s-p-fil2 a:hover {
+    background-color: black;
+    color: orange;
+}
+
+.s-s-p-fil2 a:active {
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE text_library SYSTEM "../../dtd/dtd.deco.def.dtd">
+
+<text_library>
+    <text id="test_deco_id1">
+        Hello WORLD !
+    </text>
+    <text id="test_deco_id2">
+        Ceci est la page par défaut du produit PROD_TEST.&lt;br/&gt; Cette page n'est visible que parce que vous (utilisateur) n'est pas connecté.
+    </text>
+    <text id="test_deco_id3">
+        Cette page sert avant tout à tester le fonctionnement du système au niveau de la gestion des pages et process. Ceci, dans le mode 'Restricted' ou 'Welcome'.
+    </text>
+    <text id="test_deco_id4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non sagittis urna. 
+        Phasellus quam libero, auctor sed mollis vehicula, malesuada sit amet felis. 
+        Vestibulum ac velit nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+        Sed dapibus diam rutrum tortor tempor, ac dapibus felis facilisis. Cras fermentum urna neque, eget facilisis ipsum porttitor id. Duis in lacus massa. 
+        Pellentesque felis leo, volutpat sed condimentum a, posuere sit amet lorem. Phasellus dignissim vitae lacus eget imperdiet. 
+        Proin porttitor, ipsum sed dapibus lacinia, lacus quam auctor enim, sed volutpat est urna consectetur nunc. Mauris faucibus nisi nec lorem imperdiet, et bibendum felis consequat. 
+        Vivamus aliquam neque ac urna consequat tincidunt.
+    </text>
+    <text id="test_deco_id5">
+        Page_welc2
+    </text>
+    <text id="test_deco_id6">
+        Mon_compte
+    </text>
+    <text id="test_deco_id7">
+       Prod_accueil
+    </text>
+    <text id="test_deco_id8">
+        Connexion
+    </text>
+    <text id="test_deco_id9">
+        Deconnexion
+    </text>
+    <text id="test_deco_id10">
+        Page WELCOME 2 !
+    </text>
+    <text id="test_deco_id11">
+        Ceci est la seconde page du produit PROD_TEST.&lt;br/&gt; Cette page n'est visible que parce que vous (utilisateur) n'est pas connecté.
+    </text>
+    <text id="test_deco_id12">
+        Utile pour tester par exemple la gestion des langues (je viens de france, je veux ma page en anglais).&lt;br/&gt;
+		Ou pour tester le systeme EXT_FILES. Ce texte est en rouge pour tous les navigateurs sauf &lt;b&gt;Internet Explorer&lt;/b&gt; ou le bloc est entouré d'une bordure rouge.
+    </text>
+    <text id="test_deco_id13">
+        Aller vers la page d'accueil
+    </text>
+    <text id="test_deco_id14">
+        Aller vers la page de connexion
+    </text>
+    <text id="test_deco_id15">
+        VOTRE PAGE PAR DEFAUT DE PROFIL
+    </text>
+    <text id="test_deco_id16">
+        Cette page est reservée au produit PROD_TEST et est distribuée en mode "Restreint" (necessite une authentification pour y accéder).
+    </text>
+    <text id="test_deco_id17">
+        Votre Nom : 
+    </text>
+    <text id="test_deco_id18">
+        Votre Prenom : 
+    </text>
+    <text id="test_deco_id19">
+        Se deconnecter
+    </text>
+    <text id="test_deco_id20">
+        PAGE PAR DEFAUT DU PRODUIT (mode restreint)
+    </text>
+    <text id="test_deco_id21">
+        PAGE DE CONNEXION
+    </text>
+    <text id="test_deco_id22">
+        Utiliser cette page pour tester le système d'authentification et/ou de redirection.&lt;br/&gt;Les identifiants sont : (login : test) (pass: test)
+    </text>
+</text_library>
+    

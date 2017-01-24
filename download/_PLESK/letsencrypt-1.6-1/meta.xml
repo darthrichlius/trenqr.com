@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 1999-2016. Parallels IP Holdings GmbH. -->
+<module>
+  <id>letsencrypt</id>
+  <name>Let's Encrypt</name>
+  <description>Let's Encrypt is a certificate authority (CA) that allows you to create a free SSL certificate for your domain.</description>
+  <url>https://github.com/plesk/letsencrypt-plesk</url>
+  <version>1.6</version>
+  <release>1</release>
+  <vendor>Plesk</vendor>
+  <plesk_min_version>12.5</plesk_min_version>
+  <!-- Localized descriptions below -->
+  <description xml:lang="ar">Let's Encrypt هو مرجع شهادة (CA) يسمح لك بإنشاء شهادة SSL مجانية لمجالك.</description>
+  <description xml:lang="cs-CZ">Let's Encrypt je certifikační autorita (CA), která umožňuje vytvořit bezplatný certifikát SSL pro vaši doménu.</description>
+  <description xml:lang="da-DK">Let's Encrypt er en cerifikatmyndighed (CA) der tillader dig tag oprette et gratis SSL-certifikat for dit domæne.</description>
+  <description xml:lang="de-DE">Let's Encrypt ist eine Zertifizierungsstelle (CA), die es Ihnen ermöglicht, ein kostenloses SSL-Zertifikat für Ihre Domain zu erstellen.</description>
+  <description xml:lang="el-GR">Το Let's Encrypt είναι μια αρχή έκδοσης πιστοποιητικών (CA) που σας δίνει τη δυνατότητα να δημιουργήσετε ένα δωρεάν πιστοποιητικό SSL για τον τομέα σας.</description>
+  <description xml:lang="es-ES">Let's Encrypt es una entidad de certificación (CA) que le permite crear un certificado SSL gratuito para su dominio.</description>
+  <description xml:lang="fi-FI">Let's Encrypt on varmentaja, joka mahdollistaa ilmaisen SSL-varmenteen luomisen toimialueeseesi.</description>
+  <description xml:lang="fr-FR">Let's Encrypt est une Autorité de certification (CA) qui vous permet de créer un certificat SSL gratuit pour votre domaine.</description>
+  <description xml:lang="he-IL">Let's Encrypt היא רשות אישורים (CA) שמאפשרת לך ליצור אישור SSL בחינם עבור הדומיין שלך.‬</description>
+  <description xml:lang="hu-HU">Let's Encrypt egy tanúsító szervezet (CA), mely lehetővé teszi egy ingyenes SSL-tanúsítvány létrehozását a domainje számára.</description>
+  <description xml:lang="id-ID">Let's Encrypt adalah otoritas sertifikat (CA) yang mengizinkan Anda membuat sertifikat SSL bebas untuk domain Anda.</description>
+  <description xml:lang="it-IT">Let's Encrypt è un'autorità di certificazione (CA) che consente di creare un certificato SSL gratuito per il dominio.</description>
+  <description xml:lang="ja-JP">Let's Encrypt は、ご自分のドメイン用に無償の SSL 証明書を作成することを可能にする認証局（CA）です。</description>
+  <description xml:lang="ko-KR">Let's Encrypt은(는) 도메인에 대한 무료 SSL 인증서를 생성할 수 있는 인증 기관(CA)입니다.</description>
+  <description xml:lang="ms-MY">Let's Encrypt ialah autoriti sijil (CA) yang membenarkan anda mencipta sijil SSL percuma untuk domain anda.</description>
+  <description xml:lang="nb-NO">Let's Encrypt er en sertifikatautoritet (CA) som lar deg opprette et gratis SSL-sertifikat for domenet ditt.</description>
+  <description xml:lang="nl-NL">Let's Encrypt is een certificaatautoriteit (CA) waarbij u kosteloos een SSL-certificaat voor uw domein kunt aanmaken.</description>
+  <description xml:lang="pl-PL">Let's Encrypt jest instytucją wydającą certyfikaty (CA), która uomżliwia ci utworzenie darmowego certyfikatu SSL dla twojej domeny.</description>
+  <description xml:lang="pt-BR">Let's Encrypt é uma certificação de autoridade (CA) que lhe permite criar um certificado SSL gratuito para seu domínio.</description>
+  <description xml:lang="pt-PT">Let's Encrypt é uma autorização de certificado (CA) que lhe permite criar um certificado SSL livre para o seu domínio.</description>
+  <description xml:lang="ro-RO">Let's Encrypt este o autoritate de certificate (CA) care vă permite să creați un certificat SSL gratuit pentru domeniul dvs.</description>
+  <description xml:lang="ru-RU">Let's Encrypt - это центр сертификации, позволяющий создавать бесплатные SSL-сертификаты для защиты ваших доменов.</description>
+  <description xml:lang="sv-SE">Let's Encrypt är en certifieringsmyndighet (CA) som gör att du kan skapa ett fritt SSL-certifikat för din domän.</description>
+  <description xml:lang="th-TH">Let's Encrypt คือผู้มีอำนาจในการออกใบรับรอง (CA) ที่อนุญาตให้คุณสามารถสร้างใบรับรอง SSL ได้ฟรีสำหรับโดเมนของคุณ</description>
+  <description xml:lang="tl-PH">Ang Let's Encrypt ay isang certificate authority (CA) na nagpapahintulot sa iyo na lumikha ng isang libreng SSL na sertipiko para sa iyong domain.</description>
+  <description xml:lang="tr-TR">Let's Encrypt, alan adınız için boş bir SSL sertifikası oluşturmanıza izin veren bir sertifika yetkisidir (CA).</description>
+  <description xml:lang="uk-UA">Let's Encrypt - це центр сертифікації (ЦС), який дозволяє вам створювати безкоштовний SSL-сертифікат для вашого домену.</description>
+  <description xml:lang="vi-VN">Let's Encrypt là xác thực chứng nhận (CA) cho phép bạn tạo chứng nhận SSL miễn phí cho miền của bạn.</description>
+  <description xml:lang="zh-CN">Let's Encrypt 是一个证书认证机构 (CA)，该机构能够让您为域名创建免费的 SSL 证书。</description>
+  <description xml:lang="zh-TW">Let's Encrypt 是一個證書認證機構 (CA)，該機構能夠讓您為域名創建免費的 SSL 證書。</description>
+</module>

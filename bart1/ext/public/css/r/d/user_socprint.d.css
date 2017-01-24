@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12 juin 2014, 14:24:40
+    Author     : arsphinx
+*/
+
+#user-socialprint-box {
+    border-top: 1px solid #ccc;
+    border-radius: 0px 0px 3px 3px;
+    /*padding: 10px 10px 13px 20px;*/ /* Choix 1 */
+    padding: 10px 10px 13px 35px;
+    margin: 0px auto 0 auto;
+    /*width: 272px;*/ /* Choix 1 */
+    width: 257px;
+    background-color: #ededed;
+    
+    overflow: auto;
+    
+}
+
+#user-socialprint-box > * {
+    float: left;
+}
+.u-sp-sin-box {
+    /*border: 1px solid #f00;*/
+    width: 33.33%;
+}
+
+.u-sp-sin-box > * {
+    display: ineline-block;
+    /*border: 1px solid #f00;*/
+    
+    /*text-shadow: 0px 1px 1px rgba(0, 0, 0,0.2);*/ /* Black Version */
+    text-shadow: 0px 1px 1px rgba(255,255,255,1); /* White Version */
+}
+
+.u-sp-sin {
+    display: block;
+    /*border: 1px solid #f00;*/
+    
+    
+    font-family: Calibri, "Myriad Pro", Arial, sans-serif;
+    font-weight: 700; 
+}
+
+.u-sp-sin-nb {
+    
+    overflow: hidden;
+    word-wrap: break-word;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+    
+    color: #111;
+    font-size: 19px;
+    
+}
+
+.u-sp-sin-deco {
+    
+    overflow: hidden;
+    word-wrap: break-word;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+    
+    color: #aaa;
+    font-size: 14px;
+    line-height: 15px;
+}

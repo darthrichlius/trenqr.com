@@ -1,0 +1,545 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29 juin 2014, 12:40:48
+    Author     : arsphinx
+*/
+
+#pfl-hdr-max {
+    /*border: 1px solid #f00;*/
+    border-bottom: 1px solid #d3d3d3;
+    margin: 0;
+    height: 70px;
+    
+    position: relative;
+    overflow: visible;
+    
+    text-align: center;
+}
+
+#pfl-hdr-box {
+    display: inline-block;
+    /*border: 1px solid #ff0;*/
+    margin-top: 10px;
+    height: 50px;
+    min-width: 220px;
+    
+    overflow: visible;
+}
+
+.p-hdr-elt {
+    float: left;
+}
+
+/********************************************************/
+/********************* ERROR MESSAGE ********************/
+
+#p-h-ui-err-panel {
+    border: 1px solid #FF7171;
+    /*border: 1px solid #f00;*/
+    border-radius: 0px 0px 6px 6px;
+    /* border-radius: 6px; */
+    width: 400px;
+/*    width: 350px;*/
+    /*min-height: 35px;*/
+    padding: 10px;
+    background-color: #FFE3E3;
+    /*background-color: rgb(255, 192, 203);*/
+    
+    position: absolute;
+    top: -11px;
+    left: -140px;
+    /*
+    top: -80px;
+    left: -125px;
+    */
+    z-index: 101;
+      
+    color: #111;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 14px;
+    
+}
+
+/*******************************************************/
+/********************* PROFIL IMAGE ********************/
+#p-h-b-uimg {
+    /*border: 1px solid #00f;*/
+    margin-left: 29px;
+    
+    position: relative;
+    z-index: 100;
+}
+
+.p-h-b-uimg-zm {
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+    background: #fff;
+}
+
+.p-h-b-ui-trg-box-zm {
+    padding: 10px 15px !important;
+}
+
+#p-h-b-ui-trg {
+    display: inline-block;
+    border: none;
+    /*border: 1px solid #f00;*/
+    /*margin: 0 8px 0 28px;*/
+/*    height: 45px;
+    width: 45px;*/
+    outline: 0;
+    
+    text-decoration: none;
+}
+
+.p-h-b-ui-trg-zm {
+    
+    height: 90px;
+    width: 90px;
+}
+
+#p-h-b-ui-img {
+    border: none;
+    border-radius: 2px;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.3);
+    outline: 0;
+    
+    position: relative;
+    z-index: 100;
+}
+
+#p-h-b-ui-img-buffer {
+    border: none;
+    border-radius: 2px;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.3);
+    outline: 0;
+    
+    position: relative;
+    z-index: 100;
+}
+
+.p-h-b-ui-action {
+    display: block;
+    border-top: 1px solid rgba(0,0,0,0.07);
+    padding: 4px 0;
+    background-color: rgba(0,0,0,0.15);
+    outline: 0;
+    
+    position: relative;
+    /*overflow: visible; /* DEV, DEBUG */
+    overflow: hidden;
+    
+    color: #333;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.p-h-b-ui-action:nth-of-type(1) {
+    margin-top: 5px;
+}
+
+.p-h-b-ui-action:hover {
+    background-color: rgba(0,0,0,0.25);
+}
+
+/********************/
+/* wt = wait */
+#p-h-b-ui-wt {
+    display: inline-block;
+    border-radius: 2px;
+    width: 90px;
+    height: 90px;
+    
+    background-color: rgba(0,0,0,0.3);
+    
+    position: absolute;
+    z-index: 101;
+    
+    color: #fff;
+    font-family: Calibri, Arial, sans-serif;
+    line-height: 90px;
+}
+
+/********************/
+#p-h-ui-help-panel {
+    border: 2px solid #02BAFF;
+    border-radius: 10px;
+    width: 252px;
+    padding: 10px;
+    background-color: #fff;
+    
+    position: absolute;
+    top: 0px;
+    left: -288px;
+    
+    color: #111;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 13px;
+}
+
+#ppr-clz-trg {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    
+    color: #666;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+#ppr-clz-trg:hover {
+    border: 1px solid #333;
+    background-color: #eee;
+    
+    color: #333;
+}
+
+#p-h-ui-help-panel > p {
+    text-align: left;
+}
+
+#p-h-ui-help-panel > ul {
+    text-align: left;
+}
+
+/**** INPUT FILE ****/
+#p-h-b-ui-a-file {
+    display: block;
+    border: 1px solid #f00;
+    margin-right: 20px;
+    height: 100px;
+    width: 500px;
+    opacity: 0;
+    
+    cursor: pointer;
+    
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    z-index: 5;
+    
+    font-size: 1000%;
+}
+
+/*********************************************************/
+/********************** PROFIL PSEUDO ********************/
+#p-h-b-upsd {
+    padding-left: 8px;
+    margin: 15px 0 0 0;
+    min-width: 140px;
+    
+    font-family: Batang, Calibri, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.p-h-b-upsd-zm {
+}
+
+/**************************************************************/
+/********************* PROFIL FOLLOW ACTION *******************/
+
+.tmlnr-user-fol {
+    display: inline-block;
+    border-radius: 3px;
+    padding: 0 23px 0 55px;
+    margin: -45px 0 0 0;
+    height: 32px;
+    /*min-width: 125px;*/
+    
+    position: absolute;
+    right: 0;
+    
+    font-family: Arial, "Myraid Pro", Calibri, helvetica, sans-serif;
+    font-weight: bold;
+    text-align: right;
+    text-decoration: none;
+    line-height: 32px;
+}
+
+/*
+.tmlnr-user-fol[data-action |= follow] {
+    border: 1px solid #000;
+    /*border: 1px solid #ffbb02;*/
+    /*background-color: #ffc906;
+    background: -moz-linear-gradient(to bottom,#ffd724,#ffd724); 
+    background: -webkit-linear-gradient(to bottom,#ffd724,#ffd724); 
+    background: -ms-linear-gradient(to bottom,#ffd724,#ffd724); 
+    background: -o-linear-gradient(to bottom,#ffd724,#ffd724); 
+    background: linear-gradient(to bottom,#ffd724,#ffd724);
+    /*background: linear-gradient(to bottom,#ffd724,#ffc906); /* ABONDONNEE : Trop prononcé*/
+    /*
+    color: #151515;
+    font-size: 13px; 
+}
+*/
+
+.tmlnr-user-fol[data-action |= follow] {
+    /*border: 1px solid #000;*/
+    border: 1px solid #ffbb02;
+    background-color: #ffc906;
+    background: -moz-linear-gradient(to top,#ffd724,#ffd724); 
+    background: -webkit-linear-gradient(to top,#ffd724,#ffd724); 
+    background: -ms-linear-gradient(to top,#ffd724,#ffd724); 
+    background: -o-linear-gradient(to top,#ffd724,#ffd724); 
+    background: linear-gradient(to top,#ffd724,#ffd724);
+    /*background: linear-gradient(to bottom,#ffd724,#ffc906); /* ABONDONNEE : Trop prononcé*/
+    
+    color: #151515;
+    font-size: 13px; 
+}
+
+
+.tmlnr-user-fol[data-action |= follow]:hover {
+    border: 1px solid #ffbb02;
+    /*background-color: #d3d3d3;
+    background: linear-gradient(to top,#d3d3d3,#eaeaea);*/
+    
+    background-image: -moz-linear-gradient(to top,#ffd724,#ffc906); 
+    background-image: -webkit-linear-gradient(to top,#ffd724,#ffc906); 
+    background-image: -ms-linear-gradient(to top,#ffd724,#ffc906); 
+    background-image: -o-linear-gradient(to top,#ffd724,#ffc906); 
+    background-image: linear-gradient(to top,#ffd724,#ffc906); 
+    
+}
+
+.tmlnr-user-fol[data-action |= unfollow] {
+    border: 1px solid #0c9f9b;
+    background-color: #0c9f9b;
+    background-image: -moz-linear-gradient(to bottom,#0db2ad,#0c9f9b);
+    background-image: -webkit-linear-gradient(to bottom,#0db2ad,#0c9f9b);
+    background-image: -ms-linear-gradient(to bottom,#0db2ad,#0c9f9b);
+    background-image: -o-linear-gradient(to bottom,#0db2ad,#0c9f9b);
+    background-image: linear-gradient(to bottom,#0db2ad,#0c9f9b);
+}
+
+.tmlnr-user-fol[data-action |= unfollow]:hover {
+    border: 1px solid #0c9f9b;
+    background-color: #0c9f9b;
+    background-image: -moz-linear-gradient(to top,#0db2ad,#0c9f9b);
+    background-image: -webkit-linear-gradient(to top,#0db2ad,#0c9f9b);
+    background-image: -ms-linear-gradient(to top,#0db2ad,#0c9f9b);
+    background-image: -o-linear-gradient(to top,#0db2ad,#0c9f9b);
+    background-image: linear-gradient(to top,#0db2ad,#0c9f9b);
+}
+
+.tmlnr-user-fol-wing {
+    border: 1px solid #0c9f9b !important;
+    background-color: #0c9f9b!important;
+    background-image: -moz-linear-gradient(to bottom,#0db2ad,#0c9f9b) !important;
+    background-image: -webkit-linear-gradient(to bottom,#0db2ad,#0c9f9b) !important;
+    background-image: -ms-linear-gradient(to bottom,#0db2ad,#0c9f9b) !important;
+    background-image: -o-linear-gradient(to bottom,#0db2ad,#0c9f9b) !important;
+    background-image: linear-gradient(to bottom,#0db2ad,#0c9f9b) !important;
+    
+    color: #fff !important;
+    font-size: 13px;
+}
+
+#tmlnr-u-f-img {
+    border: none;
+    margin: 1px 0 0 20px;
+    height: 26px;
+    width: 26px;
+    outline: 0;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+#tmlnr-u-uf-img {
+    border: none;
+    margin: 3px 0 0 20px;
+    height: 25px;
+    width: 25px;
+    outline: 0;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+/********** Option *********/
+#tmlnr-urel-more-box {
+    display: inline-block;
+    /*border: 1px solid #f00;*/
+    width: 50px;
+    height: 30px;
+    
+    position: absolute;
+    top: -44px;
+    right: 135px;
+    
+}
+
+/*******/
+
+#tmlnr-urel-m-mrbox {
+    margin-left: 4px;
+    
+    line-height: 33px;
+}
+
+.css-tmlnr-urel-m-img {
+    border: none;
+    outline: none;
+}
+
+#tmlnr-urel-m-mlogo {
+    opacity: .50;
+}
+
+/*******/
+
+#tmlnr-urel-m-frdbox {
+    line-height: 37px;
+}
+
+#tmlnr-urel-m-frdlogo {
+    opacity: .7;
+}
+
+
+/*************************************************************************/
+/************************* FINAL ACTION (DECISION) ***********************/
+
+#p-h-b-ui-final-action {
+    padding: 2px 0 5px 0;
+}
+
+#p-h-b-ui-f-a-title {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#p-h-b-ui-f-a-box {
+    padding: 5px 0 2px 0;
+}
+
+.p-h-b-ui-f-a-ch {
+    border: none;
+    outline: 0;
+    
+    color: #09c;
+    font-family: Calibri, Arial, sans-serif;
+    text-decoration: none;
+}
+
+.p-h-b-ui-f-a-ch[data-action=save] {
+    margin-right: 5px;
+}
+
+.p-h-b-ui-f-a-ch[data-action=cancel] {
+    margin-left: 5px;
+}
+
+.p-h-b-ui-f-a-ch:hover {
+    
+    text-decoration: underline;
+}
+
+/*************************************************************************/
+/******************************** HOME ***********************************/
+#tmlnr-hdr-homebox {
+    border: 1px solid transparent;
+    margin: -49px -10px 0 0;
+    padding: 3px 15px 3px 15px;
+    
+    position: absolute;
+    right: 10px;
+    z-index: 12;
+    
+    color: #000;
+    text-decoration: none;
+}
+
+#tmlnr-hdr-homebox:not(.hover):hover {
+    border-color: #C8C8C8;
+    border-radius: 2px;
+    box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.04);
+    /*background-color: #fff;*/
+}
+
+#tmlnr-hdr-homebox.hover {
+    border-top: 1px solid rgba(0, 0, 0, .15);
+    border-right: 1px solid rgba(0, 0, 0, .15);
+    border-bottom: 1px solid #FFF;
+    border-left: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 0px 0px 0px 0px;
+    border-radius: 2px;
+    box-shadow: 0px 3px 8px -8px rgba(0, 0, 0, .3);
+    background-color: #FFF;
+}
+
+#tmlnr-hdr-hb-txt {
+    
+    font-family: Calibri, Verdana, Arial, sans-serif;
+    font-size: 18px;
+}
+
+/******* MENUS ***/
+
+#tmlnr-athm-mn-bmx {
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 3px 0px 3px 3px;
+    width: 230px;
+    margin: 0;
+    padding: 10px 0px 10px 0px;
+    background-color: #FFF;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, .3);
+    
+    overflow: hidden;
+    
+    position: absolute;
+    top: -7px;
+    right: 0px;
+    z-index: 11;
+  
+    list-style: none;
+}
+
+.tmlnr-athm-mn {
+    display: inline-block;
+    width: 100%;
+    height: 33px;
+    
+    color: #333;
+    font-family: "Segoe UI", Calibri, Arial, sans-serif;
+    text-decoration: none;
+    text-align: left;
+    text-indent: 30px;
+    line-height: 33px;
+}
+
+.tmlnr-athm-mn:hover {
+    background-color: rgba(63, 95, 78, 0.88);
+    /*background-color: rgba(76, 95, 63, 0.88);*/
+    /*background-color: #5C92D0;*/
+    
+    color: #FFF;
+}

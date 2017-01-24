@@ -1,0 +1,261 @@
+#home_porto_art {
+    /*border: 1px solid black;*/
+    width: 100%;
+    /*max-width: 1005px;*/  /* si JS (si grand ecart => changer template) pret */
+    max-width: 787px; 
+    /*background-color: gray;*/
+    overflow: auto;
+    padding: 0px;
+    padding-bottom: 20px;
+    margin: 0px auto;
+    
+}
+
+
+
+/******************************* SPECIAL BLOC *************************/
+
+#h_p_a_spe_bloc {
+    /*border: 1px solid red;*/
+    margin: 0;
+    padding: 0;
+    width: 785px; /* 787px des que les bordures du parent sont retirées */
+    height: 340px;
+}
+
+#h_p_a_spe_bloc > ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+}
+
+
+#h_p_a_spe_bloc > ul li {
+    float: left;
+}
+
+/************* COMMONS *************/
+.h_com_cells {
+    margin: 20px 0 0 20px;
+}
+
+.h_com_c_img {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 130px;
+    background-image: url("http://lorempixel.com/225/130/nature");
+}
+
+.home_fade_splilpost {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.1);
+    width: 100%;
+    height: 100%;
+}
+
+.home_lilp_reacts {
+    position: absolute;
+    border-radius: 0 4px 4px 0;
+    z-index: 2;
+    margin: 50px 0 0 0;
+    padding: 0 4px;
+    height: 22px;
+    background-color: rgba(128,0,128,0.9);
+}
+
+.home_lilp_reacts span {
+    color: white;
+    
+    font-family: Calibri, Arial, Georgia;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.home_lilp_clb {
+    position: absolute;
+    border-radius: 0 4px 4px 0;
+    z-index: 2;
+    margin: 50px 0 0 0;
+    padding: 0 4px;
+    height: 22px;
+    background-color: rgba(255,165,0,1);
+}
+
+.home_lilp_clb span {
+    color: white;
+    
+    font-family: Calibri, Arial, Georgia;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.home_lilp_psd {
+    position: absolute;
+    z-index: 2;
+    /*padding: 2px 0 3px 5px;*/
+    margin: 110px 0 0 0;
+    height: 20px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    
+    text-indent: 5px;
+    line-height: 19px;
+}
+
+.home_lilp_psd a {
+    color: white;
+    
+    text-decoration: none;
+    font-family: Calibri, Arial, Georgia;
+    font-size: 15px;
+}
+
+.home_lilp_psd a:hover {
+    color: white;
+    
+    text-decoration: underline;
+    font-family: Calibri, Arial, Georgia;
+    font-size: 15px;
+}
+
+.h_com_c_specs {
+    width: 100%;
+    height: 20px;
+}
+
+.h_com_c_specs p {
+    /*border: 1px solid black;*/
+    float: left;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+    
+    
+.splil_spec_time {
+    width: 96px;
+    padding-left: 2px !important;
+    
+    color: grey;
+    line-height: 20px;
+    font-family: Arial, Calibri;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.splil_spec_aprnb, .splil_spec_aprind {
+    color: #036;
+}
+
+.splil_spec_aprnb {
+    width: 85px;
+    
+    color: black;
+    font-family: Calibri, Georgia, Arial;
+    line-height: 17px;
+    font-size: 15px;
+    text-align: right;
+}
+
+.splil_spec_aprind {
+    width: 35px;
+    padding-left: 5px !important;
+    
+    /*color: black;*/
+    font-style: italic;
+    font-family: 'Lily Script One', "Comic Sans MS", cursive, Calibri;
+    line-height: 16px;
+    font-size: 15px;
+    text-align: left;
+}
+
+/************* SPECIAL BLOC LEFT *************/
+#hpa_spe_b_l {
+    /*border: 1px solid green;*/
+    width: 520px;
+    height: 340px;
+}
+
+.h_spe_art_cells {
+    /*border: 1px solid lightgrey;*/
+    width: 225px;
+    height: 150px;
+    float: left;
+}
+
+/************* SPECIAL BLOC RIGHT *************/
+#hpa_spe_b_r {
+    /*border: 1px solid purple;*/
+    width: 250px;
+    height: 340px;
+    
+}
+
+#hpa_spe_b_r > p {
+    margin: 15px 0 4px 0;
+    
+    
+    font-family: Calibri, Arial, sans-serif;
+    /*font-weight: bold;*/
+    text-align: left;
+}
+
+#hpa_spe_b_r ul {
+    /*border: 1px solid lightgray;*/
+    box-shadow: 0px 0px 1px rgb(200,200,200);
+    margin: 0px 0 0 0;
+    padding: 3px 0px 0 5px;
+    list-style: none;
+    overflow: hidden;
+    width: 241px;
+    background-color: white;
+}
+
+#hpa_spe_b_r ul li {
+    margin-bottom: 8px;
+    width: 235px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.spe_htgs_ln {
+    width: 100%;
+    
+    font-family: Arial, calibri, sans-serif;
+    font-size: 13px;
+    color: #3395E6;
+    text-decoration: none;
+    
+}
+
+.spe_htgs_ln:hover {
+    text-decoration: underline;
+}
+
+/**********************************************************************/
+/******************************* STD BLOC ****************************/
+#h_p_a_std_bloc {
+    /*border: 1px solid red;*/
+    margin: 0;
+    padding: 0;
+    width: 785px;
+}
+
+
+.h_std_art_cells {
+    /*border: 1px solid lightgrey;*/
+    width: 235px; /* 225 +( (250-225)/3) */
+    height: 150px;
+    float: left;
+}
+
+.h_std_c_img {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 130px;
+    background-image: url("http://lorempixel.com/235/130/nightlife");
+}

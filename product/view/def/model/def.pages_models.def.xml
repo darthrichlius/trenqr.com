@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE def.pages_models SYSTEM "../dtd/dtd.pages_models.def.dtd">
+
+<def.pages_models>
+
+    <model id="TMLNR_GTPG_WLC">
+        <model.id value ="TMLNR_GTPG_WLC" />
+        <model.files.css>
+            <std>
+                <!--<media name="media" value="screen and (min-width: 250px) and (max-width: 1400px);{wos/sysdir:stylesheet_dir_uri}/r/s/mdl15p.m.css?{wos/systx:now}" />-->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/mdl15p.m.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model21.css?{wos/systx:now}" />
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model2.css?{wos/systx:now}" /> -->
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/profil-hdr-max.d.css?{wos/systx:now}" /> (01-07-15) -->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/pflbioplus_asdbox.csam.css?{wos/systx:now}" />
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/user_socprint.d.css?{wos/systx:now}" /> -->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/aside_right_rest.d.css?{wos/systx:now}" />
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/hdr-with-co.d.css?{wos/systx:now}" /> -->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/acc-header.d.css?{wos/systx:now}" />
+                <!-- Account Feed n'est disponible que pour ce modoèle donc, déclaré comme vfiles de Model -->
+                <!-- Cependant, il a été créé pour une dvt, il garde donc son extension *.d -->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/accountFeed.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/legals.dvt.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/perfect-scrollbar-0.4.6.min.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/font-awesome.min.css?{wos/systx:now}" />
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+	
+    <model id="TMLNR_GTPG_RU">
+        <model.id value ="TMLNR_GTPG_RU" />
+        <model.files.css>
+            <std>
+                <!--<media name="media" value="screen and (min-width: 250px) and (max-width: 1400px);{wos/sysdir:stylesheet_dir_uri}/r/s/mdl15p.m.css?{wos/systx:now}" />-->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/mdl15p.m.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model21.css?{wos/systx:now}" />
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model2.css?{wos/systx:now}" /> -->
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/profil-hdr-max.d.css?{wos/systx:now}" /> (01-07-15) -->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/pflbioplus_asdbox.csam.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/asdapps.csam.css?{wos/systx:now}" />
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/user_socprint.d.css?{wos/systx:now}" /> -->
+                
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/aside_right_rest.d.css?{wos/systx:now}" />
+                <!--<file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/hdr-with-co.d.css?{wos/systx:now}" />-->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/acc-header.d.css?{wos/systx:now}" />
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/badges.css?{wos/systx:now}" /> -->
+                <!-- Account Feed n'est disponible que pour ce modèle donc, déclaré comme vfiles de Model -->
+                <!-- Cependant, il a été créé pour une dvt, il garde donc son extension *.d -->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/accountFeed.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />
+                <!--<file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/legals.dvt.css?{wos/systx:now}" />-->
+                
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/tqs.m.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/crpr.min.css?{wos/systx:now}" />
+                
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/perfect-scrollbar-0.4.6.min.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/jquery-ui.min.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/jquery.datetimepicker.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/font-awesome.min.css" />
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+	
+    <model id="TMLNR_GTPG_RO">
+        <model.id value ="TMLNR_GTPG_RO" />
+        <model.files.css>
+            <std>
+                <!--<media name="media" value="screen and (min-width: 250px) and (max-width: 1400px);{wos/sysdir:stylesheet_dir_uri}/r/s/mdl15p.m.css?{wos/systx:now}" />-->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/mdl15p.m.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model21.css?{wos/systx:now}" />
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model2.css?{wos/systx:now}" /> -->
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/profil-hdr-max.d.css?{wos/systx:now}" /> (01-07-15) -->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/pflbioplus_asdbox.csam.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/asdapps.csam.css?{wos/systx:now}" />
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/user_socprint.d.css?{wos/systx:now}" /> -->
+
+                <!--<file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/hdr-with-co.d.css?{wos/systx:now}" />--> <!-- UnUSed -->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/acc-header.d.css?{wos/systx:now}" />
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/badges.css?{wos/systx:now}" /> -->
+                <!-- Account Feed n'est disponible que pour ce modèle donc, déclaré comme vfiles de Model -->
+                <!-- Cependant, il a été créé pour une dvt, il garde donc son extension *.d -->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/accountFeed.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />
+                <!--<file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/tia.csam.css?{wos/systx:now}" />-->
+                
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/tqs.m.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/crpr.min.css?{wos/systx:now}" />
+                
+                <!--<file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/legals.dvt.css?{wos/systx:now}" />--> <!-- UnUSed -->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/perfect-scrollbar-0.4.6.min.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/jquery-ui.min.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/font-awesome.min.css?{wos/systx:now}" />
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+	
+    <model id="TRPG_GTPG_WLC">
+        <model.id value ="TRPG_GTPG_WLC" />
+        <model.files.css>
+            <std>
+                <!--<media name="media" value="screen and (min-width: 250px) and (max-width: 1400px);{wos/sysdir:stylesheet_dir_uri}/r/s/mdl15p.m.css?{wos/systx:now}" />-->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/mdl15p.m.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/home_tr.m.css?{wos/systx:now}" />
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/flags-txt.css?{wos/systx:now}" /> -->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model21.css?{wos/systx:now}" />
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model2.css?{wos/systx:now}" /> -->
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/user_socprint.d.css?{wos/systx:now}" /> -->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/aside_right_rest.d.css?{wos/systx:now}" />
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/hdr-with-co.d.css?{wos/systx:now}" /> -->
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/acc-header.d.css?{wos/systx:now}" /> -->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/tr-header.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/newtrdart.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/list_posts_in_trpg.d.css?{wos/systx:now}" />
+                
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/badges.css?{wos/systx:now}" /> -->
+                <!-- Account Feed n'est disponible que pour ce modoèle donc, déclaré comme vfiles de Model -->
+                <!-- Cependant, il a été créé pour une dvt, il garde donc son extension *.d -->
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/accountFeed.d.css?{wos/systx:now}" /> -->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/err-bar-vtop.csam.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/trend_cockpit.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/legals.d.css?{wos/systx:now}" />
+<!--                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/list_posts_in_tmlnr.d.css?{wos/systx:now}" />-->
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/perfect-scrollbar-0.4.6.min.css" /> -->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/font-awesome.min.css?{wos/systx:now}" />
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+	
+    <model id="TRPG_GTPG_RU">
+        <model.id value ="TRPG_GTPG_RU" />
+        <model.files.css>
+            <std>
+                <!--<media name="media" value="screen and (min-width: 250px) and (max-width: 1400px);{wos/sysdir:stylesheet_dir_uri}/r/s/mdl15p.m.css?{wos/systx:now}" />-->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/mdl15p.m.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/home_tr.m.css?{wos/systx:now}" />
+                <!--<file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/flags-txt.css?{wos/systx:now}" />-->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model21.css?{wos/systx:now}" />
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model2.css?{wos/systx:now}" /> -->
+                <!--<file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/user_socprint.d.css?{wos/systx:now}" />-->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/aside_right_rest.d.css?{wos/systx:now}" />
+				<file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/asdapps.csam.css?{wos/systx:now}" />
+                <!--<file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/hdr-with-co.d.css?{wos/systx:now}" />-->
+                <!--<file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/acc-header.d.css?{wos/systx:now}" />-->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/tr-header.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/newtrdart.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/list_posts_in_trpg.d.css?{wos/systx:now}" />
+                
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/badges.css?{wos/systx:now}" /> -->
+                <!-- Account Feed n'est disponible que pour ce modoèle donc, déclaré comme vfiles de Model -->
+                <!-- Cependant, il a été créé pour une dvt, il garde donc son extension *.d -->
+                <!--<file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/accountFeed.d.css?{wos/systx:now}" />-->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/err-bar-vtop.csam.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/trend_cockpit.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/legals.d.css?{wos/systx:now}" />
+<!--                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/list_posts_in_tmlnr.d.css?{wos/systx:now}" />-->
+                <!--<file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/perfect-scrollbar-0.4.6.min.css" />-->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/jquery-ui.min.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/font-awesome.min.css" />
+                
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/tqs.m.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/crpr.min.css?{wos/systx:now}" />
+                
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+	
+    <model id="TRPG_GTPG_RFOL">
+        <model.id value ="TRPG_GTPG_RFOL" />
+        <model.files.css>
+            <std>
+                <!--<media name="media" value="screen and (min-width: 250px) and (max-width: 1400px);{wos/sysdir:stylesheet_dir_uri}/r/s/mdl15p.m.css?{wos/systx:now}" />-->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/mdl15p.m.css?{wos/systx:now}" />    
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/home_tr.m.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/flags-txt.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model2.css?{wos/systx:now}" />
+				<file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/asdapps.csam.css?{wos/systx:now}" />
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/user_socprint.d.css?{wos/systx:now}" /> -->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/aside_right_rest.d.css?{wos/systx:now}" />
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/hdr-with-co.d.css?{wos/systx:now}" /> -->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/acc-header.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/tr-header.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/newtrdart.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/list_posts_in_trpg.d.css?{wos/systx:now}" />
+                
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/badges.css?{wos/systx:now}" /> -->
+                <!-- Account Feed n'est disponible que pour ce modoèle donc, déclaré comme vfiles de Model -->
+                <!-- Cependant, il a été créé pour une dvt, il garde donc son extension *.d -->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/accountFeed.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/err-bar-vtop.csam.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/trend_cockpit.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/legals.d.css?{wos/systx:now}" />
+<!--                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/list_posts_in_tmlnr.d.css?{wos/systx:now}" />-->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/perfect-scrollbar-0.4.6.min.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/jquery-ui.min.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/font-awesome.min.css" />
+                
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/tqs.m.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/crpr.min.css?{wos/systx:now}" />
+                
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+	
+    <model id="TRPG_GTPG_RO">
+        <model.id value ="TRPG_GTPG_RO" />
+        <model.files.css>
+            <std>
+                <!--<media name="media" value="screen and (min-width: 250px) and (max-width: 1400px);{wos/sysdir:stylesheet_dir_uri}/r/s/mdl15p.m.css?{wos/systx:now}" />-->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/mdl15p.m.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/home_tr.m.css?{wos/systx:now}" />
+                <!--<file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/flags-txt.css?{wos/systx:now}" />--> <!-- UnUsed -->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model21.css?{wos/systx:now}" />
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model2.css?{wos/systx:now}" /> -->
+                <!--<file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/user_socprint.d.css?{wos/systx:now}" /> --> <!-- UnUsed -->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/aside_right_rest.d.css?{wos/systx:now}" /> 
+				<file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/asdapps.csam.css?{wos/systx:now}" />
+                <!--<file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/hdr-with-co.d.css?{wos/systx:now}" />--> <!-- UnUsed -->
+                <!--<file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/acc-header.d.css?{wos/systx:now}" />-->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/tr-header.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/newtrdart.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/list_posts_in_trpg.d.css?{wos/systx:now}" />
+                
+                <!--<file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/badges.css?{wos/systx:now}" />--> <!-- UnUsed -->
+                <!-- Account Feed n'est disponible que pour ce modoèle donc, déclaré comme vfiles de Model -->
+                <!-- Cependant, il a été créé pour une dvt, il garde donc son extension *.d -->
+                <!--<file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/accountFeed.d.css?{wos/systx:now}" />--> <!-- UnUsed -->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/err-bar-vtop.csam.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/trend_cockpit.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/legals.d.css?{wos/systx:now}" />
+<!--                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/list_posts_in_tmlnr.d.css?{wos/systx:now}" />-->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/perfect-scrollbar-0.4.6.min.css" /> <!-- UnUsed -->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/jquery-ui.min.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/font-awesome.min.css" />
+                
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/tqs.m.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/crpr.min.css?{wos/systx:now}" />
+                
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+    
+    <model id="FKSA_GTPG">
+        <model.id value ="FKSA_GTPG" />
+        <model.files.css>
+            <std>
+                <media name="media" value="screen and (min-width: 250px) and (max-width: 1400px);{wos/sysdir:stylesheet_dir_uri}/r/s/fksa_f15.m.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/hdr-with-co.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />				
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/fksa.m.css?{wos/systx:now}" />	
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/font-awesome.min.css?{wos/systx:now}" />
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+    
+    <model id="FKSA_GTPG_VIDVER">
+        <model.id value ="FKSA_GTPG_VIDVER" />
+        <model.files.css>
+            <std>
+                <media name="media" value="screen and (min-width: 250px) and (max-width: 1400px);{wos/sysdir:stylesheet_dir_uri}/r/s/fksa_f15.m.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/hdr-with-co.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />				
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/fksa.m.css?{wos/systx:now}" />	
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/font-awesome.min.css?{wos/systx:now}" />
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+    
+    <model id="FKSA_GTPG_TSTVER">
+        <model.id value ="FKSA_GTPG_TSTVER" />
+        <model.files.css>
+            <std>
+                <media name="media" value="screen and (min-width: 250px) and (max-width: 1400px);{wos/sysdir:stylesheet_dir_uri}/r/s/fksa_f15.m.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/hdr-with-co.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />				
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/fksa.m.css?{wos/systx:now}" />	
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/font-awesome.min.css?{wos/systx:now}" />
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+	
+    <model id="TQR_RCMDTO_GTPG">
+        <model.id value ="TQR_RCMDTO_GTPG" />
+        <model.files.css>
+            <std>
+                <!--<media name="media" value="screen and (min-width: 250px) and (max-width: 1400px);{wos/sysdir:stylesheet_dir_uri}/r/s/fksa_f15.m.css?{wos/systx:now}" />-->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/hdr-with-co.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />				
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/rcmdto.m.css?{wos/systx:now}" />	
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/font-awesome.min.css?{wos/systx:now}" />
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+	
+    <model id="TQR_STUDIO_GTPG">
+        <model.id value ="TQR_STUDIO_GTPG" />
+        <model.files.css>
+            <std>
+                <!--<media name="media" value="screen and (min-width: 250px) and (max-width: 1400px);{wos/sysdir:stylesheet_dir_uri}/r/s/fksa_f15.m.css?{wos/systx:now}" />-->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/hdr-with-co.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />				
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/tqs.m.css?{wos/systx:now}" />	
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/font-awesome.min.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/crpr.min.css?{wos/systx:now}" />
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+	
+    <model id="TQR_GTPG_HVIEW">
+        <model.id value ="TQR_GTPG_HVIEW" />
+        <model.files.css>
+            <std>
+                <!--<media name="media" value="screen and (min-width: 250px) and (max-width: 1400px);{wos/sysdir:stylesheet_dir_uri}/r/s/fksa_f15.m.css?{wos/systx:now}" />-->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <!--<file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/hdr-with-co.d.css?{wos/systx:now}" />-->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/acc-header.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />				
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/jquery-ui.min.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/font-awesome.min.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/hview.m.css?{wos/systx:now}" />	
+                
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/tqs.m.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/crpr.min.css?{wos/systx:now}" />
+                
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+	
+	
+<!-- ************************************************************************************************************************** -->
+<!-- ******************************************** TQR SCOPE (WELCOME & GESTION)  ********************************************** -->
+<!-- ************************************************************************************************************************** -->
+	<model id="TQR_WLC_INS">
+        <model.id value ="TQR_WLC_INS" />
+        <model.files.css>
+            <std>
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model2.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/c.c/general.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/s/inscription.s.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/s/nw_ins.s.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/d/content_header.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/font-awesome.min.css?{wos/systx:now}" />
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+    
+    <model id="TQR_WLC_CNX">
+        <model.id value ="TQR_WLC_CNX" />
+        <model.files.css>
+            <std>
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model2.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/c.c/general.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/s/connection.s.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/s/nw_cnx.s.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/d/content_header.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/font-awesome.min.css?{wos/systx:now}" />
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+	
+    <model id="TQR_WLC_PREC_L">
+        <model.id value ="TQR_WLC_PREC_L" />
+        <model.files.css>
+            <std>
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model2.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/c.c/general.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/s/recovery.s.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/s/prec.s.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/d/content_header.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />				
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+	
+    <model id="TQR_WLC_PREC_F">
+        <model.id value ="TQR_WLC_PREC_F" />
+        <model.files.css>
+            <std>
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model2.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/c.c/general.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/s/recovery_change.s.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/s/prec.s.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/d/content_header.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />				
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+	
+    <!-- TODO : Page spéciale "A PROPOS" indépendante de l'univers FAQ -->
+    <model id="TQR_WLC_ABOUT">
+        <model.id value ="TQR_WLC_ABOUT" />
+        <model.files.css>
+            <std>
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />	
+                <!-- A Venir -->			
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+	
+    <model id="TQR_FAQ_X">
+        <model.id value ="TQR_FAQ_X" />
+        <model.files.css>
+            <std>
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/c.c/general.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/s/faq.s.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />				
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+    
+    <model id="TQR_FAQ_ABOUT">
+        <model.id value ="TQR_FAQ_ABOUT" />
+        <model.files.css>
+            <std>
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/c.c/general.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/s/faq.s.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />				
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+    
+    <model id="TQR_FAQ_TERMS">
+        <model.id value ="TQR_FAQ_TERMS" />
+        <model.files.css>
+            <std>
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/c.c/general.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/s/faq.s.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />				
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+    
+    <model id="TQR_FAQ_COOKIES">
+        <model.id value ="TQR_FAQ_COOKIES" />
+        <model.files.css>
+            <std>
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/c.c/general.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/s/faq.s.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />				
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+    
+    <model id="TQR_FAQ_PRIVACY">
+        <model.id value ="TQR_FAQ_PRIVACY" />
+        <model.files.css>
+            <std>
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/c.c/general.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/s/faq.s.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />				
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+    
+    <model id="TQR_FAQ_LEGALS">
+        <model.id value ="TQR_FAQ_LEGALS" />
+        <model.files.css>
+            <std>
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/c.c/general.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/s/faq.s.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />		
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+	
+<!-- ************************************************************************************************************************** -->
+<!-- ***************************************** PIERRE SCOPE (WELCOME & GESTION)  ********************************************** -->
+<!-- ************************************************************************************************************************** -->
+
+    <model id="ontrenqr">
+        <model.id value ="ontrenqr" />
+        <model.files.css>
+            <std>
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/c.c/general.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/s/home.s.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/d/home_1.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/d/home_2.d.css?{wos/systx:now}" />
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/d/home_3.d.css?{wos/systx:now}" /> -->
+                <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/d/home_ruban.d.css?{wos/systx:now}" /> -->
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/d/doodles.d.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/jquery-ui.min.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/perfect-scrollbar-0.4.6.min.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/font-awesome.min.css" />
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+    
+    <model id="TQR_GTPG_STGS">
+        <model.id value ="TQR_GTPG_STGS" /> 
+        <model.files.css>
+            <std>
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/com.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model2.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/c.c/general.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/s/profile.s.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/settings.s.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/ua_event_corner.csam.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/c.c/font-awesome.min.css?{wos/systx:now}" />
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+    
+    <model id="ins">
+        <model.id value ="ins" />
+        <model.files.css>
+            <std>
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model2.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/c.c/general.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/s/inscription.s.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/d/content_header.d.css?{wos/systx:now}" />
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+    
+    <model id="trial">
+        <model.id value ="trial" />
+        <model.files.css>
+            <std>
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model2.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/c.c/general.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/s/inscription.s.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/d/content_header.d.css?{wos/systx:now}" />
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+    
+    <model id="prg">
+        <model.id value ="prg" />
+        <model.files.css>
+            <std>
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model2.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/c.c/general.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/s/inscription.s.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/d/content_header.d.css?{wos/systx:now}" />
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+    
+    <model id="cnx">
+        <model.id value ="cnx" />
+        <model.files.css>
+            <std>
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model2.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/c.c/general.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/s/connection.s.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/d/content_header.d.css?{wos/systx:now}" />
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+    
+    <model id="rec">
+        <model.id value ="rec" />
+        <model.files.css>
+            <std>
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model2.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/c.c/general.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/s/recovery.s.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/d/content_header.d.css?{wos/systx:now}" />
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+    
+    <model id="rec2">
+        <model.id value ="rec2" />
+        <model.files.css>
+            <std>
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model2.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/c.c/general.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/s/recovery.s.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/d/content_header.d.css?{wos/systx:now}" />
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+    
+    <model id="email_confirm">
+        <model.id value ="email_confirm" />
+        <model.files.css>
+            <std>
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/s/model2.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/c.c/general.css" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/s/profile.s.css?{wos/systx:now}" />
+                <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/d/content_header.d.css?{wos/systx:now}" />
+            </std>
+        </model.files.css>
+        <model.files.js>
+        </model.files.js>
+    </model>
+
+</def.pages_models>
+
+

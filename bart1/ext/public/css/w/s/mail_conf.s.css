@@ -1,0 +1,55 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 juin 2014, 13:08:34
+    Author     : Pierre Lallement <http://www.syel.totoandco.eu>
+*/
+
+#mc_content{
+    font-size: 14px;
+    text-align: justify;
+    width: 520px;
+    margin: 0 auto 95px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 45px;
+}
+
+#mc_content h1{
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+#mc_content p{
+    margin-bottom: 15px;
+}
+
+.jsw_main_warning{
+    text-align: center;
+    position: absolute;
+    z-index: 3;
+    top: 20px;
+    width: 40%;
+    right: 0;
+    left: 0;
+    display: inline-block;
+    margin: auto;
+    background: rgba(100%, 73%, 25%, 0.9);
+    border: 1px solid #c68000;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-family: "Calibri", "Myriad Pro", arial, sans-serif;
+}
+.jsw_title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.jsw_sub{
+    font-size: 12px;
+}

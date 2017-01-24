@@ -1,0 +1,49 @@
+
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #003A78;
+}
+
+#pg-center {
+    margin: auto;
+    width: 750px;
+    height: 400px;
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;    
+}
+
+#pg-ctr-tqr {
+    height: 300px;
+    background: url('/bart1/timg/files/img/r/logo_tqr_beta.png') no-repeat;
+    background-position: 50% 0px;
+    background-size: 110%;
+}
+
+#pg-ctr-mr {
+    border-radius: 25px;
+    width: 550px;
+    margin: 0 auto;
+    padding: 15px 0px;
+    background-color: #fff;
+    
+    color: #FC9B1B;
+    font-family: "Century Gothic", Verdana, Calibri, Arial, sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE text_library SYSTEM "../../dtd/dtd.deco.def.dtd">
+
+<text_library>
+    <text id="test_deco_id1">
+        Hello WORLD !
+    </text>
+    <text id="test_deco_id2">
+        This is the default page for TEST_PROD product.&lt;br/&gt; If you are able to see that page it's only because you coonection status is 'logout'.
+    </text>
+    <text id="test_deco_id3">
+        Use this page to check the proper functioning of the system when it comes to page and process managment. For 'Restricted' or 'Welcome' mode !
+    </text>
+    <text id="test_deco_id4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non sagittis urna. 
+        Phasellus quam libero, auctor sed mollis vehicula, malesuada sit amet felis. 
+        Vestibulum ac velit nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+        Sed dapibus diam rutrum tortor tempor, ac dapibus felis facilisis. Cras fermentum urna neque, eget facilisis ipsum porttitor id. Duis in lacus massa. 
+        Pellentesque felis leo, volutpat sed condimentum a, posuere sit amet lorem. Phasellus dignissim vitae lacus eget imperdiet. 
+        Proin porttitor, ipsum sed dapibus lacinia, lacus quam auctor enim, sed volutpat est urna consectetur nunc. Mauris faucibus nisi nec lorem imperdiet, et bibendum felis consequat. 
+        Vivamus aliquam neque ac urna consequat tincidunt.
+    </text>
+    <text id="test_deco_id5">
+        Page_welc2
+    </text>
+    <text id="test_deco_id6">
+        My_account
+    </text>
+    <text id="test_deco_id7">
+       Prod_Page_On_Restricted_Mode
+    </text>
+    <text id="test_deco_id8">
+        Log In Page
+    </text>
+    <text id="test_deco_id9">
+        Log Out Page
+    </text>
+</text_library>
+    

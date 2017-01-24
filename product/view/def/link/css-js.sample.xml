@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE links.css SYSTEM "../dtd/dtd.js-css-link.def.dtd">
+
+<!-- Pour JS : remplacer 'css' par 'js' -->
+<links.css>
+    <link.css id="__L_C_ID1__">
+        <public_name value = "__PUBLIC_NAME__" />
+        <inner_name value = "__INNER_NAME__" />
+        <path_to_file value = "__PATH_TO_FILE__" />
+    </link.css>
+</links.css>

@@ -1,0 +1,162 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29 juil. 2014, 15:04:22
+    Author     : arsphinx
+*/
+
+#frdrules-sprt {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500; /* 500 Permet de passer au-dessus du module Friend */ 
+} 
+
+#fdrl-max {
+    /*border: 1px solid #f00;*/
+    margin: auto;
+    width: 530px; 
+    height: 300px; /* Il s'agirait en faite de la taille max dans ce cas avec un absolute et n normal à l'interieur qui fit son propre contenu */
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#fdrl-main {
+    border-radius: 5px;
+/*    width: 100%;
+    height: 100%;*/
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+    
+    overflow: hidden;
+}
+
+/********************* HEADER **********************/
+#fdrl-hdr-max {
+    
+}
+
+#fdrl-tlebox {
+    border-bottom: 1px solid #C6CACE;
+    margin: 0;
+    padding: 10px 20px;
+    background: #E4E5E8;
+    
+    color: #312C2C;
+    font-family: Verdana, calibri, Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+/********************** BODY ***********************/
+
+#fdrl-bdy-bmx {
+    padding: 10px 35px 20px 35px;
+}
+
+#fdrl-bdy-max {
+    
+}
+
+#fdrl-bdy-iro {
+    margin: 3px 0 0 0;
+    
+    color: #3E4448;
+    font-family: "Open sans", Arial, sans-serif;
+    font-size: 13px;
+}
+
+#fdrl-bdy-rls {
+    margin: 10px 0 15px 0;
+    
+    font-family: "Open sans", Arial, sans-serif;
+    font-size: 13px;
+}
+
+/********************* FOOTER **********************/
+#fdrl-btm-max {
+    margin: 15px 0px 0px 0px;
+    
+    overflow: auto;
+}
+
+.fdrl-bdy-rl {
+    margin-bottom: 5px;
+        
+    color: #333;
+}
+
+#fdrl-bdy-fly {
+    border: 1px solid rgba(249, 207, 130, 0.7);
+    border-radius: 2px;
+    margin: 0px 0px;
+    padding: 5px 10px;
+    background: rgba(255, 222, 160, 0.4);
+        
+    /*color: #f00;*/
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 14px;
+}
+
+/**** ACTION *****/
+
+#fdrl-lrm {
+        
+    position: relative;
+    top: 10px;
+    
+    color: #529de8;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+#fdrl-lrm:hover {
+    text-decoration: underline;
+}
+
+#fdrl-td {
+    /*border: 1px solid #1F6EBE;*/
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 5px 20px;
+    /*
+    background: #ddd;
+    background: linear-gradient(to bottom,#fff,#eee);
+    background: -o-linear-gradient(to bottom,#fff,#eee);
+    background: -moz-linear-gradient(to bottom,#fff,#eee);
+    background: -webkit-linear-gradient(to bottom,#fff,#eee);
+    */
+    background: #fff;
+    
+    float: right;
+    
+    /*color: #333;*/
+    color: #529de8;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+#fdrl-td:hover {
+    /*
+    background: linear-gradient(to bottom,#fafafa,#d3d3d3);
+    background: -o-linear-gradient(to bottom,#fafafa,#d3d3d3);
+    background: -ms-linear-gradient(to bottom,#fafafa,#d3d3d3);
+    background: -moz-linear-gradient(to bottom,#fafafa,#d3d3d3);
+    background: -webkit-linear-gradient(to bottom,#fafafa,#d3d3d3);
+    */
+    background: #529DE8;
+    
+    color: #FFF;
+}

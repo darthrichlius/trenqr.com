@@ -1,0 +1,6 @@
+#!/bin/bash -e
+### Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
+
+# Bash wrapper for backward compatibility
+
+plesk bin extension --exec letsencrypt cli.php $@

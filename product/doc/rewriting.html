@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trenqr Rewriting rules</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <h1>Les règles sur le REWRITING pour le produit <span style="color: blue">TRENqR</span></h1>
+        <br/>
+        <h2>Liste des différents formats d'URL pour le produit</h2>
+        <h3><span style="color: red; font-weight: bold;">TIMELINER</span></h3>
+        <ul>
+            <li>/@<b>[_USERNAME]</b> : <span style="color: red;">L'utilisateur veut atteindre la page de l'utilisateur spécifié. Il arrivera sur une page dispatcheuse.</span></li>
+            <li>/<b>[_USERNAME]</b>  : <span  style="color: red;">L'utilisateur veut atteindre la page de l'utilisateur spécifié. Il arrivera sur une page dispatcheuse.</span></li>
+            <li>/<b>[_USERNAME]</b>/<b>[_PAGE_NAME]</b>/<b>w=[_URQID]</b>  : <span  style="color: red;">L'utilisateur veut atteindre la page de l'utilisateur spécifié selon l'urqid spécifié.</span></li>
+            <li>/<b>[_USERNAME]</b>/<b>[_PAGE_NAME]</b>/<b>w=[_URQID]</b>&<b>[_UPS1.UPS2.UP3....]</b>  : <span  style="color: red;">L'utilisateur veut atteindre la page de l'utilisateur spécifié selon l'urqid spécifié + UPS.</span></li>
+        </ul>   
+        <h3><span style="color: red; font-weight: bold;">AUTRES PAGE</span></h3>
+        <ul>
+            <li>/<b>[_ZONE_DU_PRODUIT (PAGE_NAME)]</b>/<b>[_URQID]</b> : <span style="color: red;">L'utilisateur veut atteindre la page de la Tendance spécifiée. Cette page fait aussi office de dispatcheuse. C'est la page génréral des Tendances</span></li>
+            <li>/<b>[_ZONE_DU_PRODUIT (PAGE_NAME)]</b>/<b>[_URQID]</b>&<b>[_UPS1.UPS2.UP3....]</b> : <span style="color: red;">L'utilisateur veut atteindre la page de la Tendance spécifiée + UPS.</span></li>
+        </ul>
+        <br/>
+        <br/>
+        <h2>EXEMPLES (Les exemples représentent au mieux la réalité)</h2>
+        <h3><span style="color: red; font-weight: bold;">TIMELINER</span></h3>
+        <ul>
+            <li>/<b style='color: green;'>@BartSimpson</b></li>
+            <li>/<b style='color: green;'>BartSimpson</b></li>
+            <li>/<b style='color: green;'>BartSimpson</b>/<b>timeline</b>/w=<b>at-home</b>  : <span  style="color: red;">L'utilisateur @BartSimpson veut atteindre sa page</span></li>
+            <li>/<b style='color: green;'>BartSimpson</b>/<b>profil</b>/w=<b>visiting</b>  : <span  style="color: red;">L'utilisateur veut atteindre la page de @BartSimpson.</span></li>
+            <li>/<b style='color: green;'>BartSimpson</b>/<b>profil</b>/w=<b>discovery</b>  : <span  style="color: red;">L'utilisateur veut atteindre la page de @BartSimpson quand il n'est pas connecté</span></li>
+        </ul>
+        <h3><span style="color: red; font-weight: bold;">TREND-PAGE</span></h3>
+        <ul>
+            <li>/trend/<b style='color: green;'>Hum-donuts.78ae45sq</b> : <span  style="color: red;">L'utilisateur veut atteindre la page de la Tendance Hum-donuts. Cette page est une dispatcheuse.</span></li>
+            <li>/trend/<b>explore</b>/<b style='color: green;'>Hum-donuts.78ae45sq</b> : <span  style="color: red;">L'utilisateur veut atteindre la page de la Tendance Hum-donuts. Cette page est une dispatcheuse.</span></li>
+            <li>/trend/<b>manager</b>/<b style='color: green;'>Hum-donuts.78ae45sq</b> : <span  style="color: red;">L'utilisateur veut atteindre la page de la Tendance Hum-donuts quand l'utilisateur actif est le propriétaire de la Tendance.</span></li>
+        </ul>
+        <h3><span style="color: red; font-weight: bold;">AJAX</span></h3>
+        <ul>
+            <li>/ajax/profil/w=<b>TMNLR_ARP_ADDRCT</b>&ups=ue-4g369tffvfd  : <span  style="color: red;">Requete AJAX pour atteindre l'urq spécifié avec comme PAGE : "profil" & UPS : (ueid) "4g369tffvfd".</span></li>
+        </ul>
+    </body>
+</html>

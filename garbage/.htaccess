@@ -1,0 +1,177 @@
+SetEnv PHP_VER 5_4
+SetEnv REGISTER_GLOBALS 0
+
+ErrorDocument 400 /index.php?page=error&urqid=TQR_ERR_UNMNG&ups=cd=400
+ErrorDocument 403 /index.php?page=error&urqid=TQR_ERR_UNMNG&ups=cd=403
+ErrorDocument 404 /index.php?page=error&urqid=TQR_ERR_UNMNG&ups=cd=404
+ErrorDocument 406 /index.php?page=error&urqid=TQR_ERR_UNMNG&ups=cd=406
+ErrorDocument 414 /index.php?page=error&urqid=TQR_ERR_UNMNG&ups=cd=414
+ErrorDocument 500 /index.php?page=error&urqid=TQR_ERR_UNMNG&ups=cd=500
+ErrorDocument 503 /index.php?page=error&urqid=TQR_ERR_UNMNG&ups=cd=503
+
+Options +FollowSymlinks 
+RewriteEngine on 
+
+
+###### ***** PAGES PRODUIT (SYSTEM) ***** ######
+
+##*** HOME ***##
+#Ajouté le 04/07/15 pour résoudre un bogue
+RewriteRule ^$    /index.php?page=accueil&urqid=ontrenqr [L,NC]
+RewriteRule ^ontrenqr$    /index.php?page=accueil&urqid=ontrenqr [L,NC]
+
+##*** SIGNUP ***##
+#REGLE : Aller vers la page d'inscription 
+RewriteRule ^inscription$    /index.php?page=inscription&urqid=ins [L,NC]
+RewriteRule ^signup$    /index.php?page=signup&urqid=ins [L,NC]
+RewriteRule ^signup&lg=([a-z]{2})$    /index.php?page=signup&urqid=ins&ups=lg=$1 [L,NC]
+
+##*** LOGIN ***##
+#REGLE : Aller vers la page de connexion
+RewriteRule ^connexion$    /index.php?page=connexion&urqid=cnx [L,NC]
+RewriteRule ^login$    /index.php?page=signin&urqid=cnx [L,NC]
+RewriteRule ^login&lg=([a-z]{2})$    /index.php?page=signin&urqid=cnx&ups=lg=$1 [L,NC]
+
+##*** LOGOUT ***##
+#REGLE : Aller vers la page de deconnexion
+RewriteRule ^d[e|é]connexion$    /index.php?page=profil&urqid=LOGOUT [L,NC]
+RewriteRule ^logout$    /index.php?page=profil&urqid=LOGOUT [L,NC]
+
+##*** RECOVERY ***##
+#REGLE : Aller vers la page de récupération de mot de passe
+RewriteRule ^recuperation/motdepasse$    /index.php?page=recuperation&urqid=rec [L,NC]
+RewriteRule ^recovery/password$    /index.php?page=recovery&urqid=rec [L,NC]
+RewriteRule ^recovery/password&lg=([a-z]{2})$    /index.php?page=recovery&urqid=rec&ups=lg=$1 [L,NC]
+
+##*** RECOVERY FINAL***##
+
+#REGLE : Aller vers la page de reinitialisation effective de mot de passe
+RewriteCond %{QUERY_STRING} case=([\w]{2,25})&uid=(.+)&em=(.+)&is=([\w-]+)=([\w-]+)=([\w-]+)&lg=([a-z]{2})
+RewriteRule ^s/rpassword$   /index.php?page=recovery&urqid=REC_GTPG_F&ups=up=%1.ui=%2.ue=%3.oei=%4.k=%5.ssid=%6.lg=%7 [L,NC]
+
+
+##*** FAQ ***##
+# NOTE : On regroupe toutes les pages faisant parties de FAQ
+
+#PAGE : INDEX - FAQ
+Redirect ^faq$ /about
+Redirect ^faq&lg=([a-z]{2})$ /about
+#RewriteRule ^faq$   /index.php?page=faq&urqid=FAQ_GTPG_X [L,NC]
+#RewriteRule ^faq&lg=([a-z]{2})$   /index.php?page=faq&urqid=FAQ_GTPG_X&ups=lg=$1 [L,NC]   
+#PAGE : TERMS - FAQ
+RewriteRule ^(?:apropos|about)$   /index.php?page=about&urqid=FAQ_GTPG_ABOUT [L,NC]   
+RewriteRule ^(?:apropos|about)&lg=([a-z]{2})$   /index.php?page=about&urqid=FAQ_GTPG_ABOUT&ups=lg=$1 [L,NC]   
+#PAGE : TERMS - FAQ
+RewriteRule ^(?:cgu|terms)$   /index.php?page=terms&urqid=FAQ_GTPG_TERMS [L,NC]   
+RewriteRule ^(?:cgu|terms)&lg=([a-z]{2})$   /index.php?page=terms&urqid=FAQ_GTPG_TERMS&ups=lg=$1 [L,NC]   
+#PAGE : PRIVACY - FAQ
+RewriteRule ^(?:confidentialite|privacy)$   /index.php?page=privacy&urqid=FAQ_GTPG_PRIVACY [L,NC]   
+RewriteRule ^(?:confidentialite|privacy)&lg=([a-z]{2})$   /index.php?page=privacy&urqid=FAQ_GTPG_PRIVACY&ups=lg=$1 [L,NC]   
+#PAGE : COOKIES - FAQ
+RewriteRule ^cookies$   /index.php?page=cookies&urqid=FAQ_GTPG_COOKIES [L,NC]   
+RewriteRule ^cookies&lg=([a-z]{2})$   /index.php?page=cookies&urqid=FAQ_GTPG_COOKIES&ups=lg=$1 [L,NC]   
+#PAGE : LEGALS - FAQ
+RewriteRule ^(?:mentionslegales|leglas)$   /index.php?page=legals&urqid=FAQ_GTPG_LEGALS [L,NC]   
+RewriteRule ^(?:mentionslegales|leglas)&lg=([a-z]{2})$   /index.php?page=legals&urqid=FAQ_GTPG_LEGALS&ups=lg=$1 [L,NC]   
+
+
+##*** SETTINGS ***##
+RewriteRule ^(?:settings|parametres)$   - [R=404,NC,L]
+#PAGE : "INDEX"
+RewriteRule ^\@?([\w]{2,25})/(?:settings|parametres)$   /index.php?user=$1&page=settings&urqid=TQR_GTPG_STGS [L,NC]   
+#PAGE : PROFILE - SETTINGS
+RewriteRule ^\@?([\w]{2,25})/settings/profile$   /index.php?user=$1&page=settings&urqid=TQR_GTPG_STGS&ups=s=profile [L,NC]   
+RewriteRule ^\@?([\w]{2,25})/parametres/profil$   /index.php?user=$1&page=settings&urqid=TQR_GTPG_STGS&ups=s=profile [L,NC]   
+#PAGE :  ACCOUNT - SETTINGS
+RewriteRule ^\@?([\w]{2,25})/settings/account$   /index.php?user=$1&page=settings&urqid=TQR_GTPG_STGS&ups=s=account [L,NC]   
+RewriteRule ^\@?([\w]{2,25})/parametres/compte$   /index.php?user=$1&page=settings&urqid=TQR_GTPG_STGS&ups=s=account [L,NC] 
+#PAGE :  SECURITY - SETTINGS
+RewriteRule ^\@?([\w]{2,25})/settings/security$   /index.php?user=$1&page=settings&urqid=TQR_GTPG_STGS&ups=s=security [L,NC]   
+RewriteRule ^\@?([\w]{2,25})/parametres/securit[e|é]$   /index.php?user=$1&page=settings&urqid=TQR_GTPG_STGS&ups=s=security [L,NC] 
+#PAGE :  DELETE_ACCOUNT - SETTINGS
+#NOTE : On ajoute des ups_optional pour rendre impossible (ou presque) l'action d'arriver directement sur cette section sans passer par le lien adéquat
+RewriteRule ^\@?([\w]{2,25})/settings/security/account/xeu=([a-z\d]+)&k=([a-z\d]{32})$   /index.php?user=$1&page=settings&urqid=TQR_GTPG_STGS&ups=xeu=$2.k=$3 [L,NC]   
+RewriteRule ^\@?([\w]{2,25})/parametres/securit[e|é]/compte/xeu=([a-z\d]+)&k=([a-z\d]{32})$   /index.php?user=$1&page=settings&urqid=TQR_GTPG_STGS&ups=xeu=$2.k=$3 [L,NC] 
+#PAGE :  ABOUT - SETTINGS
+RewriteRule ^\@?([\w]{2,25})/settings/about$   /index.php?user=$1&page=settings&urqid=TQR_GTPG_STGS&ups=s=about [L,NC]   
+RewriteRule ^\@?([\w]{2,25})/parametres/apropos$   /index.php?user=$1&page=settings&urqid=TQR_GTPG_STGS&ups=s=about [L,NC] 
+
+ 
+##*** ABOUT ***##
+# TODO
+
+
+##*** AJAX ***##
+
+#REGLE : Type d'URL pour requetes AJAX sans user
+#NOTE : Pour l'heure, la partie timestamp n'est qu'un leurre
+RewriteRule ^ajax/([\w]{1,30})@([\w]{1,30})/[\d]{10,20}$     /index.php?page=$2&urqid=$1 [L,NC]
+
+#REGLE : Type d'URL pour requetes AJAX sans user
+#NOTE : Pour l'heure, la partie timestamp n'est qu'un leurre
+RewriteRule ^ajax/\@?([\w]{2,25})/([\w]{1,30})@([\w]{1,30})/[\d]{10,20}$     /index.php?user=$1&page=$3&urqid=$2 [L,NC]
+
+
+###### ***** PAGES PRODUIT (USER) ***** ######
+
+## ***** TIMELINER ***** ##
+
+#REGLE : Aller vers la page de l'utilisateur avec seulement USERNAME
+RewriteRule ^\@?([\w]{2,25})$ 	/index.php?user=$1&page=profil&urqid=TMLNR_GTPG&ups=pg=ml [L]
+RewriteRule ^\@?([\w]{2,25})/(?:trends|tendances)$ 	/index.php?user=$1&page=profil&urqid=TMLNR_GTPG&ups=pg=tr [L]
+
+#REGLE : Aller vers la page de l'utilisateur avec seulement USERNAME
+RewriteRule ^\@?([\w]{2,25})/explore$ 	/index.php?user=$1&page=profil&urqid=TMLNR_GTPG [L]
+
+#REGLE : Aller vers la page de l'utilisateur selon : PAGE & URQID
+#RewriteRule ^\@?([\w]{2,25})/timeline/w=([\w\-]+)$     /index.php?user=$1&page=profil&urqid=$2 [L]
+#REGLE : Aller vers la page de l'utilisateur selon : PAGE & URQID
+#RewriteRule ^\@?([\w]{2,25})/([\w\-]{2,50})/w=([\w\-]+)$     /index.php?user=$1&page=$2&urqid=$3 [L]
+#REGLE : Aller vers la page de l'utilisateur selon : PAGE & URQID & UPS
+#RewriteRule ^\@?([\w]{2,25})/([\w\-]{2,50})/w=([\w\-]+)&ups=[^.]([\w\.\=\@\-ÀÁÂÃÄÅÆàáâãäåæắạặằảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøⱣᵽÙÚÛÜùúûüựÿÝýÑñŠŽžż]{3,})$	/index.php?user=$1&page=$2&urqid=$3&ups=$4 [L]
+
+#REGLE : Aller vers la page PAGE de l'utilisateur quand il est le propriétaire
+RewriteRule ^\@?([\w]{2,25})&as=(?:chezmoi|athome)$ /index.php?user=$1&page=profil&urqid=TMLNR_GTPG_RO&ups=pg=ml [L,NC]
+#REGLE : Aller vers la page TRENDS de l'utilisateur quand il est le propriétaire
+RewriteRule ^\@?([\w]{2,25})/(?:trends|tendances)&as=(?:chezmoi|athome)$ /index.php?user=$1&page=profil&urqid=TMLNR_GTPG_RO&ups=pg=tr [L,NC]
+
+#REGLE : Aller vers la page PAGE de l'utilisateur quand il est visiteur (restricted)
+RewriteRule ^\@?([\w]{2,25})&as=(?:visiting)$ /index.php?user=$1&page=profil&urqid=TMLNR_GTPG_RU&ups=pg=ml [L,NC]
+#REGLE : Aller vers la page TRENDS de l'utilisateur quand il est le propriétaire
+RewriteRule ^\@?([\w]{2,25})/(?:trends|tendances)&as=(?:visiting)$ /index.php?user=$1&page=profil&urqid=TMLNR_GTPG_RU&ups=pg=tr [L,NC]
+
+#REGLE : Aller vers la page de l'utilisateur quand il est visiteur (welcome)
+RewriteRule ^\@?([\w]{2,25})&as=(?:public)$ /index.php?user=$1&page=profil&urqid=TMLNR_GTPG_WLC&ups=pg=ml [L,NC]
+#REGLE : Aller vers la page TRENDS de l'utilisateur quand il est le propriétaire
+RewriteRule ^\@?([\w]{2,25})/(?:trends|tendances)&as=(?:public)$ /index.php?user=$1&page=profil&urqid=TMLNR_GTPG_WLC&ups=pg=tr [L,NC]
+
+
+##*** TREND_PAGE ***##
+
+#200 car on le titre fait 100 max. Cependant, il admet des séparateurs '-'. On peut donc (si je ne me trompe pas) aller jusqu'à 200)
+
+#REGLE : Aller vers la Tendance ayant le titre $1 et l'identifiant $2
+RewriteRule ^(?:trend|tendance)/([\w\-]{2,50})/([\w\-ÀÁÂÃÄÅÆàáâãäåæắạặằảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøⱣᵽÙÚÛÜùúûüựÿÝýÑñŠŽžż]{20,200})$       /index.php?page=trend&urqid=TRPG_GTPG&ups=tei=$1.tle=$2 [L]
+
+#REGLE : Aller vers la Tendance ayant le titre $2 et l'identifiant $3 selon RO
+RewriteRule ^(?:trend|tendance)/([\w\-]{2,50})/([\w\-ÀÁÂÃÄÅÆàáâãäåæắạặằảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøⱣᵽÙÚÛÜùúûüựÿÝýÑñŠŽžż]{20,200})&as=manager$    /index.php?page=trend&urqid=TRPG_GTPG_RO&ups=tei=$1.tle=$2 [L]
+
+#REGLE : Aller vers la Tendance ayant le titre $2 et l'identifiant $3 selon RFOL
+RewriteRule ^(?:trend|tendance)/([\w\-]{2,50})/([\w\-ÀÁÂÃÄÅÆàáâãäåæắạặằảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøⱣᵽÙÚÛÜùúûüựÿÝýÑñŠŽžż]{20,200})&as=contributor$    /index.php?page=trend&urqid=TRPG_GTPG_RFOL&ups=tei=$1.tle=$2 [L]
+
+#REGLE : Aller vers la Tendance ayant le titre $2 et l'identifiant $3 selon RU
+RewriteRule ^(?:trend|tendance)/([\w\-]{2,50})/([\w\-ÀÁÂÃÄÅÆàáâãäåæắạặằảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøⱣᵽÙÚÛÜùúûüựÿÝýÑñŠŽžż]{20,200})&as=me$    /index.php?page=trend&urqid=TRPG_GTPG_RU&ups=tei=$1.tle=$2 [L]
+
+#REGLE : Aller vers la Tendance ayant le titre $2 et l'identifiant $3 selon WLC
+RewriteRule ^(?:trend|tendance)/([\w\-]{2,50})/([\w\-ÀÁÂÃÄÅÆàáâãäåæắạặằảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøⱣᵽÙÚÛÜùúûüựÿÝýÑñŠŽžż]{20,200})&as=visitor$    /index.php?page=trend&urqid=TRPG_GTPG_WLC&ups=tei=$1.tle=$2 [L]
+
+
+
+##*** FOCUSARTICLE_PAGE ***##
+
+#REGLE : Aller vers la page présentant l'Article en mode Focus. 
+#NOTA : On utilise le plus souvent 'f' plutot que "article".
+RewriteRule ^(?:f|article)/([\w\-_]{5,50})$    /index.php?page=focus&urqid=FKSA_GTPG&ups=pmlkid=$1 [L,NC]
+
+#REGLE : Aller vers la page présentant l'Article en mode Focus. L'utilisateur peut ajout une option le cas échéant.
+RewriteRule ^(?:f|article)/([\w\-_]{5,50})/&vwopt=([\w\_,]{2,50})$    /index.php?page=focus&urqid=FKSA_GTPG&ups=pmlkid=$1.vwopt=$2   [L,NC]

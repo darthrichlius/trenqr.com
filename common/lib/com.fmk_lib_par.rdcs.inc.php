@@ -1,0 +1,39 @@
+<?php
+
+require_once WOS_PATH_FMK_PAR_MOTH;
+require_once WOS_PATH_FMK_PAR_PAGE;
+require_once WOS_PATH_FMK_PAR_DATAVIEWTEMPLATE;
+
+require_once WOS_PATH_FMK_PAR_SRVC;
+
+//RULES
+
+
+//COMMONS 
+require_once WOS_PATH_LIB_COMS_WTO;
+require_once WOS_PATH_LIB_COMS_SESSION;
+require_once WOS_PATH_LIB_COMS_RSESSION;
+require_once WOS_PATH_LIB_COMS_SPOKLG;
+
+//UTILITIES
+require_once WOS_PATH_LIB_UTILS_DB;
+require_once WOS_PATH_LIB_UTILS_HASH;
+
+//AUC --- ACTORS
+require_once WOS_PATH_LIB_AUC_REL;
+require_once WOS_PATH_LIB_AUC_ACTORS;
+require_once WOS_PATH_LIB_AUC_ACTORS_AS_FT;
+require_once WOS_PATH_LIB_AUC_ACTORS_AS_ACC;
+
+require_once WOS_PATH_LIB_AUC_CONTACT_LTPFL;
+require_once WOS_PATH_LIB_AUC_CONTACT_GNR;
+require_once WOS_PATH_LIB_AUC_CONTACT_ACC;
+/*
+//AUC --- CONTACT
+
+require_once WOS_PATH_LIB_AUC_CONTACT_FTPFL;
+require_once WOS_PATH_LIB_AUC_CONTACT_GNR;
+require_once WOS_PATH_LIB_AUC_CONTACT_ACC;
+require_once WOS_PATH_LIB_AUC_CONTACT_GW;
+*/
+?>

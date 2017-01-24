@@ -1,0 +1,87 @@
+#corner_msg_maximus {
+    border: 1px solid lightgrey;
+    background-color: #fff;
+    /*height: 150px;*/
+    width: 300px;
+    
+    position: fixed;
+    left: 10px;
+    bottom: 21px; /*21 Pour passer au dessus de la barre de chargement du navigateur*/ 
+    z-index: 10;
+}
+
+#c_n_header {
+    /*border: 1px solid lightgrey;*/
+    padding: 8px 12px;
+}
+
+#c_n_header_title {
+    /*border: 1px solid green;*/
+    
+    color: rgb(5,5,5);
+    font-family: 'Lucida sans bold', Calibri, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#c_n_header_x {
+    border: 1px solid rgb(250,250,250);
+    border-radius: 3px;
+    padding: 2px 7px;
+    /*margin: 3px 3px 0 0;*/
+    float: right;
+    
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+#c_n_header_x:hover {
+    border: 1px solid rgb(210,210,210);
+    
+}
+
+/*************************** CORNER MESSAGE BODY */
+
+#c_n_body {
+    /*border: 1px solid red;*/
+    padding: 0px 15px 5px 15px;
+    
+    text-align: justify;
+}
+
+#c_n_text {
+    padding: 0;
+    margin: 0;
+    
+    color: rgb(10,10,10);
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+/*************************** CORNER MESSAGE BOTTOM */
+#c_n_bottom {
+    /*border: 1px solid black;*/
+    padding: 0px 15px 8px 0;
+    
+    overflow: auto;
+}
+
+.c_n_bot_btn {
+    border: 1px solid rgb(190,190,190);
+    background-color: rgb(250,250,250);
+    border-radius: 2px;
+    padding: 2px 15px 3px 15px;
+    margin: 0 0 0 15px;
+    
+    float: right;
+    
+    color: rgb(40,40,40);
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.c_n_bot_btn:hover {
+    background-color: rgb(240,240,240);
+}

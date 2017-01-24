@@ -1,0 +1,160 @@
+#dashboard {
+    border-bottom: 2px solid orange;
+    overflow: auto;
+    padding-bottom: 20px;
+    
+    font-family: calibri;
+}
+
+#dashboard ul {
+    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#dash-top {
+    overflow: auto;
+}
+
+#dash-top > li {
+    float: left;
+    width: 33%;
+    height: 190px;
+}
+
+.dash-menu {
+    display: block;
+    /*border: 1px solid red;*/
+}
+
+.dash-menu-catcher {
+    height: 19px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.dash-menu-bb-container {
+    margin-top: 5px;
+    border-radius: 28px;
+}
+
+.dash-menu-bb {
+    display: block;
+    border: none;
+    outline: 0;
+    background-color: rgb(30,30,30);
+    box-shadow: 0px 0px 3px rgb(90,90,90);
+    margin: 0px auto;
+    width: 210px; 
+    height: 143px; 
+    
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    behavior: url("mods/PIE.htc");
+    
+    text-decoration: none;
+}
+
+.dash-menu-bb:hover{
+    background-color: black;
+}
+
+.dash-menu-bb-active {
+    display: block;
+    background-color: black;
+    margin: 0px auto;
+    width: 210px; 
+    height: 143px; 
+    border-radius: 28px;
+    
+    text-decoration: none;
+}
+
+.dash-menu-bb-active:hover {
+    background-color: rgb(30,30,30);
+    box-shadow: 0px 0px 3px rgb(90,90,90);
+}
+
+.dash-menu-bb-inner {
+    /*border: 1px solid white;*/
+    margin: 0;
+    padding: 0;
+    height: 126px;
+    
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 150px;
+}
+
+.dash-menu-bb-light {
+    height: 8px;
+    background-color: orange;
+    width: 155px;
+    
+    border-radius: 2.5px;
+    margin: 0px auto;
+}
+
+.dash-menu-bb-nolight {
+    height: 8px;
+    background-color: black;
+    /*background-color: rgb(30,30,30);*/
+    width: 155px;
+    
+    border-radius: 2.5px;
+    margin: 0px auto;
+}
+
+
+#dash-submenu {
+    margin: 0px auto;
+    height: 30px;
+    /*width: 600px;*/
+    overflow: auto;
+    
+    /*border: 1px solid rgb(169,169,169);*/
+    /*border-radius: 10px;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.3) inset;*/
+}
+
+.dash-sub-menu-active {
+    color: red !important;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.3) inset;
+}
+
+#dash-submenu li {
+    display: block;
+    /*border: 1px solid black;*/
+    float: left;
+    width: 33%;
+}
+
+#dash-submenu li p {
+    height: 25px;
+    width: 150px;
+    margin: 0 auto;
+    padding: 0;
+    
+    
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+}
+
+#dash-submenu li p a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#dash-submenu li p a:hover:not(.dash-sub-menu-active-a) {
+    text-decoration: none;
+    color: lightcoral !important;
+    font-weight: bold;
+}

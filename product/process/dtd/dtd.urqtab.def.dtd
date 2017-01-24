@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT urqtab (urq+)>
+    <!ELEMENT urq (urqid,urqdef,urq_is_ajax,urq_is_auth?,urq_is_pg_required,urq_is_inner_refer_required,urqpageid,urq_opt_url_params,upstab_required,upstab_opt,urq_access_rules,urq_post_data_expected,urq_file_data_expected,urq_queries,urq_need_to_reach_worker_anyway,urq_param_in_expected,urq_target_type)>
+        <!ATTLIST urq id ID #REQUIRED> 
+        <!ELEMENT urqid EMPTY>
+            <!ATTLIST urqid value CDATA #REQUIRED>
+        <!ELEMENT urqdef EMPTY>
+            <!ATTLIST urqdef value CDATA #REQUIRED>
+		<!ELEMENT urq_is_ajax EMPTY>
+            <!ATTLIST urq_is_ajax value (yes|no) #REQUIRED>
+<!-- Permet de gerer de façon optimisé les requetes de type auth : brute_force, page d'authentification, controle optimisé des valeurs entrées ... -->
+        <!ELEMENT urq_is_auth EMPTY>
+            <!ATTLIST urq_is_auth value (yes|no) #REQUIRED>
+        <!ELEMENT urq_is_pg_required EMPTY>
+            <!ATTLIST urq_is_pg_required value (yes|no) #REQUIRED>
+        <!ELEMENT urq_is_inner_refer_required EMPTY>
+            <!ATTLIST urq_is_inner_refer_required value (yes|no) #REQUIRED>
+<!-- Permet de savoir ce qu'il faut faire en cas de REST. Les valeurs sont les AG de type REDIR --> 
+<!-- A certains egards cela peut etre redondant par rapport à access_rule -->
+<!-- On le mets car si on ne mettait que les rules ça serait trop complexe à gérer au point de vue redirection et securisation. C'est assez complexe comme ça -->
+<!-- 'go_on' car WATCHMAN saura quoi faire par la suite avec les access_rule -->
+<!-- 'abort' peut servir c [NOTE au 15/10/13: et pour abort? à voir après ?]-->
+        <!-- <!ELEMENT urq_in_case_of_rest EMPTY>
+          -->  <!-- <!ATTLIST urq_in_case_of_rest value (go_on|abort|agden_sr_prod|agden_sr_prod2|agall_sr_need|racconown_sr1) #REQUIRED> -->
+        <!ELEMENT urqpageid EMPTY> <!-- Le nom de la page selon la langue est disponible dans le fichier PAGE_NAMES_DEF -->
+            <!ATTLIST urqpageid value CDATA #REQUIRED>
+        <!ELEMENT urq_opt_url_params (url_param*)>
+            <!ELEMENT url_param EMPTY>
+                <!ATTLIST url_param id CDATA #REQUIRED>
+                <!ATTLIST url_param value CDATA #REQUIRED>
+        <!ELEMENT upstab_required (ups*)>
+            <!ELEMENT ups EMPTY>
+                <!ATTLIST ups id CDATA #REQUIRED>
+                <!ATTLIST ups value CDATA #REQUIRED>
+        <!ELEMENT upstab_opt (ups*)>
+        <!ELEMENT urq_access_rules (access_rule+)>
+            <!ELEMENT access_rule EMPTY>
+                <!ATTLIST access_rule id CDATA #REQUIRED>
+                <!ATTLIST access_rule value (ag_denied|ag_allaccess|agden_sr_prod|agden_sr_prod2|agall_sr_need|radmin|rtester|racc|racconown|racconown_sr1|rall|wall_rest_sr1|wall_rest_sr2|wiku|wanon|wghost|wall) #REQUIRED>
+        <!-- <!ELEMENT is_data_layer_wanted_for_view EMPTY> NO !!!! Laisser le choix à Worker.Data de verifier chaque DVT pour voir s'il y a des requetes. Evitons le trop plein de process -->
+            <!ATTLIST is_data_layer_wanted_for_view value (yes|no) #REQUIRED>
+        <!ELEMENT urq_post_data_expected (post*)>
+            <!ELEMENT post EMPTY>
+                <!ATTLIST post name CDATA #REQUIRED>
+                <!ATTLIST post value CDATA #REQUIRED>
+        <!-- Si aucune donnée n'est attendue, cette section doit restée vide !! -->
+        <!ELEMENT urq_file_data_expected (file*)>
+            <!ELEMENT file EMPTY>
+                <!-- On specifie ici le type de fichier attendu : png, mp3, mp4, etc ...-->
+                <!ATTLIST file file.type CDATA #REQUIRED>
+                <!-- Taille maximum autorisé pour le type de fichier attendu (taille en octect) -->
+                <!ATTLIST file file.size_max CDATA #REQUIRED>
+                <!-- 'hm' : howmuch -->
+                <!ATTLIST file file.hm CDATA #REQUIRED>
+        <!ELEMENT urq_queries (query*)>
+        <!-- Il s'agit de queries liées à urq. Les queries de DVT sont plus liées à de l'affichage quand celles ci sont liées au traitement --> 
+        <!-- Par exemple, nous procedons à l'inscription d'un nouvelle utilisateur. Avant d'afficher sa fiche il faut déjà l'inscrire grace à des requetes de type set.  -->
+        <!-- On mettra donc ces queries ici. -->
+        <!-- Les queries de urq sont logiquements prioritaires -->
+        <!-- Ces queries ne sont pas utilisées directement par un Factory mais par Product.Entity. -->
+        <!-- Ils sont repertoriés ici pour des questions de segmentation -->
+            <!ELEMENT query EMPTY>
+                <!ATTLIST query id CDATA #REQUIRED>
+                <!ATTLIST query value CDATA #REQUIRED>
+        <!ELEMENT urq_need_to_reach_worker_anyway EMPTY>
+            <!ATTLIST urq_need_to_reach_worker_anyway value (yes|no) #REQUIRED>
+        <!ELEMENT urq_param_in_expected EMPTY>
+            <!ATTLIST urq_param_in_expected value (yes|no) #REQUIRED>
+        <!ELEMENT urq_target_type EMPTY>
+            <!ATTLIST urq_target_type value CDATA #REQUIRED>

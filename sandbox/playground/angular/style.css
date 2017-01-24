@@ -1,0 +1,17 @@
+.go-green { 
+	background-color: green;
+}
+
+.go-red {
+	background-color: red;
+}
+
+.circle {
+	display: inline-block;
+	border: 1px solid;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	
+	color: #000;
+}

@@ -1,0 +1,782 @@
+/* 
+    Created on : 4 oct. 2015, 12:18:09
+    Author     : arsphinx
+*/
+
+#tiap-screen {
+    width: 100%;
+    min-width: 1120px;
+    height: 100%;
+    background-color: #fff;
+    /*
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    */
+}
+
+#tiap-trigger-bx {
+    border-radius: 0px 4px 4px 0px;
+    background-color: rgb(2,28,53);
+    
+    position: fixed;
+    top: 95px;
+    left: 0;
+    
+}
+
+#tiap-trigger {
+    display: block;
+    border: none;
+    padding: 5px 15px 3px 8px;
+    outline: 0;
+    
+    color: #fff;
+    font-family: "Open sans", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#tiap-trigger::before {
+    content: "\f135";
+    margin-right: 8px;
+    font-family: fontawesome;
+    font-size: 17px;
+}
+
+
+/****************************************************************************************/
+/************************************** ASIDE ZONE **************************************/
+
+/********** HEADER SCOPE **********/
+
+#tiap-scrn-aside {
+    /*border: 1px solid #f00;*/
+    width: 300px;
+    height: 100%;
+    background-color: rgba(64,65,65,0.85);
+    
+    float: left;
+    position: relative;
+}
+
+#tiap-scrn-asd-hdr-mx {
+    height: 100px;
+    background-color: rgb(2,28,53);
+    /*background-color: #15518C;*/
+    
+    color: #fff;
+    
+}
+
+#tiap-scrn-asd-hdr {
+    text-align: center;
+}
+
+#tiap-scrn-a-h-tia {
+    padding: 25px 0px 0px 0px;
+        
+    font-family: "Open sans", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#tiap-scrn-a-h-tia::before {
+    content: "\f135";
+    margin-right: 8px;
+    font-family: fontawesome;
+    font-size: 17px;
+}
+
+#tiap-scrn-a-h-tia-ver {
+    padding: 5px 0px 0px 0px;
+        
+    color: #9c9c9d;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/********** BODY SCOPE **********/
+
+#tiap-scrn-asd-bdy {
+    padding: 20px 0px;
+    box-sizing: border-box;
+}
+
+#tiap-scrn-asd-apps {
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+}
+
+.tiap-scrn-asd-app-mx {
+    
+}
+
+.tiap-scrn-asd-app {
+    padding: 9px 20px;
+    box-sizing: border-box;
+    
+    font-family: Lato, "Open sans", Arial, sans-srif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tiap-scrn-asd-app.active {
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    
+    color: #404040;
+}
+
+#tiap-scrn-asd-ftr {
+    width: 100%;
+    padding: 7px 20px;
+    background-color: #282725;
+    box-sizing: border-box;
+    
+    position: absolute;
+    bottom: 0;
+    
+    color: #fff;
+    text-align: left;
+}
+
+#tiap-scrn-a-f-opt, #tiap-scrn-a-f-clz {
+    display: inline-block;
+    border: none;
+    outline: 0;
+    
+    font-family: Lato, "Open sans", Arial, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#tiap-scrn-a-f-opt {
+    
+}
+
+#tiap-scrn-a-f-opt::before {
+    content: "\f0c9";
+    color: #27EA60;
+    font-family: Fontawesome;
+}
+
+#tiap-scrn-a-f-clz {
+    float: right;
+    
+    color: #FFF;
+}
+
+#tiap-scrn-a-f-clz::before {
+    content: "\f08b";
+    margin-right: 4px;
+    font-family: Fontawesome;
+}
+
+/****************************************************************************************/
+/*************************************** BODY ZONE **************************************/
+
+#tiap-scrn-body {
+    /*border: 1px solid #00f;*/
+    /*width: 100%;*/
+    min-width: 800px;
+    height: 100%;
+    margin-left: 300px;
+    
+    overflow: auto;
+        
+}
+
+#tiap-scrn-b-spcl {
+    width: 100%;
+    height: 100%;
+    
+    position: relative;
+}
+
+#tiap-scrn-b-sp-ldg {
+    width: 430px;
+    height: 100px;
+    margin: auto;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    text-align: center;
+}
+
+#tiap-scrn-b-sp-ldg-txt {
+    color: #D1A03E;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#tiap-scrn-b-sp-ldg-txt i {
+    margin-left: 8px;
+}
+
+#tiap-scrn-b-sp-err {
+    border: 1px solid;
+    width: 400px;
+    height: 100px;
+    margin: auto;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    text-align: center;
+}
+
+#tiap-scrn-b-sp-err-txt {
+    
+    font-family: sans-serif;
+}
+
+#tiap-scrn-b-bdy {
+}
+
+#tiap-scrn-bdy-bdy {
+    margin: 0px 50px;
+}
+
+#tiap-scrn-bdy-hdr {
+    border-bottom: 1px solid #e1e5e5;
+    height: 99px;
+    margin: 0px 50px;
+    box-sizing: border-box;
+    
+    overflow: auto;
+}
+
+#tiap-scrn-b-h-tle-mx {
+    overflow: auto;
+    float: left;
+    
+    color: #a1a4a5;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+#tiap-scrn-b-h-t-tle {
+    
+    color: #54A7E6;
+    font-family: "Open sans", Lato, Arial, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+#tiap-scrn-b-h-usr-bmx {
+    margin-top: 20px;
+    
+    overflow: auto;
+    float: right;
+}
+
+#tiap-scrn-b-h-ubx {
+    border: none;
+    outline: 0;
+    
+    overflow: auto;
+    position: relative;
+    
+    color: #9099A2;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#tiap-scrn-b-h-ubx-i {
+    border: none;
+    border-radius: 2px;
+    margin-right: 8px;
+    outline: 0;
+    
+    float: left;
+}
+
+#tiap-scrn-b-h-ubx-psd {
+    
+}
+
+/************************************************************************************************/
+/*************************************** APPS SECTION ZONE **************************************/
+
+.tiap-app-section {
+    
+}
+
+.tiap-a-sctn-hdr {
+    
+}
+
+.tiap-a-sctn-bdy {
+    
+}
+
+#tiap-a-sctn-bdy-sprbar {
+    width: 560px;
+    padding: 30px 0px;
+    
+    text-align: center;
+}
+
+#tiap-a-sctn-bdy-sprbar {
+    width: 700px;
+    padding: 50px 0px;
+    
+    text-align: center;
+}
+
+#tiap-a-s-b-spr {
+    font-size: 35px;
+}
+
+/************************************************************/
+/******************** SECTION : LINKFAVS ********************/
+
+.tiap-app-section[data-appname='tia-lifav'].tiap-a-sctn-bdy {
+    width: 600px;
+}
+
+#tiap-a-lifav-nav {
+    /*border-bottom: 1px solid #ebebeb;*/
+}
+
+#tiap-a-lifav-filt {
+    margin: 0;
+    padding: 0;
+    
+    overflow: auto;
+    
+    list-style: none;
+}
+
+.tiap-a-lf-flt-wpr {
+    margin-right: 8px; 
+    padding: 15px 0px;
+        
+    float: left;
+}
+
+.tiap-a-lf-flt {
+    border-bottom: 3px solid transparent;
+    padding: 12px 8px;
+    box-sizing: border-box;
+    
+    color: #2F343E;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.tiap-a-lf-flt.active {
+    border-color: rgba(255, 55, 55, 0.8);
+    
+    font-weight: bold;
+}
+
+.tiap-a-lf-flt:hover {
+    border-color: rgba(255, 55, 55, 0.8);
+    /*border-color: #4285f4;*/
+}
+
+/*************************/
+#tiap-a-lifav-xtrabar {
+    height: 45px;
+    
+    line-height: 45px;
+}
+/********* COUNT *********/
+
+#tiap-a-lifav-cn-mx {
+    
+    color: #828285;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/********* NEW LINK *********/
+#tiap-a-lifav-af-catch-mx {
+    
+}
+
+#tiap-a-lifav-af-catch {
+    display: inline-block;
+    border: 2px dashed;
+    border-radius: 5px;
+    width: 515px;
+    padding: 3px 15px;
+    
+    cursor: text;
+    
+    color:  #DEDEDC;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#tiap-a-lifav-adfrm {
+    /*border: 1px solid;*/
+    width: 560px;
+    margin-bottom: 30px;
+    
+    position: relative;
+    
+    font-family: Arial, sans-serif;
+}
+
+#tiap-a-lifav-adfrm-clz {
+    margin-right: 20px;
+        
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    
+    color: #858A92;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tiap-a-lifav-af-fld-wpr {
+    margin-bottom: 8px; 
+    
+    overflow: auto;
+}
+
+.tiap-a-lifav-af-fld {
+    outline: 0;
+}    
+
+.tiap-a-lifav-af-err {
+    display: inline-block;
+    margin-top: 4px;
+    
+    color: #F97878;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.tiap-a-lifav-af-inf {
+    display: inline-block;
+    margin: 4px 15px 0px 0px;
+    
+    float: right;
+    
+    color: #aaa;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+}
+
+.tiap-a-lifav-af-inf > * {
+    margin-left: 5px;
+}
+
+.tiap-a-lifav-af-fld[type="text"], textarea.tiap-a-lifav-af-fld {
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    width: 545px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+textarea.tiap-a-lifav-af-fld {
+    height: 65px;
+    
+    resize: none;
+}
+
+#tiap-a-lifav-ctg-lbl {
+    margin-right: 8px;
+    
+    font-size: 14px;
+    font-weight: bold;
+}
+
+select.tiap-a-lifav-af-fld {
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    /*width: 545px;*/
+    padding: 5px 10px;
+    box-sizing: border-box;
+    
+    font-size: 14px;
+    
+}
+
+.tiap-a-lifav-af-fld[data-field='title'] {
+    
+    color: #1E3DE0;
+    font-weight: bold;
+}
+
+.tiap-a-lifav-af-fld[data-field='url'] {
+    
+    color: #259248;
+}
+
+#tiap-a-lifav-af-fnl {
+    overflow: auto;
+    
+    text-align: right;
+}
+
+#tiap-a-lifav-af-rint {
+    margin-right: 8px;
+    
+    color: #3b73af;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#tiap-a-lifav-af-rint:hover {
+    text-decoration: underline;
+}
+
+#tiap-a-lifav-af-spnr {
+    display: inline-block;
+    
+    position: absolute;
+    top: 1px;
+    left: -30px;
+    
+    color: #627088;
+}
+
+#tiap-a-lifav-af-spnr i {
+    font-size: 20px;
+}
+
+#tiap-a-lifav-af-sbmt {
+    margin-right: 15px;
+    padding: 5px 20px;
+    
+    cursor: pointer;
+}
+
+/********* LISTE *********/
+
+#tiap-a-lifav-lks-lsts-mx {
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+
+/*** NoONE ***/
+
+#tiap-a-lifav-lsts-none-mx {
+    width: 515px;
+    padding: 150px 0px;
+    
+    color: #959EA9;
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*** LISTE ***/
+
+#tiap-a-lifav-lks-lsts {
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+}
+
+.tiap-a-lifav-lk-mx {
+    border-left: 3px solid #828994;
+    width: 550px;
+    padding: 10px 10px;
+    
+    overflow: auto;
+    
+    font-family: Arial,sans-serif;
+}
+
+.tiap-a-lifav-lk-mx.first {
+    padding-top: 10px;
+}
+
+.tiap-a-lifav-lk-mx.hover {
+    border-left-color: #38CE68;
+}
+
+.tiap-a-lifav-lk-mx > * {
+    margin: 2px 0px;
+}
+
+.tiap-a-lifav-lk-cntt {
+    width: 515px;
+    
+    float: left;
+}
+
+.tiap-a-lifav-lk-tle {
+    
+    color: #1E3DE0;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.tiap-a-lifav-lk-url {
+    
+    color: #259248;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.tiap-a-lifav-lk-dsc {
+    
+    color: #808080;
+    font-size: 14px;
+}
+
+.tiap-a-lifav-lk-wpr[data-fiel='url'] {
+    
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.tiap-a-lifav-lk-xtrabar {
+    margin-top: 8px;
+    
+    overflow: auto;
+}
+
+.tiap-a-lifav-lk-last, .tiap-a-lifav-lk-cn {
+    color: #9099A2;
+    font-size: 12px;
+}
+
+.tiap-a-lifav-tgspy {
+    
+}
+
+.tiap-a-lifav-lk-last {
+    float: left;
+}
+
+.tiap-a-lifav-lk-cn {
+    float: right;
+}
+
+.tiap-a-lifav-lk-optbar {
+    height: 100px;
+    
+    float: right;
+}
+
+.tiap-a-lifav-lk-opts {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin: 0;
+    padding: 3px 5px;
+    height: 100%;
+    background-color: #F9F9F9;
+    
+    list-style: none;
+}
+
+.tiap-a-lifav-lk-opt {
+    
+    color: #707070;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tiap-a-lifav-lk-cnfdel-mx {
+    padding: 20px 0px;
+    
+    text-align: center;
+}
+
+.tiap-a-lifav-lk-cfdl-hdr {
+    padding-bottom: 15px;
+    
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.tiap-a-lifav-lk-cfdl-bdy {
+    
+}
+
+.tiap-a-lifav-lk-cfdl {
+    display: inline-block;
+    
+    color: #3b73af;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.tiap-a-lifav-lk-cfdl[data-action='delconf_abort'] {
+    margin-left: 30px;
+}
+
+.tiap-a-lifav-lk-cfdl:hover {
+    text-decoration: underline;
+}
+
+/****************** LOAD MORE *****************/
+
+#tiap-a-lifav-ldmr-bar {
+    text-align: center;
+}
+
+#tiap-a-lifav-lks-btm {
+    width: 515px;
+    padding: 30px 0px 50px 0px;
+}
+
+#tiap-a-lifav-ldmr {
+    border: 2px solid;
+    border-radius: 4px;
+    padding: 8px 80px;
+    
+    color: #4296E4;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#tiap-a-lifav-ldmr:hover {
+    color: #0B65A9;
+}
+
+#tiap-a-lifav-ldmr-spr {
+    
+    color: #0B65A9;
+    font-size: 18px;
+}
+
+#tiap-a-lifav-ldmr-none {
+    
+    color: #A6A6A6;
+    font-family: "Open sans", Calibri, "Myriad pro", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    text-shadow: 1px 1px #E2E2E2;
+}

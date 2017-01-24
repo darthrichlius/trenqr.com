@@ -1,0 +1,1148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE email_models SYSTEM "../../dtd/dtd.email_models.def.dtd">
+
+<email_models>
+    <emodel id="emdl_sample">
+        <emodel.id value="emdl_sample" />
+        <emodel.type value="text/html" />
+        <emodel.object value="Un sample pour le developpement, les tests ou debug." />
+        <emodel.body 
+            value="
+                &lt;p&gt;Bonjour,&lt;/p&gt;
+                &lt;p&gt;
+                    Mon nom est Wall.E ! Je suis là pour t'aider dans tes tâches ô combien difficiles cher maitre développeur.&lt;br/&gt;
+                    Tu peux me contacter via ce &lt;a href=''&gt;lien fictif&lt;/a&gt; qui ne te menera nulle part. &lt;br/&gt;
+                    Tu peux aussi t'entrainer à remplacer ce %{marqueur}%.
+                &lt;/p&gt;
+                &lt;p&gt;Souviens toi que pour les emaux de type html, la technique c'est de saisir le texte avec les '&lt;' '&gt;' puis de les remplacer avec un Ctrl+H ciblé.&lt;/p&gt;
+                &lt;p&gt;
+                    Sinon, tu peux toujours corriger l'orthographe de ce texte si tu constates les erreurs commises. BON CHANCE !
+                &lt;/p&gt;
+                &lt;p&gt;Cordiallement,&lt;/p&gt;
+                &lt;p&gt;WALL.E et E.V.E&lt;/p&gt;
+            " />
+    </emodel>
+    <emodel id="emdl_errlgn1">
+        <emodel.id value="emdl_errlgn1" />
+        <emodel.type value="text/html" />
+        <emodel.object value="Rapport d'erreur critique." />
+        <emodel.body 
+            value="
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                &lt;div style='font-family: Calibri, Arial, sans-serif'&gt;
+                    &lt;p style='font-style: italic;'&gt;Hey !&lt;/p&gt;
+                    &lt;p&gt;
+                        Cet email est envoyé à la suite du déclenchement d'une erreur detectée depuis le produit &lt;span style='color: rgb(28,140,255); font-weight: bold;'&gt;Trenqr&lt;/span&gt;.&lt;br/&gt;
+                        Ci-dessous les données relatives à l'erreur : 
+                    &lt;/p&gt;
+                    &lt;h2 style='color: #555;'&gt;RAPPORT DÉTAILLÉ :&lt;/h2&gt;
+                    &lt;table style='border: 1px solid #000; border-collapse: collapse;'&gt;
+                        &lt;tr&gt;
+                            &lt;th style='border-bottom: 1px solid #000; border-right: 1px solid #000; font-size: 20px; font-weight: bold; background-color: #ccc; text-align: center;'&gt;PROPRIÉTÉS&lt;/th&gt;
+                            &lt;th style='border-bottom: 1px solid #000; border-right: 1px solid #000; font-size: 20px; font-weight: bold; background-color: #ccc; text-align: center;'&gt;VALEURS&lt;/th&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td style='font-size: 16px; font-weight: bold;'&gt;ERROR CODE : &lt;/td&gt;
+                            &lt;td style='color: #f00'&gt;%{error_code}%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td style='font-size: 16px; font-weight: bold;'&gt;ERROR MESSAGE : &lt;/td&gt;
+                            &lt;td style='color: #f00'&gt;%{error_message}%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr style='color: #28b957; font-weight: bold; text-align: center;'&gt;
+                            &lt;td&gt;WHO STUFF&lt;/td&gt;
+                            &lt;td&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td style='font-size: 16px; font-weight: bold;'&gt;SESSION_ID: &lt;/td&gt;
+                            &lt;td&gt;%{ssid}%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td style='font-size: 16px; font-weight: bold;'&gt;USER EID : &lt;/td&gt;
+                            &lt;td&gt;%{error_user_ueid}%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td style='font-size: 16px; font-weight: bold;'&gt;USER PSEUDO : &lt;/td&gt;
+                            &lt;td&gt;%{error_user_pseudo}%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td style='font-size: 16px; font-weight: bold;'&gt;ERROR LOCIP ADDR : &lt;/td&gt;
+                            &lt;td&gt;%{error_locip}%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr style='color: #28b957; font-weight: bold; text-align: center;'&gt;
+                            &lt;td&gt;WHERE STUFF&lt;/td&gt;
+                            &lt;td&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td style='font-size: 16px; font-weight: bold;'&gt;ERROR SRVIP: &lt;/td&gt;
+                            &lt;td&gt;%{error_srvip}%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td style='font-size: 16px; font-weight: bold;'&gt;ERROR SRVNAME : &lt;/td&gt;
+                            &lt;td&gt;%{error_srvname}%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td style='font-size: 16px; font-weight: bold;'&gt;ERROR FILE : &lt;/td&gt;
+                            &lt;td&gt;%{error_file}%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td style='font-size: 16px; font-weight: bold;'&gt;ERROR CLASS : &lt;/td&gt;
+                            &lt;td&gt;%{error_class}%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td style='font-size: 16px; font-weight: bold;'&gt;ERROR FUNCTION : &lt;/td&gt;
+                            &lt;td&gt;%{error_function}%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td style='font-size: 16px; font-weight: bold;'&gt;ERROR LINE : &lt;/td&gt;
+                            &lt;td&gt;%{error_line}%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr style='color: #28b957; font-weight: bold; text-align: center;'&gt;
+                            &lt;td&gt;HOW STUFF&lt;/td&gt;
+                            &lt;td&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td style='font-size: 16px; font-weight: bold;' valign='top'&gt;ERROR REFERER : &lt;/td&gt;
+                            &lt;td&gt;%{error_referer}%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td style='font-size: 16px; font-weight: bold;' valign='top'&gt;ERROR URI : &lt;/td&gt;
+                            &lt;td&gt;%{error_uri}%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td style='font-size: 16px; font-weight: bold;' valign='top'&gt;ERROR USER AGENT : &lt;/td&gt;
+                            &lt;td&gt;%{error_user_agent}%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td style='font-size: 16px; font-weight: bold;' valign='top'&gt;ERROR TRACE : &lt;/td&gt;
+                            &lt;td style='width: 500px;'&gt;%{debug_print_trace}%&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr style='color: #28b957; font-weight: bold; text-align: center;'&gt;
+                            &lt;td&gt;WHEN STUFF&lt;/td&gt;
+                            &lt;td&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td style='font-size: 16px; font-weight: bold;'&gt;ERROR DATE : &lt;/td&gt;
+                            &lt;td&gt;%{error_date_tstamp}% (%{error_datetime}%)&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr style='color: rgb(230,10,10); font-weight: bold; text-align: center;'&gt;
+                            &lt;td&gt;LOGGED STUFF&lt;/td&gt;
+                            &lt;td&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td style='font-size: 16px; font-weight: bold;'&gt;ERROR LOG EID : &lt;/td&gt;
+                            &lt;td&gt;%{error_log_eid}%&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                &lt;/div&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            " />
+    </emodel>
+	<emodel id="emdl_newaccn1">
+        <emodel.id value="emdl_newaccn1" />
+        <emodel.type value="text/html" />
+        <emodel.object value="Bienvenue sur Trenqr !" />
+        <emodel.body 
+            value="
+                &lt;div id='new-acc-panel-mx' style='
+                    border: 1px solid #ccc; 
+                    border-radius: 2px; width: 700px; 
+                    height: 100%; 
+                    margin: 20px auto; 
+                    background-color: #003A78; 
+                    position: relative; 
+                    overflow: auto;
+                    color: #000;'
+                &gt;
+                &lt;div id='n-a-pan-left' style='width: 150px; height: 100%; background-color: #003A78; float: left;'&gt;
+                    &lt;div id='n-a-pan-l-logo' style='margin: 20px 0px 0px 0px;'&gt;
+                        &lt;div id='' style='text-align: center;'&gt;
+                            &lt;a href='%{trenqr_http_root}%'&gt;&lt;img height='50px' src='%{trenqr_prod_img_root}%/r/logo_tqr_beta.png' /&gt;&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div id='n-a-p-logo' style='
+                             color: #fff; 
+                             font-family: \'Century Gothic\'; 
+                             font-size: 20px; 
+                             text-align: center;'
+                        &gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div id='n-a-pan-right' style='width: 550px; margin-left: 150px; color: #000;'&gt;
+                    &lt;div id='n-a-pan-r-body' style='
+                         padding: 20px; 
+                         background-color: #fff; 
+                         color: #000;
+                         font-family: Calibri, Arial, sans-serif; font-size: 15px;'
+                    &gt;
+                        &lt;p&gt;Bonjour &lt;b style='font-weight: bold;'&gt;%{fullname}%&lt;/b&gt;,&lt;/p&gt;
+                        &lt;p&gt;
+                            &lt;span style='font-weight: bold;'&gt;Bienvenue sur Trenqr&lt;/span&gt;,
+                        &lt;/p&gt;
+                        &lt;p&gt;
+                            Nous vous souhaitons la bienvenue parmi nous et vous remercions d’avoir rejoint Trenqr. 
+                            Pour l’instant, la plateforme est distribuée en version &lt;span style='font-weight: bold;'&gt;beta&lt;/span&gt;. 
+                            Aussi, de nombreuses améliorations et de nouvelles fonctionnalités, seront bientôt disponibles, pour répondre au mieux à vos attentes. 
+                            Cependant,la &lt;span style='text-decoration: underline;'&gt;version actuelle est totalement opérationnelle&lt;/span&gt;.
+                        &lt;/p&gt;
+                        &lt;p&gt;
+                            Les principales raisons qui font la différence :
+                        &lt;/p&gt;
+                        &lt;ul style='list-style: none;'&gt;
+                                &lt;li&gt;- Des &lt;span style='font-weight: bold;'&gt;images&lt;/span&gt; plein les yeux&lt;/li&gt;
+                                &lt;li&gt;- Une meilleure &lt;span style='font-weight: bold;'&gt;structuration sociale&lt;/span&gt;
+                                &lt;li&gt;- Vous faites de &lt;span style='font-weight: bold;'&gt;nouvelles connaissances&lt;/span&gt;
+                                &lt;li&gt;- Une approche &lt;span style='font-weight: bold;'&gt;communautaire&lt;/span&gt; assumée&lt;/li&gt;
+                                &lt;li&gt;- Un concept &lt;span style='font-weight: bold;'&gt;ludique&lt;/span&gt; et &lt;span style='font-weight: bold;'&gt;convivial&lt;/span&gt;&lt;/li&gt;
+                                &lt;li&gt;- Des &lt;span style='font-weight: bold;'&gt;règles&lt;/span&gt; communes : &lt;span style='font-weight: bold;'&gt;liberté&lt;/span&gt; et &lt;span style='font-weight: bold;'&gt;respect&lt;/span&gt;
+                                &lt;li&gt;- C'est simple et c'est &lt;span style='font-weight: bold;'&gt;cool&lt;/span&gt;
+                        &lt;/ul&gt;
+                        &lt;p&gt;
+                            Profitez des &lt;b style='color: purple;'&gt;Tendances&lt;/b&gt; pour nous faire partager un peu de vous, de votre créativité ou tout simplement, pour imprimer votre marque sur Trenqr.&lt;br/&gt;Ça commence quand ? Maintenant :
+                        &lt;/p&gt;
+                        &lt;div style='text-align: center;'&gt;
+                            &lt;a id='' class='btn-like' style='display: inline-block; border: 1px solid rgb(40,148,255); border-radius: 5px; padding: 5px 20px; color: rgb(40,148,255); font-size: 13px; text-decoration: none;' href='%{trenqr_http_root}%/@%{pseudo}%'&gt;Accéder à mon compte&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;p&gt;
+                            Si vous faites face à des difficultés, que des erreurs ou des bogues apparaissent, n’hésitez pas à nous le signaler, via le module accessible depuis votre compte, ou en cliquant sur le lien ci-dessous (vous devez être connecté) :
+                        &lt;/p&gt;
+                        &lt;p&gt;
+                            &lt;a href='%{trenqr_http_root}%'&gt;Signaler un dysfonctionnement&lt;/a&gt;
+                        &lt;/p&gt;
+                        &lt;ul style='list-style: none; padding: 0;'&gt;
+                            &lt;span&gt;Rappel de vos identifiants de connexion&lt;/span&gt; :
+                            &lt;li style='margin-left: 30px'&gt;
+                                &lt;span style='display: inline-block; width: 90px; margin-left: 15px; font-weight: bold;'&gt;Identifiant :&lt;/span&gt; 
+                                &lt;span style='color: #1081F2; font-weight: bold; text-decoration: none;'&gt;%{pseudo}%&lt;/span&gt; (ou votre adresse email)&lt;/span&gt;&lt;/span&gt;
+                            &lt;/li&gt;
+                            &lt;li style='margin-left: 30px'&gt;
+                                &lt;span style='display: inline-block; width: 90px; margin-left: 15px; font-weight: bold;'&gt;Mot de passe &lt;/span&gt;
+                                &lt;span&gt;:&lt;/span&gt;
+                                &lt;span style='font-style:italic'&gt;Vous seul(e) le connaissez&lt;/span&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;p style='margin-top: 25px'&gt;À très bientôt !&lt;/p&gt;
+                        &lt;p&gt;L'Équipe Trenqr&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div id='n-a-pan-r-footer' style='height: 68px; padding: 10px; background-color: rgb(225,225,225); font-family: Calibri, Arial, sans-serif; color: #000; font-size: 14px;'&gt;
+                        &lt;p style='margin: 0'&gt;Pour vous connecter, c'est par ici : &lt;a style='color: rgb(40,148,255);' href='%{trenqr_login_link}%'&gt;Connectez-vous&lt;/a&gt;&lt;/p&gt;
+                        &lt;p style='margin: 0'&gt;Vous avez oublié votre mot de passe ? &lt;a style='color: rgb(40,148,255);' href='%{trenqr_start_rcvy_link}%'&gt;Réinitialisez votre mot de passe via ce lien&lt;/a&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            " />
+    </emodel>
+	
+	
+    <emodel id="emdl_doncapn1">
+        <emodel.id value="emdl_doncapn1" />
+        <emodel.type value="text/html" />
+        <emodel.object value="Débutez sur de bonnes bases sur Trenqr" />
+        <emodel.body 
+            value="
+                &lt;div id='new-acc-panel-mx' style='
+             border: 1px solid #ccc; 
+             border-radius: 2px; width: 700px; 
+             height: 100%; 
+             margin: 20px auto; 
+             background-color: #003A78; 
+             position: relative; 
+             overflow: auto;'
+             &gt;
+            &lt;div id='n-a-pan-left' style='width: 150px; height: 100%; background-color: #003A78; float: left;'&gt;
+                &lt;div id='n-a-pan-l-logo' style='margin: 20px 0px 0px 0px;'&gt;
+                    &lt;div id='' style='text-align: center;'&gt;
+                        &lt;a href='http://www.trenqr.com'&gt;&lt;img height='50px' src='http://timg.ycgkit.com/files/img/r/logo_tqr_beta.png' /&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div id='n-a-p-logo' style='
+                         color: #fff; 
+                         font-family: \'Century Gothic\'; 
+                         font-size: 20px; 
+                         text-align: center;'
+                    &gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div id='n-a-pan-right' style='width: 550px; margin-left: 150px; color: #000;'&gt;
+                &lt;div id='n-a-pan-r-body' style='
+                     padding: 20px; 
+                     background-color: #fff; 
+                     font-family: Calibri, Arial, sans-serif; font-size: 15px;'
+                     &gt;
+                    &lt;p&gt;Bonjour &lt;b style='font-weight: bold;'&gt;%{fullname}%&lt;/b&gt;,&lt;/p&gt;
+                    &lt;p&gt;
+                        Suite à votre inscription sur Trenqr, vous recevez une donation de &lt;b style='font-weight: bold;'&gt;%{clcoins}% clcoins&lt;/b&gt;. Cette donation fait partie de notre programme spécial &lt;b id='ilmb' style='color: #007eff; font-style: italic;'&gt;«I love my beta»&lt;/b&gt;.
+                    &lt;/p&gt;
+                    &lt;p&gt;
+                        Ces points vous permettront de constituer votre premier capital, qui augmentera à mesure que vos publications recevront des appréciations positives.
+                    &lt;/p&gt;
+                    &lt;p&gt;
+                        Le champ d’application de votre capital, est pour l’heure, encore assez limité. Mais, nous ne pouvons que vous conseiller, de ne pas sous-estimer les possiblités qu'il pourra vous offrir.
+                    &lt;/p&gt;
+                    &lt;p&gt;
+                        Cependant, rien ne vous oblige à vous lancer dans une croisade pour accroitre vos points. Sachez par exemple, qu’&lt;b style='font-weight: bold;'&gt;il est possible d’utiliser pleinement Trenqr avec un capital nul&lt;/b&gt;.
+                    &lt;/p&gt;
+                    &lt;p&gt;
+                        Il ne vous reste plus qu’à explorer l’univers Trenqr, en profitant de votre espace personnel et en jouissant des possibilités de partage qu’offrent les &lt;b style='color: purple'&gt;Tendances&lt;/b&gt;.
+                    &lt;/p&gt;
+                    &lt;div style='text-align: center;'&gt;
+                        &lt;a id='' class='btn-like' style='display: inline-block; border: 1px solid rgb(40,148,255); border-radius: 5px; padding: 5px 20px; color: rgb(40,148,255); font-size: 13px; text-decoration: none;' href='http://www.trenqr.com/@%{pseudo}%'&gt;Accéder à mon compte&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;p&gt;A vous de jouer !&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div id='n-a-pan-r-footer' style='height: 68px; padding: 10px; background-color: rgb(225,225,225); font-family: Calibri, Arial, sans-serif; font-size: 14px;'&gt;
+                    &lt;p style='margin: 0;'&gt;Pour vous connecter, c'est par ici : &lt;a style='color: rgb(40,148,255);' href='http://www.trenqr.com/login'&gt;Connectez-vous&lt;/a&gt;&lt;/p&gt;
+                    &lt;p style='margin: 0;'&gt;Vous avez oublié votre mot de passe ? &lt;a style='color: rgb(40,148,255);' href='http://www.trenqr.com/recovery/password'&gt;Vous pouvez créer un nouveau via ce lien&lt;/a&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+            " />
+    </emodel>
+    
+	<emodel id="emdl_delacccnfn1">
+        <emodel.id value="emdl_delacccnfn1" />
+        <emodel.type value="text/html" />
+        <emodel.object value="Suppression de votre compte Trenqr" />
+        <emodel.body 
+            value="
+                &lt;div id='new-acc-panel-mx' style='
+                    border: 1px solid #ccc; 
+                    border-radius: 2px; width: 700px; 
+                    height: 100%; 
+                    margin: 20px auto; 
+                    background-color: #003A78; 
+                    position: relative; 
+                    overflow: auto;'
+                &gt;
+            &lt;div id='n-a-pan-left' style='width: 150px; height: 100%; background-color: #003A78; float: left;'&gt;
+                &lt;div id='n-a-pan-l-logo' style='margin: 20px 0px 0px 0px;'&gt;
+                    &lt;div id='' style='text-align: center;'&gt;
+                        &lt;a href='%{trenqr_http_root}%'&gt;&lt;img height='50px' src='%{trenqr_prod_img_root}%/r/logo_tqr_beta.png' /&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div id='n-a-p-logo' style='
+                         color: #fff; 
+                         font-family: \'Century Gothic\'; 
+                         font-size: 20px; 
+                         text-align: center;'
+                    &gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div id='n-a-pan-right' style='width: 550px; margin-left: 150px; color: #000;'&gt;
+                &lt;div id='n-a-pan-r-body' style='
+                     padding: 20px; 
+                     background-color: #fff; 
+                     font-family: Calibri, Arial, sans-serif; font-size: 15px;'
+                &gt;
+                    &lt;p&gt;Bonjour &lt;b style='font-weight: bold;'&gt;%{fullname}%&lt;/b&gt;,&lt;/p&gt;
+                    &lt;p&gt;
+                        Nous vous confirmons l’enregistrement de la demande de suppression de votre compte, effectuée à la date du &lt;b style='font-weight: bold;'&gt;%{date}%&lt;/b&gt;. Nous confirmons aussi que vous avez décidé de nous quitter pour les raisons suivantes :
+                    &lt;/p&gt;
+                    &lt;p&gt;
+                        Conformément à nos conditions d’utilisation, &lt;b style='font-weight: bold;'&gt;la suppression de votre compte ne se fera pas avant un délai de 30 jours, à partir de la date de votre demande&lt;/b&gt;.
+                    &lt;/p&gt;
+                    &lt;p&gt;
+                        Si vous n’êtes pas à l’origine de cette demande de suppression, pas de panique. 
+                        &lt;b style='font-weight: bold;'&gt;Il vous suffit de vous connecter à votre compte et le processus de suppression sera automatiquement annulé&lt;/b&gt;.
+                    &lt;/p&gt;
+                    &lt;div style='text-align: center;'&gt;
+                        &lt;a id='' class='btn-like' style='display: inline-block; border: 1px solid rgb(40,148,255); border-radius: 5px; padding: 5px 20px; color: rgb(40,148,255); font-size: 13px; text-decoration: none;' href='%{trenqr_http_root}%/%{pseudo}%'&gt;Accéder à mon compte&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;p&gt;
+                        Si vous quittez Trenqr parce qu’il ne vous correspond pas, il vous est encore possible de nous le signaler, afin que nous puissions l’améliorer.
+                    &lt;/p&gt;
+                    &lt;p&gt;
+                        Dans tous les cas, nous vous remercions d’avoir été des nôtres, tout en espérant vous revoir de nouveau parmi nous, afin qu’ensemble, nous puissions continuer l’aventure, pour un Trenqr à votre image.
+                    &lt;/p&gt;
+                    &lt;p&gt;&lt;b style='font-weight: bold;'&gt;L’équipe Trenqr&lt;/b&gt;&lt;/p&gt;
+                &lt;/div&gt;
+               &lt;div id='n-a-pan-r-footer' style='height: 68px; padding: 10px; background-color: rgb(225,225,225); font-family: Calibri, Arial, sans-serif; color: #000; font-size: 14px;'&gt;
+                    &lt;p style='margin: 0'&gt;Pour vous connecter, c'est par ici : &lt;a style='color: rgb(40,148,255);' href='%{trenqr_login_link}%'&gt;Connectez-vous&lt;/a&gt;&lt;/p&gt;
+                    &lt;p style='margin: 0'&gt;Vous avez oublié votre mot de passe ? &lt;a style='color: rgb(40,148,255);' href='%{trenqr_start_rcvy_link}%'&gt;Réinitialisez votre mot de passe via ce lien&lt;/a&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+            " />
+    </emodel>
+	
+    
+	<emodel id="emdl_toshelledn1">
+        <emodel.id value="emdl_toshelledn1" />
+        <emodel.type value="text/html" />
+        <emodel.object value="Mise en protection de votre compte Trenqr" />
+        <emodel.body 
+            value="
+                &lt;div id='new-acc-panel-mx' style='
+                border: 1px solid #ccc; 
+                border-radius: 2px; width: 700px; 
+                height: 100%; 
+                margin: 20px auto; 
+                background-color: #003A78; 
+                position: relative; 
+                overflow: auto;'
+                &gt;
+            &lt;div id='n-a-pan-left' style='width: 150px; height: 100%; background-color: #003A78; float: left;'&gt;
+                &lt;div id='n-a-pan-l-logo' style='margin: 20px 0px 0px 0px;'&gt;
+                    &lt;div id='' style='text-align: center;'&gt;
+                        &lt;a href='%{trenqr_http_root}%'&gt;&lt;img height='50px' src='%{trenqr_prod_img_root}%/r/logo_tqr_beta.png' /&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div id='n-a-p-logo' style='
+                         color: #fff; 
+                         font-family: \'Century Gothic\'; 
+                         font-size: 20px; 
+                         text-align: center;'
+                    &gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div id='n-a-pan-right' style='width: 550px; margin-left: 150px; color: #000;'&gt;
+                &lt;div id='n-a-pan-r-body' style='
+                     padding: 20px; 
+                     background-color: #fff; 
+                     font-family: Calibri, Arial, sans-serif; font-size: 15px;'
+                     &gt;
+                    &lt;p&gt;Bonjour &lt;b style='font-weight: bold;'&gt;%{fullname}%&lt;/b&gt;,&lt;/p&gt;
+                    &lt;p&gt;
+                        Nous vous informons que l’&lt;b style='color: #DF4961;'&gt;accès à votre compte a été temporairement bloqué, à la suite de trop nombreuses tentatives de connexion erronées&lt;/b&gt;.
+                    &lt;/p&gt;
+                    &lt;p&gt;
+                        Il s’agit d’une mesure de protection, destinée à protéger votre compte contre des tentatives d’accès frauduleuses.
+                    &lt;/p&gt;
+                    &lt;p&gt;
+                        La sécurité est l’une de nos priorités sur Trenqr. Nous nous attelons constamment à l'améliorer, de manière à ce que votre navigation reste la plus sûre possible. Cependant, tous nos efforts resteront vains sans votre pleine participation. Nous vous conseillons donc de suivre les règles de sécurité suivantes :
+                    &lt;/p&gt;
+                    &lt;ol&gt;
+                        &lt;li&gt;Ne communiquez sous aucun prétexte votre mot de passe à qui que ce soit&lt;/li&gt;
+                        &lt;li&gt;Utilisez un mot de passe difficilement devinable même (surtout) par vos proches&lt;/li&gt;
+                        &lt;li&gt;Utilisez un mot de passe avec au moins 8 caractères, au moins 2 caractères spéciaux et deux chiffres&lt;/li&gt;
+                        &lt;li&gt;Changez régulièrement votre mot de passe&lt;/li&gt;
+                        &lt;li&gt;Invitez les personnes de votre entourage, sur Trenqr, à suivre ces règles. Car si l’une d'entre elles se fait pirater, votre vie privée peut se retrouver exposée. Vous ne le souhaitez pas !&lt;/li&gt;
+                    &lt;/ol&gt;
+                    &lt;p&gt;
+                        Ces règles ne sont pas exhaustives. Nous vous invitons donc à utiliser votre bon sens, pour limiter les risques de piratage de votre compte.
+                    &lt;/p&gt;
+                    &lt;p&gt;
+                        Sachez que &lt;b style='font-weight: bold;'&gt;vous ne pourrez pas vous connecter avant la fin du délai de « mise en protection »&lt;/b&gt;. Cependant, vous pouvez dès à présent changer votre mot de passe et tenter de vous connecter, une fois que l’accès à votre compte sera à nouveau possible.
+                    &lt;/p&gt;
+                    &lt;div style='text-align: center;'&gt;
+                        &lt;a id='' class='btn-like' style='display: inline-block; border: 1px solid rgb(40,148,255); border-radius: 5px; padding: 5px 20px; color: rgb(40,148,255); font-size: 13px; text-decoration: none;' href='%{trenqr_start_rcvy_link}%'&gt;Modifier votre mot de passe&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;p&gt;Nous vous remercions de votre compréhension.&lt;/p&gt;
+                    &lt;p&gt;L'équipe Trenqr&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div id='n-a-pan-r-footer' style='height: 68px; padding: 10px; background-color: rgb(225,225,225); font-family: Calibri, Arial, sans-serif; color: #000; font-size: 14px;'&gt;
+                    &lt;p style='margin: 0'&gt;Pour vous connecter, c'est par ici : &lt;a style='color: rgb(40,148,255);' href='%{trenqr_login_link}%'&gt;Connectez-vous&lt;/a&gt;&lt;/p&gt;
+                    &lt;p style='margin: 0'&gt;Vous avez oublié votre mot de passe ? &lt;a style='color: rgb(40,148,255);' href='%{trenqr_start_rcvy_link}%'&gt;Réinitialisez votre mot de passe via ce lien&lt;/a&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+            " />
+    </emodel>
+    
+    <emodel id="emdl_recpwdn1">
+        <emodel.id value="emdl_recpwdn1" />
+        <emodel.type value="text/html" />
+        <emodel.object value="Réinitialisation de votre mot de passe Trenqr" />
+        <emodel.body 
+            value="
+                &lt;div id='new-acc-panel-mx' style='border: 1px solid #ccc; border-radius: 2px; width: 700px; min-height: 500px; height: 100%; margin: 20px auto; background-color: #003A78; position: relative; overflow: auto; color: #000 !important;'&gt;
+                    &lt;div id='n-a-pan-left' style='width: 150px; height: 100%; background-color: #003A78; float: left;'&gt;
+                        &lt;div id='n-a-pan-l-logo' style='margin: 215px 0px 0px 0px;'&gt;
+                            &lt;div id='' style='text-align: center;'&gt;
+                                &lt;img height='50px' src='%{trenqr_prod_img_root}%/r/logo_tqr_beta.png' /&gt;
+                            &lt;/div&gt;
+                            &lt;div id='n-a-p-logo' style='color: #fff; font-family: \'Century Gothic\'; font-size: 20px; text-align: center;'&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div id='n-a-pan-right' style='margin-left: 150px; color: #000;'&gt;
+                        &lt;div id='n-a-pan-r-body' style='padding: 20px; background-color: #fff; font-family: Calibri, Arial, sans-serif; font-size: 15px;'&gt;
+                            &lt;p style='color: #000'&gt;Bonjour &lt;b style='color: #000, font-weight: bold;'&gt;%{fullname}%&lt;/b&gt;,&lt;/p&gt;
+                            &lt;p style='color: #000'&gt;
+                                Suite à votre  demande, nous avons ouvert une procédure de &lt;b style='font-weight: bold;'&gt;réinitialisation de mot de passe&lt;/b&gt;.
+                            &lt;/p&gt;
+                            &lt;p style='color: #000'&gt;
+                                Pour changer votre mot de passe, il vous suffit de suivre les instructions qui vous seront indiquées après avoir cliqué sur le bouton ci-dessous :
+                            &lt;/p&gt;
+                            &lt;div style='text-align: center;'&gt;
+                                &lt;a id='' class='btn-like' style='display: inline-block; border: 1px solid rgb(40,148,255); border-radius: 5px; padding: 5px 20px; color: rgb(40,148,255); font-size: 13px; text-decoration: none;' href='%{recovery_link}%'&gt;Réinitialiser votre mot de passe&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;p style='color: #000'&gt;Utilisez le &lt;b&gt;code de validation&lt;/b&gt; ci-dessous (en respectant la casse) afin de valider l'opération : &lt;/p&gt;
+                            &lt;div style='text-align: center;'&gt;
+                                &lt;span id='' style='border-radius: 4px; background-color: #eee; padding: 10px 35px; font-size: 15px; font-weight: bold; letter-spacing: 1px;'&gt;%{secret_code}%&lt;/span&gt;
+                            &lt;/div&gt;
+                            &lt;p style='color: #000'&gt;
+                                Si vous avez des difficultés à cliquer sur le bouton ou qu'il ne vous est pas accessible, vous pouvez utiliser le lien alternatif ci-dessous :
+                            &lt;/p&gt;
+                            &lt;div&gt;
+                                &lt;a href='%{recovery_link}%'&gt;%{recovery_link_public}%&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;p style='color: #000'&gt;
+                                Si vous n’êtes pas à l’origine de cette demande ou que vous souhaitez l'annuler, vous pouvez nous le signaler en cliquant sur le lien ci-dessous :
+                            &lt;/p&gt;
+                             &lt;div&gt;
+                                &lt;a href='%{recovery_cancel_link}%'&gt;%{recovery_cancel_link_public}%&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;p&gt;A très bientot&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div id='n-a-pan-r-footer' style='height: 68px; padding: 10px; background-color: rgb(225,225,225); font-family: Calibri, Arial, sans-serif; color: #000; font-size: 14px;'&gt;
+                            &lt;p style='margin: 0'&gt;Pour vous connecter, c'est par ici : &lt;a style='color: rgb(40,148,255);' href='%{trenqr_login_link}%'&gt;Connectez-vous&lt;/a&gt;&lt;/p&gt;
+                            &lt;p style='margin: 0'&gt;Vous avez oublié votre mot de passe ? &lt;a style='color: rgb(40,148,255);' href='%{trenqr_start_rcvy_link}%'&gt;Réinitialisez votre mot de passe via ce lien&lt;/a&gt;&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+            " />
+    </emodel>
+    
+    <emodel id="emdl_delacc_apply">
+        <emodel.id value="emdl_delacc_apply" />
+        <emodel.type value="text/html" />
+        <emodel.object value="Demande de suppression de votre compte Trenqr" />
+        <emodel.body 
+            value="
+                &lt;div id='new-acc-panel-mx' style='border: 1px solid #ccc; border-radius: 2px; width: 700px; min-height: 500px; height: 100%; margin: 20px auto; background-color: #003A78; position: relative; overflow: auto; color: #000;'&gt;
+                    &lt;div id='n-a-pan-left' style='width: 150px; height: 100%; background-color: #003A78; float: left;'&gt;
+                        &lt;div id='n-a-pan-l-logo' style='margin: 215px 0px 0px 0px;'&gt;
+                            &lt;div id='' style='text-align: center;'&gt;
+                                &lt;img height='50px' src='http://timg.ycgkit.com/files/img/r/logo_tqr_beta.png' /&gt;
+                            &lt;/div&gt;
+                            &lt;div id='n-a-p-logo' style='color: #fff; font-family: \'Century Gothic\'; font-size: 20px; text-align: center;'&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div id='n-a-pan-right' style='margin-left: 150px; color: #000;'&gt;
+                        &lt;div id='n-a-pan-r-body' style='padding: 20px; background-color: #fff; color: #000; font-family: Calibri, Arial, sans-serif; font-size: 15px;'&gt;
+                            &lt;p&gt;Bonjour &lt;b style='font-weight: bold;'&gt;%{fullname}%&lt;/b&gt;,&lt;/p&gt;
+                            &lt;p&gt;
+                                Nous vous confirmons que votre &lt;b style='font-weight: bold;'&gt;demande de suppression de compte&lt;/b&gt; a bien été prise en compte.&lt;br/&gt;
+                                Pour des raisons de sécurité, nous vous transmettons les informations concernant cette demande :
+                            &lt;/p&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;Date de la demande : &lt;b style='color: #1E2E3E; font-weight: bold;'&gt;%{apply_date}%&lt;/b&gt;&lt;/li&gt;
+                                &lt;li&gt;Heure de la demande : &lt;b style='color: #1E2E3E; font-weight: bold;'&gt;%{apply_hour}%&lt;/b&gt;&lt;/li&gt;
+                                &lt;li&gt;Localisation (approximative): &lt;b style='color: #1E2E3E; font-weight: bold;'&gt;%{apply_loc}%&lt;/b&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                            &lt;p&gt;
+                                Conformément à notre politique de &lt;a style='color: rgb(40,148,255);' href='http://www.trenqr.com/privacy'&gt;confidentialité et de gestion des données&lt;/a&gt;, votre compte sera supprimé dans un &lt;b style='font-weight: bold'&gt;délai d’un mois&lt;/b&gt; (valeur supérieure) à compter de la date de la demande.
+                            &lt;/p&gt;
+                            &lt;p&gt;
+                                &lt;b style='font-weight: bold'&gt;Si vous avez changé d’avis&lt;/b&gt; ou que &lt;b style='font-weight: bold'&gt;vous n’êtes pas à l’origine de cette demande&lt;/b&gt;, il vous suffit de vous connecter à nouveau à votre compte pour annuler la dite procédure. Cliquez sur le bouton ci-dessous pour vous reconnecter :
+                            &lt;/p&gt;
+                            &lt;div style='text-align: center;'&gt;
+                                &lt;a id='' class='btn-like' style='display: inline-block; border: 1px solid rgb(40,148,255); border-radius: 5px; padding: 5px 20px; color: rgb(40,148,255); font-size: 13px; text-decoration: none;' href='www.trenqr.com/login'&gt;Récupérer mon compte&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;p&gt;
+                                Il ne nous reste plus qu’à vous souhaiter bonne continuation et d'ajouter que nous regrettons que vous nous quittiez. Aussi, nous gardons espoir que vous puissiez retenter à nouveau l’aventure avec Trenqr.
+                            &lt;/p&gt;
+                            &lt;p&gt;A très bientot&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div id='n-a-pan-r-footer' style='height: 68px; padding: 10px; background-color: rgb(225,225,225); font-family: Calibri, Arial, sans-serif; font-size: 14px;'&gt;
+                            &lt;p style='margin: 0;'&gt;Pour vous connecter, c'est par ici : &lt;a style='color: rgb(40,148,255);' href='http://www.trenqr.com/login'&gt;Connectez-vous&lt;/a&gt;&lt;/p&gt;
+                            &lt;p style='margin: 0;'&gt;Vous avez oublié votre mot de passe ? &lt;a style='color: rgb(40,148,255);' href='http://www.trenqr.com/recovery/password'&gt;Vous pouvez créer un nouveau via ce lien&lt;/a&gt;&lt;/p&gt;
+                            &lt;p style='margin: 0;'&gt;Si vous considérez que vous avez reçu ce message par erreur, merci de nous le signaler : &lt;a href='www.trenqr.com'&gt;Cet email ne m’est pas destiné&lt;/a&gt;.&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            " />
+    </emodel>
+    
+    <emodel id="emdl_delacc_apply_light">
+        <emodel.id value="emdl_delacc_apply_light" />
+        <emodel.type value="text/html" />
+        <emodel.object value="Demande de suppression de votre compte Trenqr" />
+        <emodel.body 
+            value="
+                &lt;div id='new-acc-panel-mx' style='border: 1px solid #ccc; border-radius: 2px; width: 700px; min-height: 500px; height: 100%; margin: 20px auto; background-color: #003A78; position: relative; overflow: auto; color: #000;'&gt;
+                    &lt;div id='n-a-pan-left' style='width: 150px; height: 100%; background-color: #003A78; float: left;'&gt;
+                        &lt;div id='n-a-pan-l-logo' style='margin: 215px 0px 0px 0px;'&gt;
+                            &lt;div id='' style='text-align: center;'&gt;
+                                &lt;img height='50px' src='http://timg.ycgkit.com/files/img/r/logo_tqr_beta.png' /&gt;
+                            &lt;/div&gt;
+                            &lt;div id='n-a-p-logo' style='color: #fff; font-family: \'Century Gothic\'; font-size: 20px; text-align: center;'&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div id='n-a-pan-right' style='margin-left: 150px; color: #000;'&gt;
+                        &lt;div id='n-a-pan-r-body' style='padding: 20px; background-color: #fff; font-family: Calibri, Arial, sans-serif; font-size: 15px;'&gt;
+                            &lt;p&gt;Bonjour &lt;b style='font-weight: bold;'&gt;%{fullname}%&lt;/b&gt;,&lt;/p&gt;
+                            &lt;p&gt;
+                                Nous vous confirmons que votre &lt;b style='font-weight: bold;'&gt;demande de suppression de compte&lt;/b&gt; a bien été prise en compte.
+                            &lt;/p&gt;
+                            &lt;p&gt;
+                                Conformément à notre politique de &lt;a style='color: rgb(40,148,255);' href='http://www.trenqr.com/privacy'&gt;confidentialité et de gestion des données&lt;/a&gt;, votre compte sera supprimé dans un &lt;b style='font-weight: bold'&gt;délai d’un mois&lt;/b&gt; à compter de la date de la demande.
+                            &lt;/p&gt;
+                            &lt;p&gt;
+                                &lt;b style='font-weight: bold'&gt;Si vous avez changé d’avis&lt;/b&gt; ou que &lt;b style='font-weight: bold'&gt;vous n’êtes pas à l’origine de cette demande&lt;/b&gt;, il vous suffit de vous connecter à nouveau à votre compte pour annuler la dite procédure. Cliquez sur le bouton ci-dessous pour vous reconnecter :
+                            &lt;/p&gt;
+                            &lt;div style='text-align: center;'&gt;
+                                &lt;a id='' class='btn-like' style='display: inline-block; border: 1px solid rgb(40,148,255); border-radius: 5px; padding: 5px 20px; color: rgb(40,148,255); font-size: 13px; text-decoration: none;' href='http://www.trenqr.com/login'&gt;Récupérer mon compte&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div&gt;
+                                Si le bouton vous est inaccessible, vous pouvez essayer avec le lien direct suivant : &lt;a &lt;a style='color: rgb(40,148,255);' href='http://www.trenqr.com/login'&gt;www.trenqr.com/login&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;p&gt;
+                                Il ne nous reste plus qu’à vous souhaiter bonne continuation et d'ajouter que nous regrettons que vous nous quittiez. Aussi, nous gardons espoir que vous puissiez retenter à nouveau l’aventure avec Trenqr.
+                            &lt;/p&gt;
+                            &lt;p&gt;A très bientot&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div id='n-a-pan-r-footer' style='height: 68px; padding: 10px; background-color: rgb(225,225,225); font-family: Calibri, Arial, sans-serif; font-size: 14px;'&gt;
+                            &lt;p style='margin: 0;'&gt;Pour vous connecter, c'est par ici : &lt;a style='color: rgb(40,148,255);' href='http://www.trenqr.com/login'&gt;Connectez-vous&lt;/a&gt;&lt;/p&gt;
+                            &lt;p style='margin: 0;'&gt;Vous avez oublié votre mot de passe ? &lt;a style='color: rgb(40,148,255);' href='http://www.trenqr.com/recovery/password'&gt;Vous pouvez créer un nouveau via ce lien&lt;/a&gt;&lt;/p&gt;
+                            &lt;p style='margin: 0;'&gt;Si vous considérez que vous avez reçu ce message par erreur, merci de nous le signaler : &lt;a href='www.trenqr.com'&gt;Cet email ne m’est pas destiné&lt;/a&gt;.&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            " />
+    </emodel>
+    
+    <emodel id="emdl_bgzy_exists">
+        <emodel.id value="emdl_bgzy_exists" />
+        <emodel.type value="text/html" />
+        <emodel.object value="Nouveau signalement de bogue" />
+        <emodel.body 
+            value="
+                &lt;div style='font-family: Calibri, Arial, sans-serif'&gt;
+                    &lt;p style='font-style: italic;'&gt;Hey !&lt;/p&gt;
+                    &lt;p&gt;
+                        Un nouveau signalement de bogue est disponible. Vérifiez les rapports avec le staut 'Ouvert'.
+                    &lt;/p&gt;
+                &lt;/div&gt;
+            " />
+    </emodel>
+    
+    <!-- NOUVEAUX MODELES -->
+    
+    <emodel id="emdl_econfirm">
+        <emodel.id value="emdl_econfirm" />
+        <emodel.type value="text/html" />
+        <emodel.object value="Vous y êtes presque ! Confirmez votre compte Trenqr." />
+        <emodel.body 
+            value="
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Activer son compte en validant l'email&lt;/title&gt;
+                    &lt;meta charset='utf-8'&gt;
+                &lt;/head&gt;
+                &lt;bodystyle='
+                    margin: 0px 0px 50px 0px; 
+                    padding: 0; 
+                '&gt;
+                &lt;div id='tqr-confirm-acc-mx' style='
+                    width: 100%; 
+                    min-width: 550px; 
+                    max-width: 650px; 
+                    height: 100%; 
+                    margin: 20px auto; 
+
+                    color: #000;
+                    font-family: Arial, sans-serif;
+                '&gt;
+            &lt;div id='n-a-pan-right' 
+                 style='
+                    color: #000;
+                '
+            &gt;
+                &lt;div id='n-a-pan-r-body' style='
+                     padding: 20px; 
+                     background-color: #fff; 
+                     color: #000;
+                     font-size: 15px;'
+                &gt;
+                    &lt;section id='tqr-rcmd-scn-cfrm-bmx' style='
+                        width: 100%;
+                        margin: 30px auto 0;
+                        text-align: center;
+                    '&gt;
+                        &lt;div style='
+                            text-align: center;
+                        '&gt;
+                            &lt;a href='%{trenqr_http_root}%'&gt;&lt;img height='50px' src='%{trenqr_prod_img_root}%/r/logo_tqr_beta_be.png' /&gt;&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div id='tqr-rcmd-scn-cfrm-mx' style='
+                            border: 1px solid #6C7D92;
+                            border-radius: 8px;
+                            padding: 40px 30px;
+                            background-color: rgba(242, 246, 247, 0.51);;
+                            font-family: Arial, sans-serif;
+                            text-align: center;
+                        '&gt;
+                            &lt;div id='header'&gt;
+                                &lt;div style='
+                                    color: #767D84;
+                                    font-size: 26px;
+                                '&gt;Activez votre compte en validant votre email&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div id='tqr-rcmd-scn-cfrm-bdy-mx' style='
+                                margin-top: 18px;
+                            '&gt;
+                                &lt;div id='tqr-rcmd-scn-cfrm-txt' style='
+                                    color: #31314C;
+                                    font-size: 15px;
+                                '&gt;
+                                    &lt;div id='tqr-rcmd-scn-cfrm-txt-hi' style='
+                                        margin-bottom: 5px;
+                                        text-align: left;
+                                        '&gt;Bonjour &lt;span style='font-weight: bold;'&gt;%{fullname}%&lt;/span&gt;,&lt;/div&gt;
+                                    &lt;div id='tqr-rcmd-scn-cfrm-txt-then' style='
+                                        margin-top: 10px;
+                                        text-align: left; 
+                                    '&gt;
+                                        C'est presque fini ...Confirmez votre adresse email afin d'activer définitivement votre compte Trenqr. C'est simple, il vous suffit de cliquer sur le bouton ci-dessous :
+                                    &lt;/div&gt;
+                                    &lt;div style='
+                                        margin-top: 20px;
+                                    '&gt;
+                                        &lt;a class='tqr-rcmd-scn-cfrm-btn' data-action='ja' href='%{econfirm_link}%' style='
+                                            display: block;
+                                            border: 1px solid;
+                                            border-radius: 6px;
+                                            width: 270px;
+                                            margin: 0px auto;
+                                            padding: 10px 0px;
+                                            background-color: #004589;
+                                            color: #FFF;
+                                            text-decoration: none;
+                                        '&gt;Confirmer maintenant&lt;/a&gt;
+                                    &lt;/div&gt;
+                                    &lt;div style='
+                                        margin-top: 20px;
+                                        text-align: left;
+                                    '&gt;
+                                        Si vous avez du mal à cliquer sur le bouton, cliquez sur le lien ci-dessous :
+                                    &lt;/div&gt;
+                                    &lt;div&gt;
+                                        &lt;a class='tqr-rcmd-scn-cfrm-btn' data-action='nein' href='%{econfirm_link}%' style='
+                                            display: block;
+                                            margin: 8px auto 0px;
+                                            overflow: auto;
+                                            color: #3F729B;
+                                            font-size: 14px;
+                                            text-decoration: none;
+                                            text-align: left;
+                                        '&gt;%{econfirm_link_public}%&lt;/a&gt;
+                                    &lt;/div&gt;
+                                    &lt;div id='tqr-rcmd-scn-cfrm-txt-author' style='
+                                        margin-top: 25px;
+                                        text-align: left;
+                                    '&gt;L'équipe Trenqr&lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                &lt;/div&gt;
+                &lt;div id='n-a-pan-r-footer' style='
+                    padding: 10px; 
+                    color: #000; 
+               '&gt;
+                    &lt;div id='' style='
+                         text-align: center;
+                    '&gt;
+                        &lt;a href='%{trenqr_http_root}%'&gt;&lt;img height='50px' src='%{trenqr_prod_img_root}%/r/fav2.png' /&gt;&lt;/a&gt; 
+                    &lt;/div&gt;
+                    &lt;div id='' style='
+                         margin-top: 30px;
+                        padding: 0px 15px;
+                    ' &gt;
+                        &lt;p style='
+                            margin: 0;
+                            font-size: 13px;
+                        '&gt;
+                            Pour vous connecter, c'est par ici : &lt;a style='color: rgb(40,148,255);' href='%{trenqr_login_link}%'&gt;Connectez-vous&lt;/a&gt;
+                        &lt;/p&gt;
+                        &lt;p style='
+                           margin: 0;
+                           font-size: 13px;
+                        '&gt;
+                            Vous avez oublié votre mot de passe ? &lt;a style='color: rgb(40,148,255);' href='%{trenqr_start_rcvy_link}%'&gt;Réinitialisez votre mot de passe via ce lien&lt;/a&gt;
+                        &lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+            " />
+    </emodel>
+    
+    <!-- TQR.VB3 -->
+    
+    <emodel id="emdl_acty_notify">
+        <emodel.id value="emdl_acty_notify" />
+        <emodel.type value="text/html" />
+        <emodel.object value="Vous avez une nouvelle notification" />
+        <emodel.body 
+            value="
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Activer son compte en validant l'email&lt;/title&gt;
+                    &lt;meta charset='utf-8'&gt;
+                &lt;/head&gt;
+                &lt;bodystyle='
+                    margin: 0px 0px 50px 0px; 
+                    padding: 0; 
+                '&gt;
+                &lt;div id='new-acc-panel-mx' style='
+            width: 100%; 
+            min-width: 550px; 
+            max-width: 650px; 
+            height: 100%; 
+            margin: 20px auto; 
+            /*background-color: rgb(242,242,242);*/
+            
+            position: relative; 
+            overflow: auto;
+            color: #000;
+            font-family: Arial, sans-serif;
+        '&gt;
+            &lt;div id='n-a-pan-right' 
+                 style='
+                    color: #000;
+                '
+            &gt;
+                &lt;div id='n-a-pan-r-body' style='
+                     padding: 20px; 
+                     background-color: #fff; 
+                     color: #000;
+                     font-size: 15px;'
+                &gt;
+                    &lt;section id='tqr-rcmd-scn-cfrm-bmx' style='
+                        width: 100%;
+                        margin: 30px auto 0;
+                        text-align: center;
+                    '&gt;
+                        &lt;div&gt;
+                            &lt;a href='%{trenqr_http_root}%'&gt;&lt;img height='50px' src='%{trenqr_prod_img_root}%/r/logo_tqr_beta_be.png' /&gt;&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div id='tqr-rcmd-scn-cfrm-mx' style='
+                            border: 1px solid #ddd;
+                            border-radius: 8px;
+                            padding: 40px 30px;
+                            background-color: rgba(230, 230, 230, 0.5);
+                            font-family: Arial, sans-serif;
+                            text-align: center;
+                        '&gt;
+                            &lt;header id='tqr-rcmd-scn-cfrm-hdr-bmx'&gt;
+                                &lt;div id='tqr-rcmd-scn-cfrm-hdr-mx'&gt;
+                                    &lt;div style='
+                                        padding: 0 0 20px 0;
+                                        color: #767D84;
+                                        font-family:  &quot;Open sans&quot;, Arial, sans-serif;
+                                        font-size: 26px;
+                                    '&gt;Vous avez une nouvelle notification de&lt;/div&gt;
+                                    &lt;div id='tqr-rcmd-scn-cfrm-ppic-mx'&gt;
+                                        &lt;a id='tqr-rcmd-scn-cfrm-nm-ix' href='%{act_uhrf}%'&gt;
+                                            &lt;img id='tqr-rcmd-scn-cfrm-nm-i' width='70' height='70' src='%{act_uppic}%' alt='' style='
+                                                 border: 1px solid #bcbcbc;
+                                                border-radius: 15%;
+                                            '/&gt;
+                                        &lt;/a&gt;
+                                    &lt;/div&gt;
+                                    &lt;div id='tqr-rcmd-scn-cfrm-nm-mx'&gt;
+                                        &lt;a id='tqr-rcmd-scn-cfrm-nm' href='%{act_uhrf}%' style='text-decoration: none;'&gt;
+                                            &lt;div id='tqr-rcmd-scn-cfrm-psd' style='
+                                                margin-top: 5px;
+                                                
+                                                color: #434850;
+                                                font-size: 21px;
+                                            '&gt;%{act_ufn}%&lt;/div&gt;
+                                            &lt;div id='tqr-rcmd-scn-cfrm-fn' style='
+                                                display: block;
+                                                color: #3f729b;
+                                                font-size: 20px;
+                                                font-weight: bold;
+                                            '&gt;@%{act_upsd}%&lt;/div&gt;
+                                        &lt;/a&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/header&gt;
+                            &lt;div id='tqr-rcmd-scn-cfrm-bdy-mx' style='
+                                margin-top: 18px;
+                            '&gt;
+                                &lt;div id='tqr-rcmd-scn-cfrm-txt' style='
+                                    color: #31314C;
+                                    font-size: 15px;
+                                '&gt;
+                                    &lt;div id='tqr-rcmd-scn-cfrm-txt-hi' style='
+                                        margin-bottom: 5px;
+                                        text-align: left;
+                                    '&gt;Bonjour @%{tag_upsd}%,&lt;/div&gt;
+                                    &lt;div id='tqr-rcmd-scn-cfrm-txt-then' style='
+                                        text-align: left; 
+                                    '&gt;
+                                        &lt;p&gt;
+                                            &lt;a style='color: #3f729b; font-weight:bold;' href='%{act_uhrf}%'&gt;@%{act_upsd}%&lt;/a&gt; %{action_sentence}%. 
+                                        &lt;/p&gt;
+                                        &lt;p
+                                            style='
+                                                border: 1px solid #ddd;
+                                                border-radius: 6px;
+                                                padding: 15px;
+                                                box-sizing: border-box;
+                                                background: #fff;
+                                                
+                                                color: #303742;
+                                                font-size: 17px;
+                                        '&gt;
+                                            &lt;q&gt;%{preview}%&lt;/q&gt;
+                                        &lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div id='tqr-rcmd-scn-cfrm-btns-mx' style='
+                                    margin-top: 30px;
+                                '&gt;
+                                    &lt;div&gt;
+                                        &lt;a class='tqr-rcmd-scn-cfrm-btn' data-action='ja' href='%{perma}%' style='
+                                            display: block;
+                                            border: 1px solid;
+                                            border-radius: 6px;
+                                            width: 235px;
+                                            margin: 0px auto;
+                                            padding: 10px 0px;
+                                            background-color: #004589;
+                                            
+                                            color: #FFF;
+                                            font-size: 18px;
+                                            text-decoration: none;
+                                        '&gt;Afficher sur Trenqr&lt;/a&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                &lt;/div&gt;
+                &lt;div id='n-a-pan-r-footer' style='
+                    padding: 10px; 
+                    color: #000; 
+               '&gt;
+                    &lt;div id='' style='
+                         text-align: center;
+                    '&gt;
+                        &lt;a href='%{trenqr_http_root}%'&gt;&lt;img height='50px' src='%{trenqr_prod_img_root}%/r/fav2.png' /&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div id='' style='
+                         margin-top: 30px;
+                        padding: 0px 15px;
+                    ' &gt;
+                        &lt;p style='
+                            margin: 0;
+                            font-size: 13px;
+                        '&gt;
+                            Pour vous connecter, c'est par ici : &lt;a style='color: rgb(40,148,255);' href='%{trenqr_login_link}%'&gt;Connectez-vous&lt;/a&gt;
+                        &lt;/p&gt;
+                        &lt;p style='
+                           margin: 0;
+                           font-size: 13px;
+                        '&gt;
+                            Vous avez oublié votre mot de passe ? &lt;a style='color: rgb(40,148,255);' href='%{trenqr_start_rcvy_link}%'&gt;Réinitialisez votre mot de passe via ce lien&lt;/a&gt;
+                        &lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+            " />
+    </emodel>
+    
+    <emodel id="emdl_acty_notify_noprw">
+        <emodel.id value="emdl_acty_notify" />
+        <emodel.type value="text/html" />
+        <emodel.object value="Vous avez une nouvelle notification" />
+        <emodel.body 
+            value="
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Activer son compte en validant l'email&lt;/title&gt;
+                    &lt;meta charset='utf-8'&gt;
+                &lt;/head&gt;
+                &lt;bodystyle='
+                    margin: 0px 0px 50px 0px; 
+                    padding: 0; 
+                '&gt;
+                &lt;div id='new-acc-panel-mx' style='
+            width: 100%; 
+            min-width: 550px; 
+            max-width: 650px; 
+            height: 100%; 
+            margin: 20px auto; 
+            /*background-color: rgb(242,242,242);*/
+            
+            position: relative; 
+            overflow: auto;
+            color: #000;
+            font-family: Arial, sans-serif;
+        '&gt;
+            &lt;div id='n-a-pan-right' 
+                 style='
+                    color: #000;
+                '
+            &gt;
+                &lt;div id='n-a-pan-r-body' style='
+                     padding: 20px; 
+                     background-color: #fff; 
+                     color: #000;
+                     font-size: 15px;'
+                &gt;
+                    &lt;section id='tqr-rcmd-scn-cfrm-bmx' style='
+                        width: 100%;
+                        margin: 30px auto 0;
+                        text-align: center;
+                    '&gt;
+                        &lt;div&gt;
+                            &lt;a href='%{trenqr_http_root}%'&gt;&lt;img height='50px' src='%{trenqr_prod_img_root}%/r/logo_tqr_beta_be.png' /&gt;&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div id='tqr-rcmd-scn-cfrm-mx' style='
+                            border: 1px solid #ddd;
+                            border-radius: 8px;
+                            padding: 40px 30px;
+                            background-color: rgba(230, 230, 230, 0.5);
+                            font-family: Arial, sans-serif;
+                            text-align: center;
+                        '&gt;
+                            &lt;header id='tqr-rcmd-scn-cfrm-hdr-bmx'&gt;
+                                &lt;div id='tqr-rcmd-scn-cfrm-hdr-mx'&gt;
+                                    &lt;div style='
+                                        padding: 0 0 20px 0;
+                                        color: #767D84;
+                                        font-family:  &quot;Open sans&quot;, Arial, sans-serif;
+                                        font-size: 26px;
+                                    '&gt;Vous avez une nouvelle notification de&lt;/div&gt;
+                                    &lt;div id='tqr-rcmd-scn-cfrm-ppic-mx'&gt;
+                                        &lt;a id='tqr-rcmd-scn-cfrm-nm-ix' href='%{act_uhrf}%'&gt;
+                                            &lt;img id='tqr-rcmd-scn-cfrm-nm-i' width='70' height='70' src='%{act_uppic}%' alt='' style='
+                                                 border: 1px solid #bcbcbc;
+                                                border-radius: 15%;
+                                            '/&gt;
+                                        &lt;/a&gt;
+                                    &lt;/div&gt;
+                                    &lt;div id='tqr-rcmd-scn-cfrm-nm-mx'&gt;
+                                        &lt;a id='tqr-rcmd-scn-cfrm-nm' href='%{act_uhrf}%' style='text-decoration: none;'&gt;
+                                            &lt;div id='tqr-rcmd-scn-cfrm-psd' style='
+                                                margin-top: 5px;
+                                                
+                                                color: #434850;
+                                                font-size: 21px;
+                                            '&gt;%{act_ufn}%&lt;/div&gt;
+                                            &lt;div id='tqr-rcmd-scn-cfrm-fn' style='
+                                                display: block;
+                                                color: #3f729b;
+                                                font-size: 20px;
+                                                font-weight: bold;
+                                            '&gt;@%{act_upsd}%&lt;/div&gt;
+                                        &lt;/a&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/header&gt;
+                            &lt;div id='tqr-rcmd-scn-cfrm-bdy-mx' style='
+                                margin-top: 18px;
+                            '&gt;
+                                &lt;div id='tqr-rcmd-scn-cfrm-txt' style='
+                                    color: #31314C;
+                                    font-size: 15px;
+                                '&gt;
+                                    &lt;div id='tqr-rcmd-scn-cfrm-txt-hi' style='
+                                        margin-bottom: 5px;
+                                        text-align: left;
+                                    '&gt;Bonjour @%{tag_upsd}%,&lt;/div&gt;
+                                    &lt;div id='tqr-rcmd-scn-cfrm-txt-then' style='
+                                        text-align: left; 
+                                    '&gt;
+                                        &lt;p&gt;
+                                            &lt;a style='color: #3f729b; font-weight:bold;' href='%{act_uhrf}%'&gt;@%{act_upsd}%&lt;/a&gt; %{action_sentence}%. 
+                                        &lt;/p&gt;
+                                        &lt;p
+                                            style='
+                                                border: 1px solid #ddd;
+                                                border-radius: 6px;
+                                                padding: 15px;
+                                                box-sizing: border-box;
+                                                background: #fff;
+                                                
+                                                color: #303742;
+                                                font-size: 11px;
+                                                font-style: italic;
+                                                text-transform: uppercase;
+                                        '&gt;
+                                            %{preview}%
+                                        &lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div id='tqr-rcmd-scn-cfrm-btns-mx' style='
+                                    margin-top: 30px;
+                                '&gt;
+                                    &lt;div&gt;
+                                        &lt;a class='tqr-rcmd-scn-cfrm-btn' data-action='ja' href='%{perma}%' style='
+                                            display: block;
+                                            border: 1px solid;
+                                            border-radius: 6px;
+                                            width: 235px;
+                                            margin: 0px auto;
+                                            padding: 10px 0px;
+                                            background-color: #004589;
+                                            
+                                            color: #FFF;
+                                            font-size: 18px;
+                                            text-decoration: none;
+                                        '&gt;Afficher sur Trenqr&lt;/a&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                &lt;/div&gt;
+                &lt;div id='n-a-pan-r-footer' style='
+                    padding: 10px; 
+                    color: #000; 
+               '&gt;
+                    &lt;div id='' style='
+                         text-align: center;
+                    '&gt;
+                        &lt;a href='%{trenqr_http_root}%'&gt;&lt;img height='50px' src='%{trenqr_prod_img_root}%/r/fav2.png' /&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div id='' style='
+                         margin-top: 30px;
+                        padding: 0px 15px;
+                    ' &gt;
+                        &lt;p style='
+                            margin: 0;
+                            font-size: 13px;
+                        '&gt;
+                            Pour vous connecter, c'est par ici : &lt;a style='color: rgb(40,148,255);' href='%{trenqr_login_link}%'&gt;Connectez-vous&lt;/a&gt;
+                        &lt;/p&gt;
+                        &lt;p style='
+                           margin: 0;
+                           font-size: 13px;
+                        '&gt;
+                            Vous avez oublié votre mot de passe ? &lt;a style='color: rgb(40,148,255);' href='%{trenqr_start_rcvy_link}%'&gt;Réinitialisez votre mot de passe via ce lien&lt;/a&gt;
+                        &lt;/p&gt;
+                        &lt;div style='
+                            margin-top: 10px;
+                            padding: 0 15px;
+                            color: #a1a5af;
+                            font-size: 11px;
+                        ' &gt;
+                            Ce message est destiné à %{tag_ufn}% - %{tag_upsd}%, dont l'email est %{tag_ueml}%.
+                        &lt;/div&gt;
+                        &lt;div style='
+                            margin-top: 2px;
+                            padding: 0 15px;
+                            color: #a1a5af;
+                            font-size: 11px;
+                        ' &gt;
+                            &lt;a style='color: rgb(40,148,255);' href='%{trenqr_login_link}%'&gt;Connectez-vous&lt;/a&gt; à votre compte et modifiez vos paramètres si vous ne voulez plus recevoir de notifications par email.
+                        &lt;/div&gt;
+                        &lt;div style='
+                            margin-top: 2px;
+                            padding: 0 15px;
+                            color: #a1a5af;
+                            font-size: 11px;
+                        ' &gt;
+                            Trenqr est une marque déposée. DEUSLYNN ENTREPRISE, BP8415 69359 Lyon, FRANCE
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+            " />
+    </emodel>
+</email_models>

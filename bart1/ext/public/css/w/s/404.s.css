@@ -1,0 +1,124 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12 mai 2014, 10:45:57
+    Author     : Pierre Lallement <http://www.syel.totoandco.eu>
+*/
+
+/* Actual Styling */
+body{
+    background-color: rgb(253, 253, 253);
+    font-family: "Myriad Pro", "Calibri", Arial, Helvetica, sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+.nf_error_border{
+    border-color: red !important;
+}
+
+#nf_screensize{
+    position: relative;
+    width: 1351px;
+    padding-top: 95px;
+    margin: auto;
+}
+
+.nf_content{
+    width: 510px;
+    margin: auto;
+    border-radius: 3px;
+    padding: 20px;
+    font-size: 14px;
+    color: #000;
+}
+
+#nf_content_main{
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 15px;
+}
+
+#nf_content_title{
+    font-weight: bold;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    padding-left: 45px;
+    background: url('http://timg.ycgkit.com/files/img/w/warning.png') left center no-repeat;
+    background-size: 40px 30px;
+}
+
+#nf_content_text{
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+#nf_content_sub{
+    margin-top: 10px;
+    //background-color: #fff;
+    //border: 1px solid #999;
+}
+
+#nf_linkback{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+}
+#nf_linkback a{
+    color: #999;
+    text-decoration: none;
+}
+#nf_linkback a:hover{
+    text-decoration: underline;
+}
+
+#nf_linkhome{
+    display: inline-block;
+    float: right;
+    font-weight: bold;
+    font-size: 16px;
+}
+#nf_linkhome a{
+    color: #999;
+    text-decoration: none;
+}
+#nf_linkhome a:hover{
+    text-decoration: underline;
+}
+
+// Pour le placement des doodles, ajouter une div par illustration avec
+// le dessin en background.
+#nf_doodle{
+    position: relative;
+}
+
+#nf_notfound_big{
+    margin: 0 auto 20px auto;
+    display: block;
+    width: 267px;
+/*    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;*/
+    top: 265px;
+    font-size: 10em;
+    font-weight: bold;
+    z-index: -1;
+}
+
+#nf_notfound_big p{
+    color: rgb(253, 253, 253);
+    text-shadow:
+        2px 2px 0 #000,
+        2px -2px 0 #000,
+        -2px -2px 0 #000,
+        -2px 2px 0 #000;
+}

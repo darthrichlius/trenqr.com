@@ -1,0 +1,15 @@
+<h1>List of articles</h1>
+
+<div>
+	<div ng-repeat="article in articles">
+		<div>
+			<div>title : {{article.title}}</div>
+			<div>message</div>
+			<div>{{article.message}}</div>
+			<div>
+				<a href="#/articles/comments/{{article.id}}">{{article.comments.length}} comments</a>
+			</div>
+		</div>
+		<hr>
+	</div>
+</div>

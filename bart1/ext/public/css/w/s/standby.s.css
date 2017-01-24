@@ -1,0 +1,243 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28 avr. 2014, 11:33:40
+    Author     : Pierre Lallement <http://www.syel.totoandco.eu>
+*/
+
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Actual Styling */
+body{
+    background-color: #fffdfa;
+    font-family: "Myriad Pro", "Calibri", Arial, Helvetica, sans-serif;
+}
+
+a:visited{
+    color: #00e;
+}
+
+.clear{
+    clear: both;
+}
+
+.sb_error_border{
+    border-color: red !important;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+#sb_screensize{
+    width: 1351px;
+    padding-top: 45px;
+    margin: auto;
+}
+
+#sb_content{
+    font-size: 14px;
+    text-align: justify;
+    width: 520px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+#sb_content h1{
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+#sb_content p{
+    margin-bottom: 15px;
+}
+
+#sb_btn_wrapper{
+    display: none;
+    margin-top: 25px;
+    height: 25px;
+    text-align: right;
+}
+
+#sb_loadinggroup{
+    display: block;
+    margin-top: 50px;
+}
+
+#sb_loadigtitle{
+    display: inline-block;
+    font-size: 18px;
+    padding-right: 30px;
+    margin-bottom: 5px;
+    background: transparent url('http://timg.ycgkit.com/files/img/w/anim_loading.gif') center right no-repeat;
+}
+
+#sb_loadingbar{
+    display: block;
+    width: 100%;
+    height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#sb_loadingfill{
+    display: block;
+    width: 0%;
+    height: 20px;
+    background-color: #003A78;
+}
+
+#sb_loadinghints{
+    height: 14px;
+}
+
+#sb_loadinghints_zone{
+    margin: 30px auto;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    background: #eee;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#sb_loadingstatus{
+    font-family: "Calibri", "Myriad Pro", arial, sans-serif;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 15px;
+    max-width: 400px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+#sb_continue{
+     padding: 7px 35px;
+     border-radius: 4px;
+     border: 1px solid #4EBF4E;
+     background: url('../images/btn_green_gradient.jpg') repeat-x;
+     background: -webkit-linear-gradient(#7BD77B, #4EBF4E); /* For Safari 5.1 to 6.0 */
+     background: -o-linear-gradient(#7BD77B, #4EBF4E); /* For Opera 11.1 to 12.0 */
+     background: -moz-linear-gradient(#7BD77B, #4EBF4E); /* For Firefox 3.6 to 15 */
+     background: linear-gradient(#7BD77B, #4EBF4E); /* Standard syntax */    
+     
+     color: #fff;
+     text-decoration: none;
+     font-size: 14px;
+}
+#sb_continue:active{
+     background: url('../images/btn_green_gradient_reverse.jpg') repeat-x;
+     background: -webkit-linear-gradient(#4EBF4E, #7BD77B); /* For Safari 5.1 to 6.0 */
+     background: -o-linear-gradient(#4EBF4E, #7BD77B); /* For Opera 11.1 to 12.0 */
+     background: -moz-linear-gradient(#4EBF4E, #7BD77B); /* For Firefox 3.6 to 15 */
+     background: linear-gradient(#4EBF4E, #7BD77B); /* Standard syntax */ 
+}
+
+
+/* ------- */
+
+.general_footer{
+    font-size: 12px;
+    display: block;
+    margin: 10px auto 30px auto;
+    padding: 8px;
+    border-radius: 5px;
+    height: 40px;
+    width: 562px;
+    margin-bottom: 20px;
+}
+
+.footerbox{
+    vertical-align: top;
+    display: inline-block;
+    width: 55px;
+    height: 1px;
+    float: left;
+}
+
+.footersite{
+    display: inline-block;
+    float: left;
+}
+
+.stretch{
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+
+.footercontent{
+    display: inline-block;
+    text-align: right;
+    width: inherit; 
+}
+
+.footerlink{
+    display: inline-block;
+    color: #111;
+    margin: 0 13px 20px 0;
+}
+.footerlink:first-child{
+    margin: 0 40px 20px 0;
+}
+.footerlink:last-of-type{
+    margin: 0 0 20px 0;
+}
+.footerlink a, .pfl_footerlink a:visited{
+    color: #111;
+    text-decoration: none;
+}
+.footerlink a:hover{
+    text-decoration: underline;
+}

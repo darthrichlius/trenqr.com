@@ -1,0 +1,1849 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE def.pages SYSTEM "../dtd/dtd.pages.def.dtd">
+<!--
+[NOTE 29-09-15]
+    Les textes sont fait pour mettre en avant les mots : "images"
+-->
+
+<def.pages>
+    <page id="TMLNR_GTPG_WLC">
+        <creadate value="2014-04-07" />
+        <last_mod_date value="2015-09-2015" />
+        <!-- **** -->
+        <page.id value="TMLNR" />
+        <page.view.model value="TMLNR_GTPG_WLC" />
+        <page.name>
+            <lang id="fr" value="profil" />
+            <lang id="en" value="timeliner" />
+            <lang id="us" value="timeliner" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="{wos/datx:oufn} (@{wos/datx:oupsd}) - Trenqr • Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="{wos/datx:oufn} (@{wos/datx:oupsd}) - Trenqr • Friends and passions on photos &amp; videos" />
+            <lang id="us" value="{wos/datx:oufn} (@{wos/datx:oupsd}) - Trenqr • Friends and passions on photos &amp; videos" />
+        </page.title> 
+        <page.keywords>
+            <lang id="fr" value="{wos/datx:oufn}, {wos/datx:oupsd}, réseaux sociaux, communauté en ligne, plateforme communautaire, images, hébergement d'images, images du quotidien, images de ma vie, images qui buzz, gifs, gifs animés, tendances, ami, communauté cool, trenqr" />
+            <lang id="en" value="{wos/datx:oufn}, {wos/datx:oupsd}, social network, images, pictures, images hosting, life images, buzzing pictures, gifs, animated gifs, visual storytelling, trends, friends community, fun community, cool community, trenqr" />
+            <lang id="us" value="{wos/datx:oufn}, {wos/datx:oupsd}, social network, images, pictures, images hosting, life images, buzzing pictures, gifs, animated gifs, visual storytelling, trends, friends community, fun community, cool community, trenqr" />
+        </page.keywords> 
+        <page.description>
+            <lang id="fr" value="{wos/datx:oufn} (@{wos/datx:oupsd}) : {wos/datx:head_outesty} - Trenqr • Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="{wos/datx:oufn} (@{wos/datx:oupsd}) : {wos/datx:head_outesty} - Trenqr • Friends and passions on photos &amp; videos" />
+            <lang id="us" value="{wos/datx:oufn} (@{wos/datx:oupsd}) : {wos/datx:head_outesty} - Trenqr • Friends and passions on photos &amp; videos" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+        
+        <!-- TQ META PROPERTIES --> 
+        <page.meta.tq>
+            <tq.meta id="pg" value="{wos/datx:pagid}" />
+            <tq.meta id="ver" value="{wos/datx:pgakxver}" />
+            <tq.meta id="ueid" value="{wos/datx:oueid}" />
+            <tq.meta id="uppic" value="{wos/datx:ouppic}" />
+            <tq.meta id="ufn" value="{wos/datx:oufn}" />
+            <tq.meta id="upsd" value="{wos/datx:oupsd}" />
+            <tq.meta id="uhref" value="{wos/datx:ouhref}" />
+             <!-- UDL peut ne pas exister. Cette donner ne devrait pas être obligatoire. Elle ne sert en rien au traitement au niveau de FE -->
+            <tq.meta id="udl" value="{wos/datx:oudl}" />
+            <tq.meta id="ucity" value="{wos/datx:oucity_id}" />
+            <tq.meta id="ucn" value="{wos/datx:oucn}" />
+        </page.meta.tq>
+        
+        <!-- OG META PROPERTIES --> 
+        <!-- 
+            * [10-08-14] OpenGraph appartient à FB. Aussi, fournir des informations via ces balises est dansgereux. 
+            * GooglePlus n'utilise que la balise titile. Ils utilisent aussi la balise twitter:title
+            * On va donc ne transmettre que le titre de la page et le type.
+        -->
+        <!-- OG META PROPERTIES --> 
+        <page.meta.og>
+            <og.meta id="type" value="profile" />
+            <og.meta id="title" value="{wos/datx:oufn} (@{wos/datx:oupsd}) on Trenqr" />
+            <og.meta id="url" value="{wos/systx:prod_domain}/{wos/datx:oupsd}" />
+            <og.meta id="image" value ="{wos/datx:ouppic}" />
+            <og.meta id="image:width" value ="150px" />
+        </page.meta.og>
+        
+        <!-- TWT META PROPERTIES --> 
+        <page.meta.twitter>
+            <twt.meta id="title" value="{wos/datx:oufn} (@{wos/datx:oupsd}) on Trenqr" />
+            <twt.meta id="url" value="{wos/systx:prod_domain}/{wos/datx:oupsd}" />
+        </page.meta.twitter>
+        
+        <!-- AUTRES METAS -->
+        <page.robots value="index,follow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+        <!-- [DEPUIS 25-09-15] @author BOR -->
+        <page.customs>
+             <page.custom id='0' value="&lt;link rel='canonical' href='{wos/systx:prod_domain}/{wos/datx:oupsd}' /&gt;" />
+<!--             <page.custom id='1' value="
+                &lt;script&gt;
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-68119085-1', 'auto');
+                ga('send', 'pageview');
+                &lt;/script&gt;" 
+             />-->
+             <page.custom id='2' value="&lt;meta name='viewport' content='width=device-width, initial-scale=1.0'&gt;" />
+             <page.custom id='3' value="&lt;meta property='fb:app_id' content='1492102444425463'&gt;" />
+        </page.customs>
+    </page>
+	
+    <page id="TMLNR_GTPG_RU">
+        <creadate value="2014-04-07" />
+        <last_mod_date value="2015-09-2015" />
+        <!-- **** -->
+        <page.id value="TMLNR" />
+        <page.view.model value="TMLNR_GTPG_RU" />
+        <page.name>
+            <lang id="fr" value="profil" />
+            <lang id="en" value="timeliner" />
+            <lang id="us" value="timeliner" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="{wos/datx:oufn} (@{wos/datx:oupsd}) - Trenqr • Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="{wos/datx:oufn} (@{wos/datx:oupsd}) - Trenqr • Friends and passions on photos &amp; videos" />
+            <lang id="us" value="{wos/datx:oufn} (@{wos/datx:oupsd}) - Trenqr • Friends and passions on photos &amp; videos" />
+        </page.title> 
+        <page.keywords>
+            <lang id="fr" value="{wos/datx:oufn}, {wos/datx:oupsd}, réseaux sociaux, communauté en ligne, plateforme communautaire, images, hébergement d'images, images du quotidien, images de ma vie, images qui buzz, gifs, gifs animés, tendances, ami, communauté cool, trenqr" />
+            <lang id="en" value="{wos/datx:oufn}, {wos/datx:oupsd}, social network, images, pictures, images hosting, life images, buzzing pictures, gifs, animated gifs, visual storytelling, trends, friends community, fun community, cool community, trenqr" />
+            <lang id="us" value="{wos/datx:oufn}, {wos/datx:oupsd}, social network, images, pictures, images hosting, life images, buzzing pictures, gifs, animated gifs, visual storytelling, trends, friends community, fun community, cool community, trenqr" />
+        </page.keywords> 
+        <page.description>
+            <lang id="fr" value="{wos/datx:oufn} (@{wos/datx:oupsd}) : {wos/datx:head_outesty} - Trenqr • Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="{wos/datx:oufn} (@{wos/datx:oupsd}) : {wos/datx:head_outesty} - Trenqr • Friends and passions on photos &amp; videos" />
+            <lang id="us" value="{wos/datx:oufn} (@{wos/datx:oupsd}) : {wos/datx:head_outesty} - Trenqr • Friends and passions on photos &amp; videos" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+        
+        <!-- TQ META PROPERTIES --> 
+        <page.meta.tq>
+            <tq.meta id="pg" value="{wos/datx:pagid}" />
+            <tq.meta id="ver" value="{wos/datx:pgakxver}" />
+            <tq.meta id="ueid" value="{wos/datx:oueid}" />
+            <tq.meta id="uppic" value="{wos/datx:ouppic}" />
+            <tq.meta id="ufn" value="{wos/datx:oufn}" />
+            <tq.meta id="upsd" value="{wos/datx:oupsd}" />
+            <tq.meta id="uhref" value="{wos/datx:ouhref}" />
+             <!-- UDL peut ne pas exister. Cette donner ne devrait pas être obligatoire. Elle ne sert en rien au traitement au niveau de FE -->
+            <tq.meta id="udl" value="{wos/datx:oudl}" />
+            <tq.meta id="ucity" value="{wos/datx:oucity_id}" />
+            <tq.meta id="ucn" value="{wos/datx:oucn}" />
+        </page.meta.tq>
+        
+       <!-- OG META PROPERTIES --> 
+        <page.meta.og>
+            <og.meta id="type" value="profile" />
+            <og.meta id="title" value="{wos/datx:oufn} (@{wos/datx:oupsd}) on Trenqr" />
+            <og.meta id="url" value="{wos/systx:prod_domain}/{wos/datx:oupsd}" />
+            <og.meta id="image" value ="{wos/datx:ouppic}" />
+            <og.meta id="image:width" value ="150px" />
+        </page.meta.og>
+        
+        <!-- TWT META PROPERTIES --> 
+        <page.meta.twitter>
+            <twt.meta id="title" value="{wos/datx:oufn} (@{wos/datx:oupsd}) on Trenqr" />
+            <twt.meta id="url" value="{wos/systx:prod_domain}/{wos/datx:oupsd}" />
+        </page.meta.twitter>
+        
+        <!-- AUTRES METAS -->
+        <page.robots value="noindex,nofollow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+        <!-- [DEPUIS 25-09-15] @author BOR -->
+        <page.customs>
+             <page.custom id='0' value="&lt;link rel='canonical' href='{wos/systx:prod_domain}/{wos/datx:oupsd}' /&gt;" />
+             <page.custom id='1' value="&lt;meta property='fb:app_id' content='1492102444425463'&gt;" />
+        </page.customs>
+    </page>
+	
+    <page id="TMLNR_GTPG_RO">
+        <creadate value="2014-04-08" />
+        <last_mod_date value="2015-09-2015" />
+        <!-- **** -->
+        <page.id value="TMLNR" />
+        <page.view.model value="TMLNR_GTPG_RO" />
+        <page.name>
+            <lang id="fr" value="profil" />
+            <lang id="en" value="timeliner" />
+            <lang id="us" value="timeliner" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="{wos/datx:oufn} (@{wos/datx:oupsd}) - Trenqr • Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="{wos/datx:oufn} (@{wos/datx:oupsd}) - Trenqr • Friends and passions on photos &amp; videos" />
+            <lang id="us" value="{wos/datx:oufn} (@{wos/datx:oupsd}) - Trenqr • Friends and passions on photos &amp; videos" />
+        </page.title> 
+        <page.keywords>
+            <lang id="fr" value="{wos/datx:oufn}, {wos/datx:oupsd}, réseaux sociaux, communauté en ligne, plateforme communautaire, images, hébergement d'images, images du quotidien, images de ma vie, images qui buzz, gifs, gifs animés, tendances, ami, communauté cool, trenqr" />
+            <lang id="en" value="{wos/datx:oufn}, {wos/datx:oupsd}, social network, images, pictures, images hosting, life images, buzzing pictures, gifs, animated gifs, visual storytelling, trends, friends community, fun community, cool community, trenqr" />
+            <lang id="us" value="{wos/datx:oufn}, {wos/datx:oupsd}, social network, images, pictures, images hosting, life images, buzzing pictures, gifs, animated gifs, visual storytelling, trends, friends community, fun community, cool community, trenqr" />
+        </page.keywords> 
+        <page.description>
+            <lang id="fr" value="{wos/datx:oufn} (@{wos/datx:oupsd}) : {wos/datx:head_outesty} - Trenqr • Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="{wos/datx:oufn} (@{wos/datx:oupsd}) : {wos/datx:head_outesty} - Trenqr • Friends and passions on photos &amp; videos" />
+            <lang id="us" value="{wos/datx:oufn} (@{wos/datx:oupsd}) : {wos/datx:head_outesty} - Trenqr • Friends and passions on photos &amp; videos" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+        
+        <!-- TQ META PROPERTIES --> 
+        <page.meta.tq>
+            <tq.meta id="pg" value="{wos/datx:pagid}" />
+            <tq.meta id="ver" value="{wos/datx:pgakxver}" />
+            <tq.meta id="ueid" value="{wos/datx:oueid}" />
+            <tq.meta id="uppic" value="{wos/datx:ouppic}" />
+            <tq.meta id="ufn" value="{wos/datx:oufn}" />
+            <tq.meta id="upsd" value="{wos/datx:oupsd}" />
+            <tq.meta id="uhref" value="{wos/datx:ouhref}" />
+             <!-- UDL peut ne pas exister. Cette donner ne devrait pas être obligatoire. Elle ne sert en rien au traitement au niveau de FE -->
+            <tq.meta id="udl" value="{wos/datx:oudl}" />
+            <tq.meta id="ucity" value="{wos/datx:oucity_id}" />
+            <tq.meta id="ucn" value="{wos/datx:oucn}" />
+        </page.meta.tq>
+        
+        <!-- OG META PROPERTIES --> 
+        <page.meta.og>
+            <og.meta id="type" value="profile" />
+            <og.meta id="title" value="{wos/datx:oufn} (@{wos/datx:oupsd}) on Trenqr" />
+            <og.meta id="url" value="{wos/systx:prod_domain}/{wos/datx:oupsd}" />
+            <og.meta id="image" value ="{wos/datx:ouppic}" />
+            <og.meta id="image:width" value ="150px" />
+        </page.meta.og>
+        
+        <!-- TWT META PROPERTIES --> 
+        <page.meta.twitter>
+            <twt.meta id="title" value="{wos/datx:oufn} (@{wos/datx:oupsd}) on Trenqr" />
+            <twt.meta id="url" value="{wos/systx:prod_domain}/{wos/datx:oupsd}" />
+        </page.meta.twitter>
+        
+        <!-- AUTRES METAS -->
+        <page.robots value="noindex,nofollow,noimageindex,noarchive" />  
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+        <!-- [DEPUIS 25-09-15] @author BOR -->
+        <page.customs>
+             <page.custom id='0' value="&lt;link rel='canonical' href='{wos/systx:prod_domain}/{wos/datx:oupsd}' /&gt;" />
+             <page.custom id='1' value="&lt;meta property='fb:app_id' content='1492102444425463'&gt;" />
+        </page.customs>
+    </page>
+	
+    <page id="TRPG_GTPG_WLC">
+        <creadate value="2014-04-10" />
+        <last_mod_date value="2015-09-29" />
+        <!-- **** -->
+        <page.id value="TRPG" />
+        <page.view.model value="TRPG_GTPG_WLC" />
+        <page.name>
+            <lang id="fr" value="tendance" />
+            <lang id="en" value="trend" />
+            <lang id="us" value="trend" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="{wos/datx:trtitle} -  Trenqr • Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="{wos/datx:trtitle} -  Trenqr • Friends and passions on photos &amp; videos" />
+            <lang id="us" value="{wos/datx:trtitle} -  Trenqr • Friends and passions on photos &amp; videos" />
+        </page.title> 
+        <page.keywords>
+            <lang id="fr" value="tendances, créativité, réseaux sociaux, communauté en ligne, plateforme communautaire, images, hébergement d'images, images du quotidien, images de ma vie, images qui buzz, gifs, gifs animés, communauté cool, trenqr" />
+            <lang id="en" value="trends, creativity, social network, images, pictures, images hosting, life images, buzzing pictures, gifs, animated gifs, visual storytelling, friends community, fun community, cool community, trenqr" />
+            <lang id="us" value="trends, creativity, social network, images, pictures, images hosting, life images, buzzing pictures, gifs, animated gifs, visual storytelling, friends community, fun community, cool community, trenqr" />
+        </page.keywords> 
+        <page.description>
+            <lang id="fr" value="{wos/datx:trdesc}" />
+            <lang id="en" value="{wos/datx:trdesc}" />
+            <lang id="us" value="{wos/datx:trdesc}" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+        
+        <!-- TQ META PROPERTIES --> 
+        <page.meta.tq>
+            <tq.meta id="pg" value="{wos/datx:pagid}" />
+            <tq.meta id="ver" value="{wos/datx:pgakxver}" />
+            <tq.meta id="ueid" value="{wos/datx:oueid}" />
+            <tq.meta id="uppic" value="{wos/datx:ouppic}" />
+            <tq.meta id="ufn" value="{wos/datx:oufn}" />
+            <tq.meta id="upsd" value="{wos/datx:oupsd}" />
+            <tq.meta id="uhref" value="{wos/datx:ouhref}" />
+            
+            <tq.meta id="trid" value="{wos/datx:trid}" />
+            <tq.meta id="trtitle" value="{wos/datx:trtitle}" />
+            <tq.meta id="trdesc" value="{wos/datx:trdesc}" />
+            <tq.meta id="trcat" value="{wos/datx:trcat}" />
+            <tq.meta id="trpart" value="{wos/datx:trpart}" />
+            <!--<tq.meta id="trgrat" value="{wos/datx:trgrat}" />-->
+        </page.meta.tq>
+        
+        <!-- OG META PROPERTIES --> 
+        <page.meta.og>
+            <og.meta id="title" value="{wos/datx:trtitle} - @{wos/datx:oupsd} on Trenqr Trends" />
+            <og.meta id="url" value="{wos/systx:prod_domain}{wos/datx:trhref}" />
+            <og.meta id="image" value ="{wos/datx:head_trcov}" />
+        </page.meta.og>
+        
+        <!-- TWT META PROPERTIES --> 
+        <page.meta.twitter>
+            <twt.meta id="title" value="{wos/datx:trtitle} - @{wos/datx:oupsd} on Trenqr Trends" />
+            <twt.meta id="url" value="{wos/systx:prod_domain}{wos/datx:trhref}" />
+        </page.meta.twitter>
+        
+        <!-- AUTRES METAS -->
+        <page.robots value="index,follow,noimageindex,noarchive" /> 
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+        <!-- [DEPUIS 25-09-15] @author BOR -->
+        <page.customs>
+             <page.custom id='0' value="&lt;link rel='canonical' href='{wos/systx:prod_domain}/trend/{wos/datx:trid}/{wos/datx:head_trtlehrf}' /&gt;" />
+             <page.custom id='1' value="&lt;link rel='alternate' href='{wos/systx:prod_domain}/tendance/{wos/datx:trid}/{wos/datx:head_trtlehrf}' hreflang='fr' /&gt;" />
+             <page.custom id='2' value="&lt;link rel='alternate' href='{wos/systx:prod_domain}/trend/{wos/datx:trid}/{wos/datx:head_trtlehrf}' hreflang='en' /&gt;" />
+<!--             <page.custom id='3' value="
+                &lt;script&gt;
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-68119085-1', 'auto');
+                ga('send', 'pageview');
+                &lt;/script&gt;" 
+             />-->
+             <page.custom id='4' value="&lt;meta property='fb:app_id' content='1492102444425463'&gt;" />
+        </page.customs>
+    </page>
+	
+    <page id="TRPG_GTPG_RU">
+        <creadate value="2014-04-11" />
+        <last_mod_date value="2015-09-29" />
+        <!-- **** -->
+        <page.id value="TRPG" />
+        <page.view.model value="TRPG_GTPG_RU" />
+        <page.name>
+            <lang id="fr" value="tendance" />
+            <lang id="en" value="trend" />
+            <lang id="us" value="trend" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="{wos/datx:trtitle} - Trenqr • Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="{wos/datx:trtitle} - Trenqr • Friends and passions on photos &amp; videos" />
+            <lang id="us" value="{wos/datx:trtitle} - Trenqr • Friends and passions on photos &amp; videos" />
+        </page.title> 
+        <page.keywords>
+            <lang id="fr" value="tendances, créativité, réseaux sociaux, communauté en ligne, plateforme communautaire, images, hébergement d'images, images du quotidien, images de ma vie, images qui buzz, gifs, gifs animés, communauté cool, trenqr" />
+            <lang id="en" value="trends, creativity, social network, images, pictures, images hosting, life images, buzzing pictures, gifs, animated gifs, visual storytelling, friends community, fun community, cool community, trenqr" />
+            <lang id="us" value="trends, creativity, social network, images, pictures, images hosting, life images, buzzing pictures, gifs, animated gifs, visual storytelling, friends community, fun community, cool community, trenqr" />
+        </page.keywords> 
+        <page.description>
+            <lang id="fr" value="{wos/datx:trdesc}" />
+            <lang id="en" value="{wos/datx:trdesc}" />
+            <lang id="us" value="{wos/datx:trdesc}" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+        
+        <!-- TQ META PROPERTIES --> 
+        <page.meta.tq>
+            <tq.meta id="pg" value="{wos/datx:pagid}" />
+            <tq.meta id="ver" value="{wos/datx:pgakxver}" />
+            <tq.meta id="ueid" value="{wos/datx:oueid}" />
+            <tq.meta id="uppic" value="{wos/datx:ouppic}" />
+            <tq.meta id="ufn" value="{wos/datx:oufn}" />
+            <tq.meta id="upsd" value="{wos/datx:oupsd}" />
+            <tq.meta id="uhref" value="{wos/datx:ouhref}" />
+            
+            <tq.meta id="trid" value="{wos/datx:trid}" />
+            <tq.meta id="trtitle" value="{wos/datx:trtitle}" />
+            <tq.meta id="trdesc" value="{wos/datx:trdesc}" />
+            <tq.meta id="trcat" value="{wos/datx:trcat}" />
+            <tq.meta id="trpart" value="{wos/datx:trpart}" />
+            <!--<tq.meta id="trgrat" value="{wos/datx:trgrat}" />-->
+        </page.meta.tq>
+        
+        <!-- OG META PROPERTIES --> 
+        <page.meta.og>
+            <og.meta id="title" value="{wos/datx:trtitle} - @{wos/datx:oupsd} on Trenqr Trends" />
+            <og.meta id="url" value="{wos/systx:prod_domain}{wos/datx:trhref}" />
+            <og.meta id="image" value ="{wos/datx:head_trcov}" />
+        </page.meta.og>
+        
+        <!-- TWT META PROPERTIES --> 
+        <page.meta.twitter>
+            <twt.meta id="title" value="{wos/datx:trtitle} - @{wos/datx:oupsd} on Trenqr Trends" />
+            <twt.meta id="url" value="{wos/systx:prod_domain}{wos/datx:trhref}" />
+        </page.meta.twitter>
+        
+        <!-- AUTRES METAS -->
+        <page.robots value="noindex,nofollow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+        <!-- [DEPUIS 25-09-15] @author BOR -->
+        <page.customs>
+            <page.custom id='0' value="&lt;meta http-equiv='X-UA-Compatible' content='IE=edge' &gt;" />
+            <page.custom id='1' value="&lt;meta name='viewport' content='width=device-width, initial-scale=1.0'&gt;" />
+            <page.custom id='2' value="&lt;link rel='canonical' href='{wos/systx:prod_domain}/trend/{wos/datx:trid}/{wos/datx:head_trtlehrf}' /&gt;" />
+            <page.custom id='3' value="&lt;link rel='alternate' href='{wos/systx:prod_domain}/tendance/{wos/datx:trid}/{wos/datx:head_trtlehrf}' hreflang='fr' /&gt;" />
+            <page.custom id='4' value="&lt;link rel='alternate' href='{wos/systx:prod_domain}/trend/{wos/datx:trid}/{wos/datx:head_trtlehrf}' hreflang='en' /&gt;" />
+            <page.custom id='5' value="&lt;meta property='fb:app_id' content='1492102444425463'&gt;" />
+        </page.customs>
+    </page>
+	
+    <page id="TRPG_GTPG_RFOL">
+        <creadate value="2014-04-11" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="TRPG" />
+        <page.view.model value="TRPG_GTPG_RFOL" />
+        <page.name>
+            <lang id="fr" value="tendance" />
+            <lang id="en" value="trend" />
+            <lang id="us" value="trend" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="{wos/datx:trtitle} - Trenqr • Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="{wos/datx:trtitle} - Trenqr • Friends and passions on photos &amp; videos" />
+            <lang id="us" value="{wos/datx:trtitle} - Trenqr • Friends and passions on photos &amp; videos" />
+        </page.title> 
+        <page.keywords>
+            <lang id="fr" value="tendances, créativité, réseaux sociaux, communauté en ligne, plateforme communautaire, images, hébergement d'images, images du quotidien, images de ma vie, images qui buzz, gifs, gifs animés, communauté cool, trenqr" />
+            <lang id="en" value="trends, creativity, social network, images, pictures, images hosting, life images, buzzing pictures, gifs, animated gifs, visual storytelling, friends community, fun community, cool community, trenqr" />
+            <lang id="us" value="trends, creativity, social network, images, pictures, images hosting, life images, buzzing pictures, gifs, animated gifs, visual storytelling, friends community, fun community, cool community, trenqr" />
+        </page.keywords> 
+        <page.description>
+            <lang id="fr" value="{wos/datx:trdesc}" />
+            <lang id="en" value="{wos/datx:trdesc}" />
+            <lang id="us" value="{wos/datx:trdesc}" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" /> -->
+        
+        <!-- TQ META PROPERTIES --> 
+        <page.meta.tq>
+            <tq.meta id="pg" value="{wos/datx:pagid}" />
+            <tq.meta id="ver" value="{wos/datx:pgakxver}" />
+            <tq.meta id="ueid" value="{wos/datx:oueid}" />
+            <tq.meta id="uppic" value="{wos/datx:ouppic}" />
+            <tq.meta id="ufn" value="{wos/datx:oufn}" />
+            <tq.meta id="upsd" value="{wos/datx:oupsd}" />
+            <tq.meta id="uhref" value="{wos/datx:ouhref}" />
+            
+            <tq.meta id="trid" value="{wos/datx:trid}" />
+            <tq.meta id="trtitle" value="{wos/datx:trtitle}" />
+            <tq.meta id="trdesc" value="{wos/datx:trdesc}" />
+            <tq.meta id="trcat" value="{wos/datx:trcat}" />
+            <tq.meta id="trpart" value="{wos/datx:trpart}" />
+<!--            <tq.meta id="trgrat" value="{wos/datx:trgrat}" />-->
+        </page.meta.tq>
+        
+        <!-- OG META PROPERTIES --> 
+        <page.meta.og>
+            <og.meta id="title" value="{wos/datx:trtitle} - @{wos/datx:oupsd} on Trenqr Trends" />
+            <og.meta id="url" value="{wos/systx:prod_domain}{wos/datx:trhref}" />
+            <og.meta id="image" value ="{wos/datx:head_trcov}" />
+        </page.meta.og>
+        
+        <!-- TWT META PROPERTIES --> 
+        <page.meta.twitter>
+            <twt.meta id="title" value="{wos/datx:trtitle} - @{wos/datx:oupsd} on Trenqr Trends" />
+            <twt.meta id="url" value="{wos/systx:prod_domain}{wos/datx:trhref}" />
+        </page.meta.twitter>
+        
+        <!-- AUTRES METAS -->
+        <page.robots value="noindex,nofollow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+        <!-- [DEPUIS 25-09-15] @author BOR -->
+        <page.customs>
+            <page.custom id='0' value="&lt;meta http-equiv='X-UA-Compatible' content='IE=edge' &gt;" />
+            <page.custom id='1' value="&lt;meta name='viewport' content='width=device-width, initial-scale=1.0'&gt;" />
+            <page.custom id='2' value="&lt;link rel='canonical' href='{wos/systx:prod_domain}/trend/{wos/datx:trid}/{wos/datx:head_trtlehrf}' /&gt;" />
+            <page.custom id='3' value="&lt;link rel='alternate' href='{wos/systx:prod_domain}/tendance/{wos/datx:trid}/{wos/datx:head_trtlehrf}' hreflang='fr' /&gt;" />
+            <page.custom id='4' value="&lt;link rel='alternate' href='{wos/systx:prod_domain}/trend/{wos/datx:trid}/{wos/datx:head_trtlehrf}' hreflang='en' /&gt;" />
+            <page.custom id='5' value="&lt;meta property='fb:app_id' content='1492102444425463'&gt;" />
+        </page.customs>
+    </page>
+	
+    <page id="TRPG_GTPG_RO">
+        <creadate value="2014-04-11" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="TRPG" />
+        <page.view.model value="TRPG_GTPG_RO" />
+        <page.name>
+            <lang id="fr" value="tendance" />
+            <lang id="en" value="trend" />
+            <lang id="us" value="trend" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="{wos/datx:trtitle} - Trenqr • Friends and passions on photos &amp; videos" />
+            <lang id="en" value="{wos/datx:trtitle} - Trenqr • Friends and passions on photos &amp; videos" />
+            <lang id="us" value="{wos/datx:trtitle} - Trenqr • Friends and passions on photos &amp; videos" />
+        </page.title> 
+        <page.keywords>
+            <lang id="fr" value="tendances, créativité, réseaux sociaux, communauté en ligne, plateforme communautaire, images, hébergement d'images, images du quotidien, images de ma vie, images qui buzz, gifs, gifs animés, communauté cool, trenqr" />
+            <lang id="en" value="trends, creativity, social network, images, pictures, images hosting, life images, buzzing pictures, gifs, animated gifs, visual storytelling, friends community, fun community, cool community, trenqr" />
+            <lang id="us" value="trends, creativity, social network, images, pictures, images hosting, life images, buzzing pictures, gifs, animated gifs, visual storytelling, friends community, fun community, cool community, trenqr" />
+        </page.keywords> 
+        <page.description>
+            <lang id="fr" value="{wos/datx:trdesc}" />
+            <lang id="en" value="{wos/datx:trdesc}" />
+            <lang id="us" value="{wos/datx:trdesc}" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" /> -->
+        
+        <!-- TQ META PROPERTIES --> 
+        <page.meta.tq>
+            <tq.meta id="pg" value="{wos/datx:pagid}" />
+            <tq.meta id="ver" value="{wos/datx:pgakxver}" />
+            <tq.meta id="ueid" value="{wos/datx:oueid}" />
+            <tq.meta id="uppic" value="{wos/datx:ouppic}" />
+            <tq.meta id="ufn" value="{wos/datx:oufn}" />
+            <tq.meta id="upsd" value="{wos/datx:oupsd}" />
+            <tq.meta id="uhref" value="{wos/datx:ouhref}" />
+            
+            <tq.meta id="trid" value="{wos/datx:trid}" />
+            <tq.meta id="trtitle" value="{wos/datx:trtitle}" />
+            <tq.meta id="trdesc" value="{wos/datx:trdesc}" />
+            <tq.meta id="trcat" value="{wos/datx:trcat}" />
+            <tq.meta id="trpart" value="{wos/datx:trpart}" />
+            <!--<tq.meta id="trgrat" value="{wos/datx:trgrat}" />-->
+        </page.meta.tq>
+        
+        <!-- OG META PROPERTIES --> 
+        <page.meta.og>
+            <og.meta id="title" value="{wos/datx:trtitle} - @{wos/datx:oupsd} on Trenqr Trends" />
+            <og.meta id="url" value="{wos/systx:prod_domain}{wos/datx:trhref}" />
+            <og.meta id="image" value ="{wos/datx:head_trcov}" />
+        </page.meta.og>
+        
+        <!-- TWT META PROPERTIES --> 
+        <page.meta.twitter>
+            <twt.meta id="title" value="{wos/datx:trtitle} - @{wos/datx:oupsd} on Trenqr Trends" />
+            <twt.meta id="url" value="{wos/systx:prod_domain}{wos/datx:trhref}" />
+        </page.meta.twitter>
+        
+        <!-- AUTRES METAS -->
+        <page.robots value="noindex,nofollow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+        <!-- [DEPUIS 25-09-15] @author BOR -->
+        <page.customs>
+             <page.custom id='0' value="&lt;link rel='canonical' href='{wos/systx:prod_domain}/trend/{wos/datx:trid}/{wos/datx:head_trtlehrf}' /&gt;" />
+             <page.custom id='1' value="&lt;link rel='alternate' href='{wos/systx:prod_domain}/tendance/{wos/datx:trid}/{wos/datx:head_trtlehrf}' hreflang='fr' /&gt;" />
+             <page.custom id='2' value="&lt;link rel='alternate' href='{wos/systx:prod_domain}/trend/{wos/datx:trid}/{wos/datx:head_trtlehrf}' hreflang='en' /&gt;" />
+             <page.custom id='3' value="&lt;meta property='fb:app_id' content='1492102444425463'&gt;" />
+        </page.customs>
+    </page>
+    
+<!-- ************************************************************************************************************************************************************************ -->
+<!-- ******************************************************************* TQR SCOPE (WELCOME & GESTION)  ********************************************************************* -->
+<!-- ************************************************************************************************************************************************************************ -->
+
+    <page id="TQR_WLC_INS">
+        <creadate value="2014-08-21" />
+        <last_mod_date value="2015-09-15" />
+        <!-- **** -->
+        <page.id value="TQR_WLC_INS" />
+        <page.view.model value="TQR_WLC_INS" />
+        <page.name>
+            <lang id="fr" value="inscription" />
+            <lang id="en" value="signup" />
+            <lang id="us" value="signup" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="Créer un compte - Trenqr • Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="Create an account - Trenqr • Friends and passions on photos &amp; videos" />
+            <lang id="us" value="Create an account - Trenqr • Friends and passions on photos &amp; videos" />
+        </page.title> 
+        <page.keywords>
+            <lang id="fr" value="trenqr, inscription, créer un compte, s'inscrire sur trenqr, communauté image, vrai ami, hebergement images, partage images, image du quotidien, image de ma vie, tendances, communauté tendances, à la une, ça buzz, images, gif,gifs animés, fun, cool, social" />
+            <lang id="en" value="trenqr, signup, create a new account, image community, real friend community, image host, image sharing, everyday image, trends, trends community, current events, images, gif, animated gifs, fun, cool, social, visual storytelling" />
+            <lang id="us" value="trenqr, signup, create a new account, image community, real friend community, image host, image sharing, everyday image, trends, trends community, current events, images, gif, animated gifs, fun, cool, social, visual storytelling" />
+            
+            <lang id="fr" value="inscription, créer un compte, s'inscrire sur trenqr, créativité, réseaux sociaux, communauté en ligne, plateforme communautaire, images, hébergement d'images, images du quotidien, images de ma vie, images qui buzz, gifs, gifs animés, communauté cool, tendances, trenqr" />
+            <lang id="en" value="signup, create a new account, creativity, social network, images, pictures, images hosting, life images, buzzing pictures, gifs, animated gifs, trends, visual storytelling, friends community, fun community, cool community, trenqr" />
+            <lang id="us" value="signup, create a new account, creativity, social network, images, pictures, images hosting, life images, buzzing pictures, gifs, animated gifs, trends, visual storytelling, friends community, fun community, cool community, trenqr" />
+        </page.keywords> 
+        <page.description>
+            <lang id="fr" value="Créez un compte et rejoignez la Cool Team : La communauté cool et tendance d'internet, en photos et en images - Trenqr." />
+            <lang id="en" value="Create an account and join the Cool Team: The cool and trendy community Internet - Trenqr." />
+            <lang id="us" value="Create an account and join the Cool Team: The cool and trendy community Internet - Trenqr." />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+
+        <!-- AUTRES METAS -->
+        <page.robots value="index,follow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+        <!-- [DEPUIS 25-09-15] @author BOR -->
+        <page.customs>
+             <page.custom id='0' value="&lt;link rel='canonical' href='{wos/systx:prod_domain}/signup' /&gt;" />
+             <page.custom id='1' value="&lt;link rel='alternate' href='{wos/systx:prod_domain}/inscription' hreflang='fr' /&gt;" />
+             <page.custom id='2' value="&lt;link rel='alternate' href='{wos/systx:prod_domain}/signup' hreflang='en' /&gt;" />
+<!--             <page.custom id='3' value="
+                &lt;script&gt;
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-68119085-1', 'auto');
+                ga('send', 'pageview');
+                &lt;/script&gt;" 
+             />-->
+             <page.custom id='4' value="&lt;script src='https://www.google.com/recaptcha/api.js'&gt;&lt;/script&gt;" />
+        </page.customs>
+    </page>
+	
+    <page id="TQR_WLC_CNX">
+        <creadate value="2014-11-03" />
+        <last_mod_date value="2015-09-15" />
+        <!-- **** -->
+        <page.id value="TQR_WLC_CNX" />
+        <page.view.model value="TQR_WLC_CNX" />
+        <page.name>
+            <lang id="fr" value="connexion" />
+            <lang id="en" value="signin" />
+            <lang id="us" value="signin" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="Se connecter - Trenqr • Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="Login - Trenqr • Friends and passions on photos &amp; videos" />
+            <lang id="us" value="Login - Trenqr • Friends and passions on photos &amp; videos" />
+        </page.title> 
+        <page.keywords>
+            <lang id="fr" value="trenqr, connexion, se connecter, communauté image, vrai ami, hebergement images, partage images, image du quotidien, image de ma vie, tendances, communauté tendances, à la une, ça buzz, images, gif,gifs animés, fun, cool, social" />
+            <lang id="en" value="trenqr, image community, real friend community, image host, image sharing, everyday image, trends, trends community, current events, images, gif, animated gifs, fun, cool, social, visual storytelling" />
+            <lang id="us" value="trenqr, image community, real friend community, image host, image sharing, everyday image, trends, trends community, current events, images, gif, animated gifs, fun, cool, social, visual storytelling" />
+        </page.keywords> 
+        <page.description>
+            <lang id="fr" value="Page de connexion. Authentifiez vous pour accéder à votre compte sur Trenqr." />
+            <lang id="en" value="Login page. Authenticate yourself to access your account on Trenqr." />
+            <lang id="us" value="Login page. Authenticate yourself to access your account on Trenqr." />
+        </page.description>
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" /> -->
+
+        <!-- AUTRES METAS -->
+        <page.robots value="index,follow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+        <!-- [DEPUIS 25-09-15] @author BOR -->
+        <page.customs>
+             <page.custom id='0' value="&lt;link rel='canonical' href='{wos/systx:prod_domain}/login' /&gt;" />
+             <page.custom id='1' value="&lt;link rel='alternate' href='{wos/systx:prod_domain}/connexion' hreflang='fr' /&gt;" />
+             <page.custom id='2' value="&lt;link rel='alternate' href='{wos/systx:prod_domain}/login' hreflang='en' /&gt;" />
+<!--             <page.custom id='3' value="
+                &lt;script&gt;
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-68119085-1', 'auto');
+                ga('send', 'pageview');
+                &lt;/script&gt;" 
+             />-->
+        </page.customs>
+    </page>
+	        
+    <page id="TQR_WLC_PREC_L">
+        <creadate value="2014-11-03" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="TQR_WLC_PREC_L" />
+        <page.view.model value="TQR_WLC_PREC_L" />
+        <page.name>
+            <lang id="fr" value="recuperation" />
+            <lang id="en" value="recovery" />
+            <lang id="us" value="recovery" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="Récupération de mot de passe - Trenqr • Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="Password recovery - Trenqr • Friends and passions on photos &amp; videos" />
+            <lang id="us" value="Password recovery - Trenqr • Friends and passions on photos &amp; videos" />
+        </page.title> 
+        <page.keywords>
+            <lang id="fr" value="trenqr, mot de passe, récupération, mot de passe oublié, communauté image, vrai ami, hebergement images, partage images, image du quotidien, image de ma vie, tendances, communauté tendances, à la une, ça buzz, images, gif,gifs animés, fun, cool, social" />
+            <lang id="en" value="trenqr, trenqr password, trenqr password recovery, image community, real friend community, image host, image sharing, everyday image, trends, trends community, current events, images, gif, animated gifs, fun, cool, social, visual storytelling" />
+            <lang id="us" value="trenqr, trenqr password, trenqr password recovery, image community, real friend community, image host, image sharing, everyday image, trends, trends community, current events, images, gif, animated gifs, fun, cool, social, visual storytelling" />
+        </page.keywords> 
+        <page.description>
+            <lang id="fr" value="Récupération de mot de passe - Trenqr" />
+            <lang id="en" value="Password recovery - Trenqr" />
+            <lang id="us" value="Password recovery - Trenqr" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+        
+        <!-- AUTRES METAS -->
+        <!--
+            [DEPUIS 15-09-15] @author BOR
+                Je préfère que les utilisateurs passent par la page inscription.
+        -->
+        <page.robots value="noindex,nofollow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+    </page>
+	         
+    <page id="TQR_WLC_PREC_F">
+        <creadate value="2014-11-03" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="TQR_WLC_PREC_F" />
+        <page.view.model value="TQR_WLC_PREC_F" />
+        <page.name>
+            <lang id="fr" value="recuperation" />
+            <lang id="en" value="recovery" />
+            <lang id="us" value="recovery" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="Récupération de mot de passe - Trenqr • Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="Password recovery - Trenqr • Friends and passions on photos &amp; videos" />
+            <lang id="us" value="Password recovery - Trenqr • Friends and passions on photos &amp; videos" />
+        </page.title> 
+        <page.keywords>
+            <lang id="fr" value="trenqr, mot de passe, récupération, mot de passe oublié, communauté image, vrai ami, hebergement images, partage images, image du quotidien, image de ma vie, tendances, communauté tendances, à la une, ça buzz, images, gif,gifs animés, fun, cool, social" />
+            <lang id="en" value="trenqr, trenqr password, trenqr password recovery, image community, real friend community, image host, image sharing, everyday image, trends, trends community, current events, images, gif, animated gifs, fun, cool, social, visual storytelling" />
+            <lang id="us" value="trenqr, trenqr password, trenqr password recovery, image community, real friend community, image host, image sharing, everyday image, trends, trends community, current events, images, gif, animated gifs, fun, cool, social, visual storytelling" />
+        </page.keywords> 
+        <page.description>
+            <lang id="fr" value="Récupération de mot de passe - Trenqr. Communauté Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="Password recovery - Trenqr. Images, Trends and Just Fun Community" />
+            <lang id="us" value="Password recovery - Trenqr. Images, Trends and Just Fun Community" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+
+        <!-- AUTRES METAS -->
+        <page.robots value="noindex,nofollow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+    </page>
+	         
+    <page id="TQR_WLC_FAQ_X">
+        <creadate value="2014-11-17" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="TQR_WLC_FAQ_X" />
+        <page.view.model value="TQR_FAQ_X" />
+        <page.name>
+            <lang id="fr" value="faq" />
+            <lang id="en" value="faq" />
+            <lang id="us" value="faq" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="Foire Aux Questions - Trenqr • Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="Frequently Asked Questions - Trenqr • Friends and passions on photos &amp; videos" />
+            <lang id="us" value="Frequently Asked Questions - Trenqr • Friends and passions on photos &amp; videos" />
+        </page.title> 
+        <page.keywords>
+            <lang id="fr" value="trenqr, faq, foire aux questions, a propos, conditions d'utilisation, confidentialité, cookies, mentions légales, comprendre trenqr, communauté image, vrai ami, hebergement images, partage images, image du quotidien, image de ma vie, tendances, communauté tendances, à la une, ça buzz, images, gif,gifs animés, fun, cool, social" />
+            <lang id="en" value="trenqr, faq, about, terms, privacy, cookies, legals, image community, real friend community, image host, image sharing, everyday image, trends, trends community, current events, images, gif, animated gifs, fun, cool, social, visual storytelling" />
+            <lang id="us" value="trenqr, faq, about, terms, privacy, cookies, legals, image community, real friend community, image host, image sharing, everyday image, trends, trends community, current events, images, gif, animated gifs, fun, cool, social, visual storytelling" />
+        </page.keywords> 
+        <page.description>
+            <lang id="fr" value="Foire Aux Questions - Trenqr. Communauté Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="Frequently Asked Questions - Trenqr. Images, Trends and Just Fun Community" />
+            <lang id="us" value="Frequently Asked Questions - Trenqr. Images, Trends and Just Fun Community" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+
+        <!-- AUTRES METAS -->
+        <page.robots value="index,follow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+    </page>    
+            
+    <page id="TQR_WLC_FAQ_ABOUT">
+        <creadate value="2014-11-17" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="TQR_WLC_FAQ_ABOUT" />
+        <page.view.model value="TQR_FAQ_ABOUT" />
+        <page.name>
+            <lang id="fr" value="apropos" />
+            <lang id="en" value="about" />
+            <lang id="us" value="about" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="A propos de Trenqr • Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="About - Trenqr • Friends and passions on photos &amp; videos" />
+            <lang id="us" value="About - Trenqr • Friends and passions on photos &amp; videos" />
+        </page.title> 
+        <page.keywords>
+            <lang id="fr" value="réseau social, passions, tendances, ami, amis, photo, video, meilleur ami, centres d'intérêt" />
+            <lang id="en" value="" />
+        </page.keywords> 
+        <page.description>
+            <lang id="fr" value="Trenqr vous aide à trouver de nouveaux amis grâce à vos passions communes et à partager votre vie pour qu'ils puissent mieux vous connaitre. En savoir plus ici." />
+            <lang id="en" value="About Trenqr, the Images, Trends and Just Fun Community" />
+            <lang id="us" value="About Trenqr, the Images, Trends and Just Fun Community" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+
+        <!-- AUTRES METAS -->
+        <page.robots value="index,follow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+        <!-- [DEPUIS 25-09-15] @author BOR -->
+        <page.customs>
+            <page.custom id='0' value="&lt;link rel='canonical' href='{wos/systx:prod_domain}/apropos' /&gt;" />
+            <page.custom id='1' value="&lt;link rel='alternate' href='{wos/systx:prod_domain}/apropos' hreflang='fr' /&gt;" />
+            <page.custom id='2' value="&lt;link rel='alternate' href='{wos/systx:prod_domain}/about' hreflang='en' /&gt;" />
+<!--            <page.custom id='3' value="
+                &lt;script&gt;
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-68119085-1', 'auto');
+                ga('send', 'pageview');
+                &lt;/script&gt;" 
+             />-->
+        </page.customs>
+    </page>
+            
+    <page id="TQR_WLC_FAQ_TERMS">
+        <creadate value="2014-11-17" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="TQR_WLC_FAQ_TERMS" />
+        <page.view.model value="TQR_FAQ_TERMS" />
+        <page.name>
+            <lang id="fr" value="cgu" />
+            <lang id="en" value="terms" />
+            <lang id="us" value="terms" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="Conditions d'utilisation - Trenqr • Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="Terms of Use - Trenqr • Friends and passions on photos &amp; videos" />
+            <lang id="us" value="Terms of Use - Trenqr • Friends and passions on photos &amp; videos" />
+        </page.title> 
+        <page.keywords>
+            <lang id="fr" value="trenqr, conditions d'utilisation, conditions de service, limitation de responsabilité, confidentialité, sécurité, fiabilité, trenqr et vous, mentions legales, communauté image, vrai ami, hebergement images, partage images, image du quotidien, image de ma vie, tendances, communauté tendances, à la une, ça buzz, images, gif,gifs animés, fun, cool, social" />
+            <lang id="en" value="trenqr, image community, real friend community, image host, image sharing, everyday image, trends, trends community, current events, images, gif, animated gifs, fun, cool, social, visual storytelling" />
+            <lang id="us" value="trenqr, image community, real friend community, image host, image sharing, everyday image, trends, trends community, current events, images, gif, animated gifs, fun, cool, social, visual storytelling" />
+        </page.keywords> 
+        <page.description>
+            <lang id="fr" value="Conditions d'utilisation - Trenqr. Communauté Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="Terms of Use - Trenqr. Images, Trends and Just Fun Community" />
+            <lang id="us" value="Terms of Use - Trenqr. Images, Trends and Just Fun Community" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+
+        <!-- AUTRES METAS -->
+        <page.robots value="index,follow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+        <!-- [DEPUIS 25-09-15] @author BOR -->
+        <page.customs>
+             <page.custom id='0' value="&lt;link rel='canonical' href='{wos/systx:prod_domain}/terms' /&gt;" />
+             <page.custom id='1' value="&lt;link rel='alternate' href='{wos/systx:prod_domain}/cgu' hreflang='fr' /&gt;" />
+             <page.custom id='2' value="&lt;link rel='alternate' href='{wos/systx:prod_domain}/terms' hreflang='en' /&gt;" />
+<!--             <page.custom id='3' value="
+                &lt;script&gt;
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-68119085-1', 'auto');
+                ga('send', 'pageview');
+                &lt;/script&gt;" 
+             />-->
+        </page.customs>
+    </page>    
+    
+    <page id="TQR_WLC_FAQ_COOKIES">
+        <creadate value="2014-11-17" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="TQR_WLC_FAQ_COOKIES" />
+        <page.view.model value="TQR_FAQ_COOKIES" />
+        <page.name>
+            <lang id="fr" value="cookies" />
+            <lang id="en" value="cookies" />
+            <lang id="us" value="cookies" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="Cookies - Trenqr • Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="Cookies - Trenqr • Friends and passions on photos &amp; videos" />
+            <lang id="us" value="Cookies - Trenqr • Friends and passions on photos &amp; videos" />
+        </page.title> 
+        <page.keywords>
+            <lang id="fr" value="trenqr, cookies, comprendre les cookies, cookie, trenqr et les cookies, communauté image, vrai ami, hebergement images, partage images, image du quotidien, image de ma vie, tendances, communauté tendances, à la une, ça buzz, images, gif,gifs animés, fun, cool, social" />
+            <lang id="en" value="trenqr, image community, real friend community, image host, image sharing, everyday image, trends, trends community, current events, images, gif, animated gifs, fun, cool, social, visual storytelling" />
+            <lang id="us" value="trenqr, image community, real friend community, image host, image sharing, everyday image, trends, trends community, current events, images, gif, animated gifs, fun, cool, social, visual storytelling" />
+        </page.keywords> 
+        <page.description>
+            <lang id="fr" value="Politique sur les Cookies - Trenqr. Communauté Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="Cookies policy - Trenqr. Images, Trends and Just Fun Community" />
+            <lang id="us" value="Cookies policy - Trenqr. Images, Trends and Just Fun Community" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+
+        <!-- AUTRES METAS -->
+        <page.robots value="index,follow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+        <!-- [DEPUIS 25-09-15] @author BOR -->
+        <page.customs>
+             <page.custom id='0' value="&lt;link rel='canonical' href='{wos/systx:prod_domain}/cookies' /&gt;" />
+             <page.custom id='1' value="&lt;link rel='alternate' href='{wos/systx:prod_domain}/cookies' hreflang='fr' /&gt;" />
+             <page.custom id='2' value="&lt;link rel='alternate' href='{wos/systx:prod_domain}/cookies' hreflang='en' /&gt;" />
+<!--             <page.custom id='3' value="
+                &lt;script&gt;
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-68119085-1', 'auto');
+                ga('send', 'pageview');
+                &lt;/script&gt;" 
+             />-->
+        </page.customs>
+    </page>    
+    
+    <page id="TQR_WLC_FAQ_PRIVACY">
+        <creadate value="2014-11-17" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="TQR_WLC_FAQ_PRIVACY" />
+        <page.view.model value="TQR_FAQ_PRIVACY" />
+        <page.name>
+            <lang id="fr" value="confidentialité" />
+            <lang id="en" value="privacy" />
+            <lang id="us" value="privacy" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="Politique de confidentialié - Trenqr • Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="Privacy policy - Trenqr • Friends and passions on photos &amp; videos" />
+            <lang id="us" value="Privacy policy - Trenqr • Friends and passions on photos &amp; videos" />
+        </page.title> 
+        <page.keywords>
+            <lang id="fr" value="trenqr, confidentialité, gestion des données, vie privée, protection de la vide privée, trenqr et vos données, communauté image, vrai ami, hebergement images, partage images, image du quotidien, image de ma vie, tendances, communauté tendances, à la une, ça buzz, images, gif,gifs animés, fun, cool, social" />
+            <lang id="en" value="trenqr, image community, real friend community, image host, image sharing, everyday image, trends, trends community, current events, images, gif, animated gifs, fun, cool, social, visual storytelling" />
+            <lang id="us" value="trenqr, image community, real friend community, image host, image sharing, everyday image, trends, trends community, current events, images, gif, animated gifs, fun, cool, social, visual storytelling" />
+        </page.keywords> 
+        <page.description>
+            <lang id="fr" value="Politique de confidentialité - Trenqr. Communauté Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="Privacy - Trenqr. Images, Trends and Just Fun Community" />
+            <lang id="us" value="Privacy - Trenqr. Images, Trends and Just Fun Community" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+        
+        <!-- AUTRES METAS -->
+        <page.robots value="index,follow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+        <!-- [DEPUIS 25-09-15] @author BOR -->
+        <page.customs>
+             <page.custom id='0' value="&lt;link rel='canonical' href='{wos/systx:prod_domain}/cookies' /&gt;" />
+             <page.custom id='1' value="&lt;link rel='alternate' href='{wos/systx:prod_domain}/confidentialite' hreflang='fr' /&gt;" />
+             <page.custom id='2' value="&lt;link rel='alternate' href='{wos/systx:prod_domain}/privacy' hreflang='en' /&gt;" />
+<!--             <page.custom id='3' value="
+                &lt;script&gt;
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-68119085-1', 'auto');
+                ga('send', 'pageview');
+                &lt;/script&gt;" 
+             />-->
+        </page.customs>
+    </page>    
+            
+    <page id="TQR_WLC_FAQ_LEGALS">
+        <creadate value="2014-11-17" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="TQR_WLC_FAQ_LEGALS" />
+        <page.view.model value="TQR_FAQ_LEGALS" />
+        <page.name>
+            <lang id="fr" value="mentionslegales" />
+            <lang id="en" value="legals" />
+            <lang id="us" value="legals" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="Mentions légales - Trenqr • Communauté Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="Legals - Trenqr • Friends and passions on photos &amp; videos" />
+            <lang id="us" value="Legals - Trenqr • Friends and passions on photos &amp; videos" />
+        </page.title> 
+        <page.keywords>
+            <lang id="fr" value="trenqr, mentions légales, deuslynn, deuslynn entreprise, directeur de la publication, communauté image, vrai ami, hebergement images, partage images, image du quotidien, image de ma vie, tendances, communauté tendances, à la une, ça buzz, images, gif,gifs animés, fun, cool, social" />
+            <lang id="en" value="trenqr, image community, real friend community, image host, image sharing, everyday image, trends, trends community, current events, images, gif, animated gifs, fun, cool, social, visual storytelling" />
+            <lang id="us" value="trenqr, image community, real friend community, image host, image sharing, everyday image, trends, trends community, current events, images, gif, animated gifs, fun, cool, social, visual storytelling" />
+        </page.keywords> 
+        <page.description>
+            <lang id="fr" value="Mentions légales - Trenqr. Communauté Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="Legals - Trenqr. Images, Trends and Just Fun Community" />
+            <lang id="us" value="Legals - Trenqr. Images, Trends and Just Fun Community" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+
+        <!-- AUTRES METAS -->
+        <page.robots value="index,follow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+        <!-- [DEPUIS 25-09-15] @author BOR -->
+        <page.customs>
+             <page.custom id='0' value="&lt;link rel='canonical' href='{wos/systx:prod_domain}/cookies' /&gt;" />
+             <page.custom id='1' value="&lt;link rel='alternate' href='{wos/systx:prod_domain}/mentionslegales' hreflang='fr' /&gt;" />
+             <page.custom id='2' value="&lt;link rel='alternate' href='{wos/systx:prod_domain}/legals' hreflang='en' /&gt;" />
+<!--             <page.custom id='3' value="
+                &lt;script&gt;
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-68119085-1', 'auto');
+                ga('send', 'pageview');
+                &lt;/script&gt;" 
+             />-->
+        </page.customs>
+    </page>
+	
+    <page id="FKSA_GTPG">
+        <creadate value="2015-02-2" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="FKSA_GTPG" />
+        <page.view.model value="FKSA_GTPG" />
+        <page.name>
+            <lang id="fr" value="unique" />
+            <lang id="en" value="focus" />
+            <lang id="us" value="focus" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="{wos/datx:art_desc} (@{wos/datx:oupsd}) - Trenqr Photos &amp; vidéos" />
+            <lang id="en" value="{wos/datx:art_desc} (@{wos/datx:oupsd}) - Trenqr Photos &amp; videos" />
+            <lang id="us" value="{wos/datx:art_desc} (@{wos/datx:oupsd}) - Trenqr Photos &amp; videos" />
+            <lang id="de" value="{wos/datx:art_desc} (@{wos/datx:oupsd}) - Trenqr Fotos &amp; videos" />
+            <lang id="es" value="{wos/datx:art_desc} (@{wos/datx:oupsd}) - Trenqr Bilder &amp; videos" />
+        </page.title> 
+        <page.keywords>
+            <!-- 
+                Dans ce contexte, si l'Article appartient à une Tendance, la liste des mots clés contient la catégorie de la Tendance 
+                (AMELIORATION : et les éventuels mots contenus dans le titre.) 
+            --> 
+            <lang id="fr" value="trenqr, {wos/datx:head_keywords_list}, communauté image, vrai ami, hebergement images, partage images, image du quotidien, image de ma vie, tendances, communauté tendances, à la une, ça buzz, images, gif,gifs animés, fun, cool, social" />
+            <lang id="en" value="trenqr, {wos/datx:head_keywords_list}, image community, real friend community, image host, image sharing, everyday image, trends, trends community, current events, images, gif, animated gifs, fun, cool, social, visual storytelling" />
+            <lang id="us" value="trenqr, {wos/datx:head_keywords_list}, image community, real friend community, image host, image sharing, everyday image, trends, trends community, current events, images, gif, animated gifs, fun, cool, social, visual storytelling" />
+        </page.keywords> 
+        <page.description>
+            <lang id="fr" value="{wos/datx:oufn} (@{wos/datx:oupsd}) : {wos/datx:art_desc} - Trenqr" />
+            <lang id="en" value="{wos/datx:oufn} (@{wos/datx:oupsd}) : {wos/datx:art_desc} - Trenqr" />
+            <lang id="us" value="{wos/datx:oufn} (@{wos/datx:oupsd}) : {wos/datx:art_desc} - Trenqr" />
+            <lang id="de" value="{wos/datx:oufn} (@{wos/datx:oupsd}) : {wos/datx:art_desc} - Trenqr" />
+            <lang id="es" value="{wos/datx:oufn} (@{wos/datx:oupsd}) : {wos/datx:art_desc} - Trenqr" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+        
+        <!-- 
+            [DEPUIS 29-07-15] @BOR On ne facilite plus la lecture de cette page. L'objecif étant de garder le mystère sur la page quand on poste le lien. Aussi, il n'y a pas de meta pour les APIs (OG, TWT, etc ...) 
+            [DEPUIS 25-09-15] @BOR Le robots.txt n'est pas totalement respecté par Facebook. En attendant que le problème s'arrange, je vais le forcer à ne télécharger que l'image principale.
+        -->
+        <!-- AUTRES METAS -->
+        <page.meta.og>
+            <og.meta id="site_name" value="Trenqr" />
+            <og.meta id="type" value="article" />
+            <!-- 
+                [DEPUIS 29-07-15] @author BOR 
+                    On change la manière dont les images apparaissent sur FB en mode EXTRAIT.   
+                    Cela donne une impression plus PROFIL sur RESEAU SOCIAL
+            -->
+            <!--<og.meta id="title" value="@{wos/datx:oupsd} : {wos/datx:art_desc}" />-->
+            <og.meta id="title" value="{wos/datx:oufn} (@{wos/datx:oupsd}) - Trenqr" />
+            <og.meta id="description" value="@{wos/datx:oupsd} : {wos/datx:art_desc}" />
+            <og.meta id="url" value="{wos/systx:prod_domain}{wos/datx:aprmlk}" />
+            <og.meta id="image" value ="{wos/datx:apichrf}" />
+            <og.meta id="image:width" value ="486" />
+        </page.meta.og>
+        <!--
+            [DEPUIS 15-09-15] @BOR On laisse l'indexation mais pas celle de l'image. De toutes les façons, il n'est pas sure que 'robots.txt' laisse les crawler indexer cette page. 
+        -->
+        <page.robots value="noimageindex,noarchive,noodp,nosnippet" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+        <!-- [DEPUIS 25-09-15] @author BOR -->
+        <page.customs>
+             <page.custom id='0' value="&lt;link rel='canonical' href='{wos/systx:prod_domain}{wos/datx:aprmlk}' /&gt;" />
+<!--             <page.custom id='1' value="
+                &lt;script&gt;
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-68119085-1', 'auto');
+                ga('send', 'pageview');
+                &lt;/script&gt;" 
+             />-->
+             <page.custom id='2' value="&lt;meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'&gt;" />
+             <page.custom id='3' value="&lt;meta property='fb:app_id' content='1492102444425463'&gt;" />
+        </page.customs>
+    </page>
+	
+    <page id="FKSA_GTPG_VIDVER">
+        <creadate value="2016-05-18" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="FKSA_GTPG" />
+        <page.view.model value="FKSA_GTPG" />
+        <page.name>
+            <lang id="fr" value="unique" />
+            <lang id="en" value="focus" />
+            <lang id="us" value="focus" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="{wos/datx:art_desc} (@{wos/datx:oupsd}) - Trenqr Photos &amp; vidéos" />
+            <lang id="en" value="{wos/datx:art_desc} (@{wos/datx:oupsd}) - Trenqr Photos &amp; videos" />
+            <lang id="us" value="{wos/datx:art_desc} (@{wos/datx:oupsd}) - Trenqr Photos &amp; videos" />
+            <lang id="de" value="{wos/datx:art_desc} (@{wos/datx:oupsd}) - Trenqr Fotos &amp; videos" />
+            <lang id="es" value="{wos/datx:art_desc} (@{wos/datx:oupsd}) - Trenqr Bilder &amp; videos" />
+        </page.title> 
+        <page.keywords>
+            <!-- 
+                Dans ce contexte, si l'Article appartient à une Tendance, la liste des mots clés contient la catégorie de la Tendance 
+                (AMELIORATION : et les éventuels mots contenus dans le titre.) 
+            --> 
+            <lang id="fr" value="trenqr, {wos/datx:head_keywords_list}, communauté image, vrai ami, hebergement images, partage images, image du quotidien, image de ma vie, tendances, communauté tendances, à la une, ça buzz, images, gif,gifs animés, fun, cool, social" />
+            <lang id="en" value="trenqr, {wos/datx:head_keywords_list}, image community, real friend community, image host, image sharing, everyday image, trends, trends community, current events, images, gif, animated gifs, fun, cool, social, visual storytelling" />
+            <lang id="us" value="trenqr, {wos/datx:head_keywords_list}, image community, real friend community, image host, image sharing, everyday image, trends, trends community, current events, images, gif, animated gifs, fun, cool, social, visual storytelling" />
+        </page.keywords> 
+        <page.description>
+            <lang id="fr" value="{wos/datx:oufn} (@{wos/datx:oupsd}) : {wos/datx:art_desc} - Trenqr" />
+            <lang id="en" value="{wos/datx:oufn} (@{wos/datx:oupsd}) : {wos/datx:art_desc} - Trenqr" />
+            <lang id="us" value="{wos/datx:oufn} (@{wos/datx:oupsd}) : {wos/datx:art_desc} - Trenqr" />
+            <lang id="de" value="{wos/datx:oufn} (@{wos/datx:oupsd}) : {wos/datx:art_desc} - Trenqr" />
+            <lang id="es" value="{wos/datx:oufn} (@{wos/datx:oupsd}) : {wos/datx:art_desc} - Trenqr" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+        
+        <!-- 
+            [DEPUIS 29-07-15] @BOR On ne facilite plus la lecture de cette page. L'objecif étant de garder le mystère sur la page quand on poste le lien. Aussi, il n'y a pas de meta pour les APIs (OG, TWT, etc ...) 
+            [DEPUIS 25-09-15] @BOR Le robots.txt n'est pas totalement respecté par Facebook. En attendant que le problème s'arrange, je vais le forcer à ne télécharger que l'image principale.
+        -->
+        <!-- AUTRES METAS -->
+        <page.meta.og>
+            <og.meta id="site_name" value="Trenqr" />
+            <og.meta id="type" value="video" />
+            <og.meta id="title" value="{wos/datx:oufn} (@{wos/datx:oupsd}) - Trenqr" />
+            <og.meta id="description" value="@{wos/datx:oupsd} : {wos/datx:art_desc}" />
+            <og.meta id="url" value="{wos/systx:prod_domain}{wos/datx:aprmlk}" />
+            <og.meta id="image" value ="{wos/datx:apichrf}" />
+            <og.meta id="image:width" value ="486" />
+            <og.meta id="image:height" value ="486" />
+            <!--<og.meta id="video" value ="{wos/datx:avidu}" />-->
+            <og.meta id="video:type" value ="text/html" />
+            <og.meta id="video:url" value ="{wos/datx:avidu}" />
+            <!-- Permet de lancer la video inline au niveau de FB -->
+            <og.meta id="video:secure_url" value ="{wos/datx:avidu}" />
+            <og.meta id="video:width" value ="{wos/datx:vidh}" />
+            <og.meta id="video:height" value ="{wos/datx:vidw}" />
+        </page.meta.og>
+        <!--
+            [DEPUIS 15-09-15] @BOR On laisse l'indexation mais pas celle de l'image. De toutes les façons, il n'est pas sure que 'robots.txt' laisse les crawler indexer cette page. 
+        -->
+        <page.robots value="noimageindex,noarchive,noodp,nosnippet" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+        <!-- [DEPUIS 25-09-15] @author BOR -->
+        <page.customs>
+             <page.custom id='0' value="&lt;link rel='canonical' href='{wos/systx:prod_domain}{wos/datx:aprmlk}' /&gt;" />
+<!--             <page.custom id='1' value="
+                &lt;script&gt;
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-68119085-1', 'auto');
+                ga('send', 'pageview');
+                &lt;/script&gt;" 
+             />-->
+             <page.custom id='2' value="&lt;meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'&gt;" />
+             <page.custom id='3' value="&lt;meta property='fb:app_id' content='1492102444425463'&gt;" />
+        </page.customs>
+    </page>
+	
+    <page id="FKSA_GTPG_TSTVER">
+        <creadate value="2016-05-18" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="FKSA_GTPG" />
+        <page.view.model value="FKSA_GTPG_TSTVER" />
+        <page.name>
+            <lang id="fr" value="unique" />
+            <lang id="en" value="focus" />
+            <lang id="us" value="focus" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="{wos/datx:art_desc} (@{wos/datx:oupsd}) - Trenqr Photos &amp; vidéos" />
+            <lang id="en" value="{wos/datx:art_desc} (@{wos/datx:oupsd}) - Trenqr Photos &amp; videos" />
+            <lang id="us" value="{wos/datx:art_desc} (@{wos/datx:oupsd}) - Trenqr Photos &amp; videos" />
+            <lang id="de" value="{wos/datx:art_desc} (@{wos/datx:oupsd}) - Trenqr Fotos &amp; videos" />
+            <lang id="es" value="{wos/datx:art_desc} (@{wos/datx:oupsd}) - Trenqr Bilder &amp; videos" />
+        </page.title> 
+        <page.keywords>
+            <!-- 
+                Dans ce contexte, si l'Article appartient à une Tendance, la liste des mots clés contient la catégorie de la Tendance 
+                (AMELIORATION : et les éventuels mots contenus dans le titre.) 
+            --> 
+            <lang id="fr" value="trenqr, {wos/datx:head_keywords_list}, communauté image, vrai ami, hebergement images, partage images, image du quotidien, image de ma vie, tendances, communauté tendances, à la une, ça buzz, images, gif,gifs animés, fun, cool, social" />
+            <lang id="en" value="trenqr, {wos/datx:head_keywords_list}, image community, real friend community, image host, image sharing, everyday image, trends, trends community, current events, images, gif, animated gifs, fun, cool, social, visual storytelling" />
+            <lang id="us" value="trenqr, {wos/datx:head_keywords_list}, image community, real friend community, image host, image sharing, everyday image, trends, trends community, current events, images, gif, animated gifs, fun, cool, social, visual storytelling" />
+        </page.keywords> 
+        <page.description>
+            <lang id="fr" value="{wos/datx:oufn} (@{wos/datx:oupsd}) : {wos/datx:art_desc} - Trenqr" />
+            <lang id="en" value="{wos/datx:oufn} (@{wos/datx:oupsd}) : {wos/datx:art_desc} - Trenqr" />
+            <lang id="us" value="{wos/datx:oufn} (@{wos/datx:oupsd}) : {wos/datx:art_desc} - Trenqr" />
+            <lang id="de" value="{wos/datx:oufn} (@{wos/datx:oupsd}) : {wos/datx:art_desc} - Trenqr" />
+            <lang id="es" value="{wos/datx:oufn} (@{wos/datx:oupsd}) : {wos/datx:art_desc} - Trenqr" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+        
+        <!-- 
+            [DEPUIS 29-07-15] @BOR On ne facilite plus la lecture de cette page. L'objecif étant de garder le mystère sur la page quand on poste le lien. Aussi, il n'y a pas de meta pour les APIs (OG, TWT, etc ...) 
+            [DEPUIS 25-09-15] @BOR Le robots.txt n'est pas totalement respecté par Facebook. En attendant que le problème s'arrange, je vais le forcer à ne télécharger que l'image principale.
+        -->
+        <!-- AUTRES METAS -->
+        <page.meta.og>
+            <og.meta id="site_name" value="Trenqr" />
+            <og.meta id="type" value="article" />
+            <og.meta id="title" value="{wos/datx:oufn} (@{wos/datx:oupsd}) - Trenqr" />
+            <og.meta id="description" value="@{wos/datx:oupsd} : {wos/datx:art_desc}" />
+            <og.meta id="url" value="{wos/systx:prod_domain}{wos/datx:aprmlk}" />
+        </page.meta.og>
+        <!--
+            [DEPUIS 15-09-15] @BOR On laisse l'indexation mais pas celle de l'image. De toutes les façons, il n'est pas sure que 'robots.txt' laisse les crawler indexer cette page. 
+        -->
+        <page.robots value="noimageindex,noarchive,noodp,nosnippet" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+        <!-- [DEPUIS 25-09-15] @author BOR -->
+        <page.customs>
+             <page.custom id='0' value="&lt;link rel='canonical' href='{wos/systx:prod_domain}{wos/datx:aprmlk}' /&gt;" />
+<!--             <page.custom id='1' value="
+                &lt;script&gt;
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-68119085-1', 'auto');
+                ga('send', 'pageview');
+                &lt;/script&gt;" 
+             />-->
+             <page.custom id='2' value="&lt;meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'&gt;" />
+             <page.custom id='3' value="&lt;meta property='fb:app_id' content='1492102444425463'&gt;" />
+        </page.customs>
+    </page>
+	
+    <page id="TQR_RCMDTO_GTPG">
+        <creadate value="2015-10-01" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="TQR_RCMDTO_GTPG" />
+        <page.view.model value="TQR_RCMDTO_GTPG" />
+        <page.name>
+            <lang id="fr" value="recoma" />
+            <lang id="en" value="recoto" />
+            <lang id="us" value="recoto" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="Recommandez la communauté cool et tendance, en photos et images, d'internet" />
+            <lang id="en" value="Recommend the cool and trendy in pictures internet community" />
+            <lang id="us" value="Recommend the cool and trendy in pictures internet community" />
+        </page.title> 
+        <page.keywords>
+            <lang id="fr" value="trenqr, recommander, communauté image, partage images, hebergement images, image du quotidien, image de ma vie, ami, trends, communauté tendances, à la une, ça buzz, gif, gifs animés, fun, cool, social, visual storytelling" />
+            <lang id="en" value="trenqr, recommend, image community, image sharing, image hosting, everyday images, friend community, trends, trends community, current events, gif, animated gifs, fun, cool, social, visual storytelling" />
+            <lang id="us" value="trenqr, recommend, image community, image sharing, image hosting, everyday images, friend community, trends, trends community, current events, gif, animated gifs, fun, cool, social, visual storytelling" />
+        </page.keywords> 
+        <page.description>
+            <lang id="fr" value="Recommandez Trenqr à un ami ou à votre famille. Trenqr est la communauté cool et sexy d'internet. Partagez votre quotidien en photos et en images. Abonnez-vous et contribuez aux Tendances que vous aimez." />
+            <lang id="en" value="Recommend Trenqr to a friend or to your family. Trenqr is the cool and trendy internet community. Share your life in pictures. Subscribe and contribute to Trends you love." />
+            <lang id="us" value="Recommend Trenqr to a friend or to your family. Trenqr is the cool and trendy internet community. Share your life in pictures. Subscribe and contribute to Trends you love." />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+        
+        <!-- 
+            [DEPUIS 29-07-15] @BOR On ne facilite plus la lecture de cette page. L'objecif étant de garder le mystère sur la page quand on poste le lien. Aussi, il n'y a pas de meta pour les APIs (OG, TWT, etc ...) 
+            [DEPUIS 25-09-15] @BOR Le robots.txt n'est pas totalement respecté par Facebook. En attendant que le problème s'arrange, je vais le forcer à ne télécharger que l'image principale.
+        -->
+        <!-- AUTRES METAS -->
+        <page.meta.og>
+            <og.meta id="site_name" value="Trenqr" />
+            <og.meta id="title" value="Recommandez la communauté cool et tendance, en photos et images, d'internet" />
+            <og.meta id="url" value="{wos/systx:prod_domain}/!/recommend-trenqr-image-trend-cool-community" />
+            <og.meta id="image" value ="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+            <og.meta id="image:width" value ="150px" />
+        </page.meta.og>
+        <!--
+            [DEPUIS 15-09-15] @BOR On laisse l'indexation mais pas celle de l'image. De toutes les façons, il n'est pas sure que 'robots.txt' laisse les crawler indexer cette page. 
+        -->
+        <page.robots value="index,follow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+        <!-- [DEPUIS 25-09-15] @author BOR -->
+        <page.customs>
+             <page.custom id='0' value="&lt;link rel='canonical' href='{wos/systx:prod_domain}/!/recommend-trenqr-images-trends-cool-community' /&gt;" />
+<!--             <page.custom id='1' value="
+                &lt;script&gt;
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-68119085-1', 'auto');
+                ga('send', 'pageview');
+                &lt;/script&gt;" 
+             />-->
+             <page.custom id='2' value="&lt;meta name='viewport' content='width=device-width, initial-scale=1.0'&gt;" />
+             <page.custom id='3' value="&lt;script src='https://www.google.com/recaptcha/api.js'&gt;&lt;/script&gt;" />
+        </page.customs>
+    </page>
+	
+    <page id="TQR_STUDIO_GTPG">
+        <creadate value="2015-10-11" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="TQR_STUDIO_GTPG" />
+        <page.view.model value="TQR_STUDIO_GTPG" />
+        <page.name>
+            <lang id="fr" value="lestudio" />
+            <lang id="en" value="thestudio" />
+            <lang id="us" value="thestudio" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="Rogner, personnaliser, ajouter un filtre à sa photo en ligne" />
+            <lang id="en" value="Crop, customize, add a color filter to your photo online" />
+            <lang id="us" value="Crop, customize, add a color filter to your photo online" />
+        </page.title> 
+        <page.keywords>
+            <lang id="fr" value="photos, images, redimensionner, embellir, personnaliser, rogner, filtre photo, studio, instagram, photoshop, alternative, trenqr" />
+            <lang id="en" value="photos, images, resize, embellish, customize, crop, studio, photoshop alternative, instagram, trenqr" />
+            <lang id="us" value="photos, images, resize, embellish, customize, crop, studio, photoshop alternative, instagram, trenqr" />
+        </page.keywords>
+        <page.description>
+            <lang id="fr" value="Studio redimensionne et personnalise vos photos en leur donner un effet comme sur Instagram. Utile pour ajouter sa photo sur Trenqr. C'est rapide, facile, gratuit et pratique." />
+            <lang id="en" value="Resize and customize your photos by giving them an Instagram effect. Useful to add your picture on Trenqr. It's fast, easy, free and convenient." />
+            <lang id="us" value="Resize and customize your photos by giving them an Instagram effect. Useful to add your picture on Trenqr. It's fast, easy, free and convenient." />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+        
+        <!-- 
+            [DEPUIS 29-07-15] @BOR On ne facilite plus la lecture de cette page. L'objecif étant de garder le mystère sur la page quand on poste le lien. Aussi, il n'y a pas de meta pour les APIs (OG, TWT, etc ...) 
+            [DEPUIS 25-09-15] @BOR Le robots.txt n'est pas totalement respecté par Facebook. En attendant que le problème s'arrange, je vais le forcer à ne télécharger que l'image principale.
+        -->
+        <!-- AUTRES METAS -->
+        <page.meta.og>
+            <og.meta id="site_name" value="Trenqr" />
+            <og.meta id="title" value="Facile et pratique, personnalisez vos photos sur Trenqr Studio comme sur Instagram" />
+            <og.meta id="url" value="http://studio.trenqr.com" />
+            <og.meta id="image" value ="{wos/sysdir:img_dir_uri}/r/tqr_mlti_b.png" />
+            <og.meta id="image:width" value ="150px" />
+        </page.meta.og>
+        <!--
+            [DEPUIS 15-09-15] @BOR On laisse l'indexation mais pas celle de l'image. De toutes les façons, il n'est pas sure que 'robots.txt' laisse les crawler indexer cette page. 
+        -->
+        <page.robots value="index,follow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+        <!-- [DEPUIS 25-09-15] @author BOR -->
+        <page.customs>
+             <page.custom id='0' value="&lt;link rel='canonical' href='{wos/systx:prod_domain}' /&gt;" /> <!-- POUR studio.trenqr.com -->
+             <!--<page.custom id='0' value="&lt;link rel='canonical' href='{wos/systx:prod_domain}/!/trenqr-studio' /&gt;" />-->
+<!--             <page.custom id='1' value="
+                &lt;script&gt;
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-68119085-3', 'auto');
+                ga('send', 'pageview');
+                &lt;/script&gt;" 
+             />-->
+             <page.custom id='2' value="&lt;meta name='viewport' content='width=device-width, initial-scale=1.0'&gt;" />
+        </page.customs>
+    </page>
+	
+    <page id="TQR_GTPG_HVIEW">
+        <creadate value="2015-11-16" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="TQR_GTPG_HVIEW" />
+        <page.view.model value="TQR_GTPG_HVIEW" />
+        <page.name>
+            <lang id="fr" value="lehashview" />
+            <lang id="en" value="thehashview" />
+            <lang id="us" value="thehashview" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="Hashview : {wos/datx:hview_q} sur Trenqr" />
+            <lang id="en" value="Hashview : {wos/datx:hview_q} on Trenqr" />
+            <lang id="us" value="Hashview : {wos/datx:hview_q} on Trenqr" />
+        </page.title> 
+        <page.keywords>
+            <lang id="fr" value="trenqr, recommander, communauté image, partage images, hebergement images, image du quotidien, image de ma vie, ami, trends, communauté tendances, à la une, ça buzz, gif, gifs animés, fun, cool, social, visual storytelling" />
+            <lang id="en" value="trenqr, recommend, image community, image sharing, image hosting, everyday images, friend community, trends, trends community, current events, gif, animated gifs, fun, cool, social, visual storytelling" />
+            <lang id="us" value="trenqr, recommend, image community, image sharing, image hosting, everyday images, friend community, trends, trends community, current events, gif, animated gifs, fun, cool, social, visual storytelling" />
+        </page.keywords> 
+        <page.description>
+            <lang id="fr" value="" />
+            <lang id="en" value="" />
+            <lang id="us" value="" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+        
+        <!-- AUTRES METAS -->
+        <page.meta.og>
+            <og.meta id="site_name" value="Trenqr" />
+            <og.meta id="title" value="Hashview : {wos/datx:hview_q} - Trenqr Search" />
+            <og.meta id="url" value="{wos/systx:prod_domain}/hview?q={wos/datx:hview_q}&amp;src={wos/datx:hview_src}" />
+            <og.meta id="image" value ="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+            <og.meta id="image:width" value ="150px" />
+        </page.meta.og>
+        <!--
+            [DEPUIS 15-09-15] @BOR On laisse l'indexation mais pas celle de l'image. De toutes les façons, il n'est pas sure que 'robots.txt' laisse les crawler indexer cette page. 
+        -->
+        <page.robots value="noindex,nofollow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+        <!-- [DEPUIS 25-09-15] @author BOR -->
+        <page.customs>
+             <page.custom id='0' value="&lt;link rel='canonical' href='{wos/systx:prod_domain}/hview' /&gt;" />
+             <page.custom id='1' value="&lt;meta name='viewport' content='width=device-width, initial-scale=1.0'&gt;" />
+        </page.customs>
+    </page>
+    
+           
+<!-- **************************************************************************************************************************************************************************** -->
+<!-- ******************************************************************** PIERRE SCOPE (WELCOME & GESTION)  ********************************************************************* -->
+<!-- **************************************************************************************************************************************************************************** -->
+
+
+    <page id="ontrenqr">
+        <creadate value="2014-08-20" />
+        <last_mod_date value="2015-10-10" />
+        <!-- **** -->
+        <page.id value="welcome" />
+        <page.view.model value="ontrenqr" />
+        <page.name>
+            <lang id="fr" value="accueil" />
+            <lang id="en" value="home" />
+            <lang id="us" value="home" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="Se faire de nouveaux amis et partager sa vie et ses passions - Trenqr" />
+            <lang id="en" value="T like Trenqr : Your next best friend is on Trenqr" />
+        </page.title> 
+        <page.keywords>
+            <lang id="fr" value="réseau social, passions, tendances, ami, amis, photo, video, meilleur ami, centres d'intérêt" />
+            <lang id="en" value="social network, passion, trends, friend, photo, video, best friend, hobbies" />
+        </page.keywords> 
+        <page.description>
+            <lang id="fr" value="Vivez de nouvelles expériences ! Trenqr vous aide à vous faire de nouveaux amis grâce à vos passions communes et à partager avec eux, les moments de votre vie." />
+            <lang id="en" value="Match with new friends, meet new people who share your passions in an useful, fun and authentic environment. Trenqr, the social network that closes the gap, really !" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+        
+        <!-- OG META PROPERTIES --> 
+        <!--
+            Le mot "petit" est spécialement employé pour les utilisateurs dans réseaux sociaux comme Facebook ou Twitter.
+            (1) Sinon, il placeront sur la même echelle de valeur Facebook et Trenqr ce qui serait une erreur stratégique.
+            (2) Cela permet de marquer notre différence et de briser la peur de s'engager dans quelque de chose de grand et peut-être fastidieux.
+        -->
+        <page.meta.og>
+            <og.meta id="site_name" value="Trenqr" />
+            <!--<og.meta id="title" value="Trenqr : Partagez votre vie en photos avec vos amis et plus, dans un environnement original, sur le site cool et tendance d'internet" />-->
+            <og.meta id="title" value="Rencontrez de nouveaux amis grâce à vos passions communues - T comme Trenqr" />
+            <og.meta id="url" value="https://trenqr.com" />
+            <og.meta id="image" value ="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        </page.meta.og>
+        
+        <!-- TWT META PROPERTIES --> 
+        <page.meta.twitter>
+            <twt.meta id="title" value="Rencontrez de nouveaux amis grâce à vos passions communues - T comme Trenq" />
+            <twt.meta id="url" value="https://trenqr.com" />
+        </page.meta.twitter>
+        
+        <!-- AUTRES METAS -->
+        <page.robots value="index,follow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+        <!-- [DEPUIS 25-09-15] @author BOR -->
+        <page.customs>
+             <page.custom id='0' value="&lt;link rel='canonical' href='{wos/systx:prod_domain}' /&gt;" />
+<!--             <page.custom id='1' value="
+                &lt;script&gt;
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-68119085-1', 'auto');
+                ga('send', 'pageview');
+                &lt;/script&gt;" 
+             />-->
+             <!--<page.custom id='2' value="&lt;meta http-equiv='X-UA-Compatible' content='IE=edge' /&gt; " />-->
+             <!--<page.custom id='3' value="&lt;meta name='viewport' content='width=device-width, initial-scale=1.0'&gt;" />-->
+        </page.customs>
+    </page>
+
+
+    <page id="TQR_GTPG_STGS">
+        <creadate value="2014-08-20" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="TQR_GTPG_STGS" />
+        <page.view.model value="TQR_GTPG_STGS" /> 
+        <page.name>
+            <lang id="fr" value="parametres" />
+            <lang id="en" value="settings" />
+            <lang id="us" value="settings" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="fr" value="Gestion de compte - Trenqr • Amis et passions en photos &amp; vidéos" />
+            <lang id="en" value="Account settings - Trenqr • Friends and passions on photos &amp; videos" />
+            <lang id="us" value="Account settings - Trenqr • Friends and passions on photos &amp; videos" />
+        </page.title> 
+        <page.keywords>
+            <lang id="fr" value="trenqr, gestion compte, gestion profil, securite, a propos, changement mot de passe" />
+            <lang id="en" value="trenqr" />
+            <lang id="us" value="trenqr" />
+        </page.keywords> 
+        <page.description>
+            <lang id="fr" value="Gérer les données et paramètres de votre compte sur Trenqr" />
+            <lang id="en" value="Manage your datas and settings of your account on Trenqr." />
+            <lang id="us" value="Manage your datas and settings of your account on Trenqr." />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+
+        <!-- TQ META PROPERTIES --> 
+        <page.meta.tq>
+            <tq.meta id="pg" value="{wos/datx:pagid}" />
+            <tq.meta id="ver" value="{wos/datx:pgakxver}" />
+            <tq.meta id="ueid" value="{wos/datx:oueid}" />
+            <tq.meta id="uppic" value="{wos/datx:ouppic}" />
+            <tq.meta id="ufn" value="{wos/datx:oufn}" />
+            <tq.meta id="upsd" value="{wos/datx:oupsd}" />
+            <tq.meta id="uhref" value="{wos/datx:ouhref}" />
+        </page.meta.tq>
+
+        <!-- AUTRES METAS -->
+        <page.robots value="noindex,nofollow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+    </page>
+    
+    <page id="ins">
+        <creadate value="2014-08-21" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="ins" />
+        <page.view.model value="ins" />
+        <page.name>
+            <lang id="en" value="signup" />
+            <lang id="fr" value="inscription" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="en" value="Trenqr" />
+            <lang id="fr" value="Trenqr" />
+        </page.title> 
+        <page.keywords>
+            <lang id="en" value="trenqr" />
+            <lang id="fr" value="trenqr" />
+        </page.keywords> 
+        <page.description>
+            <lang id="en" value="Trenqr" />
+            <lang id="fr" value="Trenqr" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+
+        <!-- AUTRES METAS -->
+        <page.robots value="index,follow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+    </page>
+
+    <page id="trial">
+        <creadate value="2014-08-21" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="trial" />
+        <page.view.model value="trial" />
+        <page.name>
+            <lang id="en" value="signup" />
+            <lang id="fr" value="inscription" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="en" value="Trenqr" />
+            <lang id="fr" value="Trenqr" />
+        </page.title> 
+        <page.keywords>
+            <lang id="en" value="trenqr" />
+            <lang id="fr" value="trenqr" />
+        </page.keywords> 
+        <page.description>
+            <lang id="en" value="Trenqr" />
+            <lang id="fr" value="Trenqr" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+
+        <!-- AUTRES METAS -->
+        <page.robots value="index,follow,noimageindex" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+    </page>
+
+    <page id="prg">
+        <creadate value="2014-08-21" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="prg" />
+        <page.view.model value="prg" />
+        <page.name>
+            <lang id="en" value="signup" />
+            <lang id="fr" value="inscription" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="en" value="Trenqr" />
+            <lang id="fr" value="Trenqr" />
+        </page.title> 
+        <page.keywords>
+            <lang id="en" value="trenqr" />
+            <lang id="fr" value="trenqr" />
+        </page.keywords> 
+        <page.description>
+            <lang id="en" value="Trenqr" />
+            <lang id="fr" value="Trenqr" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+
+        <!-- AUTRES METAS -->
+        <page.robots value="noindex,nofollow,noimageindex" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+    </page>
+    
+    <page id="cnx">
+        <creadate value="2014-08-22" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="cnx" />
+        <page.view.model value="cnx" />
+        <page.name>
+            <lang id="en" value="signin" />
+            <lang id="fr" value="connexion" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="en" value="Trenqr" />
+            <lang id="fr" value="Trenqr" />
+        </page.title> 
+        <page.keywords>
+            <lang id="en" value="trenqr" />
+            <lang id="fr" value="trenqr" />
+        </page.keywords> 
+        <page.description>
+            <lang id="en" value="Trenqr" />
+            <lang id="fr" value="Trenqr" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+
+        <!-- AUTRES METAS -->
+        <page.robots value="index,follow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+    </page>
+
+    <page id="re">
+        <creadate value="2014-08-22" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="rec" />
+        <page.view.model value="rec" />
+        <page.name>
+            <lang id="en" value="recovery" />
+            <lang id="fr" value="recuperation" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="en" value="Trenqr" />
+            <lang id="fr" value="Trenqr" />
+        </page.title> 
+        <page.keywords>
+            <lang id="en" value="trenqr" />
+            <lang id="fr" value="trenqr" />
+        </page.keywords> 
+        <page.description>
+            <lang id="en" value="Trenqr" />
+            <lang id="fr" value="Trenqr" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+
+        <!-- AUTRES METAS -->
+        <page.robots value="noindex,nofollow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+    </page>
+
+    <page id="rec2">
+        <creadate value="2014-08-29" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="rec2" />
+        <page.view.model value="rec2" />
+        <page.name>
+            <lang id="en" value="recovery2" />
+            <lang id="fr" value="recuperation2" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="en" value="Trenqr" />
+            <lang id="fr" value="Trenqr" />
+        </page.title> 
+        <page.keywords>
+            <lang id="en" value="trenqr" />
+            <lang id="fr" value="trenqr" />
+        </page.keywords> 
+        <page.description>
+            <lang id="en" value="Trenqr" />
+            <lang id="fr" value="Trenqr" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+
+        <!-- AUTRES METAS -->
+        <page.robots value="noindex,nofollow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+    </page>
+
+    <page id="recch">
+        <creadate value="2014-08-29" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="recch" />
+        <page.view.model value="recch" />
+        <page.name>
+            <lang id="en" value="recovery_change" />
+            <lang id="fr" value="recuperation_change" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="en" value="Trenqr" />
+            <lang id="fr" value="Trenqr" />
+        </page.title> 
+        <page.keywords>
+            <lang id="en" value="trenqr" />
+            <lang id="fr" value="trenqr" />
+        </page.keywords> 
+        <page.description>
+            <lang id="en" value="Trenqr" />
+            <lang id="fr" value="Trenqr" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+
+        <!-- AUTRES METAS -->
+        <page.robots value="noindex,nofollow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+    </page>
+
+    <page id="email_confirm">
+        <creadate value="2014-08-27" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <page.id value="email_confirm" />
+        <page.view.model value="email_confirm" />
+        <page.name>
+            <lang id="en" value="confirm" />
+            <lang id="fr" value="confirmation" />
+        </page.name>
+        <page.icon value="{wos/sysdir:img_dir_uri}/r/fav2.png" />
+        <page.title>
+            <lang id="en" value="Trenqr" />
+            <lang id="fr" value="Trenqr" />
+        </page.title> 
+        <page.keywords>
+            <lang id="en" value="trenqr" />
+            <lang id="fr" value="trenqr" />
+        </page.keywords> 
+        <page.description>
+            <lang id="en" value="Trenqr" />
+            <lang id="fr" value="Trenqr" />
+        </page.description> 
+<!--        <page.author value="DEUSLYNN ENTREPRISE" />
+        <page.copyright value="DEUSLYNN ENTREPRISE, ALL RIGHTS RESERVED" />-->
+
+        <!-- AUTRES METAS -->
+        <page.robots value="noindex,nofollow,noimageindex,noarchive" />
+        <page.pragma value="no-cache" />
+        <page.cache_control value="no-cache" />
+    </page>
+</def.pages>

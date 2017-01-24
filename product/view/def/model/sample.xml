@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE def.pages_models SYSTEM "../dtd/dtd.pages_models.def.dtd">
+
+<def.pages_models>
+    <model id="__MDL_ID__">
+        <author value="" />
+        <creadate value="" />
+        <last_mod_date value="" />
+        <!-- **** -->
+        <model.files.css>
+            <link.css id="__CSS_ID1__" />
+        </model.files.css> 
+        <model.files.js>
+            <link.js id="__JS_ID1__" />
+        </model.files.js>
+    </model>
+
+</def.pages_models>

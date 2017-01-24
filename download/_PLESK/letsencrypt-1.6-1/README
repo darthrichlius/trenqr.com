@@ -1,0 +1,5 @@
+Let's Encrypt integration
+
+This extension provides ability to create free SSL certificates for your domains in one click from Plesk GUI.
+
+Plesk plugin for Let's Encrypt client: https://github.com/plesk/letsencrypt-plesk

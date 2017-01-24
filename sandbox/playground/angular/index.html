@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="blogApp">
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/flatly/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.7/angular-route.min.js"></script>
+    
+</head>
+<body>
+	<div class="navbar navbar-default">
+		<div class="navbar-header">
+			<a class="navba-brand" href="#/">MyBLOG with AngularJS</a>
+		</div>
+	</div>
+	<div id="container" ng-view></div>
+	
+	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="web/js/app.js"></script>
+	<script type="text/javascript" src="web/js/service/ArticlesFactory.js"></script>
+	<script type="text/javascript" src="web/js/controller/ArticleController.js"></script>
+	<script type="text/javascript" src="web/js/controller/CommentController.js"></script>
+	
+
+</body>
+</html>

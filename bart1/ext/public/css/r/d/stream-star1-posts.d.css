@@ -1,0 +1,244 @@
+
+#stream-star1-posts {
+/*    border: 1px solid black;*/
+    width: 720px;
+    margin: 5px auto 0 auto;
+    padding: 0 0 0px 0;
+    list-style: none;
+}
+
+#stream-star1-posts ul {
+    list-style: none;
+}
+
+.s-s-p-unik {
+    /*border: 1px solid black;*/
+    height: 816px;
+    margin: 0;
+    
+    overflow: hidden;
+    position: relative;
+}
+
+.s-s-p-unik ul {
+    margin-bottom: 20px; 
+    list-style: none;
+}
+
+.s-s-p-u-comp-img, .s-s-p-u-comp-spec, .s-s-p-u-comp-conx {
+    margin: 0 auto;
+    width: 570px !important;
+}
+
+.s-s-p-u-comp-img{
+    border: 1px solid lightgray;
+    
+    height: 569px;
+    
+}
+
+.s-s-p-u-comp-img p {
+/*    border: 1px solid lightgray;*/
+    margin: 0 auto;
+    padding: 3px;
+    /*width: 570px !important;*/
+    float: left;
+    
+    text-align: center;
+}
+
+.goto-prev-area-on-img, .goto-next-area-on-img {
+    margin-top: 3px;
+    width: 80px;
+    height: 562px;
+    position: absolute;
+}
+
+.goto-prev-area-on-img {
+    /*border: 1px solid yellow;*/
+    float: left;
+    margin-left: 2px;
+}
+
+.goto-next-area-on-img {
+    /*border: 1px solid red;*/
+    float: left;
+    margin-left: 485px;
+}
+
+.goto-prev-area-on-img a, .goto-next-area-on-img a {
+    /*border: 1px solid green;*/
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgb(0,0,0);
+}
+/**
+.goto-prev-area-on-img a:hover, .goto-next-area-on-img a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+*/
+/*
+.shadow-goto {
+    background-color: rgba(0,0,0,0.3);
+}
+*/
+
+/*********************** SPECS *********************/
+.s-s-p-u-comp-spec {
+    margin-top: -20px !important;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    
+    height: 30px;
+}
+.s-s-p-u-comp-spec ul {
+    padding: 0;
+}
+.s-s-p-u-comp-spec ul li {
+    float: left;
+}
+
+.p-appr {
+    padding: 3px 0 0 0;
+    
+}
+
+.p-appr p {
+    /*border: 1px solid black;*/
+    float: left;
+}
+
+.p-appr-1 {
+    border: 1px solid rgb(63, 114, 155);
+    /*border: 1px solid rgb(120,0,0);*/
+    height: 19px;
+    width: 55px;
+    border-radius: 5px;
+    margin: 1px 0 0 7px;
+    /*box-shadow: 0px 0px 5px rgba(190,0,0,0.8) inset;*/
+    box-shadow: 0px 0px 5px rgb(63, 114, 155) inset;
+    
+    line-height: 19px;
+    /*color: rgb(200,10,0);*/
+    color: rgb(63, 114, 155);
+    font-family: Arial;
+    text-align: center;
+    font-size: 12px;
+}
+
+.p-appr-2 {
+    display: block;
+    margin: 0px 0 0 0px;
+    padding: 0 0 0 7px;
+    background-color: orange;
+    border: 1px solid gray;
+    border-radius: 6px;
+    height: 18px;
+    width: 51px;
+    box-shadow: 0px 0px 2px rgba(15,15,15,0.8);
+    
+    color: black;
+    font-family: calibri, cursive;
+    font-style: italic;
+    text-decoration: none;
+    line-height: 16px;
+    /*text-align: center;*/
+    font-weight: bold;
+    
+}
+
+@font-face {
+    font-family: "Lily Script One";
+    src: url("../../../../mods/fonts/Lily_Script_One/LilyScriptOne-Regular.ttf");
+}
+
+.appr-ind {
+    margin-left: 0px;
+    font-size: 13px;
+    /*font-weight: bold;*/
+    font-family: 'Lily Script One' !important;
+    font-style: italic !important;
+    line-height: 16px;
+}
+
+.appr-p1 {
+    margin-left: -1px;
+    /*font-weight: bold;*/
+    font-size: 13px;
+}
+
+.p-date {
+    /*border: 1px solid black;*/
+    margin: 7px 0 0 369px; 
+    width: 70px;
+    
+    /*color: rgb(110,110,110);*/
+    /*color: rgb(63, 114, 155);*/
+    color: rgba(63, 111, 154, 0.8);
+    font-family: Arial;
+    font-size: 12px;
+    text-align: right;
+}
+
+/*********************** CONX *********************/
+.s-s-p-u-comp-conx {
+    /*border: 1px solid lightgray;*/
+    
+    /*border-top: 0px solid lightgray;*/
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    height: 35px;
+   /*margin-top: -17px !important;*/
+    
+    font-family: Arial;
+    font-size: 13px;
+    color: rgb(150,150,150);
+}
+
+.s-s-p-u-comp-conx p {
+    /*border: 1px solid red;*/
+    padding: 2px 4px;
+    margin: 0;
+}
+
+.s-s-p-u-comp-conx a {
+    text-decoration: none;
+    font-family: calibri;
+    font-size: 14px !important;
+    font-weight: bold;
+    color: rgb(63, 114, 155);
+}
+
+.s-s-p-u-comp-conx a:hover {
+    text-decoration: underline;
+}
+
+.conx-others {
+    font-family: proxima-nova, 'Helvetica Neue', Arial !important;
+    font-weight: bold;
+    font-size: 14px !important;
+    color: gray;
+}
+
+/*********************** DESC ********************/
+
+.s-s-p-u-comp-desc {
+    /*border: 1px solid black;*/
+    margin: 20px auto 0 auto;
+    padding: 10px;
+    width: 530px !important;
+    
+    font-family: Georgia, calibri;
+    font-size: 17px;
+    text-align: justify;
+}
+
+/*********************** SEPARATOR *********************/
+.s-s-p-sepa {
+    border-top: 1px solid lightgrey;
+    margin-bottom: 10px;
+}

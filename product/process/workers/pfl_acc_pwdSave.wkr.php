@@ -1,0 +1,70 @@
+<?php
+
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+class WORKER_pfl_acc_pwdSave extends WORKER  {
+    
+    function __construct() {
+        parent::__construct(__FILE__,__CLASS__);
+        $this->isAjax = FALSE;
+        //Lignes de debug
+        //        $this->presentVarIfDebug(__FUNCTION__, __LINE__, $_SESSION["ud_carrier"]["itr.articles"],'v_d');
+        //        $this->endExecutionIfDebug(__FUNCTION__,__LINE__);
+    }
+    
+    /**************** START SPECFIC METHODES ********************/
+    
+    private function acc_accountPasswdSave($args){
+        $ACC = new ACCOUNT();
+        $r = $ACC->on_alter_entity($args);
+        //Ce ne sont pas les mêmes arguments passés au on_alter_entity, c'est pour ça qu'on sépare les deux types d'updates (classic/passwd)
+        return $r;
+    }
+
+    /****************** END SPECFIC METHODES ********************/
+    
+
+    public function on_process_in() {
+        $r = $this->acc_accountPasswdSave($this->KDIn["datas"]);
+        $this->KDOut["r"] = $r;
+    }
+
+    public function on_process_out() {
+        echo json_encode(["ret" => $this->KDOut["r"]]);
+        exit();
+    }
+    
+    protected function prepare_params_in_if_exist() {
+        
+    }
+    
+    public function prepare_datas_in() {
+        $this->KDIn['datas'] = $_POST['datas'];
+//        //TODO: Récupérer l'ID de l'utilisateur connecté via $_SESSION['']
+//        //En attendant: simulation
+//        $this->KDIn['datas']['accid'] = 95;
+        
+        $oid = $_SESSION["rsto_infos"]->getAccid();
+        $A = new PROD_ACC();
+        $exists = $A->exists_with_id($oid);
+        
+        if ( !$exists ) {
+            $this->Ajax_Return("err","__ERR_VOL_USER_GONE");
+        } else {
+            $this->KDIn['datas']['accid'] = $oid;
+        }
+    }
+    
+    
+    /*************************************************************************************************/
+    /************************************* GETTERS and SETTERS ***************************************/
+    
+}
+
+
+
+?>

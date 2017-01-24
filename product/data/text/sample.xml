@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE text_library SYSTEM "../dtd/dtd.deco.def.dtd">
+
+<text_library>
+    <text id="id1">
+        [Text]
+    </text>
+    <text id="id2">
+        [Text]
+    </text>
+</text_library>
+    

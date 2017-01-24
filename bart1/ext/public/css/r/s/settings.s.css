@@ -1,0 +1,479 @@
+/* 
+    Created on : 18 nov. 2014, 22:25:25
+*/
+
+
+/********************* SKELETON ********************/
+#pfl_content {
+    /*border: 1px solid #f00;*/
+    /* 225*2+520 Somme Width des contenus */
+    width: 970px;
+    margin: 35px auto 0 auto;
+    
+    overflow: visible !important;
+}
+
+#pfl-center {
+    width: 745px;
+    
+    overflow: visible !important;
+}
+
+#pfl_leftbar {
+    /*margin-left: 9px;*/
+}
+
+#pfl_rightbar {
+    /*margin-right: 9px;*/
+    
+    float: right;
+}
+
+#pfl_leftbar, #pfl_rightbar {
+    /* border: 1px solid black;
+    display: inline-block;*/
+    width: 225px;
+    vertical-align: top;
+    
+    font-size: 14px;
+    text-align: left;
+}
+
+#pfl_middle {
+    /* display: inline-block; 
+     border: 1px solid blue; */
+    width: 520px;
+    margin: auto;
+    
+    float: right;
+    
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+}
+
+
+/******************** GENERAL *********************/
+
+.stgs-lmenu.active {
+    background-color: #fdfdfd;
+    font-weight: bold;
+}
+
+.stgs-back-orign {
+    border: none;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    
+    position: absolute;
+    right: 15px;
+    top: -2px;
+    
+}
+
+.stgs-back-orign img {
+    border: none;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.stgs-err-subhint {
+    height: 12px;
+    margin: 5px 0px 0px 160px;
+    
+    overflow: hidden;
+    
+    color: #898989;
+    font-size: 12px;
+    text-overflow: ellipsis;  
+}
+
+.stgs-pfl-spnr {
+    position: absolute;
+    right: 100px;
+}
+
+/************** INFOS **************/
+
+#pfl-infbox-mx p {
+    margin: 10px 0px ;
+}
+
+/************** FORMULAIRE **************/
+
+.stgs-pfl-fld.error_field, .stgs-fld-errchk.error_field {
+    border-color: #FF8F8F !important;
+}
+
+/****** CITY SEARCH ******/
+
+#stgs-city-list-mx {
+    width: 252px;
+    margin: 2px 0px 0px 160px;
+
+    position: relative;
+}
+
+#stgs-city-list {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    width: 100%;
+    background-color: #fff;
+    
+    position: absolute;
+    z-index: 10;
+}
+
+.stgs-city-list-row {
+    border-bottom: 1px solid #ccc;
+    width: 248px;
+}
+
+.stgs-city-list-trg {
+    display: block;
+    padding: 5px 15px;
+    
+    color: #666;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.stgs-city-list-trg b {
+    color: #444 !important;
+    font-weight: bold;
+}
+
+.stgs-city-list-trg:hover {
+    background-color: #ebebeb;
+    
+    color: #353535 !important;
+}
+.stgs-city-list-trg:visited, .stgs-city-list-trg:active {
+    color: #666;
+}
+
+.cy-list-cycop-mx {
+    margin-top: 3px;
+        
+    float: right;
+    
+    color: #00f;
+    font-size: 13px;
+}
+
+#cysrh-cstm-spnr-mx {
+    padding: 10px;
+    
+    text-align: center;
+}
+
+/* GESTION DU TABLEAU DES VILLES */
+#city_table_wrapper {
+/*    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;*/
+    /*display: none;*/
+    width: 327px;
+    margin: 10px 0px 0px 87px;
+}
+#city_table_wrapper::after {
+    clear: both;
+}
+
+#city_table_details {
+    /*font-style: italic;*/
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+#city_table{
+    display: block;
+    font-family: "Calibri", "Myriad Pro", arial, sans-serif;
+    cursor: default;
+}
+
+#city_table th{
+    /* border-radius: 5px */
+    text-align: left;
+    background-color: #e6e6e6;
+    font-weight: bold;
+    padding: 3px 12px;
+    /*text-align: center;*/
+    margin: auto;
+    min-width: 108px;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+#city_table th:first-of-type{
+    /*border-radius: 5px 0 0 0;*/
+    border: 1px solid;
+    border-color: #ddd transparent #ddd #ddd;
+}
+#city_table th:last-of-type{
+    /*border-radius: 0 5px 0 0;*/
+    border: 1px solid;
+    border-color: #ddd #ddd #ddd transparent;
+}
+
+#city_table tr:hover{
+    background-color: #e6e6e6;
+}
+
+#city_table tr:last-of-type *{
+    border-bottom: 1px solid #ddd;
+}
+/*#pfl_city_table tr:last-of-type td:first-of-type{
+    border-radius: 0 0 0 5px;
+}
+#pfl_city_table tr:last-of-type td:last-of-type{
+    border-radius: 0 0 5px 0;
+}*/
+
+#city_table td {
+    cursor: pointer;
+    padding: 3px 12px;
+    border: 1px solid;
+    border-color: transparent #ddd transparent #ddd;
+}
+
+/********* ACCOUNT **********/
+
+#stgs-acc-sub-wpr {
+    margin-bottom: 25px;
+}
+
+/*** PASSWORD ***/
+.stgs-pwd-grp {
+    margin-top: 10px;
+}
+
+/********* SECURITY **********/
+
+#stgs-sec-sub-wpr {
+    margin-bottom: 25px;
+}
+
+/********* DEL ACCUOUNT *******/
+
+.stgs-pfl-del-spnr {
+    margin: 5px 55px 0px 0px;
+}
+
+/************** FOOTER **************/
+
+#pfl-stgs-ftr-chs {
+    float: right;
+}
+
+/************** VALID BY PASSWORD **************/
+
+#stgs-vld-by-pwd-mx {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    
+    position: fixed;
+    z-index: 100;
+}
+
+#stgs-vbp-ccl {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+#stgs-vld-by-pwd-ctr {
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+    color: #fff;
+}
+
+#stgs-vbp-hdr {
+    color: #fff;
+    font-family: "Segoe UI","Mythic Gothic";
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#stgs-vbp-ipt-mx {
+    margin: 20px 0px;
+    
+    text-align: center;
+}
+
+#stgs-vbp-ipt {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    width: 215px;
+    padding: 8px 20px 6px 20px;
+    outline: 0;
+    
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#stgs-vbp-ipt:focus {
+    border-color: #2875B5;
+    box-shadow: 0 0 0 1px rgba(0, 150, 150, 0.7);
+}
+
+#stgs-vbp-sub-mx {
+    width: 255px;
+    margin: 0px auto;
+    
+    text-align: right;
+}
+
+#stgs-vbp-sub {
+    border-radius: 4px;
+    padding: 5px 15px;
+    
+    color: #fff;
+    font-family: "century gothic", calibri, sans-serif;
+    text-decoration: none;
+}
+
+#stgs-vbp-sub:hover {
+    background-color: rgba(221,220,221,0.4);
+}
+
+#stgs-vbp-xpln {
+    margin-top: 15px;
+    
+    font-family: "Segoe UI", Calibri, Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/************************ DEL ACCOUNT ****************************/
+
+#stgs-del-form-mx {
+    
+}
+
+#stgs-del-form-mx b {
+    font-weight: bold;
+}
+
+#stgs-del-form-mx h2 {
+    color: #6784AB;
+    font-size:  14px;
+    font-family: "Segoe UI", calibri, sans-serif;
+    font-weight: bold;
+}
+
+#stgs-del-form-mx i {
+    font-style: italic;
+}
+
+#stgs-del-intro-mx {
+    
+}
+
+#stgs-del-ibeta {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 470px;
+    margin: 10px 0px 15px -28px;
+    padding: 10px 10px;
+    background-color: #ebebeb;
+    
+    line-height: 16px;
+}
+
+#stgs-del-intro {
+    margin: 0px 0px 20px 0px;
+}
+
+.stgs-del-minfm-grp {
+    margin: 0px 0px 30px 0px;
+}
+
+.stgs-del-minfm-body {
+    margin: 15px 0px 0px 15px;
+}
+
+#stgs-del-y-other-xpln {
+    width: 357px;
+    max-height: 80px;
+    padding: 5px;
+    resize: vertical;
+    
+}
+
+.stgs-del-lmt-chr {
+    display: inline-block;
+    margin-bottom: 5px;
+    
+    color: #aeae9e;
+    font-size: 12px;
+    text-align: left;
+}
+
+.stgs-del-free-xpln {
+    width: 377px;
+    max-height: 80px;
+    padding: 5px;
+    resize: vertical;
+    
+}
+
+#stgs-del-form-err-mx {
+    height: 12px;
+    margin: 15px 0px 0px 0px;
+}
+
+#stgs-del-form-errmsg {
+    
+    color: #FF2121;
+    font-size: 12px;
+}
+
+/***************************** ERRORBOX *****************************/
+
+#stgs-errbx-clz {
+    display: inline-block;
+    /* border: 1px solid #f00; */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding-right: 1px;
+    
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    
+    color: #555;
+    font-family: 'Myriad Pro', Calibri, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    line-height: 17px;
+}
+
+#stgs-errbx-clz:hover {
+    background: rgba(207, 87, 87, 0.2);
+}
+
+#stgs-errbx-errmsg b {
+    font-weight: bold;
+}
+
+#stgs-errbx-errmsg i {
+    font-style: italic;
+}

@@ -1,0 +1,174 @@
+<!Doctype>
+<html ng-app="pg-angular">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Index AngularJS playground</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.5.7/angular-route.min.js"></script>
+    </head>
+    <body>
+        <div ng-controller="main">
+            <h1>Test des fonctionnalités AngularJS</h1>
+            <div>
+                <h2>Input with result</h2>
+                <div>
+                    <label>
+                        <span>Say hello word</span>
+                        <input type="text" name="" ng-model="user_hw">
+                    </label>
+                </div>
+                <div>
+                    <span>Your hello world result is : </span> {{user_hw}}
+                </div>
+            </div>
+            
+            <div>
+                <h2>AJAX</h2>
+                <div>
+                <button ng-click="alertThis(user_hw)">Display</button>
+                </div>
+                <div>
+                    <button ng-click="serverSayHello()">Server Say Hello</button>
+                </div>
+                <div>
+                    (Auto AJAX) Server Say Hello => {{server_hw}}
+                </div>
+            </div>
+
+            <div>
+                <h2>Repeat something</h2>
+                <div>
+                    <label>
+                        <span>Add a reaction (via JS File)</span>
+                        <input type="text" name="" ng-model="newReaction">
+                        <button ng-click="AddReaction(newReaction)" ng-enter="AddReaction(newReaction)">Add</button>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span>Add a reaction (via HTML)</span>
+                        <input type="text" name="" ng-model="newReaction_html">
+                        <button ng-click="reactions.push({id:4,text:newReaction_html})">Add</button>
+                    </label>
+                </div>
+                <ul>
+                    <li ng-repeat="react in reactions">
+                        {{react.text}}
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>WATCH</h2>
+                <p>The line below displays the number of comments in list</p>
+                <div>
+                    <span ng-init="react_length=2">{{react_length}}</span>
+                </div>
+            </div>
+
+            <div>
+                <h2>BLUR</h2>
+                <p>When the field bellow blurs, we display TRUE (or 1) => {{is_blur}}</p>
+                <div>
+                    <input type="text" name="" myng-enter="DisplayBlur()">
+                </div>
+            </div>
+
+            <div>
+                <h2>CLASS IF DATA</h2>
+                <p>When user change value, we change class</p>
+                <div>
+                    <p>Would you like to start the engine ?</p>
+                    <label>
+                        YES : 
+                        <input type="radio" name="engine" ng-model="engine_status" value="go-green">
+                    </label>
+                    <label>
+                        NO : 
+                        <input type="radio" name="engine" ng-model="engine_status" value="go-red">
+                    </label>
+                    {{engine_status}}
+                </div>
+                <div>
+                    Engine is : <span class="circle" ng-class="engine_status"></span>
+                </div>
+                <!-- ooooo -->
+                <p>When user change value, we change class</p>
+                <div>
+                    <p>Would you like to start the engine ?</p>
+                    <label>
+                        YES : 
+                        <input type="radio" name="engine" ng-model="engine_status_2" value="1">
+                    </label>
+                    <label>
+                        NO : 
+                        <input type="radio" name="engine" ng-model="engine_status_2" value="0">
+                    </label>
+                    {{engine_status_2}}
+                </div>
+                <div>
+                    Engine is : <span class="circle" ng-class="{'go-green': engine_status_2 == '1', 'go-red': engine_status_2 == '0'}"></span>
+                </div>
+            </div>
+
+            <ul>
+                    <li class="test">
+                        Ceci est une super fonctionnalité qui déchire sa race \o/
+                    </li>
+                    <li class="test">
+                        Ceci est une super fonctionnalité qui déchire sa race \o/
+                    </li>
+                    <li class="test">
+                        Ceci est une super fonctionnalité qui déchire sa race \o/
+                    </li>
+            </ul>
+
+            <div>
+                <h2>ARRAY FILTER</h2>
+                <p>The main goal is to get a precise value from an array depending on the enter</p>
+                <div>
+                    <input type="text" name="" ng-model="query" >
+                </div>
+                <ul>
+                    <li ng-repeat="user in users">{{user.name}}</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h2>LE SOUCIS AVEC LES SCOPES ET L'HERITAGE PROTOTYPAL</h2>
+                <P>Veuillez changer les champs pour vérifier le problème :)</P>
+                <script type="text/ng-template" id="/tpl1.html">
+                    <input ng-model="myPrimitive">
+                    <span>{{myPrimitive}}</span>
+                    <span>{{myObject.aNumber}}</span>
+                </script>
+                <p>Ici la variable "primitive" est appelée depuis le child, d'où le changement au niveau LOCAL</p>
+                <div ng-include src="'/tpl1.html'"></div>
+
+                <script type="text/ng-template" id="/tpl2.html">
+                    <input ng-model="myObject.aNumber">
+                    <span>{{myPrimitive}}</span>
+                    <span>{{myObject.aNumber}}</span>
+                </script>
+                <p>Ici on modifie directement la valeur d'un objet. Donc euh bah ...lol Ca modifie le parent MDR </p>
+                <div ng-include src="'/tpl2.html'"></div>
+
+                <script type="text/ng-template" id="/tpl3.html">
+                    <input ng-model="$parent.myPrimitive">
+                    <span>{{myPrimitive}}</span>
+                    <span>{{myObject.aNumber}}</span>
+                </script>
+                <p>Ici la variable "primitive" est appelée depuis le parent, d'où le changement au niveau GLOBAL</p>
+                <div ng-include src="'/tpl3.html'"></div>
+            </div>
+
+            <div>
+                <h2>Le BIND EVENT</h2>
+                <button>Click here</button>
+            </div>
+            
+            <script type="text/javascript" src="script.js"></script>
+        </div>
+    </body>
+</html>

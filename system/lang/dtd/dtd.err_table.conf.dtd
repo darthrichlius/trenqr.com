@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT sys_error_table (error+)>
+    <!ELEMENT error (errno,errtype,sys_errmsg,user_errmsg)>
+            <!ATTLIST error id CDATA #REQUIRED>
+        <!ELEMENT errno EMPTY>
+            <!ATTLIST errno value CDATA #REQUIRED>
+        <!ELEMENT errtype EMPTY>
+            <!ATTLIST errtype value (E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE) #REQUIRED>
+        <!ELEMENT sys_errmsg EMPTY>
+            <!ATTLIST sys_errmsg value CDATA #REQUIRED>
+        <!ELEMENT user_errmsg EMPTY>
+            <!ATTLIST user_errmsg value CDATA #REQUIRED>
+

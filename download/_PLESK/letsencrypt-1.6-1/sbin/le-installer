@@ -1,0 +1,102 @@
+#!/bin/bash -e
+### Copyright 1999-2016. Parallels IP Holdings GmbH. All Rights Reserved.
+
+EXT_PATH=${EXT_PATH:-/usr/local/psa/var/modules/letsencrypt}
+export DEBIAN_FRONTEND=noninteractive
+
+if [ "$PLESK_DEBUG" != "1" ] ; then
+  yum_quiet="-q"
+  apt_quiet="-qq"
+  venv_quiet="-q"
+  pip_quiet="-q"
+fi
+
+if [ "$1" = "remove" ] ; then
+  rm -f /etc/apt/sources.list.d/plesk-letsencrypt.list
+  rm -f /etc/yum.repos.d/plesk-letsencrypt.repo
+  [ -n "$(which apt-get)" ] && apt-get remove -y $apt_quiet plesk-letsencrypt-pre
+  [ -n "$(which yum)" ] && yum remove -y $yum_quiet plesk-letsencrypt-pre
+  exit 0
+fi
+
+ai_url="http://autoinstall.plesk.com"
+le_version="LETSENCRYPT_0.0.2"
+python_path="/opt/plesk/python/2.7/bin/"
+
+not_supported()
+{
+  echo "Sorry, your operating system $1 is not supported"
+  exit 1
+}
+
+bootstrap_debian()
+{
+  local os_name="$1"
+  local os_version="$2"
+  echo "Bootstrapping dependencies for $os_name $os_version..."
+  echo "deb $ai_url/$os_name/$le_version $os_version all" > /etc/apt/sources.list.d/plesk-letsencrypt.list
+  apt-get update $apt_quiet -o Dir::Etc::sourcelist="sources.list.d/plesk-letsencrypt.list" \
+                    -o Dir::Etc::sourceparts="-" \
+                    -o APT::Get::List-Cleanup="0"
+  apt-get install -y $apt_quiet -o APT::Install-Suggests=false -o APT::Install-Recommends=false plesk-letsencrypt-pre
+}
+
+bootstrap_centos()
+{
+  local os_version="$1"
+  local os_arch="$(uname -i)"
+  echo "Bootstrapping dependencies for centos $os_version $os_arch..."
+  cat > /etc/yum.repos.d/plesk-letsencrypt.repo <<EOF
+[plesk-letsencrypt]
+name=Plesk packages for letsencrypt
+baseurl=$ai_url/$le_version/dist-rpm-CentOS-$os_version-$os_arch
+enabled=1
+gpgcheck=1
+gpgkey=$ai_url/plesk.gpg
+
+[plesk-letsencrypt-tp]
+name=Plesk 3d-party packages for letsencrypt
+baseurl=$ai_url/$le_version/thirdparty-rpm-CentOS-$os_version-$os_arch
+enabled=1
+gpgcheck=0
+EOF
+  yum install -y $yum_quiet plesk-letsencrypt-pre
+}
+
+psa_version=( $(cat /usr/local/psa/version) )
+case "${psa_version[1]}${psa_version[2]}" in
+    Debian6*) bootstrap_debian "debian" "squeeze" ;;
+    Debian7*) bootstrap_debian "debian" "wheezy" ;;
+    Debian8*) bootstrap_debian "debian" "jessie" ;;
+    Ubuntu12.04) bootstrap_debian "ubuntu" "precise" ;;
+    Ubuntu14.04) bootstrap_debian "ubuntu" "trusty" ;;
+    CentOS6*|RedHatel6*) bootstrap_centos "6" ;;
+    CentOS7*|RedHatel7*) bootstrap_centos "7" ;;
+    *) not_supported "${psa_version[1]} ${psa_version[2]}" ;;
+esac
+
+if [ -L "$EXT_PATH/venv" ] ; then
+    old_venv=$(readlink "$EXT_PATH/venv")
+fi
+venv_path=$(mktemp "$EXT_PATH/venv.XXXXX")
+rm -f "$venv_path"
+mkdir "$venv_path"
+
+echo "Creating virtual environment..."
+$python_path/virtualenv $venv_quiet --no-site-packages --setuptools "$venv_path"
+
+echo "Updating letsencrypt and virtual environment dependencies..."
+export PYTHONWARNINGS="ignore:A true SSLContext object is not available."
+pip="$venv_path/bin/pip"
+"$pip" install $pip_quiet -U setuptools
+"$pip" install $pip_quiet -U pip
+"$pip" install $pip_quiet /var/lib/plesk/wheels/*.whl
+# the latest pip does not require --pre option
+"$pip" install $pip_quiet letsencrypt-plesk
+
+echo "Switch venv to the installed one..."
+[ ! -z "$old_venv" ] && rm -rf "$old_venv"
+rm -rf "$EXT_PATH/venv"
+ln -s "$venv_path" "$EXT_PATH/venv"
+
+echo "Done"

@@ -1,0 +1,7 @@
+# Vendor & libs
+/vendor
+/vendor_save
+/node_modules
+
+# Extensions
+*.sql

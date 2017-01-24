@@ -1,0 +1,37 @@
+DEVELOPPER : Lou Carther
+VERSION NAME : tqr.vb1.1510.1
+AVAILABLE DATE  : Octobre 2015
+COMMENTS : 
+# La priorité sera faite sur le module CHATBOX pour lui permettre d'être pleinement opérationnel
+# Sur le code de priorité est faible, plus la tâche est importante
+
+[PAGE:www.trenqr.com]
+	-> Une page qui demande d'aller vers la beta
+	Priorité : 3
+
+
+[PAGE:HOME]
+	-> Le bouton "Se connecter" est trop exentré sur le modèle 15"
+	Priorité : 2
+
+
+[TEXTES]
+	-> Mettre au singulier tous les noms quand il n'y a qu'une seule mesure. exemple : "1 nouvelles publications" => "1 nouvelle publication"
+	Priorité : 3
+
+
+[SRHBX]
+	-> Quand une Tendance a des caractères avec des accents spéciaux, la recherche ne fonctionne pas bien.
+	Priorité : 2
+	Exemple : "Ma Tendänçe pour les tests mais belle quand même" La recherche avec "tendance" ne mène nulle part
+
+
+[CHATBOX]
+	-> Mettre en place un moyen d'être avertit des nouveaux messages reçus
+	Priorité : 1
+	-> Maintenir les conversations quand on change de page où qu'on reload
+	Priorité : 1
+
+[POSTMAN]
+	-> Pouvoir cliquer sur la boxe en bas à gauche
+	Priorité : 1

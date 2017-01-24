@@ -1,0 +1,242 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    
+    /*background-color: white;*/
+    /*background-color: rgb(216,216,216);*/
+    background-color: rgb(20,20,20);
+}
+
+/*****************************************************************************/
+/********************************** HEADER ZONE ************************************/
+#header {
+    /*border: 1px solid black;*/
+    min-height: 55px;
+    height: 80px;
+    width: 100%;
+    /*min-width: 1350px;*/
+    min-width: 1162px;
+    background-color: rgb(0,32,95);
+    /*background-color: rgb(0,112,195);*/
+    /* background-color: rgb(0,69,120); /* Autre Theme */
+}
+
+/*****************************************************************************/
+/********************************** PAGE ************************************/
+#page_clb {
+    /*border: 1px solid green;*/
+    /*min-width: 1350px;*/
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1512px;
+    min-width: 1162px;
+    overflow: hidden;
+}
+
+/********************************** PAGE HEADER ************************************/
+#page_header {
+    /*border: 1px solid white;*/
+    height: 50px;
+}
+
+/********************************** PAGE MAIN ************************************/
+#page_main {
+    /*border: 1px solid red;*/
+    margin: 5px auto;
+    /*width: 100%;*/
+    /*height: 612px;*/
+    width: 914px;
+    /*max-width: 1042px;*/
+    /*min-width: 942px;*/
+    overflow: visible;
+}
+
+#page_main > div {
+    
+   height: 512px;
+}
+
+/********************************** COMMON  */
+
+.clb_goto {
+    /*border: 1px solid green;*/
+    width: 50px;
+    height: 512px;
+    /*background-color: white;*/
+    position: relative;
+    overflow: visible;
+}
+
+.page_main_left, .page_main_right {
+    
+}
+
+/******************************** NAVIGATE */
+
+.navigate {
+    display: block;
+    border: 1px solid grey;
+    border-radius: 6px;
+    width: 70px;
+    height: 70px;
+    
+    position: absolute;
+    
+    /* FOR PROTO */
+    color: grey;
+    font-size: 10px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 70px;
+}
+
+.navigate:hover {
+    border: 1px solid #fff;
+    background-color: rgb(30,30,30);
+    
+    color: #fff;
+}
+
+.navigate-left {
+    top: 200px;
+    right: 10px;
+}
+
+.navigate-right {
+    top: 200px;
+    left: 10px;
+}
+
+/********************************** LEFT */
+#page_main_left {
+    /*clear: both;*/
+    /*border: 1px solid green;*/
+    /*width: 100%;*/
+    /*max-width: 662px;*/
+    width: 565px;
+    /*min-width: 555px;*/
+    /*width: 662px;*/
+    /*margin-right: 380px;*/
+    
+    color: white;
+}
+
+.p_m_a_l_clb_goto {
+    float: left;
+}
+
+.p_m_a_l_img_cntr {
+    border-top: 1px solid rgb(200,200,200);
+    border: 1px solid rgb(200,200,200);
+    border-bottom: 1px solid rgb(200,200,200);
+    border-left: 1px solid rgb(200,200,200);
+    /*border-radius: 3px 0 0 3px;*/
+    margin-left: 50px;
+    padding: 0;
+    height: 512px;
+    
+    position: relative;
+    z-index: 1;
+}
+
+/* OBSELETE [24-01-14] @RDL
+.p_m_a_l_img_cntr .fade {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+}
+*/
+.p_m_a_l_img_cntr .time {
+    border: 1px solid red;
+    margin: 5px 0 0 430px;
+    padding: 0;
+    position: absolute;
+    z-index: 2;
+    
+    color: white;
+    font-family: Arial, Calibri, sans-serif;
+    font-size: 12px;
+}
+
+.p_m_a_l_img_cntr .clb_post_specs {
+    border: none;
+    margin: 0 0 0 0;
+    padding: 0 0 0 5px;
+    background-color: rgba(0,0,0,0.5);
+    height: 25px;    
+    width: 508px;
+    
+    position: absolute;
+    top: 487px;
+    z-index: 4;
+    
+    line-height: 25px;
+}
+
+.clb_post_specs_time {
+    margin: 0 10px 0 0;
+    float: right;
+    
+    font-family: Arial !important;
+    font-size: 12px;
+}
+
+.p_m_a_l_img_cntr a {
+    color: white;
+    text-decoration: none;
+    line-height: 25px;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Calibri, Arial;
+    /*z-index: 3;*/
+}
+
+.p_m_a_l_img_cntr a:hover {
+    text-decoration: underline;
+}
+/********************************** ASIDE */
+
+#page_main_right {
+    /*border-left: 1px solid yellow;*/
+    float: right;
+    width: 350px;
+}
+
+.p_m_aside {
+    border-bottom: 1px solid rgb(200,200,200);
+    border-right: 1px solid rgb(200,200,200);
+    border-left: 1px solid lightgray;
+    border-top: 1px solid rgb(200,200,200);
+    border-radius: 0 3px 3px 0;
+    /*border: 1px solid rgb(200,200,200);*/
+    float: left;
+    width: 300px;
+    height: 512px;
+    background-color: white;
+}
+
+.p_m_aside_clb_goto {
+    margin-left: 300px;
+    /*height: 100%;*/
+    /*background-color: red;*/
+    color: white;
+}
+
+/********************************** NEXT ***/
+
+#footer {
+    /*border: 1px solid white;*/
+    height: 100px;
+    width: 100px;
+}

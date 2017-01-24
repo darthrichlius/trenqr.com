@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT url_library (url*)>
+    <!ELEMENT url (lang+)>
+        <!ATTLIST url id ID #REQUIRED>
+        <!ELEMENT lang EMPTY>
+            <!ATTLIST lang id CDATA #REQUIRED>
+            <!ATTLIST lang value CDATA #REQUIRED>
+

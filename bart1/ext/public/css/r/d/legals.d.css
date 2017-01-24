@@ -1,0 +1,103 @@
+
+#legals {
+    
+    
+    /*border-top: 10px solid #FC9;*/
+    /*border-top: 4px solid #FC9;*/
+    border: 1px solid #ddd;
+    /*
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    */
+    /*border-radius: 4px;*/
+    width: 342px;
+    height: 80px;
+    padding: 0;
+    margin-top : 15px !important;
+    /*margin-left: -3px;*/
+    /*margin: 50px auto 15px 8px;*/
+    background-color: #fff;
+    box-sizing: border-box;
+    
+    position: relative;
+    /*top: 15px;*/
+    z-index: 2;
+}
+
+#legals.wlc {
+    /*border: 1px solid #ccc;*/
+    /*width: 308px;*/
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#design-legals {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    height: 40px;
+    margin-left: -3px;
+    background-color: #2d2d2d;;
+    
+    position: relative;
+    z-index: 2;
+}
+
+.legals_sp_with_trade {
+    margin-top: 250px !important;
+}
+
+#legals p {
+    font-family: calibri;
+    font-size: 12px;
+    width: 260px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+#legals p > a {
+    color: #000;
+    text-decoration: none;
+    /*font-style: italic;*/
+    font-weight: bold;
+}
+
+#legals p > a:hover {
+    text-decoration: underline;
+}
+
+#legals ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px auto 0 10px;
+    overflow: auto;
+    width: 280px;
+    
+    font-family: calibri;
+    font-size: 14px;
+}
+
+#legals ul li {
+    float: left;
+}
+
+#legals ul li a {
+    color: #586B79;
+    text-decoration: none;
+}
+
+#legals ul li a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.legals-sep {
+    width: 12px;
+    text-align: center;
+}
+
+.legals-first {
+    color: #000 !important;
+    font-weight: bold;
+    font-size: 13px !important;
+}

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE products SYSTEM "dtd/dtd.prod.conf.dtd">
+<!-- This is extremely high important file. This file and all contained are properties of Deuslynn Corporation. -->
+<!-- The access to this file is highly restricted to mandated people. -->
+<!-- If you are not one of them, please close it and notify us to : leaks@deuslynn.com -->
+
+<!-- This is the center of Our Products. This file contains all confs of our products. -->
+<!-- Without that file, products could not run. So Please, Respect the following rules. -->
+<!-- NEVER ALTER THE FILE WITHOUT AUTORIZATIONS. -->
+<!-- NEVER WIPE OUT THE FILE -->
+
+<products>
+    <prod id="trenqr">
+        <prod_id value="848182"/>
+        <prod_code value="tqr"/>
+        <prod_name value="test_prod"/>
+        <prod_commer_name value="Trenqr"/>
+        <prod_author value="DIEUD-LOUSSAKOU RICHARD"/>
+        <copy_r value="Deuslynn Entreprise, all rights reserved"/>
+        <prod_hosts>
+            <!-- Liste des hosts possibles. Cela permet de les retirer ou de valider certaines opérations. -->
+			<host id="std1" value="trenqr.com" />
+			<host id="prod" value="www.trenqr.com" />
+			<host id="beta" value="beta.trenqr.com" />
+			<host id="beta-fr" value="beta-fr.trenqr.com" />
+			<host id="test" value="test.trenqr.com" />
+			<!-- Il faut changer la ligne ci-dessous si on change la 'référence' (ex : .1412) du dossier demo -->
+			<!-- <host id="dev" value="dm1412.trenqr.com" /> -->
+			<!-- <host id="dm1509" value="dm1509.trenqr.com" /> -->
+			<host id="dev" value="dm1606.trenqr.com" />
+            <host id="local" value="127.0.0.1" />
+            <host id="local_2" value="trenqr.local.dev" />
+        </prod_hosts>
+        <prod_host_compls>
+            <!-- Liste des compléments possibles. Cela permet de les retirer aisement lors de certains traitements. -->
+            <hcompl id="std" value="forrest" />
+            <hcompl id="local" value="dev.trenqr.com" />
+            <hcompl id="ajax" value="ajax" />
+        </prod_host_compls>
+        <prod_ver>
+            <ver_code value="vb1"/>
+            <ver_name value="Buggy1"/>
+            <ver_catchphr value="" />
+        </prod_ver>
+        <prod_conf>
+            <is_installed value="yes"/> <!-- yes | no -->
+            <w_status value="on" /> <!-- on | off --> 
+            <is_debug value="yes" /> <!-- yes | no -->
+            <r_mode value="T_RM_DBRM"/> <!--T_RM_TRM | T_RM_DBRM -->
+            <production_r_mode value="P_RM_PRM"/> <!-- P_RM_PRM | P_RM_CRM | P_RM_MRM | P_RM_QRM -->
+        </prod_conf>
+        <default_lang value="fr" />  
+        <available_langs>
+            <!-- [DEPUIS 10-07-16] -->
+<!--            <lang value="en" /> 
+            <lang value="fr" />  -->
+            <lang name="lang" value="fr" />  
+            <lang name="lang" value="en" /> 
+            <!-- 
+                [DEPUIS 10-07-16] 
+                Si on a pas de traduction spécifique, on considérera us comme "en" via des copoer coller ou autres ajustements.
+            -->
+            <lang name="lang" value="us" /> 
+        </available_langs>
+        <!-- [DEPUIS 03-08-16] -->
+        <available_lang_aliases>
+            <lang_alias id="us" value="en" />
+        </available_lang_aliases>
+        <url_params_required>
+            <url_param id="page" value="simple" />
+            <url_param id="urqid" value="simple" />
+        </url_params_required>
+        <url_params_optional>
+            <url_param id="user" value="simple" />
+            <url_param id="ups" value="composed" />
+<!--            <url_param id="login" value="simple" />
+            <url_param id="pwd" value="simple" />
+            <url_param id="spe_entry" value="simple" />-->
+        </url_params_optional>
+        <url_params_default>
+            <url_param_d id="page" value="profil"/>
+            <url_param_d id="urqid" value="TMLNR_GTPG"/>
+        </url_params_default> 
+        <default_params_separator value="." />
+        <default_couple_separator value="=" />
+        
+        <!-- COOKIE NAMES -->
+        
+        <cookie_names>
+            <cookie_name id="lang_welc" value="TQR_LCLG" />  
+            <cookie_name id="lang_rest" value="TQR_RLG" />  
+        </cookie_names>
+        
+        <!-- DEFAULT PAGES -->
+		
+        <pdpage_welc_pgid value="/ontrenqr" />
+        <pdpage_welc_conx_pgid value="/login" />
+        <pdpage_welc_deconx_pgid value="/logout" />
+        <pdpage_rest_prod_pgid value="/%{pseudo}%" />
+        <pdpage_rest_own_pgid value="%{pseudo}%" />
+        <pdpage_rest_confirm_own_pgid value="/" />
+		<!--
+		<pdpage_welc_pgid value="http://www.trenqr.com/forrest/ontrenqr" />
+        <pdpage_welc_conx_pgid value="http://www.trenqr.com/forrest/login" />
+        <pdpage_welc_deconx_pgid value="http://www.trenqr.com/forrest/logout" />
+        <pdpage_rest_prod_pgid value="http://www.trenqr.com/forrest/%{pseudo}%" />
+        <pdpage_rest_own_pgid value="http://www.trenqr.com/forrest/%{pseudo}%" />
+        <pdpage_rest_confirm_own_pgid value="http://www.trenqr.com/" />
+        -->
+        <!-- **** EMAIL **** -->
+        <prod_email_table>
+			<!-- Main Senders -->	
+            <email id="email_default" 			value="Trenqr &lt;trenqr@trenqr.com&gt;" />
+            <email id="email_system" 			value="Trenqr System &lt;system@trenqr.com&gt;" />
+			<email id="email_noreply" 			value="Trenqr &lt;noreply@trenqr.com&gt;" />
+			<email id="email_bugzy_sender" 		value="Trenqr System &lt;system@trenqr.com&gt;" />
+            <email id="email_pass_recovery" 	value="Trenqr &lt;noreply@trenqr.com&gt;" /> 
+            <email id="email_info_sender" 		value="Trenqr Info &lt;info@trenqr.com&gt;" /> 
+            <email id="email_newsletter" 		value="Trenqr Newsletter &lt;newsletter-noreply@trenqr.com&gt;" />
+            <email id="email_welcome" 			value="Trenqr &lt;welcome-noreply@trenqr.com&gt;" />
+            <email id="email_acty_notif"        value="Trenqr &lt;notify-noreply@trenqr.com&gt;" />
+            <!-- Receivers -->
+            <email id="email_serr_receiver" 	value="err.auto.sys.rcr@trenqr.com" /> 
+            <email id="email_uerr_receiver" 	value="err.user.rcr@trenqr.com" />
+            <email id="email_bugzy_receiver" 	value="err.bugzy.rcr@trenqr.com" />
+            <!-- Personnes physiques ou Groupes -->
+            <email id="email_director" 			value="lou.carther@deuslynn-entreprise.com" />
+            <email id="email_support_tech" 		value="Trenqr Technical Support &lt;support.technical@trenqr.com&gt;" />
+            <email id="email_support_premier" 	value="Trenqr Premier Support &lt;support.premier@trenqr.com&gt;" />
+        </prod_email_table>
+        
+        <!-- ERROR HANDLING -->
+        <err_rpt_table>
+			<err_rpt_enable value="no" /> <!-- yes | no --> 
+            <err_rpt_only_PRM value="yes" /><!-- yes | no -->
+            <err_rpt_only_syserr value="yes" /><!-- yes | no -->
+        </err_rpt_table>
+        
+        <!-- REPPORT HANDLING -->
+        <prod_rpt_table>
+            <prod_rpt_subs_each_date value="604800000" />
+            <prod_rpt_subs_each_number value="x10, +10k" />
+        </prod_rpt_table>
+    </prod>
+</products>

@@ -1,0 +1,1 @@
+require.config({"baseUrl":"bart1/ext/public/js","paths":{"jquery":"//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min","jqueryui":"//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min","masonry":"//cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min"}});

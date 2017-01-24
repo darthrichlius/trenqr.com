@@ -1,0 +1,345 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15 mai 2014, 11:25:30
+    Author     : arsphinx
+*/
+
+
+#tr-filter-res {
+    /*border: 1px solid #0f0;*/
+    margin: 20px 0 0 0;
+    overflow: auto;
+}
+
+/******************** TREDN FILTERS RESULT *********************/
+
+#tr-fil-res-more {
+    /*border: 1px solid #f00;*/
+    padding: 1px 10px;
+    margin: 0 0 3px 0;
+    /*height: 16px;*/
+    
+    overflow: auto;
+    
+    color: #b0b0b0;
+    font-family: Arial, Calibri, sans-serif;
+    font-size: 13px;
+}
+
+#tr-fil-res-more > * {
+    display: inline-block;
+    /*border: 1px solid blue;*/
+}
+
+/******** MORE LEFT *********/
+
+#t-f-r-m-left {
+/*    width: 69px;*/
+}
+
+#t-f-r-m-nb {
+    
+}
+
+#t-f-r-m-txt {
+    font-style: italic;
+}
+
+/******** MORE RIGHT *********/
+
+#t-f-r-m-right {
+    margin: 0 5px 0 0;
+    
+    white-space: nowrap;
+    
+    float: right;
+}
+
+#tr-fil-res-more a {
+    padding: 0 10px;
+    margin: 0 0 0 0;
+    
+    text-decoration: none;
+}
+
+.tr-fil-res-more-link-ena {
+    color: #4461D9 !important;
+}
+
+.tr-fil-res-more-link-dis {
+    /*background-color: #f7f7f7;*/
+    
+    cursor: default;
+        
+    color: #ccc !important;
+}
+
+
+.tr-fil-res-more-link-dis:hover {
+    text-decoration: none !important;
+}
+
+#tr-fil-res-more a:hover {
+    text-decoration: underline;
+}
+
+#tr-fil-res-more a:before {
+    content: "";
+}
+
+
+#t-f-r-m-prev {
+    
+}
+
+#t-f-r-m-next {
+    
+}
+
+/****************** CHILD **************/
+
+#tr-fil-res-child-max {
+    /*border: 1px solid #f00;*/
+    height: 620px;
+    
+    overflow: auto;
+}
+
+#tr-fil-res-nochild {
+    /*border: 1px solid #000;*/
+    padding: 0 20px;
+    
+    overflow: hidden;
+    white-space: nowrap;
+    /*word-wrap: break-word;*/
+    text-overflow: ellipsis;
+     
+    color: #ccc;
+    font-family: Arial, sans-serif;
+    font-size: 58px;
+    font-weight: bold;
+    line-height: 500px;
+    text-align: center;
+}
+
+.tr-f-res-model {
+    /*border: 1px solid #000;*/
+    padding: 0;
+    margin: 0;
+    height: 124px;
+    width: 124px;
+    
+    float: left;
+    overflow: hidden;
+}
+
+.tr-f-res-model-link {
+    display: block;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    
+    text-align: center;
+}
+
+.tr-f-res-model-img {
+    border: none;
+    outline: 0;
+}
+
+/******************** TREND FILTERS BRAIN *********************/
+#tr-filter-brain {
+    border: 1px solid #bbb;
+    margin: 20px 0 0 0;
+    background-color: #fff;
+}
+
+#tr-filter-brain-form {
+    
+}
+
+#tr-fil-br-close-max {
+    padding: 10px 10px 0 0;
+    
+    text-align: right;
+}
+
+#tr-fil-br-close {
+    padding: 5px 15px;
+    
+    color: rgb(50,50,50);
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    /*letter-spacing: 1px;*/
+    text-decoration: none;
+}
+
+#tr-fil-br-close:hover {
+    background-color: #f1f1f1;
+    
+    /*text-decoration: underline;*/
+}
+
+#tr-fil-br-header-max {
+    
+}
+
+#tr-fil-br-title, #tr-fil-br-desc {
+    /*border: 1px solid #f00;*/
+    
+    font-family: Calibri, Arial, sans-serif;
+}
+
+#tr-fil-br-title {
+    margin: 5px 0 0 0;
+    padding: 0 30px 0 30px;
+    
+    color: #1F2223;
+    font-size: 22px;
+    font-weight: 500; /* normal = 100, bold = 700 */
+}
+
+#tr-fil-br-desc {
+    margin: 2px 0 20px 0;
+    padding: 0 30px 0 30px;
+    
+    color: #758896;
+    font-size: 14px;
+}
+
+#sub-fil-specs {
+    /*border: 1px solid pink;*/
+    padding-left: 136px;
+    margin-top: -8px !important;
+}
+
+#tr-filter-brain-form fieldset {
+    border: 0;
+    margin: 0;
+    padding: 4px 0;
+    
+    overflow: visible;
+}
+
+
+#tr-filter-brain-form input[type=checkbox], #tr-filter-brain-form input[type=radio] {
+    margin: 0 0px 0 0; 
+}
+
+#tr-filter-brain-form input[type=text] {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 5px 5px;
+    width: 200px;
+}   
+
+#tr-filter-brain-form textarea {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 4px 5px;
+    min-height: 25px;
+    width: 200px;
+    
+    overflow: auto;
+    
+    resize: none;
+}
+
+label {
+    /*border: 1px solid #0f0;*/
+    
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.rage-left {
+    display: inline-block;
+    /*border: 1px solid #00f;*/
+    margin: 0 10px 0 0;
+    padding: 0 3px 0 0;
+    width: 102px;
+    height: 25px;
+    
+    float: left;
+    
+    color: rgb(20,20,20);
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.rage-left-sub {
+    /*padding-left: 148px !important;*/
+}
+
+.rage-left-solo {
+    padding-left: 112px !important;
+}
+/*
+.rage-left-check {
+    margin-right: 5px !important;
+}
+
+.rage-left-radio {
+    margin-right: 3px !important;
+}*/
+
+.sp-auth {
+    line-height: 23px;
+}
+
+#contt-char-cn {
+    display: block;
+    /*padding: 0 0 0 114px;*/
+    padding: 0 0 0 305px;
+    
+    font-size: 12px;
+}
+
+#tr-fil-bloc-anim {
+    /*border: 1px solid #f00;*/
+    padding: 0 0 0 115px;
+}
+
+#tr-fil-reset-max {
+    /*border: 1px solid #f00;*/
+    
+    position: relative;
+    overflow: visible;
+    
+    text-align: right;
+}
+
+#tr-fil-reset {
+/*    border-radius: 2px;
+    box-shadow: none;*/
+    margin: 10px 15px 15px 0;
+    padding: 2px 8px;
+    /*background-color: rgb(221,221,211);*/
+    
+    font-family: Arial, Calibiri, sans-serif;
+    font-size: 13px;
+}
+
+#tr-fil-help-link {
+    margin: 20px 0 0 20px;
+    position: absolute;
+    left: 0;
+    
+    color: #123CE7;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+#tr-fil-help-link:hover {
+    text-decoration: underline;
+}

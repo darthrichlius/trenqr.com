@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TREND Rules</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <style>
+            #page {
+                width: 980px;
+                margin: 0 auto;
+            }
+            
+            table {
+                border: 1px solid #000;
+                border-collapse: collapse;
+            }
+            
+            
+            td, th {
+                border: 1px solid #000;
+                border-collapse: collapse;
+            }
+            
+            td {
+                text-align: center;
+            }
+            
+            th {
+                background-color: #aaa;
+            }
+            
+            h1 {
+                text-align: center;
+            }
+            
+            h2 {
+                color: #cc3300;
+            }
+            
+            #ups_table_k {
+                
+            }
+            
+            .tb-elt-medium {
+                width: 100px;
+            }
+            
+            .tb-elt-long {
+                width: 300px;
+            }
+            
+            .tb-elt-vlong {
+                width: 600px;
+            }
+            
+            .red {
+                color: red;
+            }
+            
+            .blue {
+                color: blue;
+            }
+            
+            .green {
+                color: green;
+            }
+            
+            .pink {
+                color: pink;
+            }
+            
+            .left {
+                text-align: left;
+            }
+            
+            #tb-url-rules .left {
+                padding: 5px 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="page">
+            <h1>Règles sur les Tendances</h1>
+            <h2>Menus</h2>
+            <ul>
+                <li><a href="#url_format">Définition</a></li>
+                <li><a href="#ups_rules">Foncitonnalités</a></li>
+                <li><a href="#tr_rules_rules">Règles</a></li>
+            </ul>
+            <div id="tr_rules_defs">
+                <h2>Défintions</h2>
+                <p></p>
+            </div>
+            <div id="tr_rules_feats">
+                <h2>Fonctionnalités</h2>
+                <h3>VBETA1</h3>
+                <p><b>GESTION</b></p>
+                <ul>
+                    <li>Créer une Tendance depuis BRAIN. Après la création, l'utilisateur est rediriger vers la Tendance nouvellement créée.</li>
+                    <li>Créer une Tendance depuis TRPG. Après la création, l'utilisateur est rediriger vers la Tendance nouvellement créée.</li>
+                    <li>Modifier les paramètres d'une Tendance. La modification implique de modifier tous les autres paramètres en même temps au niveau de la couche métier.</li>
+                    <li>Supprimer une Tendance depuis BRAIN.</li>
+                    <li>Mettre à jour les données sur le nombre de Tendances qui m'appartiennent après une suppression de Tendance. Seulement si l'utilisateur est sur sa page TMLNR</li>
+                    <li>Mettre à jour les données sur le nombre de Tendances qui m'appartiennent dans l'entête après une suppression de Tendance. Seulement si l'utilisateur est sur BRAIN - MyTrends</li>
+                    <li>Supprimer les Articles situées dans TIMELINE quand la Tendance liée vient d'être supprimée. Seulement si l'utilisateur est sur sa page TMLNR</li>
+                </ul>
+                <p><b>ABONNEMENTS</b></p>
+                <ul>
+                    <li>Se connecter à une Tendance depuis sa page TRPG</li>
+                    <li>Arrêter l'abonnement à une Tendance depuis BRAIN</li>
+                    <li>Mettre à jour le nombre de Tendances suivies dans l'entete. Seulement si lu'tilisateur est sur BRAIN - MyTrends.</li>
+                    <li>Arrêter l'abonnement à une Tendance de sa page TRPG</li>
+                </ul>
+                <p><b>ARTICLES</b></p>
+                <ul>
+                    <li>Ajouter un nouvel Article à une Tendance depuis BRAIN.</li>
+                    <li>Mettre à jour les données de la Tendance chaque fois qu'une opération add/delete est effectuée sur un Article.</li>
+                    <li>Afficher les premiers Articles d'une Tendance. Le nombre est de 5 par colonnes.</li>
+                    <li>Afficher le nombre de d'Articles ajoutés par un Compte dans une Tendance. La donnée est directement disponible sur la représentation de l'Article.</li>
+                    <li>Afficher les Articles ajoutés ulterieurement.</li>
+                    <li>Afficher les Articles plus anciens.</li>
+                </ul>
+            </div>
+            <div id="tr_rules_rules">
+                <h3>REGLES SUR LES TENDANCES</h3>
+                <p></p>
+                <table id="tr_rules_rules_list">
+                    <tr>
+                        <th class="tb-elt-medium">Section</th>
+                        <th class="tb-elt-vlong">Observations</th>
+                    </tr>
+                    <tr>
+                        <td><b>URL</b></td>
+                        <td class="left">
+                            <ul>
+                                <li>
+                                    www.trenqr.com/<span class="red">trend</span>/<span class="blue">75gef6h1</span>/<span class="green">Jaime-la-voile-et-la-paix</span> <b class='red'>(Le plus commun)</b>
+                                </li>
+                                <li>
+                                    www.trenqr.com/<span class="red">trend</span>/<span class="blue">75gef6h1</span>/<span class="green">Jaime-la-voile-et-la-paix</span>&ups=<b>explore</b> <b class='red'>(Moins fréquent)</b>
+                                </li>
+                                <li>
+                                    www.trenqr.com/<span class="red">trend</span>/<span class="blue">75gef6h1</span>/<span class="green">Jaime-la-voile-et-la-paix</span>&ups=<b>manager</b> <b class='red'>(Souvent après une REDIR)</b>
+                                </li>
+                                <li>
+                                    www.trenqr.com/<span class="red">trend</span>/<span class="blue">75gef6h1</span>/<span class="green">Jaime-la-voile-et-la-paix</span>&ups=<b>[URQ]</b>&<b class='pink'>key1=value1.key2=value2</b>
+                                </li>
+                            </ul>
+                            <p>
+                                <b><u>NOTE</u></b> : Le fait de laisser le titre à la fin de l'URL nous permet de rendre le plus lisible possible ce qui est le plus important pour l'utilisateur : le <b class='red'>TITRE</b>.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>TITRE</b></td>
+                        <td class="left">
+                            <ul>
+                                <li>
+                                    L'équipe technique peut modifier le titre d'une Tendance sans préavis si il ne respecte pas les conditions de la plateforme. 
+                                </li>
+                                <li>
+                                    <b class='red'>Le titre d'une Tendance n'est pas unique</b>. En effet, cela permet de rester dans l'esprit du <q>système concurrentiel entre les différents utilisateurs</q>.
+                                    Cependant, cela complique les traitements en ce qui concerne les recherches mais tout est fait pour y remédier grace à la création de table de références.
+                                </li>
+                                <li>
+                                    L'utilisateur ne doit<u class="red"> pas utiliser de façon abusives des mots faisant référence à des marques déposées</u>. La plateforme se reserve le droit d'utilser des mesures de rétorsions en cas de violations répétées de cette règle.
+                                    Ces mésures peuvent aller jusqu'au bannissement.
+                                </li>
+                                <li>Le titre ne doit pas dépasser <b class='red'>100 cractères</b>.</li>
+                                <li>Les caractères spéciaux sont autorisés dans le titre.</li>
+                                <li>Le titre <u class="red">ne peut pas être uniquement composé que de caractères spéciaux</u>. Cependant, l'utilisateur ne doit pas utiliser abusivement des caractères spéciaux.</li>
+                                <li>L'encodage du titre d'une Tendance est "<b>utf-8</b>".</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>DESCRIPTION</b></td>
+                        <td class="left">
+                            <ul>
+                                <li>La description permet d'apporter des informations complémentaires sur la tendance. Elle complète le titre.</li>
+                                <li>La description ne doit pas dépasser <b class='red'>200 cractères</b>.</li>
+                                <li>Les caractères spéciaux sont autorisés dans la description.</li>
+                                <li>La description <u class="red">ne peut pas être uniquement composé que de caractères spéciaux</u>. Cependant, l'utilisateur ne doit pas utiliser abusivement des caractères spéciaux.</li>
+                                <li>L'encodage du description d'une Tendance est "<b>utf-8</b>".</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>CATEGORIE</b></td>
+                        <td class="left"></td>
+                    </tr>
+                    <tr>
+                        <td><b>ACCES</b></td>
+                        <td class="left">
+                            <ul>
+                                <li>
+                                    Les Tendances sont des <b class='red'>"lieux" publics</b>. L'accès y est autorisé à tout visiteur quelque soit son état de connexion.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>PARTICPATION</b></td>
+                        <td class="left">
+                            <ul>
+                                <li>
+                                    Le créateur d'une Tendance peut choisir entre une particpation <b class='red'>PUBLIC</b> ou <b class='red'>PRIVATE</b>.
+                                </li>
+                                <li><b class='red'>PUBLIC</b> : <span>N'importe qu'elle utilisateur qui est <b class='red'>CONNECTE</b> et qui est <b class='red'>ABONNÉ</b> à la Tendance peut y poster des publications.</span></li>
+                                <li><b class='red'>PRIVATE</b> : <span>Seul le propriétaire de la Tendance peut ajouter des publications.</span></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>PUBLICITE</b></td>
+                        <td class="left">
+                            <ul>
+                                <li>
+                                    Les pages de Tendances contiennent des publicités lorsque l'utilisateur n'est pas connecté.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

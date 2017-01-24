@@ -1,0 +1,86 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25 juil. 2014, 22:31:37
+    Author     : arsphinx
+*/
+
+#welcbox-max {
+    /*border: 1px solid #fff;*/
+/*    width: 317px;
+    height: 66px;
+    margin: 28px 14px 0 0;
+    padding-top: 10px;*/
+
+    border-bottom: 2px solid #efc974;
+    width: 340px;
+    height: 55px;
+    margin: 0;
+    margin-left: -12px;
+    background: #004589;
+    
+    overflow: auto;
+    position: relative;
+    top: 0;
+    z-index: 1001;
+    
+}
+
+#wbx-ch-max {
+    border-bottom: 5px; 
+    /*margin: 0 0 10px 0;*/
+    margin-top: 17px;
+    
+    text-align: center;
+}
+
+.wbx-ch-box {
+    display: inline-block;
+    /*border: 1px solid #f00;*/
+    width: 155px;
+    
+}
+
+.wbx-choices {
+    /*border: 1px solid #f00;*/
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 5px 20px;
+    /*box-shadow: 0px 0px 6px rgba(255,255,255,.4);*/
+    
+    /*color: #fff;*/
+    /*color: #7ACEF4;*/
+    color: #FFF;
+    font-family: "Open sans", Calibri, Verdana, Arial, sans-serif;
+    /*font-weight: bold;*/
+    font-size: 15px;
+    text-decoration: none;
+}
+.wbx-choices:hover {
+    border-color: #FFF;
+    background-color: #FFF;
+    
+/*    color: #FFA500;
+      color: #ffc906; */
+    /*color: #ffbb02;*/
+    color: #60b9b8;
+}
+
+.wbx-choices[data-action |= "conx"] {
+    margin-right: 28px;
+}
+
+.wbx-choices[data-action |= "signup"] {
+    margin-left: 28px;
+}
+
+/********************************************/
+
+#wbx-franky {
+/*    border: 2px solid #FFA500;
+    border-radius: 2px;*/
+}
+

@@ -1,0 +1,407 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18 mai 2014, 10:57:18
+    Author     : arsphinx
+*/
+
+#tr-edit-ver-aside, #tr-cr-ver-aside {
+    /*border: 1px solid #ddd;*/
+    border-top: 1px solid #ddd;
+    /*border-right: 1px solid #ddd;*/
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 0px 15px 0px;
+    margin: 69px 0px 0px -152px;
+    width: 310px;
+    background-color: #fff;
+    
+    position: fixed;
+}
+
+#trpg-ed-ver-ovly-max, #trpg-cr-ver-ovly-max {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 440px;
+/*    width: 405px;*/
+    margin: 150px auto 0px auto;
+    padding: 5px 0px 10px 0px;
+    background-color: #fff;
+    
+    position: relative;
+}
+
+/*************** CONFIRM PART *****************/
+.trpg-conf-part-max {
+    border-radius: 2px;
+    margin: -5px 0px 0px 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    
+    position: absolute;
+    z-index: 2;
+}
+
+.trpg-conf-part-dialog {
+    /*border: 1px solid #f00;*/
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 0px 0px 10px 0px;
+    margin: 35% auto 0 auto;
+    width: 90%;
+    background-color: #fff;
+}
+
+.trpg-c-p-d-m {
+    /*border: 1px solid #f00;*/
+    padding: 20px 15px 15px 15px;
+    margin: 0;
+    /*height: 100%;*/
+    min-height: 10px;
+    
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.trpg-c-p-d-ch {
+    padding: 0 0 0 0;
+    
+    text-align: center;
+}
+
+.trpg-c-p-d-ch-each {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 2px 12px 3px 12px;
+    margin: 0 10px 0 0;
+    
+    color: #222;
+    font-family: Calibri, Aria, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.trpg-c-p-d-ch-each:hover {
+    background-color: #eee;
+}
+/**************** GEN ******************/
+fieldset {
+    border: none;
+    padding: 5px 5px;
+    
+    overflow: auto;
+}
+
+/*************** CANCEL ****************/
+#tr-e-v-a-cancel, #tr-cr-v-a-cancel {
+    padding: 2px 10px;
+    margin: -30px 0px 0px 0px;
+    
+    float: right;
+    
+    color: #323232;
+    font-family: Calibri, Sarial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#tr-e-v-a-cancel:hover, #tr-cr-v-a-cancel:hover {
+    background-color: #bbb;
+}
+
+.tr-v-ovly-cancel {
+    /*padding: 2px 10px;*/
+    margin: -32px 0px 0px 0px;
+    
+    float: right;
+    
+    color: #fff;
+    font-family: Calibri, Sarial, sans-serif;
+    font-size: 33px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 15px;
+}
+
+.tr-v-ovly-cancel:hover {
+    /*background-color: rgba(255,255,255,0.5);*/
+}
+
+
+
+/*************** HEADER ****************/
+.tr-v-a-hder-title {
+    /*border: 1px solid #000;*/
+    margin: 0 0 5px 0;
+    padding: 0;
+    
+    color: #1F2223;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 23px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.tr-v-ovly-hder-title {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+
+.tr-v-a-hder-desc {
+    margin: 8px 0;
+    padding: 0 10px;
+    
+    color: #758896;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 13px;
+}
+
+.tr-v-ovly-hder-desc {
+    margin: 0px 0 10px 0;
+    padding: 0 20px;
+    
+    color: #758896;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.tr-v-ovly-hder-err {
+    width: 241px;
+    margin: 0px 0px 0px 105px;
+    /*padding: 0 105px;*/
+    
+    color: #D84C4C;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.tr-v-a-hder-err {
+    /*border: 1px solid #f00;*/
+    margin: 0;
+    padding: 0 25px;
+    
+    color: #f00;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 12px;
+}
+
+/************** COMPONENTS **************/
+
+#tr-e-v-a-form input, #tr-e-v-a-form textarea, #tr-e-v-a-form select, 
+#tr-cr-v-a-form input, #tr-cr-v-a-form textarea, #tr-cr-v-a-form select, 
+#tr-e-v-ovly-form input, #tr-e-v-ovly-form textarea, #tr-e-v-ovly-form select, 
+#tr-cr-v-ovly-form input, #tr-cr-v-ovly-form textarea, #tr-cr-v-ovly-form select
+{
+    border: 1px solid #bfbfbf;
+    resize: none;
+    
+    font-family: Verdana, Calibri, Arial, sans-serif;
+    font-size: 12px;
+}
+
+#tr-e-v-a-form input, #tr-cr-v-a-form input {
+    border-radius: 2px;
+    padding: 4px 5px;
+    width: 175px;
+    /*box-shadow: none;*/
+    /*background: none repeat scroll 0% 0% transparent;*/
+    /*box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5) inset, 0px 1px 0px*/ 
+}
+
+#tr-e-v-ovly-form input, #tr-cr-v-ovly-form input {
+    border-radius: 2px;
+    width: 275px;
+    padding: 6px 10px;
+    margin-bottom: 3px;
+    /*box-shadow: none;*/
+    /*background: none repeat scroll 0% 0% transparent;*/
+    /*box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5) inset, 0px 1px 0px*/
+}
+
+#tr-e-v-a-desc, #tr-cr-v-a-desc {
+    padding: 3px 5px;
+    width: 175px;
+    resize: vertical;
+    
+    overflow: auto;
+}
+
+#tr-e-v-ovly-desc, #tr-cr-v-ovly-desc {
+    padding: 6px 10px;
+    width: 275px;
+    min-height: 60px;
+    max-height: 95px;
+    resize: vertical !important;
+    
+    overflow: auto;
+}
+
+#intrpg-edit-char-cn, #intrpg-cr-char-cn {
+    display: block;
+    /*border: 1px solid #00f;*/
+    padding: 0 5px 0 0;
+    width: 282px;
+    
+    color: #aaa;
+    font-size: 11px;
+    text-align: right;
+}
+
+#intrpg-ed-ovly-chktr, #intrpg-ed-ovly-char-cn, #intrpg-cr-ovly-char-cn {
+    display: block;
+    /*border: 1px solid #00f;*/
+    padding: 0 5px 0 0;
+    width: 388px;
+    
+    color: #aaa;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 11px;
+    text-align: right;
+}
+
+#tr-e-v-a-form select, #tr-cr-v-a-form select {
+    width: 100px;
+}
+
+#tr-e-v-ovly-form select, #tr-cr-v-ovly-form select {
+    border-radius: 2px;
+    width: 120px;
+    padding: 3px;
+}
+
+.tr-v-a-label {
+    display: inline-block;
+    /*border: 1px solid #0f0;*/
+    padding: 0 8px 0 0;
+    width: 90px;
+    
+    float: left;
+    
+    color: rgb(90,90,90);
+    font-family: Calibri, Myriad, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+    line-height: 30px;
+}
+
+.tr-v-a-label-select {
+    line-height: 23px !important;
+}
+
+.trpg-ed-cr-help {
+    border-bottom: 1px dashed #02BAFF;
+    margin: 0 0 0 5px;
+    outline: 0;
+    
+    color: #02BAFF;
+    font-family: Calibri, Myriad, Arial, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.trpg-ed-cr-help:hover {
+    border: none;
+}
+
+.trpg-ed-cr-help:visited {
+    color: #02BAFF;
+}
+
+/************ FOOTER ***********/
+.tr-v-a-footer {
+    margin: 15px 0 0 0;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+        
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.tr-v-a-footer a {
+    display: inline-block;
+}
+
+.tr-v-ovly-footer {
+    margin: 25px 0px 10px 0px;
+    padding-left: 15px !important;
+    padding-right: 28px !important;
+        
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.tr-v-ovly-footer a {
+    display: inline-block;
+}
+
+#tr-e-v-a-reset, #tr-cr-v-a-reset {
+    border: none;
+    margin: 7px 0 0 0;
+    background: none;
+    
+    color: #123CE7;
+    text-decoration: underline;
+}
+
+#tr-e-v-a-reset:hover, #tr-cr-v-a-reset:hover {
+    text-decoration: none;
+}
+
+#tr-e-v-ovly-reset, #tr-cr-v-ovly-reset {
+    border: none;
+    margin: 7px 0 0 5px;
+    background: none;
+    
+    color: #123CE7;
+    text-decoration: underline;
+}
+
+#tr-e-v-ovly-reset:hover, #tr-cr-v-ovly-reset:hover {
+    text-decoration: none;
+}
+
+#tr-e-v-a-save, #tr-cr-v-a-save {
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    padding: 3px 13px;
+    background-color: #eee;
+    
+    float: right;
+    
+    color: rgb(50,50,50);
+    font-family: Arial, sans-serif; 
+    font-size: 13px;
+    text-decoration: none;
+}
+
+#tr-e-v-a-save:hover, #tr-cr-v-a-save:hover {
+    background-color: #dfdfdf;
+}
+
+#tr-e-v-ovly-save, #tr-cr-v-ovly-save {
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    padding: 5px 15px;
+    background-color: #eee;
+    
+    float: right;
+    
+    color: rgb(50,50,50);
+    font-family: Arial, sans-serif; 
+    font-size: 13px;
+    text-decoration: none;
+}
+
+#tr-e-v-ovly-save:hover, #tr-cr-v-ovly-save:hover {
+    background-color: #dfdfdf;
+}

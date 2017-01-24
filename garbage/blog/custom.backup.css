@@ -1,0 +1,260 @@
+/*
+Bienvenue dans l'éditeur de CSS !
+
+Pour en savoir plus sur le fonctionnement de l'éditeur, vous pouvez vous
+rendre sur cette page :
+http://wp.me/PEmnE-Bt
+*/
+/*--------------------------------------------------------------
+	20.0 Customs
+--------------------------------------------------------------*/
+.site-header {
+	border: 1px solid rgba(153,153,153,0.3);
+	background: #FFF;
+}
+
+.site-navigation-wrapper {
+	border-top: 1px solid rgba(153,153,153,0.3);
+	border-bottom: none;
+}
+
+body.page #primary {
+	border: 1px solid rgba(153,153,153,0.3);
+	margin-bottom: 25px;
+	padding: 25px;
+	background: #fff;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+/*--------------------------------------------------------------
+	20.1 Header
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+	20.2 Wdgets
+--------------------------------------------------------------*/
+.widget_categories li:before {
+	content: "" !important;
+}
+
+.widget_archive li:before {
+	content: "" !important;
+}
+
+.widget_recent_entries li:before {
+	content: "" !important;
+}
+
+.widget_recent_entries a {
+	margin: 0 !important;
+}
+
+/*--------------------------------------------------------------
+	20.3 Home
+--------------------------------------------------------------*/
+body.home .smr-post {
+	border: 1px solid #cfd9e4;
+	background: #fff;
+}
+
+body.home .smr-post:last-child {
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+}
+
+/*--------------------------------------------------------------
+	20.4 Pages
+--------------------------------------------------------------*/
+.archive.category .smr-post {
+	background: #fff;
+}
+
+.single .smr-post {
+	border: solid 1px #dedede;
+	padding-bottom: 30px;
+	background: #fff;
+	font-family: "Open sans", Calibri, Arial, "PT serif", sans-serif;
+	font-size: 13px;
+}
+
+@media (max-width: 620px) {
+	.smr-post .entry-content {
+		padding: 0 15px;
+	}
+}
+
+.entry-header {
+	padding: 0 25px 0 45px;
+}
+
+.post-categories {
+	margin: 20px 0 10px;
+	padding: 0;
+	display: inline-block;
+}
+
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6:not(.tqrbg-cstm-htle-md1):not(.tqrbg-cstm-hglght-md2):not(.tqrbg-cstm-hglght-md3):not(.tqrbg-cstm-hglght-md4):not(.tqrbg-cstm-hglght-md5):not(.gold) {
+	color: #6692B9 !important;
+}
+
+.entry-content h1.gold,
+.entry-content h2.gold,
+.entry-content h3.gold,
+.entry-content h4.gold,
+.entry-content h5.gold,
+.entry-content h6.gold {
+	color: #f8c35e !important;
+}
+
+.entry-title {
+	color: #F8C35E;
+	font-size: 25px;
+}
+
+.single .smr-post p, .smr-post ul, .smr-post ol {
+	font-size: 13px !important;
+}
+
+.smr-post p {
+	margin-bottom: 15px;
+}
+
+.tqrbg-cstm-htle-md1 {
+	color: #b58ed2 !important;
+}
+
+.smr-post .tqrbg-cstm-tuto-step:not(._notyou) {
+	margin-top: 40px !important;
+}
+
+.tqrbg-cstm-tle {
+	font-size: 25px !important;
+}
+
+.tqrbg-cstm-wrng-ltblu {
+	border-radius: 4px;
+	padding: 5px 15px;
+	background: #dfecfd;
+	box-sizing: border-box;
+	font-family: "Open sans", Calibri, Arial, "PT serif", sans-serif;
+	font-size: 13px;
+}
+
+.tqrbg-cstm-wrng-ltblu a {
+	color: #0066DC !important;
+}
+
+.tqrbg-cstm-wrng-ltblu a:hover {
+	text-decoration: underline;
+}
+
+.tqrbg-cstm-hglght-md1,
+.tqrbg-cstm-hglght-md2,
+.tqrbg-cstm-hglght-md3,
+.tqrbg-cstm-hglght-md4 {
+	margin: 35px 0 10px;
+}
+
+.tqrbg-cstm-hglght-md1 {
+	color: #20b2fb !important;
+	font-size: 16px;
+}
+
+.tqrbg-cstm-hglght-md2 {
+	color: #a864ca !important;
+	font-size: 16px;
+}
+
+.tqrbg-cstm-hglght-md3 {
+	color: #f8c35e !important;
+	font-size: 16px;
+}
+
+.tqrbg-cstm-hglght-md4 {
+	color: #587d86 !important;
+	font-size: 16px;
+}
+
+/*--------------------------------------------------------------
+	20.4.1 Page : Equipe
+--------------------------------------------------------------*/
+.tqr-blog-team-indiv-mx {
+	margin-bottom: 70px;
+	overflow: auto;
+}
+
+.tqr-blog-team-indiv-pfl {
+	float: left;
+}
+
+.tqr-blog-team-indiv-pfl-img {
+	display: inline-block;
+	border: none;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	outline: 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.tqr-blog-team-indiv-pfl-img .p-i-image {
+}
+
+.tqr-blog-team-indiv-pfl-img .p-i-image.jzcase {
+	max-width: 260px !important;
+	height: 200px;
+}
+
+.tqr-blog-team-indiv-pfl-img .p-i-fade {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+	position: absolute;
+}
+
+.tqr-blog-team-indiv-xtras {
+	margin-left: 50px;
+	float: left;
+}
+
+.tqr-blog-team-i-x-fn {
+}
+
+.tqr-blog-team-i-x-fn .x-fn-a {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.tqr-blog-team-i-x-poz {
+	color: #96A6B3;
+	font-size: 18px;
+}
+
+.tqr-blog-team-i-x-addrs {
+}
+
+.tqr-blog-team-i-x-tle {
+	margin-top: 30px;
+	font-weight: bold;
+}
+
+.tqr-blog-team-i-x-list {
+	padding: 0;
+	list-style: none;
+}
+
+.x-lst-lbl {
+}
+
+/*--------------------------------------------------------------
+	20.5 Archive (Page)
+--------------------------------------------------------------*/

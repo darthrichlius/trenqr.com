@@ -1,0 +1,231 @@
+#header-container {
+    /*border: 1px solid yellow;*/
+    min-width: 1162px;
+    max-width: 1580px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/************************************** HEADER-LEFT-BLOC ***************************************/
+#header-left-bloc {
+    /*border: 1px solid green;*/
+    min-width: 842px;
+    margin-right: 328px;
+}
+
+#header-logo-container{
+     margin: 7px 0 0 0px;
+     padding: 10px;
+     width: 210px;
+     float: left;
+}
+
+#header-logo {
+    display: block;
+    border: 3px solid white;
+    border-radius: 5px;
+    width: 100px;
+    
+    color: white;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    
+}
+
+/************************************** HEADER-CENTER-BLOC ***************************************/
+#header-center-bloc {
+     /*border: 1px solid red;*/
+     /*width: 100%;*/
+     margin-left: 230px;
+}
+
+#h-c-b-form {
+    display: block;
+    /*border: 1px solid white;*/
+    margin: 0px auto 0 auto;
+    padding-top: 20px; 
+    /*height: 100%;*/
+    
+}
+
+#h-c-b-form input {
+    display: block;
+    margin: 0 auto;
+    height: 25px;
+    width: 500px;
+    outline: none;
+}
+
+#h-c-b-p {
+    /*border: 1px solid white;*/
+    margin: 4px auto 0 auto;
+    
+    font-family: calibri;
+    color: white;
+    text-align: center;
+}
+/************************************** HEADER-RIGHT-BLOC ***************************************/
+#header-right-bloc {
+    /*border: 1px solid red;*/
+    width: 328px;
+    float: right;
+}
+
+
+#user-id-card {
+   border: 1px solid rgb(205,205,205);
+   box-shadow: 0px 0px 6px rgb(255,255,255);
+   -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    behavior: url("mods/PIE.htc");
+   
+   background-color: rgb(0,36,111);
+   
+   min-width: 200px;
+   float: right;
+   list-style: none;
+   padding: 0;
+   margin: 7px 20px 0 0;
+}
+
+#user-id-card > li {
+    float: left;
+    margin: 4px 0 0 4px;
+}
+
+
+#header-user-pflpic {
+    border: 1px solid yellow;
+    box-shadow: 00px 0px 2px rgb(255,255,255);
+}
+
+
+/************************************** LEFT ***************************************/
+/************************************* RIGHT ***************************************/
+#u-i-c-right {
+    
+}
+
+#u-i-c-pseudo {
+    display: block;
+    color : white;
+    text-decoration: none;
+    
+    margin-bottom: 1px; 
+    
+    font-family: calibri;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#u-i-c-pseudo:hover {
+    text-decoration: underline;
+}
+
+#u-i-c-loc {
+    color : white;
+    font-family: calibri;
+    font-size: 13px;
+}
+
+#header-btn-handle{
+    display: block;
+    width: 60px;
+    border: 1px solid orange;
+   
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    behavior: url("mods/PIE.htc");
+    
+    background-color: orange;
+    margin-left: 68px;
+    /*float: left;*/
+    position: relative;
+    
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: calibri;
+    font-size: 13px;
+}
+
+#handle-menu {
+    border: 1px solid rgb(150,150,150);
+    border-radius: 5px; 
+    background-color: white;
+    padding: 5px 0 !important; /* 5px = meme que border-radius*/
+    
+    position: absolute;
+    z-index: 2;
+    top: 72px;
+    /*right: 85px;*/
+    
+    color: black;
+}
+
+#handle-menu, #handle-menu ul {
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#handle-menu>li {
+    /*border: 1px solid grey;*/ 
+    width: 160px;
+}
+
+#handle-menu>li a {
+    display: block;
+    
+    padding: 4px 0;
+    
+    /*text-align: center;*/
+    text-indent: 25px; /* Pouvoir aligner tous les textes a gauche avec un indent commun */
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-family: calibri;
+    font-weight: bold;
+}
+
+#handle-menu>li a:hover {
+    /*box-shadow: 0px 0px 3px rgb(253,165,0) inset;*/
+    box-shadow: 0px 0px 3px rgb(100,100,100) inset;
+    background-color: orange;
+}
+
+
+.menu-dropdown-divider {
+    border-top: 1px solid rgb(220,220,220);
+    display: block;
+    margin: 5px 0;
+    
+}
+/*
+
+
+#header-btn-handle li {
+    border: 1px solid red;
+}
+/*
+#header-btn-handle {
+    border: 1px solid orange;
+    border-radius: 4px;
+    background-color: rgb(249,187,0);
+    
+    margin: 3px 0 0 3px;
+    
+    font-family: arial;
+    font-size: 12px;
+}
+
+#header-btn-handle li {
+    display: block;
+    border: 1px solid red;
+}*/

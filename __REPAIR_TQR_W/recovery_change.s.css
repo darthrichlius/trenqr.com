@@ -1,0 +1,316 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23 avr. 2014, 16:04:25
+    Author     : Pierre Lallement <http://www.syel.totoandco.eu>
+*/
+
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input{
+    outline: 0;
+}
+
+/* Actual Styling */
+body{
+    background-color: #fffdfa;
+    font-family: "Myriad Pro", "Calibri", Arial, Helvetica, sans-serif;
+}
+
+a:visited{
+    color: #00e;
+}
+
+.clear{
+    clear: both;
+}
+
+.recch_error_border{
+    border-color: red !important;
+}
+
+#recch_header{
+    position: relative;
+    width: 100%;
+    min-width: 1366px;
+    height: 80px;
+    background-color: #003A78;
+}
+
+#recch_logo{
+    line-height: 40px;
+    vertical-align: middle;
+    
+    display: inline-block;
+    background: url('../images/headerbar_logo.jpg');
+    color: #003A78;
+    text-align: center;
+
+    height: 40px;
+    width: 246px;
+    margin: 20px 40px;   
+}
+
+#recch_screensize{
+    width: 1351px;
+    padding-top: 95px;
+    margin: auto;
+}
+
+.recch_error_border{
+    border-color: red !important;
+}
+
+#recch_title{
+    height: 38px;
+    width: 640px;
+    margin: 0 auto 20px auto;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 22px;
+    line-height: 38px;
+}
+
+#recch_content {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 550px;
+    margin: auto;
+    padding: 20px 20px 0 20px;
+    background-color: #fff;
+    
+    position: relative;
+}
+
+#recch_content b {
+    font-weight: bold;
+}
+
+#recch_content_text{
+    font-size: 20px;
+    text-indent: 20px
+}
+
+#recch_pw_policy{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+#recch_form_error{
+    /*    display: none;*/
+    width: 100%;
+    /*height: 30px;*/
+    margin: -20px 0px 10px 0px;
+    
+    /*float: left;*/
+    
+    color: red;
+    font-size: 14px;
+    /*font-style: italic;*/
+    /*line-height: 40px;*/
+
+}
+
+#recch_form_wrapper{
+    width: 384px;
+    margin: 32px auto 0 auto;
+}
+#recch_form{
+    position: relative;
+}
+
+.recch_label_wrapper{
+    width: 100%;
+    margin-bottom: 8px;
+}
+.recch_form_label{
+    font-size: 13px;
+}
+
+.recch_input_wrapper{
+    width: 100%;
+    margin-bottom: 8px;
+    
+    overflow: auto;
+}
+.recch_form_input {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 375px;
+    height: 30px;
+    padding: 2px 8px;
+    margin: 0;
+    
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 27px;
+}
+
+#recch_submit_wrapper{
+    width: 100%;
+    height: 50px;
+    
+    text-align: right;
+}
+
+#recch_form_submit{
+    float: right;
+    margin-right: 9px;
+    
+    color: #ffffff;
+    height: 30px;
+    width: 90px;
+    border-radius: 4px;
+    border: 1px solid #0b76e6;
+    outline: 0;
+    cursor: pointer;
+    background: url('../images/btn_gradient.jpg') repeat-x;
+    background: -webkit-linear-gradient(#3799ff, #007eff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#3799ff, #007eff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#3799ff, #007eff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#3799ff, #007eff); /* Standard syntax */
+    
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 13px;
+}
+#recch_form_submit:active{
+    background: url('../images/btn_gradient_reverse.jpg') repeat-x;
+    background: -webkit-linear-gradient(#007eff, #3799ff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#007eff, #3799ff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#007eff, #3799ff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#007eff, #3799ff); /* Standard syntax */    
+}
+
+#recch_help, #rec_help{
+    position: relative;
+    font-size: 14px;
+    width: 510px;
+    height: 58px;
+    line-height: 58px;
+    margin: 10px auto;
+    border-radius: 3px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    padding: 0 20px;
+}
+
+.recch_group_wrapper{
+    margin-bottom: 12px;
+}
+
+
+#recch_cancel_div{
+    margin: 15px 0;
+    font-size: 12px;
+    font-family: "Calibri", arial, sans-serif;
+    display: block;
+}
+
+#recch_cancel_link{
+    
+}
+
+
+.general_footer{
+    font-size: 12px;
+    display: block;
+    margin: 10px auto 30px auto;
+    padding: 8px;
+    border-radius: 5px;
+    height: 40px;
+    width: 552px;
+    margin-bottom: 20px;
+}
+
+.footerbox{
+    vertical-align: top;
+    display: inline-block;
+    width: 55px;
+    height: 1px;
+    float: left;
+    //border: 1px solid black;
+}
+
+.footersite{
+    display: inline-block;
+    float: left;
+}
+
+.stretch{
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+
+.footercontent{
+    display: inline-block;
+    text-align: right;
+    width: inherit; 
+}
+
+.footerlink{
+    display: inline-block;
+    color: #111;
+    margin: 0 13px 20px 0;
+}
+.footerlink:first-child{
+    margin: 0 40px 20px 0;
+}
+.footerlink:last-of-type{
+    margin: 0 0 20px 0;
+}
+.footerlink a, .pfl_footerlink a:visited{
+    color: #111;
+    text-decoration: none;
+}
+.footerlink a:hover{
+    text-decoration: underline;
+}

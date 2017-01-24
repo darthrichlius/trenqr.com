@@ -1,0 +1,504 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25 mars 2015, 15:24:24
+    Author     : @BlackOwlRobot
+*/
+
+#mytrds-mx {
+    /*border: 1px solid #f00;*/
+    width: 765px;
+    margin: 130px auto 20px auto;
+}
+
+/**************************************************************************************************************************************************/
+/****************************************************************** HEADER SCOPE ******************************************************************/
+
+#mytrds-hdr {
+    margin: 0 0 20px 0;
+}
+
+#mytrds-hdr-fltrs {
+    font-family: "Open sans", Calibri, Arial, sans-serif;
+}
+
+#mytrds-hdr-f-lbl {
+    margin-right: 5px;
+    
+    font-weight: bold;
+}
+
+.mytrds-hdr-fil {
+    margin-right: 10px;
+}
+ 
+/**************************************************************************************************************************************************/
+/******************************************************************** BODY SCOPE ******************************************************************/
+
+#mytrds-body {
+    
+}
+
+.myts-mdl-mx {
+    /*border: 1px solid #bbb;*/
+    /*height: 465px;*/
+    height: 429px;
+    margin-bottom: 45px;
+    background-color: rgb(240,242,245);
+    
+    overflow: visible;
+} 
+.myts-mdl-mx[data-tba="sbtrs"] {
+    margin-bottom: 69px !important;
+}
+
+.myts-mdl-purpz {
+    margin-bottom: 5px;
+    
+    font-family: "Open sans", Calibri, sans-serif;
+    font-size: 14px;
+}
+
+.myts-mdl-purpz-u {
+    
+    color: #3f729b;
+    font-family: "Open sans", Calibri,Arial,sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.myts-mdl-purpz-tx {
+    display: inline-block;
+    margin-left: 4px;
+}
+
+#mytrds-bdy-noone-mx {
+    height: 396px;
+    
+    text-align: center;
+}
+
+.mytrds-bdy-noone {
+    display: inline-block;
+    margin-top: 100px;
+    
+    color: #686868;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*********************************************** MEDIA SCOPE **********************************************/
+
+.myts-mdl-media {
+    border: 1px solid #ccc;
+    width: 532px;
+    height: 100%;
+    background-color: #fff;
+    
+    overflow: hidden;
+}
+
+.myts-m-md-cvr-tle {
+    padding: 10px 10px;
+    
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+    text-align: center;
+}
+
+.myts-m-md-cvr-tle-hrf {
+    border: none;
+    height: 30px;
+    outline: 0;
+    
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+    color: #111;
+    font-family: "Open Sans", Calibri, Myriad, Arial, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.myts-m-md-cvr-tle-hrf:hover {
+    color: #7062CE;
+    /*color: #830ad3;*/
+}
+    
+.myts-m-md-cvr-cvr {
+/*    height: 200px;*/
+    height: 164px;
+    padding: 0px;
+    margin: 0px;
+    
+    position: relative;
+    
+    overflow: hidden;
+}
+
+.myts-m-md-cvr-cvr > * {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.myts-m-md-cvr-cvr-hrf {
+    display: block;
+    border: none;
+    width: 100%;
+    /*height: 200px;*/
+    height: 164px;
+    outline: 0;
+    
+    position: absolute;
+    /*top: -166px;*/
+    
+    overflow: hidden;
+}
+
+
+.myts-m-md-cvr-cvr-fade {
+    display: inline-block;
+    background-color: rgba(0,0,0,0.1);
+    /*background-color: rgba(0,0,0,0.05);*/
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.myts-m-md-cvr-cvr-fade.cover {
+    width: 532px;
+    /*height: 200px;*/
+    height: 164px;
+}
+
+.myts-m-md-cvr-cvr-noone {
+    display: inline-block;
+    width: 100%;
+    /*width: 532px;*/
+    /*height: 200px;*/
+    height: 164px;
+    background-color: #4A5E79;
+    
+    text-align: center;
+    line-height: 164px;
+}
+
+.myts-m-md-cvr-cvr-noone img {
+    border: none;
+    outline: 0;
+}
+
+.myts-m-md-cvr-cvr-img {
+    display: inline-block;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    outline: 0;
+    
+    position: absolute;
+}
+
+.myts-m-md-cvr-desc {
+    padding: 5px 8px;
+    text-align: center;
+}
+
+.myts-m-md-cvr-desc-hrf {
+    border: none;
+    outline: 0;
+    
+    color: #7a7a8a;
+    font-family: Calibri, Arial, sans-serif;
+    text-decoration: none;
+}
+
+.myts-m-md-cvr-desc-hrf:hover {
+    color: #353535;
+}
+
+.myts-m-md-sample-mx {
+    /*border-top: 4px solid rgb(131,152,168);*/
+    padding: 20px 0px;
+    
+    text-align: center;
+}
+
+/*********************************************** SPECS SCOPE **********************************************/
+
+.myts-mdl-specs {
+    border-right: 1px solid #6B1DF9;
+    /*width: 210px;*/
+    width: 205px;
+    /*height: 461px;*/
+    height: 426px;
+    padding: 5px 5px 0px 5px;
+    background-color: #192335;
+    /*background-color: #323844;*/
+    
+    float: right;
+    position: relative;
+    top: -1px;
+    /*left: 5px;*/
+    left: 0;
+}
+
+.myts-mdl-specs * {
+    color: rgb(200,177,207);
+    font-family: Calibri, Arial, sans-serif;
+}
+
+.myts-m-s-m-noone {
+    display: inline-block;
+    margin-top: 25px;
+    
+    color: #8c8c8c;
+    font-family: "Open sans", calibri, arial, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.myts-m-md-spl-lst {
+    padding: 0px 0px 0px 10px;
+    margin: 0px;
+    
+    /*overflow: auto;*/
+    
+    list-style: none;
+}
+
+.myts-m-md-spl-lst-item-sprt {
+    width: 128px;
+    /*height: 128px;*/
+    padding: 2px 0px 0px 0px;
+    /*padding: 15px 10px 15px 10px;*/
+    
+    float: left;
+    
+    text-align: center;
+    /*line-height: 130px;*/
+}
+
+.myts-m-md-spl-lst-item-hwrap {
+    display: inline-block;
+    border: none;
+    width: 105px;
+    height: 105px;
+    margin: auto;
+    background-color: #bcbcbc;
+    outline: 0;
+    
+    position: relative;
+    
+    text-align: center;
+    line-height: 105px;
+}
+
+.myts-m-md-cvr-cvr-fade.sample {
+    width: 103px;
+    height: 103px;
+}
+
+.myts-m-md-spl-lst-item-i {
+    border: 1px solid #F0F0F0;
+    /*border: 1px solid #E4E4E4;*/
+    /*border: none;*/
+    border-radius: 2px;
+    /*box-shadow: 0px 1px 4px 1px #A0A0A0;*/
+    outline: 0;
+}
+
+/**************** USERBOX *****************/
+
+.myts-m-s-ubox {
+    padding: 5px;
+}
+
+.myts-m-s-ubx-grp {
+    border: none;
+    outline: 0;
+    
+    text-decoration: none;
+}
+
+.myts-m-s-ubx-grp:hover {
+    /*text-decoration: underline;*/
+}
+
+.myts-m-s-ubx-upsd {
+    height: 20px;
+    margin-left: 8px;
+    
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+    /*color: #3f729b;*/
+    color: #fff;
+    font-family: "Open Sans", "Segoe UI";
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+.myts-m-s-ubx-uppic-mx {
+    display: inline-block;
+    border-radius: 14px;
+    border: 1px solid #B3B3B3;
+    width: 50px;
+    height: 50px;
+    
+    float: left;
+    overflow: hidden;
+    
+    position: relative;
+    
+}
+
+.myts-m-s-ubx-uppic {
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    
+    float: left;
+}
+
+.myts-m-s-ubx-uppic-fade {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.05);
+    
+    position: absolute;
+}
+
+/**************** INFOS *****************/
+
+.myts-m-s-ifs {
+    width: 150px;
+    
+    position: relative;
+    top: -13px;
+    left: 60px;
+    
+    font-size: 13px;
+    text-align: right;
+}
+
+.myts-m-s-ifs-tm {
+    display: inline-block;
+    height: 15px;
+    margin: 0px 6px 0px 3px;
+    
+    color : rgb(246, 218, 255) !important;
+}
+
+
+.myts-m-s-ifs-tm.void {
+    width: 100px;
+    background-color: rgba(255,255,255,0.15);
+}
+
+/**************** SPECS *****************/
+.myts-m-s-sep {
+    border-top: 1px solid rgb(200,177,207);
+    width: 200px;
+    margin: 0 auto;
+}
+
+.myts-m-s-mtrx {
+    
+}
+
+.myts-m-s-mtrx-lst-mx {
+    padding: 0;
+    margin: 0;
+    
+    list-style: none;
+}
+
+.myts-m-s-mtrx-lst-ln {
+    overflow: hidden;
+    /*overflow: auto;*/
+}
+
+.myts-m-s-mtrx-lst-ln[level='1'] {
+    margin-top: 20px;
+}
+
+.myts-m-s-m-l-ln-sbwrp {
+    padding-left: 8px;
+    
+    position: relative;
+/*  overflow: overlay;*/
+}
+
+.myts-m-s-m-l-ln-nb {
+    float: left;
+    
+    color: rgb(222, 222, 222);
+    /*color: rgb(228, 200, 235);*/
+    /*font-style: italic;*/
+}
+
+.myts-m-s-m-l-ln-nb[level='1'] {
+    height: 55px;
+    
+    font-size: 65px;
+    
+    line-height: 55px;
+}
+
+.myts-m-s-m-l-ln-nb[level='2'] {
+    font-size: 30px;
+    
+    /*margin-left: 20px;*/
+}
+
+.myts-m-s-m-l-ln-libwrp {
+    position: relative;
+}
+
+.myts-m-s-m-l-ln-libwrp[level='_l1_1'], .myts-m-s-m-l-ln-libwrp[level='_l1_2'] {
+    left: 8px;
+}
+
+.myts-m-s-m-l-ln-libwrp[level='_l1_1'] {
+    top: 35px;
+}
+
+.myts-m-s-m-l-ln-libwrp[level='_l1_2'] {
+    top: 16px;
+}
+
+.myts-m-s-m-l-ln-libwrp[level='_l2_1'] {
+    top: 14px;
+    left: 8px;
+}
+
+.myts-m-s-m-l-ln-libwrp[level='_l2_1'] * {
+    font-size: 14px;
+}
+
+.myts-m-s-m-l-ln-libt {
+    /*margin-left: 10px;*/
+    
+    color: rgb(180, 178, 181);
+}
+
+.myts-m-s-m-l-ln-lib {
+    display: inline-block;
+    width: 156px;
+    height: 17px !important;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

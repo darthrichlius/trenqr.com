@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT email_models (emodel*) >
+    <!ELEMENT emodel (emodel.id,emodel.type,emodel.object,emodel.body) >
+        <!ATTLIST emodel id ID #REQUIRED>
+        <!ELEMENT emodel.id EMPTY>
+            <!ATTLIST emodel.id value CDATA #REQUIRED>
+        <!ELEMENT emodel.type EMPTY>
+            <!ATTLIST emodel.type value CDATA #REQUIRED>
+        <!ELEMENT emodel.object EMPTY>
+            <!ATTLIST emodel.object value CDATA #REQUIRED>
+        <!ELEMENT emodel.body EMPTY>
+            <!ATTLIST emodel.body value CDATA #REQUIRED>

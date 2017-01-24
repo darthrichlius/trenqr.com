@@ -1,0 +1,12 @@
+#DO NOT REMVOVE !!!!
+
+SetEnv PHP_VER 5_5
+SetEnv REGISTER_GLOBALS 0
+
+Options +FollowSymlinks 
+RewriteEngine on
+
+#RewriteCond %{HTTP_HOST} ^trenqr\.com$ [NC]
+#RewriteRule ^(.*)$ /beta/$1 [L,R=301]
+
+RewriteRule ^(.*)$ http://beta.trenqr.com/$1 [R=301,L]

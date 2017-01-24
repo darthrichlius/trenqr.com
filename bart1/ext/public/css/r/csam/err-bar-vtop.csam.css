@@ -1,0 +1,118 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 mai 2014, 22:08:43
+    Author     : arsphinx
+*/
+
+.error_bar_vtop_max {
+    border: 1px solid #f00;
+    border-radius: 0 0 6px 6px;
+    width: 500px;
+    padding: 0 0 10px 0;
+    margin: 0px auto 0 auto;
+    
+    position: absolute;
+    /*overflow: auto;*/
+    /* 
+        Les paramètres ci-dessus sont gérées par le gestionnaire de la barre d'erreur.
+        On laisse quand meme ces paramètres pour faciliter le developpeur de l'element en l'abscence du module de positionnement.
+        C'est donc utile pour le developpement ou DEBUG'
+    */
+    /*
+    left: 0;
+    right: 0;
+    z-index: 4;
+    /**/
+    
+    /*background-color: #CF5B6D;*/
+    background-color: #FBBCC8;
+}
+
+.error_bar_vtop_max h3 {
+    /*border: 1px solid #100;*/
+    border-bottom: 1px solid #f00;
+    width: 400px;
+    padding: 0 0 10px 0;
+    margin: 10px auto 0 auto;
+    
+    color: #000;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 20px;
+}
+    
+    
+.e-b-vtop-msg {
+    /*border: 1px solid #100;*/
+    padding: 10px 50px 5px 50px;
+    margin: 0 0;
+    
+    color: #000;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 15px;
+}
+
+.e-b-vtop-err-max {
+    /*border: 1px solid pink;*/
+    padding: 0 50px;
+    margin: 0 0 0 0;
+    
+    text-align: right; 
+}
+
+.err-bar-close-trig {
+    color: #111;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.err-bar-close-trig:hover {
+    text-decoration: none;
+}
+
+/******************** NOMBRE D'ERREURS ************************/
+.e-b-vtop-list-err {
+/*    border: 1px solid yellow;*/
+    margin: 15px 0 0 0;
+    width: 500px;
+    
+    position: absolute;
+    
+    text-align: center;
+}
+
+.e-b-v-l-e-max {
+    border: 1px solid #f00;
+    border-radius: 4px;
+    padding: 1px 10px;
+    margin: 0 auto;
+    width: 100px;
+    background-color: pink;
+    /*background-color: #fff;*/
+    
+    color: #000;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#list-id-esk {
+    display: none;
+    border: 1px solid #000;
+    width: 250px;
+    background-color: #fff;
+    
+    display: absolute;
+    top: 0;
+    left:0;
+    z-index: 100;
+}
+
+#list-id-esk span {
+    display: block;
+        
+}

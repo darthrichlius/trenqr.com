@@ -1,0 +1,6 @@
+
+Refactoriser le code pour créer un moteur de Templates comparable à Twig.
+L'objectif étant de suivre à peu prêt la même syntaxe sans perdre nos acquis.
+Cela signifie que nous pourront continuer à utiliser la syntaxe suivante : %{wos/datx:identifiant}% qui deviendra %{rode/srcdata:identifiant}%.
+
+L'objectif étant de faciliter sa prise en main par les développeurs habitués à Symfony ou autres Frameworks utilisant Twig ou Jinja.

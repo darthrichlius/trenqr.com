@@ -1,0 +1,51 @@
+
+#trpg-state-wrng-sprt {
+    border: 1px solid rgb(203, 150, 105);
+    /*border: 2px solid rgb(210, 106, 102);*/
+    border-radius: 5px;
+    width: 670px;
+    margin: auto;
+    padding: 20px 20px;
+    background-color: rgb(253, 242, 184);
+    
+    position: absolute;
+    top: 60px;
+    /*position: fixed;
+    top: 50px;*/
+    right: 0;
+    left: 0;
+    z-index: 100;
+    /*z-index: 1001;*/
+}
+
+#trpg-state-wrng-msg {
+    color: #000;
+    font-family: "Segoe Ui", Calibri, sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+
+#trpg-delay {
+    font-weight: 600;
+}
+
+#trpg-delay.urgent {
+    color: #b41530;
+}
+
+#trpg-state-wrng-fmr {
+    border: none;
+    outline: 0;
+    
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    
+    color : #676767;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#trpg-state-wrng-fmr:hover {
+    color : #000;
+}

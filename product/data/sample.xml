@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE queries SYSTEM "dtd/dtd.queries.def.dtd">
+
+<queries>   
+<!-- ******************************************************************************************************************************************************** -->
+<!-- ************************************************************* CONTROLLER SCOPE LEVEL l3 **************************************************************** -->
+    <query id="qryl3n1">
+        <query.body value="
+        SELECT ipLang 
+        FROM IpBanEvents, IpAsCompTab
+        WHERE ip = ipv4
+        AND ipv4 = :ipv4;" />
+        <query.dbname value="greenburjkx" />
+       <query.type value="get" /><!-- get, set, update, delete -->
+	<query.note value="" />
+        <query.params.in>
+            <qparam id=":ipv4" value="" />
+        </query.params.in>
+        <query.params.out>
+        </query.params.out>
+    </query>
+    <query id="qryl3n2">
+        <query.body value="
+        SELECT city_name as loc_city, countries.ctr_code as loc_ctr_code, countries.ctr_name as loc_ctr_name 
+        FROM partner_mm_cities_reference
+        INNER JOIN partner_mm_location_match_ipadd
+        ON partner_mm_cities_reference.loc_id = partner_mm_location_match_ipadd.loc_id
+        INNER JOIN Countries
+        ON countries.ctr_code = partner_mm_cities_reference.ctr_code
+        AND partner_mm_location_match_ipadd.start_numeral_ip &lt;= :ip_numeral1
+        AND partner_mm_location_match_ipadd.end_numeral_ip &gt;= :ip_numeral2;" />
+        <query.dbname value="greenburjkx" />
+       <query.type value="get" /><!-- get, set, update, delete -->
+	<query.note value="" />
+        <query.params.in>
+            <qparam id=":ip_numeral1" value="" />
+            <qparam id=":ip_numeral2" value="" />
+        </query.params.in>
+        <query.params.out>
+            <qparam id="loc_city" value="" />
+            <qparam id="loc_ctr_code" value="" />
+            <qparam id="loc_ctr_name" value="" />
+        </query.params.out>
+    </query>
+    <query id="qryl3n3">
+        <query.body value="
+        SELECT lang as loc_ctr_lg_code, flag as loc_ctr_flag
+        FROM astb_country_lang, countries
+        WHERE astb_country_lang.country = countries.ctr_code
+        AND astb_country_lang.country = :ctr_code 
+        ORDER BY lg_level_rank ASC; " />
+        <query.dbname value="kx_commons_vBeta" />
+       <query.type value="get" /><!-- get, set, update, delete -->
+	<query.note value="" />
+        <query.params.in>
+            <qparam id=":ctr_code" value="" />
+        </query.params.in>
+        <query.params.out>
+            <qparam id="loc_ctr_lg_code" value="" />
+            <qparam id="flag" value="" />
+        </query.params.out>
+    </query>
+    <query id="qryl3n4">
+        <query.body value="
+        UPDATE Profils
+        SET spoken_lang = :lg_code
+        WHERE pflid = :pflid; "/>
+        <query.dbname value="gudb_736c70_main" />
+       <query.type value="update" /><!-- get, set, update, delete -->
+	<query.note value="" />
+        <query.params.in>
+            <qparam id=":lg_code" value="" />
+            <qparam id=":pflid" value="" />
+        </query.params.in>
+        <query.params.out>
+        </query.params.out>
+    </query>
+    <query id="qryl3n5">
+        <query.body value="
+        UPDATE IpAsCompTab
+        SET ipLang = :lg_code
+        WHERE ipv4 = :ip_numeral;" />
+        <query.dbname value="gudb_736c70_main" />
+       <query.type value="update" /><!-- get, set, update, delete -->
+	<query.note value="" />
+        <query.params.in>
+            <qparam id=":lg_code" value="" />
+            <qparam id=":ip_numeral" value="" />
+        </query.params.in>
+        <query.params.out>
+        </query.params.out>
+    </query>
+    <query id="qryl3n6">
+        <query.body value="
+        SELECT ipLang  
+        FROM IpAsCompTab
+        WHERE ipv4 = :ipv4;" />
+        <query.dbname value="tqr_account_vb1" />
+       <query.type value="get" /><!-- get, set, update, delete -->
+	<query.note value="" />
+        <query.params.in>
+            <qparam id=":ipv4" value="" />
+        </query.params.in>
+        <query.params.out>
+            <qparam id="iplang" value="" />
+        </query.params.out>
+    </query>
+<!-- ******************************************************************************************************************************************************** -->
+<!-- ************************************************************* PROD_ENTITY SCOPE LEVEL l4 **************************************************************** -->
+<!-- * GENERAL * -->
+<query id="qryl4anyn1">
+    <query.body value="
+    SELECT lg_code, lg_lib 
+    FROM Langtab
+    WHERE lg_code = :lg_code;" />
+    <query.dbname value="gudb_736c70_commons_v01" />
+   <query.type value="get" />
+	<query.note value="" />
+    <query.params.in>
+         <qparam id=":lg_code" value="" />
+    </query.params.in>
+    <query.params.out>            
+    </query.params.out>
+</query>
+<!-- * LOCATION * -->
+<query id="qryl4locn1">
+    <query.body value="
+    SELECT city_name, city_id AS city_code, city_pop, admin1_code as admin1, admin2_code as admin2, ctr_code, ctr_name, longitude, latitude 
+    FROM Partner_GN_Cities_15000, Countries
+    WHERE country_code = Countries.ctr_code
+    AND country_code = :ctr_code
+    AND city_name LIKE :city_name;" />
+    <query.dbname value="gudb_736c70_commons_v01" />
+   <query.type value="get" />
+	<query.note value="" />
+    <query.params.in>
+         <qparam id=":ctr_code" value="" />
+         <qparam id=":city_name" value="" />
+    </query.params.in>
+    <query.params.out>            
+    </query.params.out>
+</query>
+<query id="qryl4locn2">
+    <query.body value="
+    SELECT city_name, city_id AS city_code, city_pop, admin1_code, admin2_code, ctr_code, ctr_name, longitude, latitude 
+    FROM Partner_GN_Cities_15000, Countries
+    WHERE country_code = Countries.ctr_code
+    AND country_code = :ctr_code
+    AND city_id = :city_code;" />
+    <query.dbname value="gudb_736c70_commons_v01" />
+   <query.type value="get" />
+	<query.note value="" />
+    <query.params.in>
+         <qparam id=":ctr_code" value="" />
+         <qparam id=":city_code" value="" />
+    </query.params.in>
+    <query.params.out>            
+    </query.params.out>
+</query>
+<query id="qryl4locn3">
+    <query.body value="
+    SELECT city_name, city_id AS city_code, city_pop, admin1_code, admin2_code, ctr_code, ctr_name, longitude, latitude 
+    FROM Partner_GN_Cities_15000, Countries 
+    WHERE country_code = Countries.ctr_code
+    AND city_name LIKE  :city_name ;"/>
+    <query.dbname value="gudb_736c70_commons_v01" />
+   <query.type value="get" />
+	<query.note value="" />
+    <query.params.in>
+         <qparam id=":city_name" value="" />
+    </query.params.in>
+    <query.params.out>            
+    </query.params.out>
+</query>
+<query id="qryl4locn4">
+    <query.body value="
+    SELECT city_name, city_id AS city_code, city_pop, admin1_code, admin2_code, ctr_code, ctr_name, longitude, latitude 
+    FROM Partner_GN_Cities_15000, Countries 
+    WHERE Partner_GN_Cities_15000.country_code = Countries.ctr_code
+    AND city_id =  :city_code ;"/>
+    <query.dbname value="gudb_736c70_commons_v01" />
+   <query.type value="get" />
+	<query.note value="" />
+    <query.params.in>
+         <qparam id=":city_code" value="" />
+    </query.params.in>
+    <query.params.out>            
+    </query.params.out>
+</query>
+<query id="qryl4locn5">
+    <query.body value="
+    SELECT country, lang, lg_level_rank 
+    FROM astb_country_lang 
+    WHERE country = :ctr_code 
+    ORDER BY lg_level_rank ASC 
+    LIMIT 1;" />
+    <query.dbname value="gudb_736c70_commons_v01" />
+   <query.type value="get" />
+	<query.note value="" />
+    <query.params.in>
+         <qparam id=":ctr_code" value="" />
+    </query.params.in>
+    <query.params.out>            
+    </query.params.out>
+</query>
+
+<!-- * EMAIL * -->
+     <query id="qryl4emailn1">
+        <query.body value="
+        SELECT emailraw as email, is_email_authentic as is_authentic, emaildom as domain, email_login as login, creadate
+        FROM emailarchive 
+        WHERE emailraw = :emailraw; "/>
+        <query.dbname value="gudb_736c70_main" />
+       <query.type value="get" />
+	<query.note value="" />
+        <query.params.in>
+             <qparam id=":emailraw" value="" />
+        </query.params.in>
+        <query.params.out>            
+        </query.params.out>
+    </query>
+    <query id="qryl4emailn2">
+        <query.body value="
+        DELETE FROM emailarchive 
+        WHERE emailraw = :emailraw; "/>
+        <query.dbname value="gudb_736c70_main" />
+       <query.type value="delete" />
+	<query.note value="" />
+        <query.params.in>
+             <qparam id=":emailraw" value="" />
+        </query.params.in>
+        <query.params.out>            
+        </query.params.out>
+    </query>
+    <query id="qryl4emailn3">
+        <query.body value="
+        INSERT INTO emailarchive (emailraw,emaildom,email_login,creadate) VALUES 
+        (:emailraw,:emaildom,:email_login,:creadate); "/>
+        <query.dbname value="gudb_736c70_main" />
+       <query.type value="set" />
+	<query.note value="" />
+        <query.params.in>
+             <qparam id=":emailraw" value="" />
+             <qparam id=":emaildom" value="" />
+             <qparam id=":email_login" value="" />
+             <qparam id=":creadate" value="" />
+        </query.params.in>
+        <query.params.out>            
+        </query.params.out>
+    </query>
+
+<!-- * PROFIL * -->
+    <query id="qryl4profiln1">
+        <query.body value="
+        SELECT pflid, u_name as uname, u_fname as ufname, u_borndate as uborndate, u_gender as ugender, creadate, modifdate 
+        FROM Profils
+        WHERE pflid = :pflid;" />
+        <query.dbname value="gudb_736c70_main" />
+       <query.type value="get" />
+	<query.note value="" />
+        <query.params.in>
+             <qparam id=":pflid" value="" />
+        </query.params.in>
+        <query.params.out>            
+        </query.params.out>
+    </query>
+    <query id="qryl4profiln2">
+        <query.body value="
+        SELECT pflid, u_name as uname, u_fname as ufname, u_borndate as uborndate, u_lvcity as ulvcity_code, city_name as ulvcity, country_code as ucountry, u_gender as ugender, creadate, modifdate 
+        FROM Profils
+        INNER JOIN gudb_736c70_commons_v01.partner_gn_cities_15000
+        ON gudb_736c70_commons_v01.partner_gn_cities_15000.city_id = gudb_736c70_main.profils.u_lvcity
+        WHERE gudb_736c70_main.profils.pflid = :pflid;" />
+        <query.dbname value="gudb_736c70_main" />
+       <query.type value="get" />
+	<query.note value="" />
+        <query.params.in>
+             <qparam id=":pflid" value="" />
+        </query.params.in>
+        <query.params.out>            
+        </query.params.out>
+    </query>
+    <query id="qryl4profiln3">
+        <query.body value="
+        INSERT INTO Profils (u_name,u_fname,u_borndate,u_lvcity,u_gender,creadate) VALUES 
+        (:uname,:fname,:ubdate,:ulvcity_code,:ugender,:creadate);" />
+        <query.dbname value="gudb_736c70_main" />
+       <query.type value="set" />
+	<query.note value="" />
+        <query.params.in>
+             <qparam id=":uname" value="" />
+             <qparam id=":fname" value="" />
+             <qparam id=":ubdate" value="" />
+             <qparam id=":ulvcity_code" value="" />
+             <qparam id=":ugender" value="" />
+             <qparam id=":creadate" value="" />
+        </query.params.in>
+        <query.params.out>            
+        </query.params.out>
+    </query>
+    <query id="qryl4profiln4">
+        <query.body value="
+        UPDATE Profils 
+        SET u_name = :uname, u_fname = :fname, u_borndate = :ubdate, u_lvcity = :ulvcity_code, u_gender = :ugender, creadate = :creadate, modifdate = :modifdate 
+        WHERE pflid = :pflid;" />
+        <query.dbname value="gudb_736c70_main" />
+       <query.type value="update" />
+	<query.note value="" />
+        <query.params.in>
+             <qparam id=":pflid" value="" />
+             <qparam id=":uname" value="" />
+             <qparam id=":fname" value="" />
+             <qparam id=":ubdate" value="" />
+             <qparam id=":ulvcity_code" value="" />
+             <qparam id=":ugender" value="" />
+             <qparam id=":creadate" value="" />
+             <qparam id=":modifdate" value="" />
+        </query.params.in>
+        <query.params.out>            
+        </query.params.out>
+    </query>
+    <query id="qryl4profiln5">
+        <query.body value="
+        DELETE FROM Profils 
+        WHERE pflid = :pflid;" />
+        <query.dbname value="gudb_736c70_main" />
+       <query.type value="delete" />
+	<query.note value="" />
+        <query.params.in>
+             <qparam id=":pflid" value="" />
+        </query.params.in>
+        <query.params.out>            
+        </query.params.out>
+    </query>
+<!-- * ACCOUNT * -->
+    <query id="qryl4accn1">
+        <query.body value="
+        SELECT * 
+        FROM ACCOUNTS 
+        WHERE accid = :accid; " />
+        <query.dbname value="gudb_736c70_main" />
+       <query.type value="get" />
+	<query.note value="" />
+        <query.params.in>
+             <qparam id=":accid" value="" />
+        </query.params.in>
+        <query.params.out>            
+        </query.params.out>
+    </query>
+    <query id="qryl4accn2">
+        <query.body value="
+        SELECT accid, pflid, is_conx_with_pseudo_enabled, acc_authpwd, stayconnected 
+        FROM ACCOUNTS 
+        WHERE acc_authemail = :email; " />
+        <query.dbname value="gudb_736c70_main" />
+       <query.type value="get" />
+	<query.note value="Utiliser principalement pour savoir si un email est attaché à un compte. Mais peut servir à d'autres fins. On en profite pour recupperer des données." />
+        <query.params.in>
+             <qparam id=":email" value="" />
+        </query.params.in>
+        <query.params.out>            
+        </query.params.out>
+    </query>
+    <query id="qryl4accn3">
+        <query.body value="
+        INSERT INTO ACCOUNTS (pflid,accpseudo,acclang,acc_authemail,acc_authpwd,creadate) VALUES 
+        (:pflid,:accpseudo,:acclang,:acc_authemail,:acc_authpwd,:creadate); " />
+        <query.dbname value="gudb_736c70_main" />
+       <query.type value="set" />
+	<query.note value="Créer un nouveau compte." />
+        <query.params.in>
+             <qparam id=":pflid" value="" />
+             <qparam id=":accpseudo" value="" />
+             <qparam id=":acclang" value="" />
+             <qparam id=":acc_authemail" value="" />
+             <qparam id=":acc_authpwd" value="" />
+             <qparam id=":creadate" value="" />
+        </query.params.in>
+        <query.params.out>            
+        </query.params.out>
+    </query>
+    <query id="qryl4accn4">
+        <query.body value="
+        UPDATE ACCOUNTS 
+        SET :prop = :val 
+        WHERE accid = :accid;" />
+        <query.dbname value="gudb_736c70_main" />
+       <query.type value="update" />
+	<query.note value="Mettre a jour l'occurence ACCOUNT. La chaine :prop causera une FATAL ERROR si elle n'est pas remplacée. Peut aussi etre utilise pour récupérer les composantes de la Query." />
+        <query.params.in>
+             <qparam id=":accid" value="" />
+             <qparam id=":val" value="" />
+        </query.params.in>
+        <query.params.out>
+        </query.params.out>
+    </query>
+    <query id="qryl4accn5">
+        <query.body value="
+        SELECT accid 
+        FROM ACCOUNTS 
+        WHERE pflid = :pflid; " />
+        <query.dbname value="gudb_736c70_main" />
+       <query.type value="get" />
+	<query.note value="Utiliser principalement pour connaitre le compte lié au profil represente par :pflid." />
+        <query.params.in>
+             <qparam id=":pflid" value="" />
+        </query.params.in>
+        <query.params.out>            
+        </query.params.out>
+    </query>
+    <query id="qryl4accn6">
+        <query.body value="
+        UPDATE ACCOUNTS 
+        SET todelete = :todelete, todel_event_date = :todel_event_date, cancel_todel_event_date = :cancel_todel_event_date 
+        WHERE accid = :accid;" />
+        <query.dbname value="gudb_736c70_main" />
+       <query.type value="update" />
+	<query.note value="Mettre a jour l'occurence ACCOUNT de telle sorte que l'on puisse annuler une programmation de supression." />
+        <query.params.in>
+             <qparam id=":accid" value="" />
+             <qparam id=":todelete" value="" />
+             <qparam id=":todel_event_date" value="" />
+             <qparam id=":cancel_todel_event_date" value="" />
+        </query.params.in>
+        <query.params.out>
+        </query.params.out>
+    </query>
+</queries>    

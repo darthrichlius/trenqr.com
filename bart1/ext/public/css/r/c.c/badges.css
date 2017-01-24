@@ -1,0 +1,339 @@
+.badge-official {
+    border: 1px solid blue;
+    border-radius: 4px;
+}
+
+.badge-official a {
+    display: block;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.badge-official a:hover {
+    color: white;
+    text-shadow: 0px 0px 2px white;
+    background-color: blue;
+}
+
+.badge-verified {
+    border: 1px solid rgb(2,186,255);
+    border-radius: 4px;
+}
+
+.badge-verified a {
+    display: block;
+    text-decoration: none;
+    color: rgb(2,186,255);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.badge-verified a:hover {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 2px white;
+    background-color: rgb(2,186,255);
+    font-weight: bold;
+}
+/*****************************************************************/
+/*
+** Les badges ci-dessous correspondent à ceux insérés au niveau de 'header' des comptes.
+** Ces badges sont de type 'hyperliens'
+*/
+.acch-badge-verified {
+    padding: 3px 12px;
+    background-color: rgb(2,186,255); 
+    
+    color: #fff;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.acch-badge-verified span {
+    
+}
+
+.acch-badge-official {
+    padding: 3px 14px;
+    background-color: blue; 
+    
+    color: #fff;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.acch-badge-official span{
+    
+}
+
+/******************************************************************/
+.badge-follu {
+    border: 1px solid rgba(50,50,50,0.5);
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 3px;
+    padding: 2px 10px;
+    
+    color: white;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 11px;
+}
+/*
+.fol-btn {
+    display: block;
+    border: 1px solid rgb(125,125,125);
+    margin: 25px 0 0 50px;
+    width: 93px;
+    height: 31px;
+    border-radius: 5px;
+    background-color: grey;
+    box-shadow: 1px 1px 8px rgba(30,30,30,0.3);
+    box-shadow: 0px 1px 2px rgba(200,200,200,0.9) inset;
+    
+    text-decoration: none;
+    color: white;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.fol-btn:hover {
+    color: white;
+    background-color: black;
+    box-shadow: 0px 0px 0px rgba(30,30,30,0.3);
+    box-shadow: 0px 0px 0px rgba(210,210,210,0.6) inset;
+}
+
+.fol-btn:active {
+    border: 1px solid black;
+    color: black;
+    background-color: orange;
+}
+//*/
+.bloc-btn {
+    display: block;
+    /*border: 1px solid rgb(50,50,50);*/
+    border: 1px solid rgba(96,38,19,0.1);
+    margin: 25px 0 0 50px;
+    width: 92px;
+    height: 31px;
+    border-radius: 5px;
+    background-color: rgb(189,6,6);
+    /*background-color: darkorange;*/
+    box-shadow: 1px 1px 8px rgba(30,30,30,0.3);
+    box-shadow: 0px 1px 3px rgba(200,200,200,0.9) inset;
+    
+    text-decoration: none;
+    text-shadow: 0px 0px 1px rgba(96,38,19,0.8);
+    color: white;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.bloc-btn:hover {
+    border: 1px solid rgb(189,6,6);
+    color: red;
+    background-color: white;
+    box-shadow: 0px 0px 0px rgba(30,30,30,0.3);
+    box-shadow: 0px 0px 0px rgba(210,210,210,0.6) inset;
+}
+
+.bloc-btn:active {
+    border: 1px solid rgb(100,0,0);
+    color: white;
+    background-color: rgb(189,6,6);
+}
+
+.blocked-btn-deny {
+    display: block;
+    /*border: 1px solid rgb(50,50,50);*/
+    border: 1px solid rgb(189,6,6);
+    margin: 25px 0 0 50px;
+    width: 92px;
+    height: 31px;
+    border-radius: 5px;
+    background-color: white;
+    /*background-color: darkorange;*/
+    box-shadow: 1px 1px 8px rgba(30,30,30,0.3);
+    box-shadow: 0px 1px 3px rgba(200,200,200,0.9) inset;
+    
+    cursor: not-allowed; 
+    
+    text-decoration: none;
+    text-shadow: 0px 0px 1px rgba(96,38,19,0.8);
+    color: red;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    /*line-height: 30px;*/
+    text-align: center;
+}
+
+.blocked-btn-deny span {
+    font-size: 10px !important;
+}
+/*
+.blocked-btn:hover {
+    border: 1px solid rgb(189,6,6);
+    color: red;
+    background-color: white;
+    box-shadow: 0px 0px 0px rgba(30,30,30,0.3);
+    box-shadow: 0px 0px 0px rgba(210,210,210,0.6) inset;
+}
+
+.blocked-btn:active {
+    border: 1px solid rgb(100,0,0);
+    color: white;
+    background-color: rgb(189,6,6);
+}
+*/
+
+/*********************************************/
+
+.tr-badge-tr {
+    display: block;
+    border: 1px solid rgb(112,48,160);
+    width: 79px;
+    height: 21px;
+    background-color: white;
+    /*background-color: rgb(112,48,160);*/
+    border-radius: 8px;
+    margin: 3px 0 0 8px;
+    float: left; 
+    
+    line-height: 21px;
+    font-family: calibri;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(112,48,160);
+    text-align: center;
+    text-decoration: none;
+}
+
+.tr-badge-tr:hover {
+    background-color: rgb(112,48,160);
+    color:white;
+}
+
+.tr-badge-of {
+    display: block;
+    border: 1px solid blue;
+    width: 79px;
+    height: 21px;
+    background-color: white;
+    /*background-color: rgb(112,48,160);*/
+    border-radius: 8px;
+    margin: 3px 0 0 8px;
+    float: left; 
+    
+    line-height: 21px;
+    font-family: calibri;
+    font-size: 14px;
+    font-weight: bold;
+    color: blue;
+    text-align: center;
+    text-decoration: none;
+}
+
+.tr-badge-of:hover {
+    background-color: blue;
+    color:white;
+}
+
+.tr-badge-vf {
+    display: block;
+    border: 1px solid rgb(2,186,255);
+    width: 79px;
+    height: 21px;
+    background-color: white;
+    /*background-color: rgb(112,48,160);*/
+    border-radius: 8px;
+    margin: 3px 0 0 8px;
+    float: left; 
+    
+    line-height: 21px;
+    font-family: calibri;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(2,186,255);
+    text-align: center;
+    text-decoration: none;
+}
+
+.tr-badge-vf:hover {
+    background-color: rgb(2,186,255);
+    color: white;
+}
+
+/******************************************/
+.blocked_tr_badge {
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: white;
+    width: 100px;
+    height: 35px;
+    padding: 0;
+    position: absolute;
+    
+    color: red;
+    font-family: calibri, Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sptop_in_btb {
+}
+
+.spdown_in_btb {
+    position: absolute;
+    width: 100px;
+    top: 18px;
+    right: 0;
+    
+    font-size: 12px;
+}
+
+/******************************************/
+.br_foll_folg {
+    /*border: 1px solid lightgrey;*/
+    border-radius: 4px;
+    padding: 1px 6px 2px 6px;
+    
+    background-color: rgb(58,116,116);
+    color: white;
+    font-family: Arial, calibri, sans-serif;
+    font-size: 11px;
+}
+
+.br_foll_folg_blo {
+    /*border: 1px solid lightgrey;*/
+    border-radius: 4px;
+    padding: 2px 7px 3px 7px;
+    
+    background-color: #C80000;
+    color: white;
+    font-family: Arial, calibri, sans-serif;
+    font-size: 11px;
+}
+
+/********************* OFFICIAL TREND *************************/
+.bdg-tr-offi {
+    border-radius: 3px 3px 3px 3px;
+    padding: 4px 20px;
+    background-color: #0D2EB4;
+    
+    color: #fff;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 12px;
+    /*font-weight: bold;*/
+    text-decoration: none;
+}

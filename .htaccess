@@ -1,0 +1,335 @@
+SetEnv PHP_VER 5_5
+SetEnv REGISTER_GLOBALS 0
+
+# [DEPUIS 20-11-15] Mesure de lutte contre les BOT SPAM qui nuisent aux statistiques
+RewriteCond %{HTTP_REFERER} ^http://.*54\.186\.60\.77/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*76brighton\.co\.uk/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*7makemoneyonline\.com/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*adcash\.com/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*adf\.ly/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*adviceforum\.info/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*alibestsale\.com/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*blackhatworth\.com/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*buttons\-for\-website\.com/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*cenokos\.ru/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*cenoval\.ru/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*cityadspix\.com/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*copyrightclaims\.org/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*econom\.co [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*edakgfvwql\.ru/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*europages\.com\.ru/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*descargar\-musica\-gratis\.net/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*get\-your\-social\-buttons\.info/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*gobongo\.info/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*hulfingtonpost\.com/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*ilovevitaly\.com?/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*ilovevitaly\.(?:ro|ru)/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*iskalko\.ru/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*lomb\.co/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*lumb\.co/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*luxup\.ru/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*kambasoft\.com/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*myftpupload\.com/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*o\-o\-8\-o\-o\.ru/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*paparazzistudios\.com\.au/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*powitania\.pl/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*priceg\.com/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*prodvigator\.ua/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*ranksonic\.info/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*resellerclub\.com/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*savetubevideo\.com/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*semalt\.com/?.* [NC]
+RewriteCond %{HTTP_REFERER} ^http://.*screentoolkit\.com/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*see\-your\-website\-here\.com/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*seoexperimenty\.ru/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*sharebutton\.net/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*slftsdybbg\.ru/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*socialseet\.ru/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*snip\.to/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*srecorder\.com/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*superiends\.org/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*tasteidea\.com/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*torontoplumbinggroup\.com/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*vodkoved\.ru/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*websocial\.me/?.* [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*ykecwqlixx\.ru/?.* [NC,OR]
+RewriteRule ^(.*)$ – [F,L]
+
+ErrorDocument 400 /dev.trenqr.com/index.php?page=error&urqid=TQR_ERR_UNMNG&ups=cd=400
+ErrorDocument 403 /dev.trenqr.com/index.php?page=error&urqid=TQR_ERR_UNMNG&ups=cd=403
+ErrorDocument 404 /dev.trenqr.com/index.php?page=error&urqid=TQR_ERR_UNMNG&ups=cd=404
+ErrorDocument 406 /dev.trenqr.com/index.php?page=error&urqid=TQR_ERR_UNMNG&ups=cd=406
+ErrorDocument 414 /dev.trenqr.com/index.php?page=error&urqid=TQR_ERR_UNMNG&ups=cd=414
+ErrorDocument 500 /dev.trenqr.com/index.php?page=error&urqid=TQR_ERR_UNMNG&ups=cd=500
+ErrorDocument 503 /dev.trenqr.com/index.php?page=error&urqid=TQR_ERR_UNMNG&ups=cd=503
+
+
+# Décommenter pour interdir l'access sauf pour les IPs DEV. Ne pas ajouter d'espaces sinon 500
+#ErrorDocument 404 Maintenance
+#RewriteCond %{REMOTE_ADDR} !^92\.137\.125\.165$
+#RewriteRule ^(.*)$ - [L,R=404]
+
+# [DEPUIS 16-09-15] @author BOR
+# NOTE : -Indexes : Ne pas afficher la liste des fichiers si j'ai oublié un index.(php|html|htm) quelque part
+Options +FollowSymlinks -Indexes
+
+# [DEPUIS 16-09-15] @author BOR
+# Necessaire pour éviter de transformer certaines requêtes en nom de repertoire correcte
+DirectorySlash Off
+
+# MOD_DEFLATE COMPRESSION
+SetOutputFilter DEFLATE
+AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript application/x-httpd-php
+#Pour les navigateurs incompatibles
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
+#ne pas mettre en cache si ces fichiers le sont déjà
+#SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip
+#les proxies doivent donner le bon contenu
+Header append Vary User-Agent env=!dont-vary
+
+RewriteEngine on
+
+#RewriteRule ^new/robots.txt - [L,F]
+
+# [DEPUIS 16-09-15] @author BOR
+# Permet de ne pas accéder aux repertoires sauf ceux qui concernent les applications. Ces applications sont en principe "protégées".
+RewriteCond %{REQUEST_FILENAME} -d 
+RewriteRule ^(((?!apps/apps/).){1,25})$ /dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG&ups=pg=ml [L]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^((?!apps/apps/).){25,}$ - [L,R=404]
+
+# Au cas où on aurait besoin du script.
+#RewriteCond %{REQUEST_URI} ^/bart1
+#RewriteRule ^(.+)$   /dev.trenqr.com/$1 [L,NC]
+
+###### ***** PAGES PRODUIT (SYSTEM) ***** ######
+
+##*** HOME ***##
+#Ajouté le 04/07/15 pour résoudre un bogue
+RewriteRule ^$    /dev.trenqr.com/index.php?page=accueil&urqid=ontrenqr [L,NC]
+RewriteRule ^ontrenqr$    /dev.trenqr.com/index.php?page=accueil&urqid=ontrenqr [L,NC]
+RewriteRule ^ontrenqr&v=1m30$    /dev.trenqr.com/index.php?page=accueil&urqid=ontrenqr&ups=view=1m30 [L,NC]
+
+##*** SIGNUP ***##
+#REGLE : Aller vers la page d'inscription 
+RewriteRule ^inscription$    /dev.trenqr.com/index.php?page=inscription&urqid=ins [L,NC]
+RewriteRule ^signup$    /dev.trenqr.com/index.php?page=signup&urqid=ins [L,NC]
+RewriteRule ^signup&lg=([a-z]{2})$    /dev.trenqr.com/index.php?page=signup&urqid=ins&ups=lg=$1 [L,NC]
+
+##*** LOGIN ***##
+
+#[DEPUIS 30-05-16] Prise en compte du systeme de REDIR_URL
+RewriteCond %{QUERY_STRING} redir_affair=([\w-]{2,25})&redir_url=(.+)
+RewriteRule ^connexion?$    /dev.trenqr.com/index.php?page=connexion&urqid=cnx&ups=redir_affair=%1.redir_url=%2 [L,NC]
+# -----
+RewriteCond %{QUERY_STRING} redir_affair=([\w-]{2,25})&redir_url=(.+)
+RewriteRule ^login$    /dev.trenqr.com/index.php?page=signin&urqid=cnx&ups=redir_affair=%1.redir_url=%2 [L,NC]
+# -----
+RewriteCond %{QUERY_STRING} redir_affair=([\w-]{2,25})&redir_url=(.+)
+RewriteRule ^login&lg=([a-z]{2})/ec/case=([\w-]+);([\w-]{6})$    /dev.trenqr.com/index.php?page=signin&urqid=cnx&ups=lg=$1.ec_case=econfirm_final.ec_k=$2.ec_c=$3.redir_affair=%1.redir_url=%2 [L,NC]
+
+#REGLE : Aller vers la page de connexion
+RewriteRule ^connexion$    /dev.trenqr.com/index.php?page=connexion&urqid=cnx [L,NC]
+RewriteRule ^connexion/ec/case=([\w-]+);([\w-]{6})$    /dev.trenqr.com/index.php?page=connexion&urqid=cnx&ups=ec_case=econfirm_final.ec_k=$1.ec_c=$2 [L,NC]
+RewriteRule ^login$    /dev.trenqr.com/index.php?page=signin&urqid=cnx [L,NC]
+RewriteRule ^login/ec/case=([\w-]+);([\w-]{6})$    /dev.trenqr.com/index.php?page=signin&urqid=cnx&ups=ec_case=econfirm_final.ec_k=$1.ec_c=$2 [L,NC]
+RewriteRule ^login&lg=([a-z]{2})/ec/case=([\w-]+);([\w-]{6})$    /dev.trenqr.com/index.php?page=signin&urqid=cnx&ups=lg=$1.ec_case=econfirm_final.ec_k=$2.ec_c=$3 [L,NC]
+
+
+##*** LOGOUT ***##
+#REGLE : Aller vers la page de deconnexion
+RewriteRule ^d[e|é]connexion$    /dev.trenqr.com/index.php?page=profil&urqid=LOGOUT [L,NC]
+RewriteRule ^logout$    /dev.trenqr.com/index.php?page=profil&urqid=LOGOUT [L,NC]
+
+##*** RECOVERY ***##
+#REGLE : Aller vers la page de récupération de mot de passe
+RewriteRule ^recuperation/motdepasse$    /dev.trenqr.com/index.php?page=recuperation&urqid=rec [L,NC]
+RewriteRule ^recovery/password$    /dev.trenqr.com/index.php?page=recovery&urqid=rec [L,NC]
+RewriteRule ^recovery/password&lg=([a-z]{2})$    /dev.trenqr.com/index.php?page=recovery&urqid=rec&ups=lg=$1 [L,NC]
+
+##*** RECOVERY FINAL ***##
+
+#REGLE : Aller vers la page de reinitialisation effective de mot de passe
+RewriteCond %{QUERY_STRING} case=([\w]{2,25})&uid=(.+)&em=(.+)&is=([\w-]+)=([\w-]+)=([\w-]+)&lg=([a-z]{2})
+RewriteRule ^s/rpassword$   /dev.trenqr.com/index.php?page=recovery&urqid=REC_GTPG_F&ups=up=%1.ui=%2.ue=%3.oei=%4.k=%5.ssid=%6.lg=%7 [L,NC]
+
+##*** EMAIL CONFIRMATION ***##
+#REGLE : Aller vers la page traitant de la confirmation de compte via l'email
+RewriteCond %{QUERY_STRING} case=([\w-]{2,25})&em=(.+)&is=([\w-]+)=([\w-]+)=([\w-]+)&code=([\w-]{6})
+RewriteRule ^s/confirm_email$   /dev.trenqr.com/index.php?page=profil&urqid=TQR_ACC_CNFRM&ups=ui=%1.ueml=%2.key=%3.ssid=%4.tm=%5.cd=%6 [L,NC]
+
+##*** FAQ ***##
+# NOTE : On regroupe toutes les pages faisant parties de FAQ
+
+#PAGE : INDEX - FAQ
+Redirect ^faq$ /about 
+Redirect ^faq&lg=([a-z]{2})$ /about
+#RewriteRule ^faq$   /dev.trenqr.com/index.php?page=faq&urqid=FAQ_GTPG_X [L,NC]
+#RewriteRule ^faq&lg=([a-z]{2})$   /dev.trenqr.com/index.php?page=faq&urqid=FAQ_GTPG_X&ups=lg=$1 [L,NC]   
+#PAGE : TERMS - FAQ
+RewriteRule ^(?:apropos|about)$   /dev.trenqr.com/index.php?page=about&urqid=FAQ_GTPG_ABOUT [L,NC]   
+RewriteRule ^(?:apropos|about)&lg=([a-z]{2})$   /dev.trenqr.com/index.php?page=about&urqid=FAQ_GTPG_ABOUT&ups=lg=$1 [L,NC]   
+#PAGE : TERMS - FAQ
+RewriteRule ^(?:cgu|terms)$   /dev.trenqr.com/index.php?page=terms&urqid=FAQ_GTPG_TERMS [L,NC]   
+RewriteRule ^(?:cgu|terms)&lg=([a-z]{2})$   /dev.trenqr.com/index.php?page=terms&urqid=FAQ_GTPG_TERMS&ups=lg=$1 [L,NC]   
+#PAGE : PRIVACY - FAQ
+RewriteRule ^(?:confidentialite|privacy)$   /dev.trenqr.com/index.php?page=privacy&urqid=FAQ_GTPG_PRIVACY [L,NC]   
+RewriteRule ^(?:confidentialite|privacy)&lg=([a-z]{2})$   /dev.trenqr.com/index.php?page=privacy&urqid=FAQ_GTPG_PRIVACY&ups=lg=$1 [L,NC]   
+#PAGE : COOKIES - FAQ
+RewriteRule ^cookies$   /dev.trenqr.com/index.php?page=cookies&urqid=FAQ_GTPG_COOKIES [L,NC]   
+RewriteRule ^cookies&lg=([a-z]{2})$   /dev.trenqr.com/index.php?page=cookies&urqid=FAQ_GTPG_COOKIES&ups=lg=$1 [L,NC]   
+#PAGE : LEGALS - FAQ
+RewriteRule ^(?:mentionslegales|legals)$   /dev.trenqr.com/index.php?page=legals&urqid=FAQ_GTPG_LEGALS [L,NC]   
+RewriteRule ^(?:mentionslegales|legals)&lg=([a-z]{2})$   /dev.trenqr.com/index.php?page=legals&urqid=FAQ_GTPG_LEGALS&ups=lg=$1 [L,NC]   
+
+
+##*** SETTINGS ***##
+RewriteRule ^(?:settings|parametres)$   - [R=404,NC,L]
+#PAGE : "INDEX"
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/(?:settings|parametres)$   /dev.trenqr.com/index.php?user=$1&page=settings&urqid=TQR_GTPG_STGS [L,NC]   
+#PAGE : PROFILE - SETTINGS
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/settings/profile$   /dev.trenqr.com/index.php?user=$1&page=settings&urqid=TQR_GTPG_STGS&ups=s=profile [L,NC]   
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/parametres/profil$   /dev.trenqr.com/index.php?user=$1&page=settings&urqid=TQR_GTPG_STGS&ups=s=profile [L,NC]   
+#PAGE :  ACCOUNT - SETTINGS
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/settings/account$   /dev.trenqr.com/index.php?user=$1&page=settings&urqid=TQR_GTPG_STGS&ups=s=account [L,NC]   
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/parametres/compte$   /dev.trenqr.com/index.php?user=$1&page=settings&urqid=TQR_GTPG_STGS&ups=s=account [L,NC] 
+#PAGE :  SECURITY - SETTINGS
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/settings/security$   /dev.trenqr.com/index.php?user=$1&page=settings&urqid=TQR_GTPG_STGS&ups=s=security [L,NC]   
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/parametres/securit[e|é]$   /dev.trenqr.com/index.php?user=$1&page=settings&urqid=TQR_GTPG_STGS&ups=s=security [L,NC] 
+#PAGE :  DELETE_ACCOUNT - SETTINGS
+#NOTE : On ajoute des ups_optional pour rendre impossible (ou presque) l'action d'arriver directement sur cette section sans passer par le lien adéquat
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/settings/security/account/xeu=([a-z\d]+)&k=([a-z\d]{32})$   /dev.trenqr.com/index.php?user=$1&page=settings&urqid=TQR_GTPG_STGS&ups=xeu=$2.k=$3 [L,NC]   
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/parametres/securit[e|é]/compte/xeu=([a-z\d]+)&k=([a-z\d]{32})$   /dev.trenqr.com/index.php?user=$1&page=settings&urqid=TQR_GTPG_STGS&ups=xeu=$2.k=$3 [L,NC] 
+#PAGE :  ABOUT - SETTINGS
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/settings/about$   /dev.trenqr.com/index.php?user=$1&page=settings&urqid=TQR_GTPG_STGS&ups=s=about [L,NC]   
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/parametres/apropos$   /dev.trenqr.com/index.php?user=$1&page=settings&urqid=TQR_GTPG_STGS&ups=s=about [L,NC] 
+
+ 
+##*** ABOUT ***##
+# TODO
+
+
+##*** AJAX ***##
+
+#REGLE : Type d'URL pour requetes AJAX sans user
+#NOTE : Pour l'heure, la partie timestamp n'est qu'un leurre
+RewriteRule ^ajax/([\w]{1,30})@([\w]{1,30})/[\d]{10,20}$     /dev.trenqr.com/index.php?page=$2&urqid=$1 [L,NC]
+
+#REGLE : Type d'URL pour requetes AJAX sans user
+#NOTE : Pour l'heure, la partie timestamp n'est qu'un leurre
+RewriteRule ^ajax/\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/([\w]{1,30})@([\w]{1,30})/[\d]{10,20}$     /dev.trenqr.com/index.php?user=$1&page=$3&urqid=$2 [L,NC]
+
+##*** TRENQR HVIEW PAGE ***##
+#REGLE : Aller vers la page qui traite des HASHTAG
+RewriteRule ^hview/q=([a-z\d_ÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]+)&src=hash$    /dev.trenqr.com/index.php?page=lehashview&urqid=TQR_GTPG_HVIEW&ups=q=$1.src=hash   [L,NC]
+
+###### ***** PAGES PRODUIT (USER) ***** ######
+
+## ***** TIMELINER ***** ##
+
+#REGLE : Aller vers la page de l'utilisateur avec seulement USERNAME
+#CASE : Sous page XYZ
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})$ 	/dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG&ups=pg=ml [L]
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/ec/case=([\w-]+);([\w-]{6})$ 	/dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG&ups=pg=ml.ec_case=econfirm_final.ec_k=$2.ec_c=$3 [L]
+#CASE : Sous page TREND
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/(?:trends|tendances)$ 	/dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG&ups=pg=tr [L]
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/(?:trends|tendances)/ec/case=([\w-]+);([\w-]{6})$ 	/dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG&ups=pg=tr.ec_case=econfirm_final.ec_k=$2.ec_c=$3 [L]
+#CASE : Sous page FAVORITE
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/(?:favorite|favoris)$ 	/dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG&ups=pg=fv [L]
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/(?:favorite|favoris)/ec/case=([\w-]+);([\w-]{6})$ 	/dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG&ups=pg=fv.ec_case=econfirm_final.ec_k=$2.ec_c=$3 [L]
+#CASE : Sous page ABOUTME
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/(?:aboutme|apropos)$ 	/dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG&ups=pg=abme [L]
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/(?:aboutme|apropos)/ec/case=([\w-]+);([\w-]{6})$ 	/dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG&ups=pg=abme.ec_case=econfirm_final.ec_k=$2.ec_c=$3 [L]
+
+#REGLE : Aller vers la page de l'utilisateur avec seulement USERNAME
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/explore$ 	/dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG [L]
+
+#REGLE : Aller vers la page de l'utilisateur selon : PAGE & URQID
+#RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/timeline/w^\\@?([\\w]{2,25})/(?:trends|tendances)&as=(?:chezmoi|athome)/ec/case=([\\w-]+);([\\w-]{6})=([\w\-]+)$     /dev.trenqr.com/index.php?user=$1&page=profil&urqid=$2 [L]
+#REGLE : Aller vers la page de l'utilisateur selon : PAGE & URQID
+#RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/([\w\-]{2,50})/w=([\w\-]+)$     /dev.trenqr.com/index.php?user=$1&page=$2&urqid=$3 [L]
+#REGLE : Aller vers la page de l'utilisateur selon : PAGE & URQID & UPS
+#RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/([\w\-]{2,50})/w=([\w\-]+)&ups=[^.]([\w\.\=\@\-ÀÁÂÃÄÅÆàáâãäåæắạặằảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøⱣᵽÙÚÛÜùúûüựÿÝýÑñŠŽžż]{3,})$	/dev.trenqr.com/index.php?user=$1&page=$2&urqid=$3&ups=$4 [L]
+
+#REGLE : Aller vers la page PAGE de l'utilisateur quand il est le propriétaire
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})&as=(?:chezmoi|athome)$     /dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG_RO&ups=pg=ml [L,NC]
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})&as=(?:chezmoi|athome)/ec/case=([\w-]+);([\w-]+)$       /dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG_RO&ups=pg=ml.ec_case=econfirm_final.ec_k=$2.ec_c=$3 [L,NC]
+#REGLE : Aller vers la page TRENDS de l'utilisateur quand il est le propriétaire
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/(?:trends|tendances)&as=(?:chezmoi|athome)$    /dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG_RO&ups=pg=tr [L,NC]
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/(?:trends|tendances)&as=(?:chezmoi|athome)/ec/case=([\w-]+);([\w-]{6})$    /dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG_RO&ups=pg=tr.ec_case=econfirm_final.ec_k=$2.ec_c=$3 [L,NC]
+#REGLE : Aller vers la page FAVORITES de l'utilisateur quand il est le propriétaire
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/(?:favorite|favoris)&as=(?:chezmoi|athome)$    /dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG_RO&ups=pg=fv [L,NC]
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/(?:favorite|favoris)&as=(?:chezmoi|athome)/ec/case=([\w-]+);([\w-]{6})$    /dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG_RO&ups=pg=fv.ec_case=econfirm_final.ec_k=$2.ec_c=$3 [L,NC]
+#REGLE : Aller vers la page ABOUTME de l'utilisateur quand il est le propriétaire
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/(?:aboutme|apropos)&as=(?:chezmoi|athome)$    /dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG_RO&ups=pg=abme [L,NC]
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/(?:aboutme|apropos)&as=(?:chezmoi|athome)/ec/case=([\w-]+);([\w-]{6})$    /dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG_RO&ups=pg=abme.ec_case=econfirm_final.ec_k=$2.ec_c=$3 [L,NC]
+
+
+#REGLE : Aller vers la page PAGE de l'utilisateur quand il est visiteur (restricted)
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})&as=(?:visiting)$ /dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG_RU&ups=pg=ml [L,NC]
+#REGLE : Aller vers la page TRENDS de l'utilisateur quand il est le propriétaire
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/(?:trends|tendances)&as=(?:visiting)$ /dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG_RU&ups=pg=tr [L,NC]
+#REGLE : Aller vers la page FAVORITES de l'utilisateur quand il est le propriétaire
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/(?:favorite|favoris)&as=(?:visiting)$ /dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG_RU&ups=pg=fv [L,NC]
+#REGLE : Aller vers la page ABOUTME de l'utilisateur quand il est le propriétaire
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/(?:aboutme|apropos)&as=(?:visiting)$ /dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG_RU&ups=pg=fv [L,NC]
+
+#REGLE : Aller vers la page de l'utilisateur quand il est visiteur (welcome)
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})&as=(?:public)$ /dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG_WLC&ups=pg=ml [L,NC]
+#REGLE : Aller vers la page TRENDS de l'utilisateur quand il est le propriétaire
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/(?:trends|tendances)&as=(?:public)$ /dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG_WLC&ups=pg=tr [L,NC]
+#REGLE : Aller vers la page FAVORITES de l'utilisateur quand il est le propriétaire
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/(?:favorite|favoris)&as=(?:public)$ /dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG_WLC&ups=pg=abme [L,NC]
+#REGLE : Aller vers la page ABOUTME de l'utilisateur quand il est le propriétaire
+RewriteRule ^\@?([\wÀÁÂÃÄÅÆàáâãäåæắạẶặẰằẢảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøÑñⱣᵽÙÚÛÜùúûüựÿÝýŠŽžż]{2,20})/(?:aboutme|apropos)&as=(?:public)$ /dev.trenqr.com/index.php?user=$1&page=profil&urqid=TMLNR_GTPG_WLC&ups=pg=abme [L,NC]
+
+
+##*** TREND_PAGE ***##
+
+#200 car on le titre fait 100 max. Cependant, il admet des séparateurs '-'. On peut donc (si je ne me trompe pas) aller jusqu'à 200)
+
+#REGLE : Aller vers la Tendance ayant le titre $1 et l'identifiant $2
+RewriteRule ^(?:trend|tendance)/([\w\-]{2,50})/([\w\-ÀÁÂÃÄÅÆàáâãäåæắạặằảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøⱣᵽÙÚÛÜùúûüựÿÝýÑñŠŽžż]{20,200})$       /dev.trenqr.com/index.php?page=trend&urqid=TRPG_GTPG&ups=tei=$1.tle=$2 [L,B]
+
+#REGLE : Aller vers la Tendance ayant le titre $2 et l'identifiant $3 selon RO
+RewriteRule ^(?:trend|tendance)/([\w\-]{2,50})/([\w\-ÀÁÂÃÄÅÆàáâãäåæắạặằảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøⱣᵽÙÚÛÜùúûüựÿÝýÑñŠŽžż]{20,200})&as=manager$    /dev.trenqr.com/index.php?page=trend&urqid=TRPG_GTPG_RO&ups=tei=$1.tle=$2 [L,B]
+
+#REGLE : Aller vers la Tendance ayant le titre $2 et l'identifiant $3 selon RFOL
+RewriteRule ^(?:trend|tendance)/([\w\-]{2,50})/([\w\-ÀÁÂÃÄÅÆàáâãäåæắạặằảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøⱣᵽÙÚÛÜùúûüựÿÝýÑñŠŽžż]{20,200})&as=contributor$    /dev.trenqr.com/index.php?page=trend&urqid=TRPG_GTPG_RFOL&ups=tei=$1.tle=$2 [L,B]
+
+#REGLE : Aller vers la Tendance ayant le titre $2 et l'identifiant $3 selon RU
+RewriteRule ^(?:trend|tendance)/([\w\-]{2,50})/([\w\-ÀÁÂÃÄÅÆàáâãäåæắạặằảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøⱣᵽÙÚÛÜùúûüựÿÝýÑñŠŽžż]{20,200})&as=me$    /dev.trenqr.com/index.php?page=trend&urqid=TRPG_GTPG_RU&ups=tei=$1.tle=$2 [L,B]
+
+#REGLE : Aller vers la Tendance ayant le titre $2 et l'identifiant $3 selon WLC
+RewriteRule ^(?:trend|tendance)/([\w\-]{2,50})/([\w\-ÀÁÂÃÄÅÆàáâãäåæắạặằảÞßþÇçĐđƉɖÐðÈÉÊËèéêëềệĘęÌÍÎÏìíîïłÒÓÔÕÖØΘòóôõöơởøⱣᵽÙÚÛÜùúûüựÿÝýÑñŠŽžż]{20,200})&as=visitor$    /dev.trenqr.com/index.php?page=trend&urqid=TRPG_GTPG_WLC&ups=tei=$1.tle=$2 [L,B]
+
+
+
+##*** FOCUSARTICLE_PAGE ***##
+
+#REGLE : Aller vers la page présentant l'Article en mode Focus. 
+#NOTA : On utilise le plus souvent 'f' plutot que "article".
+
+#[DEPUIS 16-05-16]
+#RewriteRule ^(?:f|article)/([\w\-_]{5,50})$    /dev.trenqr.com/index.php?page=focus&urqid=FKSA_GTPG&ups=pmlkid=$1 [L,NC]
+RewriteRule ^f/([\w\-_]{5,50})$    /dev.trenqr.com/index.php?page=focus&urqid=FKSA_GTPG&ups=pmlkid=$1.atypi=photo [L,NC]
+RewriteRule ^f/vid/([\w\-_]{5,50})$    /dev.trenqr.com/index.php?page=focus&urqid=FKSA_GTPG_VIDVER&ups=pmlkid=$1.atypi=video [L,NC]
+RewriteRule ^f/sts/([\w\-_]{5,50})$    /dev.trenqr.com/index.php?page=focus&urqid=FKSA_GTPG_TSTVER&ups=pmlkid=$1.atypi=testy [L,NC]
+
+
+#REGLE : Aller vers la page présentant l'Article en mode Focus. L'utilisateur peut ajout une option le cas échéant.
+#[DEPUIS 16-05-16]
+#RewriteRule ^(?:f|article)/([\w\-_]{5,50})/&vwopt=([\w\_,]{2,50})$    /dev.trenqr.com/index.php?page=focus&urqid=FKSA_GTPG&ups=pmlkid=$1.vwopt=$2   [L,NC]
+RewriteRule ^f/([\w\-_]{5,50})/&vwopt=([\w\_,]{2,50})$    /dev.trenqr.com/index.php?page=focus&urqid=FKSA_GTPG&ups=pmlkid=$1.vwopt=$2.atypi=photo   [L,NC]
+RewriteRule ^f/vid/([\w\-_]{5,50})/&vwopt=([\w\_,]{2,50})$    /dev.trenqr.com/index.php?page=focus&urqid=FKSA_GTPG_VIDVER&ups=pmlkid=$1.vwopt=$2.atypi=video   [L,NC]
+RewriteRule ^f/sts/([\w\-_]{5,50})/&vwopt=([\w\_,]{2,50})$    /dev.trenqr.com/index.php?page=focus&urqid=FKSA_GTPG_TSTVER&ups=pmlkid=$1.vwopt=$2.atypi=testy   [L,NC]
+
+
+##*** RECOMMEND_PAGE ***##
+RewriteRule ^\!\/recommend-trenqr-image-trend-cool-community\/?$    /dev.trenqr.com/index.php?page=recoma&urqid=TQR_RCMDTO_GTPG   [L,NC]
+
+##*** TRENQR STUDIO PAGE ***##
+RewriteRule ^\!\/trenqr-studio\/?$    /dev.trenqr.com/index.php?page=lestudio&urqid=TQR_STUDIO_GTPG   [L,NC]

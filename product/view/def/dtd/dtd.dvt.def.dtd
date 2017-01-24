@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT definition.dvt (dvt*) >
+    <!ELEMENT dvt (dvt.id,dvt.type,dvt.files.css,dvt.files.js) >
+        <!ATTLIST dvt id ID #REQUIRED>
+        <!ELEMENT dvt.id EMPTY>
+             <!ATTLIST dvt.id value CDATA #REQUIRED>
+        <!ELEMENT dvt.type EMPTY>
+                <!ATTLIST dvt.type value (dvt|csam) #REQUIRED>
+        <!ELEMENT dvt.files.css (std?,spec?)>
+             <!ELEMENT std (file*)>
+                <!ELEMENT file EMPTY>
+                    <!ATTLIST file name CDATA #REQUIRED>
+                    <!ATTLIST file value CDATA #REQUIRED>
+            <!-- On requiert au moins un element 'brz' car si spec est defini,
+                 il faut qu'il y ait au moins un element dedans. Sinon, autant ne pas le definir ! -->
+            <!ELEMENT spec (brz+)>
+            <!-- 'brz' signigie browser. Exemple : 'ie9'.
+                'name' represente l'id du browser. On met 'name' pour permettre que plusieurs fichiers puissent etre définis pour un seul browser. 
+                Voici une proposition de liste pour 'name' du brz
+                * ie, ie6, ie7, ie8, ie9, ie10, iesupeg8, iesupeg9, ieinfeg9, ieinfeg8, ie<8                
+                * chr
+                * ope
+                * saf
+                * ffx
+                 -->
+                <!-- On utilise pas les vraix opérateurs > < car il faut les tradauire en &lt; ou &gt;. Pour l'instant on considère qu'il est plus intuitif d'utiliser les formes actuelles ! -->
+                <!ELEMENT brz EMPTY>
+                    <!ATTLIST brz name (ie | ie6 | ie7 | ie8 | ie9 | ie10 | ieinf8 | iesup8 | iesupeg8 | ieinfeg8 | ieinf9 | iesup9 | iesupeg9 | ieinfeg9 | ieinf10 | iesup10 | iesupeg10 | ieinfeg10 | chr | ope | saf | ffx) #REQUIRED>
+                    <!ATTLIST brz value CDATA #REQUIRED>
+        <!ELEMENT dvt.files.js (std?,spec?)>

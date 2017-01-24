@@ -1,0 +1,495 @@
+.clearfix {
+    clear: both;
+}
+
+.this_hide {
+    display: none !important;
+}
+
+.this_invi {
+    opacity: 0;
+}
+
+.this_show {
+    display: initial;
+}
+
+.this_overhid {
+    overflow: hidden !important;
+}
+
+.error_field {
+    border-color: #f00 !important;
+}
+
+.this_showbl {
+    display: block;
+}
+
+.this_showin {
+    display: inline;
+}
+
+.this_noway:active {
+    color: #f00 !important;
+}
+
+.ta_right {
+    text-align: right !important;
+}
+
+.center {
+    text-align: center;
+}
+
+.overflow_txt {
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis; 
+}
+/* OBSELETE  [24-01-14] @RDL
+.fade {
+    padding: 0;
+    margin: 0;
+    /*border: 1px solid black;*//*
+    width: 370px;
+    height: 370px;
+    /*opacity: 0;*//*
+    background-color: rgba(0,0,0,0.2);
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+*/
+.fade-txt {
+    /*border: 1px solid black;*/
+    width: 330px;
+    height: 50px;
+    padding: 140px 20px 0 20px;
+    margin: 0;
+    /*opacity: 0;*/
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    text-overflow: word-break;
+    cursor: pointer;
+    
+    color: white;
+    font-family: Georgia, Calibri, Arial;
+    /*font-family: TheSerifOffice, Georgia;*/
+    font-weight: bold;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.kgb_blue_link {
+    /*color: rgba(63, 114, 155,0.9) !important;*/
+    color: #09C !important;
+}
+
+.red {
+    color: red !important;
+}
+
+.blue {
+    color: blue !important;
+}
+
+.purple {
+    color: purple !important;
+}
+
+.orange {
+    color: orange !important;
+}
+
+.selected-bold {
+    font-weight: bold;
+    color: black;
+}
+
+.elmnt-bk-show {
+    display: block;
+}
+
+.elmnt-hide {
+    display: none;
+}
+
+.cuz-hstg {
+    color: rgb(0,170,234); 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cuz-hstg:hover {
+    text-decoration: underline;
+}
+
+.what-trend {
+    /*border: 1px solid black;*/
+    width: 530px;
+    margin: 10px auto 10px auto;
+    padding: 0;
+    list-style: none;
+    overflow: auto;
+}
+
+.what-trend li {
+    float: left;
+}
+
+.tr-badge-par {
+    margin-left: -8px !important;
+}
+
+.tr-title-away {
+    /*border: 1px solid red;*/
+    margin: 2px 0 0 10px;
+    height: 21px;
+    
+    line-height: 21px;
+}
+
+.tr-title-away a {
+    
+    text-decoration: none;
+    color: grey;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tr-title-away a:hover {
+    color: black !important;
+}
+
+/*********************************** ACTION SPHERE **/
+.action_maximus {
+    margin-left: 278px;
+    
+    position: relative;
+    
+}
+
+.action_a {
+    display: block;
+    border: 1px solid rgb(160,160,160);
+    border-radius: 3px;
+    padding: 0px 2px 2px 0px;
+    margin-top: -2px;
+    width: 70px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3) inset;
+    outline: 0;
+    
+    text-align: center;
+    text-decoration: none;
+}
+
+.action_a:hover {
+    background-color: rgb(220,220,220);
+}
+
+.action_a_gbck {
+    background-color: orange;
+}
+
+.brain_sp_k {
+    color: #036;
+    font-weight: bold;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 16px;
+}
+
+
+.brain_sp_action {
+    /*display: block;*/
+    /*padding: 5px;*/
+    color: rgb(30,30,30);
+    font-family: Arial, Calibri, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.action_foll_choices {
+    border: 1px solid lightgray;
+    background-color: white;
+    margin: 2px 0 0 0;
+    padding: 3px 0;
+    list-style: none;
+    
+    position: absolute;
+    z-index: 2;
+    /*top: 3px;*/
+    right: 0px;
+    
+    overflow: hidden;
+}
+
+
+.action_foll_choices li {
+    
+}
+
+
+.afl_choice_sep {
+    border-top: 1px solid lightgrey;
+    margin: 3px 0; 
+    width: 100%;  
+}
+
+.afl_choice {
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    min-width: 150px;
+    max-width: 200px;
+    padding: 2px 5px 2px 15px;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    color: #333;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.afl_choice:hover { 
+    background-color: #09C;
+    
+    color: #fff;
+}
+
+/********************************** ERROR BAR **/
+#warning_bar_max {
+    border: 1px solid #ccc;
+    height: 70px;
+    width: 100%;
+    /*POSSIBILITES :  #fefbc0, #ffffa0 */
+    background-color: #fefbc0;
+    /*background-color: rgba(252,234,106,0.6);*/
+    
+    overflow: visible;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 400;
+}
+
+#warning_bar_txt_max {
+    /*border: 5px solid rgb(64,0,0);*/
+    margin: 0;
+    padding: 15px 0 5px 0;
+    /*height: 100%;*/
+    width: 100%;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    text-align: center;
+}
+
+#warning_bar_img {
+    float: left;
+}
+
+#warning_bar_text {
+    /*POSSIBILITES : #7f0013, #8a6d3b*/
+    color: #8a6d3b;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+#warning_bar_close {
+    margin: 0;
+    padding: 0;
+    
+     text-align: center;
+}
+
+#warning_bar_close_a, #warning_bar_dsag_a {
+    padding: 2px 15px;
+    
+    color: rgb(50,50,50);
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 14px;
+    /*text-decoration: underline;*/
+    text-decoration: none;
+}
+
+#warning_bar_close_a:hover, #warning_bar_dsag_a:hover {
+    /*text-decoration: none;*/
+    /*background-color: #ddd;*/
+    background-color: rgba(221,221,221,.4);
+}
+
+#warning_bar_dsag_a {
+    margin-left: 30px;
+}
+
+/* Couleur (+ autres caracs) des hash tag au niveau de la plateforme 
+   Si d'autres existent, ...1, ...2, etc ' */
+.hashview, .hashview:visited {
+    color: #228CE3;
+    text-decoration: none;
+}
+
+.hashview:active {
+    color: #f00;
+}
+
+.hashview:hover {
+    text-decoration: underline;
+}
+
+/****** No article available so far ******/
+#where_have_you_been {
+    /*border: 1px solid red;*/
+    margin: 0 auto;
+    padding: 0;
+    width: 760px;
+}
+
+#whub_txt {
+    /*border: 1px solid red;*/
+    margin: 0 0;
+    padding: 40px 10px;
+    
+    color: #bbb;
+    font-family: Arial, Calibri, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#whub_specs {
+    overflow: auto;
+}
+
+#whub_specs_ask_new {
+    border: 1px solid #aaa;
+    padding: 5px 15px;
+    /*margin: 0 110px 0 0;*/
+    background-color: rgb(200,200,200);
+    
+    float: right;
+    
+    color: rgb(50,50,50);
+    font-family: Arial, Calibri, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.cover_move {
+    cursor: move;
+}
+
+/****************************** STOP PLAYIN ****************************/
+#stop_playin_wbackgr {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.5);
+    /*opacity:0.5;*/
+    
+    position: fixed;
+    z-index: 1001;
+}
+
+#stop_playin_blbackgr {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    /*opacity:0.5;*/
+    
+    position: fixed;
+    z-index: 1001;
+}
+
+#s_p_dialog {
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 150px auto 0 auto;
+    width: 390px;
+    background-color: #fefefe;
+    box-shadow: 0px 3px 8px 1px rgba(0,0,0,0.5);
+}
+
+#s_p_d_title {
+    /*border-bottom: 3px solid #f56600;*/
+    /*border-radius: 2px 0 0 2px;*/
+    padding: 0 0 2px 0;
+    margin: 0 0 10px 0;
+    
+    color: #222;
+    font-family: Calibri, Myriad, Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
+}
+
+#s_p_d_msg {
+    margin: 15px 0 20px 0;
+    
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+#s_p_d_ch {
+    /*border: 1px solid #000;*/
+    
+    overflow: auto;
+}
+
+#s_p_d_ch a {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+}
+
+.s_p_d_ch_redir {
+    color: #0857DE;
+    font-size: 13px;
+}
+
+.s_p_d_ch_redir:hover {
+    text-decoration: none;
+}
+
+#s_p_d_ch_valid {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px 32px;
+    margin: 0 20px 0 0;
+    
+    float: right;
+    
+    color: #333;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
+#s_p_d_ch_valid:hover {
+    background-color: #eaeaea;
+}
+
+/******************* USER ******************/
+/* NOTICE : Cette valeur est aussi utilisée en *.js */
+.kxlib_user_mtrpg {
+    color: #3F729B;
+    font-weight: bold;
+    text-decoration: none;
+}

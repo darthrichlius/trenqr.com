@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT products (prod+)>
+    <!ELEMENT prod (prod_id,prod_code,prod_name,prod_commer_name,prod_author,copy_r?,prod_hosts,prod_host_compls,prod_ver,prod_conf,default_lang,available_langs,available_lang_aliases,url_params_required,url_params_optional,url_params_default,default_params_separator,default_couple_separator, cookie_names, pdpage_welc_pgid, pdpage_welc_conx_pgid, pdpage_welc_deconx_pgid, pdpage_rest_prod_pgid, pdpage_rest_own_pgid, pdpage_rest_confirm_own_pgid, prod_email_table, err_rpt_table, prod_rpt_table)>
+        <!ATTLIST prod id ID #REQUIRED>
+    <!ELEMENT prod_id EMPTY>
+        <!ATTLIST prod_id value CDATA #REQUIRED>
+    <!ELEMENT prod_code EMPTY>
+        <!ATTLIST prod_code value CDATA #REQUIRED>
+	<!ELEMENT prod_name EMPTY>
+        <!ATTLIST prod_name value CDATA #REQUIRED>
+    <!ELEMENT prod_commer_name EMPTY>
+        <!ATTLIST prod_commer_name value CDATA #REQUIRED>   
+    <!ELEMENT prod_author EMPTY>
+        <!ATTLIST prod_author value CDATA #REQUIRED>
+    <!ELEMENT copy_r EMPTY>
+        <!ATTLIST copy_r value CDATA #REQUIRED>
+<!-- 
+    * Permet de definir les hosts possibles pour le produit. Exemple : pour le site deuslynn on a : www.deuslynn.fr, deuslynn.fr 
+    * Dans le cas où on veut inclure un sous-domaine on peut en ajouter.
+-->
+    <!ELEMENT prod_hosts (host+)>
+        <!ELEMENT host EMPTY>
+            <!ATTLIST host id CDATA #REQUIRED>
+            <!ATTLIST host value CDATA #REQUIRED>
+<!-- 
+    * Permet de definir les sous-dossier utilisées pour le produit. Ces dossiers sont souvent utiliser pour effectuer des tests sans les révéler au grand jour. 
+    * Ou encore, pour créer une sous-section. Exemple : deuslynn.com/v2/.
+	* Repertorier ses 
+-->
+	<!ELEMENT prod_host_compls (hcompl+)>
+        <!ELEMENT hcompl EMPTY>
+            <!ATTLIST hcompl id CDATA #REQUIRED>
+            <!ATTLIST hcompl value CDATA #REQUIRED>
+    <!ELEMENT prod_ver (ver_code,ver_name?,ver_catchphr) >
+        <!ELEMENT ver_code EMPTY>
+            <!ATTLIST ver_code value CDATA #REQUIRED>
+        <!ELEMENT ver_name EMPTY>
+            <!ATTLIST ver_name value CDATA #REQUIRED>
+        <!ELEMENT ver_catchphr EMPTY>
+             <!ATTLIST ver_catchphr value CDATA #REQUIRED>
+    <!ELEMENT prod_conf (is_installed,w_status,is_debug,r_mode,production_r_mode) >
+        <!ELEMENT is_installed EMPTY>
+            <!ATTLIST is_installed value (no|yes) #REQUIRED>
+        <!ELEMENT w_status EMPTY>
+            <!ATTLIST w_status value (on|off) #REQUIRED>
+        <!ELEMENT is_debug EMPTY>
+            <!ATTLIST is_debug value (yes|no) #REQUIRED>
+        <!ELEMENT r_mode EMPTY>
+            <!ATTLIST r_mode value (T_RM_TRM | T_RM_DBRM) #REQUIRED>
+        <!ELEMENT production_r_mode EMPTY>
+            <!ATTLIST production_r_mode value (P_RM_PRM | P_RM_CRM | P_RM_MRM | P_RM_QRM) #REQUIRED>
+    <!ELEMENT default_lang EMPTY>
+        <!ATTLIST default_lang value CDATA #REQUIRED>
+    <!ELEMENT available_langs (lang+)>
+    <!-- Au moins une langue est disponible pour le produit. Au moins celle déclarée au niveau de 'default_lang' -->
+        <!ELEMENT lang EMPTY> 
+            <!ATTLIST lang name CDATA #REQUIRED>
+            <!ATTLIST lang value CDATA #REQUIRED>
+
+    <!ELEMENT available_lang_aliases (lang_alias*)>
+        <!ELEMENT lang_alias EMPTY> 
+            <!ATTLIST lang_alias id CDATA #REQUIRED>
+            <!ATTLIST lang_alias value CDATA #REQUIRED>
+
+     <!ELEMENT url_params_required (url_param+)> 
+    <!-- 
+        On ne peut concevoir un site web sans paramètres. Il faudrait au moins lui indiquer une page (Nous sommes dans une Logique Orientée Page) et urqid 
+        La plateforme ne peut fonctionner sans ses paramètres. C'est le minimum obligatoire. 
+        Chaque urq a ensuite la liberté de requerir tel ou tel param. Ces requêtes, permettent donc de valider une urq au niveau de URQ_CHECKER 
+        URQ_HANDLER ne fait que s'assurer que l'url suit les règles url de la plateforme et de mettre en forme les ups si ils existent 
+    -->
+    <!ELEMENT url_param EMPTY>
+        <!ATTLIST url_param id CDATA #REQUIRED>
+    <!-- 
+        Composed = La value contient d'autres paramètres de type "id=value" avec un séparateur par défaut '.'. Egale est remplacé par '-'. 
+    --> 
+        <!ATTLIST url_param value (simple | composed) #REQUIRED>
+    <!ELEMENT url_params_optional (url_param*)> <!-- La produit peut fonctionner sans ses paramètres. Cependant, si pour une raison ou une autre ils sont requis, c'est à URQ_CHECKER de s'en charger --> 
+    <!ELEMENT url_params_default (url_param_d+)>
+    <!-- On ne peut concevoir un site web sans paramètres. Il faudrait au moins lui indiquer une page (Nous sommes dans une Logique Orientée Page) et urqid -->
+    <!ELEMENT url_param_d EMPTY>
+        <!ATTLIST url_param_d id CDATA #REQUIRED>
+        <!ATTLIST url_param_d value CDATA #REQUIRED>
+    <!ELEMENT default_params_separator EMPTY>
+        <!ATTLIST default_params_separator value CDATA #REQUIRED>
+    <!ELEMENT default_couple_separator EMPTY>
+        <!ATTLIST default_couple_separator value CDATA #REQUIRED>
+
+    <!-- [DEPUIS 10-07-16] -->
+    <!ELEMENT cookie_names (cookie_name+)>
+        <!ELEMENT cookie_name EMPTY> 
+            <!ATTLIST cookie_name id CDATA #REQUIRED>
+            <!ATTLIST cookie_name value CDATA #REQUIRED>
+
+     <!ELEMENT pdpage_welc_pgid EMPTY>
+            <!ATTLIST pdpage_welc_pgid value CDATA #REQUIRED>
+     <!ELEMENT pdpage_welc_conx_pgid EMPTY>
+            <!ATTLIST pdpage_welc_conx_pgid value CDATA #REQUIRED>
+     <!ELEMENT pdpage_welc_deconx_pgid EMPTY>
+            <!ATTLIST pdpage_welc_deconx_pgid value CDATA #REQUIRED>
+     <!ELEMENT pdpage_rest_prod_pgid EMPTY>
+            <!ATTLIST pdpage_rest_prod_pgid value CDATA #REQUIRED>
+     <!ELEMENT pdpage_rest_own_pgid EMPTY>
+            <!ATTLIST pdpage_rest_own_pgid value CDATA #REQUIRED>
+<!-- Pour la page mentionné ci-dessous, elle n'est utile que si la page encours n'a pas son propre système de confirmation (zone mot_de_passe par exemple) -->
+     <!ELEMENT pdpage_rest_confirm_own_pgid EMPTY>
+            <!ATTLIST pdpage_rest_confirm_own_pgid value CDATA #REQUIRED>
+     <!ELEMENT prod_email_table (email+) >
+            <!-- Ce format permet plus de libertés structurelles -->
+            <!ELEMENT email EMPTY>
+                <!ATTLIST email id CDATA #REQUIRED>
+                <!ATTLIST email value CDATA #REQUIRED>
+            <!-- 
+                REPERTOIRE : 
+                prodmail_system : Utiliser par le produit comme email d'envoi pour transmettre des informations d'ordre techniques ou privées. 
+                prodmail_serr_receiver : Considérer par le produit comme une adresse email vers laquelle est envoyée les rapport d'erreur de type "system error". 
+                prodmail_uerr_receiver : Considérer par le produit comme une adresse email vers laquelle est envoyée les rapport d'erreur de type "user error". 
+                    NOTE : Il est cependant très rare d'envoyer des rapports d'erreur sur les erreur de ce type sauf cas très particulier.
+                prodmail_director : Considérer par le produit comme une adresse email vers laquelle est envoyée des informations destinées au responsable du produit.
+                prodmail_support : Considérer par le produit comme une adresse email vers laquelle est envoyée des informations destinées à l'équipe support du produit.
+                prodmail_info_sender : Considérer par le produit comme email d'envoi pour transmettre des informations d'ordre public. Générallement, les récipiendaires sont des utilisateurs du produit. 
+            -->
+    <!ELEMENT err_rpt_table (err_rpt_enable,err_rpt_only_PRM,err_rpt_only_syserr) >
+    <!ELEMENT err_rpt_enable EMPTY>
+        <!ATTLIST err_rpt_enable value (yes|no) #REQUIRED>
+    <!-- Definit si le signalement des erreurs ne se fait que lorsqu'on est dans un mode hors debug -->        
+    <!ELEMENT err_rpt_only_PRM EMPTY>
+        <!ATTLIST err_rpt_only_PRM value (yes|no) #REQUIRED>
+    <!-- Definit si seules les erreurs de type "system error" sont destinées à être signaler -->        
+    <!ELEMENT err_rpt_only_syserr EMPTY>
+        <!ATTLIST err_rpt_only_syserr value (yes|no) #REQUIRED>
+    <!ELEMENT prod_rpt_table (prod_rpt_subs_each_date,prod_rpt_subs_each_number) >
+    <!-- Ces informations permettent de savoir suivant quel interval doit-on recenser le nombre d'utilisateurs -->        
+    <!ELEMENT prod_rpt_subs_each_date EMPTY>
+        <!ATTLIST prod_rpt_subs_each_date value CDATA #REQUIRED>
+    <!-- 
+        Ces informations permettent de savoir quand envoyer un rapport sur le nombre d'utilisateurs.
+        On peut inscrire un numéro ou bien un 
+    -->        
+    <!ELEMENT prod_rpt_subs_each_number EMPTY>
+        <!ATTLIST prod_rpt_subs_each_number value CDATA #REQUIRED>
+            
+        

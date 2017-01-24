@@ -1,0 +1,25 @@
+<div>
+	<a href="#/">Back To Home</a>
+</div>
+<div>
+	<h2>{{article.title}}</h2>
+	<div>Message :</div>
+	<div>{{article.message}}</div>
+</div>
+<h2>List of comments</h2>
+<div ng-repeat="comment in article.comments">
+	<div style='font-weight: bold'>Comment_{{$index+1}}</div>
+	<div>comment.message</div>
+	<hr>
+</div>
+<div>
+	<h2>Ajouter Commentaire</h2>
+	<form ng-submit="AddCommentAction(newComment)">
+		<div>
+			<textarea ng-model="newComment.message" placeholder="Enter a comment for your article"></textarea>
+		</div>
+		<div>
+			<input type="submit" value="Create">
+		</div>
+	</form>
+</div>

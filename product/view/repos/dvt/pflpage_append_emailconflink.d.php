@@ -1,0 +1,1 @@
+<div id="pfl_veriflink_resend" data-action="">Renvoyer un email de confirmation</div>

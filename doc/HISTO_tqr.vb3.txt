@@ -1,0 +1,18 @@
+
+[Mars 16 - Juin 16]
+NOTE : Je n'ai pas d'informations plus précises
+	-> Debogage 
+
+[06-06-16]
+	-> Debut du process d'intégration
+	
+		-> Mise à jour de Plesk : 12.0 > 12.5
+		-> Installation du Plugin LetsEncrypt
+			-> Rédemarrage du serveur
+			-> CMD : /usr/local/psa/admin/sbin/httpdmng --reconfigure-all
+		-> BackUp de la base de données "tqr_product_vb1_prod", "tqr_account_vb1_prod"
+		-> Clonage de /beta > /dm1606
+
+[07-06-16]
+	-> Debut de l'opération d'Upgrade de /dm1606
+		-> 

@@ -1,0 +1,64 @@
+
+#fksa-article {
+    width: 1035px !important;
+    /*margin: 35px 25% !important;*/
+}
+
+#fksa-art-center {
+    height: 585px !important;
+    width: 685px !important;
+}
+
+#tqr-art-actbar-fav-artdef-wpr {
+    height: 585px !important;
+    width: 585px !important;
+}
+
+#fksa-art-ctr-img-mx {
+    height: 585px !important;
+    width: 585px !important;
+    
+    position: relative;
+}
+
+#fksa-art-ctr-img {
+    height: 585px !important;
+    width: 585px !important;
+}
+
+/* TQR.VB30 : VIDEO */
+
+#fksa-art-ctr-vid-mx {
+    height: 585px !important;
+    width: 585px !important;
+}
+
+#fksa-art-ctr-lnch-vid-mx {
+    line-height: 585px !important;
+}
+
+
+#fksa-smore-inr-prm-bd-txt {
+    padding: 0px 35px !important;
+    
+    color: #036 !important;
+    font-size: 17px !important;
+}
+
+/* ********************* ASIDE ADS **/
+#fksa-seemore-bmx {
+    margin-left: 308px !important;
+}
+
+.fksa-smr-ads-cntt {
+    width: 322px !important;
+}
+/*
+#fksa-ads-asd-ban-mx {
+    right: -220px !important;
+}
+
+#fksa-ads-asd-ban {
+    width: 160px !important;
+}
+*/

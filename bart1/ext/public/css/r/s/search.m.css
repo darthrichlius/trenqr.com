@@ -1,0 +1,378 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23 janv. 2014, 21:58:30
+    Author     : arsphinx
+*/
+#search_header_max {
+    /*border: 1px solid red;*/
+    /*height: 100%;*/
+    padding: 40px 0 0 0;
+    background-color: rgb(250,250,250);
+}
+
+#search_header_box {
+    /*border: 1px solid black;*/
+    margin: 0 auto;
+    width: 500px;
+}
+
+#s_h_b_remind {
+    border: 1px solid rgb(120,120,120);
+    border-radius: 5px;
+    margin: 0;
+    padding: 5px 0 4px 0;
+    background-color: rgb(175,170,170);
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    font-family: Calibri, Arial, sans-serif;
+    text-align: center;
+}
+
+#search-query {
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+}
+
+#search-query:hover {
+    text-decoration: underline;
+}
+
+#s_h_b_sort {
+    /*border: 1px solid red;*/
+    margin: 0 auto;
+    padding: 20px 0 5px 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+#s_h_b_sort li {
+    width: 166px;
+    /*width: 125px; */ /* Si seulement on a 4 elements */
+    float: left;
+    
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+#s_h_b_sort a {
+    border: none;
+    outline: 0;
+    color: black;
+    text-decoration: none;
+}
+
+#s_h_b_sort a:hover:not(.search_sort_selected) {
+    text-decoration: underline;
+}
+
+.search_sort_selected span {
+    border-bottom: 2px solid black;
+    
+    font-weight: bold;
+}
+
+#sr_by_btotf {
+    padding-bottom: 30px;
+}
+
+#sr_by_btotf_par {
+    border: 1px solid rgb(100,100,100);
+    border-radius: 5px;
+    margin : 0 auto;
+    width: 700px;
+    height: 60px;
+    
+    text-align: center;
+    line-height: 60px;
+}
+
+#sr_by_btotf_go {
+    color: rgb(60,60,60);
+    text-decoration: none;
+}
+
+#sr_by_btotf_go:hover {
+    text-decoration: underline;
+}
+
+/**************************************************************************/
+
+
+/***** BODY ***/////////////
+#search_body {
+    
+}
+
+#search_by_post_list {
+    /*border: 1px solid green;*/
+    background-color: rgb(250,250,250);
+}
+
+.sr_by_list_cont {
+    /*border: 1px solid red;*/
+    width: 762px;
+    margin: 0 auto;
+    padding: 40px 0 40px 0;
+    overflow: hidden;
+}
+
+.sr_by_post_mdl {
+    /*border-right: 1px solid black;*/
+    /*border-bottom: 1px solid black;*/
+    /*margin: 0 1px 1px 0;*/
+    background-color: grey;
+    height: 253px;
+    width: 253px;
+    
+    float: left;
+    position: relative;
+}
+
+.sr_by_post_mdl_a {
+    border: none;
+    outline: 0;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.6);
+    
+    text-decoration: none;
+}
+
+.sr_by_post_mdl_fade {
+    background-color: rgba(0,0,0,0.1);
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    z-index: 1;
+}
+
+.sr_by_post_mdl_img {
+    border: none;
+    outline: 0;
+}
+
+.sr_by_post_mdl_specs {
+/*    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;*/
+    border: 1px solid lightgrey;
+    margin: -5px 0 0 0;
+    padding: 0 12px;
+    width: 227px;
+    height: 27px;
+    background-color: #fff;
+    /*box-shadow: 0 -3px 5px 2px rgba(0,0,0,0.2) inset;*/
+    overflow: auto;
+    
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    line-height: 30px;
+}
+
+.sr_by_post_specs_appr, .sr_by_post_specs_react {
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    
+    color: grey;
+    font-family: Arial, Calibri, sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.sr_by_post_specs_appr {
+    
+}
+
+.sr_by_post_specs_react {
+    float: right;
+    
+    text-align: right;
+}
+
+/********************************* PEOPLE **/
+#search_by_ppl_list {
+    
+}
+
+.sr_by_list_ppl_cont {
+    /*border: 1px solid red;*/
+    width: 700px;
+    margin: 0 auto;
+    padding: 40px 0 40px 0;
+    overflow: hidden;
+}
+
+.sr_by_ppl_mdl {
+    border: 1px solid lightgray;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+/*** -- TOP -- ***/
+
+.ppl_top_max {
+    /*border: 1px solid red;*/
+    height: 90px;
+    overflow: visible;
+}
+
+.ppl_top_left, .ppl_top_right {
+    /*border: 1px solid black;*/
+    padding: 10px;
+    float: left;
+}
+
+/* - LEFT - */
+.ppl_top_left {
+    width: 377px;
+}
+
+.ppl_top_left p {
+    white-space: nowrap;
+    overflow: visible;
+    text-overflow: ellipsis;
+}
+
+.sr_user_gp1 {
+    /*border: 1px solid black;*/
+    padding: 0;
+    margin: 0;
+    height: 25px;
+}
+
+.sr_user_a {
+    border: none;
+    outline: 0;
+    
+    position: relative;
+    
+    color: rgb(50,50,50);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: -1px;
+    text-decoration: none;
+}
+
+.sr_user_upic {
+    border: none;
+    border-radius: 2px;
+    outline: 0;
+    float: left;
+}
+
+.sr_user_fullname {
+    padding: 0 0 0 10px;
+    position: relative;
+    
+    color: rgb(50,50,50);
+}
+
+.sr_user_gp2 {
+    /*border: 1px solid grey;*/
+    padding: 0;
+    margin: 0;
+    height: 17px;
+}
+
+.sr_user_psd {
+    padding: 0 0 0 9px;
+    
+    color: grey;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.sr_user_psd:hover {
+    text-decoration: underline;
+}
+
+.sr_ppl_badges {
+    /*border: 1px solid green;*/
+    height: 23px;
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+
+/* - RIGHT - */
+.ppl_top_right {
+    /*border-left: 1px solid lightgrey;*/
+    width: 280px;
+    position: relative;
+}
+
+.sr_who_foll {
+    padding: 0;
+    margin: 0;
+    
+    color: grey;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 15px;
+}
+
+.sr_who_foll_user {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+.sr_who_foll_user:hover {
+    text-decoration: underline;
+}
+
+.action_sr_ppl {
+    margin: 10px 0 0 0;
+}
+
+.action_sr_ppl_sub {
+    /*z-index: 1;*/
+    margin-right: 108px !important;
+}
+/*** DOWN ***/
+.ppl_bot_max {
+    /*border-top: 1px solid lightgrey;*/
+}
+
+.sr_ppl_uspecs {
+    /*border: 1px solid brown;*/
+    padding:  3px 0 2px 80px;
+    height: 19px;
+    margin: 0;
+    list-style: none;
+    overflow: visible;
+}
+
+.sr_ppl_uspecs li {
+    width: 118px;
+    float: left;
+    margin: 0 50px 0 0;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    color: grey;
+    font-family: Calibri, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: right;
+}

@@ -1,0 +1,450 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7 avr. 2014, 14:38:35
+    Author     : Pierre Lallement <http://www.syel.totoandco.eu>
+*/
+
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    /*line-height: 1;*/
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+/*blockquote, q {
+	quotes: none;
+}*/
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Actual Styling */
+body {
+    //background-color: #fffdfa;
+    font-family: "Myriad Pro", "Calibri", Arial, Helvetica, sans-serif;
+}
+
+/* TEST BANDES */
+#home2_theater{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 #777; /* TEST BANDES */
+    
+    overflow: auto;
+}
+
+#home2 {
+    width: 1351px;
+    /*height: 720px;*/
+    margin: 0 auto 0 auto;
+    padding-top: 50px; /* TEST BANDES */
+    
+    background-color: #fff;
+}
+
+#big_doodle {
+    background: url('/bart1/timg/files/img/w/big_doodle.png') center no-repeat;
+    height: 605px;
+    width: 312px;
+    margin-left: -460px;
+    margin-top: -95px;
+    
+    float: left; /* CRT : BUG IE*/
+    
+    /*position: absolute;*/ 
+/*    top: 0;
+    left: 0px;*/
+    //z-index: -1;
+}
+
+#home2_pagehead {
+    margin: 16px 0 0 0;
+    
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#home2_content {
+    margin: 35px auto 0px auto;
+    width: 700px;
+    /*height: 320px;*/
+    
+    /*position: relative; //BUG SUR IE*/
+    overflow: hidden;
+    /*overflow: visible;  CRT : BUG IE*/
+}
+
+#home2_content b { 
+    font-weight: bold;
+}
+
+#home2_content i { 
+    font-style: italic;
+}
+
+#home2_content h2 {
+    padding-left: 120px;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-size: 21px;
+    color: #2ab9fb;
+}
+
+#home2_content p {
+    font-size: 14px;
+    padding-left: 120px;
+}
+
+.hm2-tqr-3p-mx {
+    margin-bottom: 30px;
+}
+
+#home2_content_bullet1 {
+    background: url('/bart1/timg/files/img/w/bullet1_w.jpg')left no-repeat;
+    /*height: 80px;*/
+}
+
+#home2_content_bullet2 {
+    background: url('/bart1/timg/files/img/w/bullet2_w.jpg') left no-repeat;
+    /*height: 80px;*/
+}
+
+#home2_content_bullet3 {
+    background: url('/bart1/timg/files/img/w/bullet3_w.jpg') left no-repeat;
+    /*height: 80px;*/
+}
+ 
+#home2_faq {
+    width: 1100px;
+    margin: 10px auto 100px auto;
+    /*margin: 10px auto 100px 177px;*/
+    /*margin: 10px auto 40px 177px;*/
+    
+    clear: right;  /* CRT : BUG IE */
+    overflow: auto; /* CRT : BUG IE*/
+}
+
+#home2-faq-tle {
+    padding-bottom: 50px;
+    /*padding-bottom: 30px;*/
+    
+    font-family: Verdana, Calibri, Arial, sans-serif;
+    font-size: 25px;
+    /*font-size: 20px;*/
+    font-weight: bold;
+    text-align: center;
+}
+
+#home2_faq_left {
+    display: inline-block;
+    width: 48%;
+    float: left;
+}
+
+#home2_faq_right {
+    display: inline-block;
+    width: 48%;
+    float: right;
+}
+
+#home2_faq_next{
+    display: block;
+    float: right;
+}
+
+#home2_faq_next a{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#home2_faq_next a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.faq_item {
+    margin-bottom: 50px;
+/*    margin-bottom: 15px;*/
+}
+
+.faq_item b {
+    font-weight: bold;
+}
+
+.faq_item h3 {
+    color: #2ab9fb;
+    font-size: 18px;
+    margin-bottom: 10px;
+    /*margin-bottom: 5px;*/
+}
+
+.faq_item h3 a {
+    cursor: default;
+    
+    color: inherit;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+.faq_item h3 a:hover {
+    text-decoration: underline;
+}
+
+.faq_item p {
+    margin: 10px 0px !important; 
+    
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    /*font-size: 12px;*/
+    text-align: justify;
+}
+
+.faq_item p i {
+    font-style: italic;
+}
+
+/********* TRENQR POLITICS *********/
+
+#tqr-pltcs-sprt {
+    /*height: 100%;*/
+    width: 100%;
+    background: rgb(0,58,120);
+    
+    overflow: auto;
+      
+/*    position: absolute;
+    top: 0px;
+    z-index: 100;*/
+
+    color : #FFF;
+    font-family: 'Segoe UI', 'Lucida Grande', Calibri, sans-serif;
+}
+
+#tqr-pltcs-mx {
+    margin: 80px auto 0px auto;
+}
+
+#tqr-pltcs-hdr {
+    margin: 0px auto;
+    
+    font-family: Verdana, 'Segoe ui', 'lucida grande';
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#tqr-pltcs-chcs-mx {
+    margin: 50px auto 30px auto;
+    width: 700px;
+    
+    text-align: center;
+}
+
+.tqr-pltcs-chc-mx {
+    margin-bottom: 25px;
+    
+    position: relative; 
+}
+
+.tqr-pltcs-chc-mx.activate::before {
+    content: "";
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    border-left: 1px solid #FFF;
+    
+    position: absolute;
+    z-index: 1;
+}
+
+.tqr-pltcs-chc-mx.activate[data-target='liberty-respect']::before {
+    width: 200px;
+    height: 455px;
+    
+    top: 30px;
+    left: -125px;
+}  
+
+.tqr-pltcs-chc-mx.activate[data-target='just-fun']::before {
+    width: 200px;
+    height: 560px;
+    
+    top: 30px;
+    left: -125px;
+}  
+
+.tqr-pltcs-chc-mx.activate[data-target='lmbyf']::before {
+    width: 200px;
+    height: 600px;
+    
+    top: 30px;
+    left: -125px;
+}  
+
+.tqr-pltcs-chc-mx.activate[data-target='commitment']::before {
+    width: 200px;
+    height: 405px;
+    
+    top: 30px;
+    left: -125px;
+}  
+
+.tqr-pltcs-chc-tgr {
+    display: inline-block; 
+    border: 1px solid;
+    border-radius: 10px;
+    width: 550px;
+    padding: 12px 0px;
+    
+    color: #FFF;
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.tqr-pltcs-chc-tgr:not(.activate):hover {
+    background-color: #FFF;
+    
+    color: rgb(129, 214, 229);
+    font-weight: bold;
+}
+
+.tqr-pltcs-chc-tgr.activate {
+    background-color: #FFF;
+    
+    color: rgb(129, 214, 229);
+    font-weight: bold;
+}
+
+#tqr-pltcs-manfts-bmx {
+    margin: 100px 0px 30px 0px;
+}
+
+.tqr-pltcs-manfto-mx {
+    border: 1px solid;
+    border-radius: 5px;
+    width: 630px;
+    margin: 0px auto;
+    padding: 30px;
+    background-color: #FFF;
+    
+    position: relative;
+    z-index: 2;
+  
+    color: rgb(0,58,120);
+    text-align: justify;
+}
+
+.tqr-pltcs-manfto-hdr {
+    margin: 0px 0px 20px 0px;
+}
+
+.tqr-pltcs-manfto-tle {
+    font-weight: bold;
+}
+
+.tqr-pltcs-manfto-bdy {
+}
+ 
+.tqr-pltcs-manfto-bdy p {
+    margin: 20px 0px;
+}
+ 
+.tqr-pltcs-manfto-bdy b {
+    font-weight: bold;
+}
+ 
+.tqr-pltcs-manfto-bdy i:not(.fa) {
+    font-style: italic;
+}
+
+#tqr-pltcs-manfto-prism {
+    border-bottom:  1px solid orange;
+    
+    color: rgb(0,58,120);
+    text-decoration: none;
+}
+
+#tqr-pltcs-manfto-prism:hover {
+    border-bottom:  1px solid transparent;
+}
+
+.tqr-pltcs-manfto-ul {
+    padding: 10px 0px 10px 20px;
+}
+
+.tqr-pltcs-manfto-ul li {
+    margin-bottom: 2px;
+}
+
+.tqr-pltcs-manfto-ul li::before {
+    content: '\f054';
+    margin-right: 6px;
+    
+    font-family: Fontawesome;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/*****************/
+
+#home-fdr-qt-mx {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 400px;
+    padding: 20px;
+    margin: 0px auto !important;
+    
+    text-align: center;
+}
+
+#home-fdr-qt-qt {
+    font-size: 18px;
+    font-weight: bold;
+}

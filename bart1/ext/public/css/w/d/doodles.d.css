@@ -1,0 +1,132 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11 avr. 2014, 15:33:28
+    Author     : Pierre Lallement <http://www.syel.totoandco.eu>
+*/
+
+#doodle_arrow {
+    position: absolute;
+    top: 340px;
+    /*left: 1175px;*/
+    right: 100px;
+    
+    background: url('/bart1/timg/files/img/w/doodles/arrow.png') center no-repeat;
+    height: 103px;
+    width: 86px;
+}
+
+#doodle-arrow-alt {
+    display: inline-block;
+    width: 260px;
+    
+    position: absolute;
+    /*top: -55px;*/
+    top: -49px;
+    left: -110px;
+    
+    font-family: 'Segoe UI', 'Open sans', calibri, Arial, sans-serif;
+    color: rgb(109,157,207);
+    font-weight: bold;
+    /*font-size: 18px;*/
+    font-size: 17px;
+    text-align: center;
+}
+/*
+#doodle_left_big{
+    position: absolute;
+    top: 233px;
+    left: 40px;
+    
+    background: url('http://timg.ycgkit.com/files/img/w/doodles/left_big.jpg') center no-repeat;
+    height: 439px;
+    width: 303px;
+    z-index: -3;
+}
+
+#doodle_right_big{
+    position: absolute;
+    top: 218px;
+    left: 988px;
+    
+    background: url('http://timg.ycgkit.com/files/img/w/doodles/right_big.jpg') center no-repeat;
+    height: 457px;
+    width: 255px;
+    z-index: -3;
+}
+*/
+#doodle_left_black{
+    position: absolute;
+    top: 483px;
+    left: 78px;
+    
+    background: url('/bart1/timg/files/img/w/doodles/left_black.png') center no-repeat;
+    height: 128px;
+    width: 95px;
+}
+/*
+#doodle_left_blue{
+    position: absolute;
+    top: 281px;
+    left: 20px;
+    
+    background: url('http://timg.ycgkit.com/files/img/w/doodles/left_blue.png') center no-repeat;
+    height: 130px;
+    width: 97px;
+}
+*/
+#doodle_left_green {
+    position: absolute;
+    top: 276px;
+    left: 255px;
+    
+    background: url('/bart1/timg/files/img/w/doodles/left_green.png') center no-repeat;
+    height: 130px;
+    width: 99px;
+}
+/*
+#doodle_right_red {
+    position: absolute;
+    top: 468px;
+    left: 1181px;
+    
+    background: url('/bart1/timg/files/img/w/doodles/right_red.png') center no-repeat;
+    height: 106px;
+    width: 49px;
+}
+*/
+/*
+#doodle_right_yellow {
+    position: absolute;
+    top: 474px;
+    left: 1130px;
+    
+    background: url('http://timg.ycgkit.com/files/img/w/doodles/right_yellow.png') center no-repeat;
+    height: 90px;
+    width: 53px;
+}
+*/
+#doodle_hash {
+    position: absolute;
+    top: 155px;
+    left: 1168px;
+    
+    background: url('/bart1/timg/files/img/w/doodles/right_hash.png') center no-repeat;
+    height: 123px;
+    width: 112px;
+    z-index: 0;
+}
+
+#doodle_photo {
+    position: absolute;
+    top: 0;
+    left: 1080px;
+    
+    background: url('/bart1/timg/files/img/w/doodles/photo.png') center no-repeat;
+    height: 169px;
+    width: 503px;
+    z-index: 0;
+}

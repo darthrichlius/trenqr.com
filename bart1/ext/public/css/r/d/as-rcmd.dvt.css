@@ -1,0 +1,117 @@
+#as-rcmd {
+/*    border: 1px solid red;*/
+    background-color: white;
+    padding: 0px;
+    margin: 20px auto 0 auto;
+    height: 80px;
+    width: 300px;
+    border-radius: 4px;
+}
+
+#as-rcmd p {
+    font-size: 14px;
+    margin: 7px 0 0 3px !important;
+}
+
+#as-rcmd-text {
+    display: block;
+    width: 250px;
+    margin: 8px auto 12px auto;
+    padding: 0;
+}
+
+.rcmd-why {
+    margin-left: 3px;
+    
+    text-decoration: none;
+    color: #3b5998;
+    font-size: 11px;
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+}
+
+.rcmd-why:hover {
+    text-decoration: underline;
+    color: blue;
+    font-size: 11px;
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+}
+
+#as-rcmd-send {
+    display: block;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    background-color: orange;
+    width: 90px;
+    height: 22px;
+    margin-top: -4.5px;
+    margin-right: 20px;
+    
+    cursor: pointer;
+    
+    float: right;
+    
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: calibri;
+    line-height: 19px;
+}
+
+/*********************************** SOCIAL NETWORK BLOC ********************************/
+#as-rcmd-sn {
+    background-color: white;
+    height: 95px;
+    width: 300px;
+    margin: 10px auto 20px auto;
+    border-radius: 4px;
+}
+
+#as-rcmd-sn a {
+    border: none;
+}
+
+#as-rcmd-sn img {
+    border: none;
+}
+
+#as-rcmd-sn p {
+    font-size: 14px;
+    margin: 5px 0 0 3px !important;
+}
+
+#as-rcmd-sn ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px auto;
+    width: 218px;
+    overflow: auto;
+}
+
+#as-rcmd-sn ul li {
+    float: left;
+}
+
+#img-twt {
+    margin-left: 20px;
+}
+
+.label-fb {
+    font-family: tahoma;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.label-twt {
+    font-family: "arial";
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.rcmd-why2 {
+    margin-top: -5px !important; 
+    display: block;
+    /*width: 100px;
+    
+    padding: 0;*/
+}

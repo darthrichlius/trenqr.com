@@ -1,0 +1,122 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12 mai 2014, 09:57:22
+    Author     : Pierre Lallement <http://www.syel.totoandco.eu>
+*/
+
+body{
+    background-color: rgb(250, 250, 250);
+    font-family: "Myriad Pro", "Calibri", Arial, Helvetica, sans-serif;
+}
+
+.fe_error_border{
+    border-color: red !important;
+}
+
+#fe_screensize{
+    position: relative;
+    width: 1351px;
+    padding-top: 95px;
+    margin: auto;
+}
+
+.fe_content{
+    width: 510px;
+    margin: auto;
+    border-radius: 3px;
+    padding: 20px;
+    font-size: 13px;
+    color: #000;
+}
+
+#fe_content_main{
+    background-color: #FF9A9A;
+    border: 1px solid #AA3939;
+    padding-bottom: 10px;
+}
+
+#fe_content_title{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#fe_content_text{
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+#fe_errcode{
+    display: inline-block;
+    text-align: left;
+}
+#fe_errcode span{
+    font-weight: bold;
+}
+
+#fe_content_sub{
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #999;
+    padding: 10px 20px;
+}
+
+#fe_linkback{
+    display: inline-block;
+}
+#fe_linkhome{
+    display: inline-block;
+    float: right;
+}
+#fe_linkback a, #fe_linkhome a{
+    color: #333;
+    text-decoration: none;
+}
+#fe_linkback a:hover, #fe_linkhome a:hover{
+    text-decoration: underline;
+}
+
+#fe_reportzone{
+    font-size: 13px;
+    text-align: right;
+}
+
+#fe_reportbug a{
+    color: #000;
+    text-decoration: none;
+}
+#fe_reportbug{
+    display: inline-block;
+    margin: 10px 0 0 auto;
+    height: 16px;
+    //width: 182px;
+    vertical-align: middle;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #999;
+    outline: 0;
+    cursor: pointer;
+    text-decoration: none;
+    background: url('../images/btn_gradient.jpg') repeat-x;
+    background: -webkit-linear-gradient(#eee, #ccc); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#eee, #ccc); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#eee, #ccc); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#eee, #ccc); /* Standard syntax */
+    
+    font-family: Calibri, Arial, sans-serif;
+}
+#fe_reportbug:active{
+    background: url('../images/btn_gradient_reverse.jpg') repeat-x;
+    background: -webkit-linear-gradient(#ccc, #eee); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ccc, #eee); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ccc, #eee); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ccc, #eee); /* Standard syntax */    
+}
+
+
+// Pour le placement des doodles, ajouter une div par illustration avec
+// le dessin en background.

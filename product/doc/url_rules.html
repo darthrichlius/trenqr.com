@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TRENqR url rules</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <style>
+            #page {
+                width: 980px;
+                margin: 0 auto;
+            }
+            
+            table {
+                border: 1px solid #000;
+                border-collapse: collapse;
+            }
+            
+            td, th {
+                border: 1px solid #000;
+                border-collapse: collapse;
+            }
+            
+            td {
+                text-align: center;
+            }
+            
+            th {
+                background-color: #aaa;
+            }
+            
+            h1 {
+                text-align: center;
+            }
+            
+            #ups_table_k {
+                
+            }
+            
+            .tb-elt-medium {
+                width: 100px;
+            }
+            
+            .tb-elt-long {
+                width: 300px;
+            }
+            
+            .tb-elt-vlong {
+                width: 600px;
+            }
+            
+            .red {
+                color: red;
+            }
+            
+            .left {
+                text-align: left;
+            }
+            
+            #tb-url-rules .left {
+                padding: 5px 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="page">
+            <h1>Règles sur les URLs</h1>
+            <h3>Menus</h3>
+            <ul>
+                <li><a href="#url_format">Composition de l'URL</a></li>
+                <li><a href="#ups_rules">Formalisme sur les identifiants dans UPS</a></li>
+            </ul>
+            <div id="url_format">
+                <h3>Composition de l'URL</h3>
+                <div>
+                    <p>
+                        Les URLs sur Trenqr suivent le formalisme adopté par WOS. Se formalisme permet de répondre à la majorité des formats d'URL.<br/>
+                        De plus, il est adapté à l'univers technico-complexe d'un site web lourd de type réseau social comme TRENqR.
+                    </p>
+                    <p>
+                        Mais encore, il est à noter que ce format correspond au format le plus brut de l'url. <b class='red'>Il n'est pas directement visible par l'utilisateur.</b><br/>
+                        Les formats qui sont vus par l'utilisateur au niveau du FrontEnd ou un MITM (Man-In-The-Middle) sont des versions Rewriting.<br/>
+                        Au delà du fait que cela rend la tâche de compréhension, de l'univers technique du produit, plus complexe, on pourra se réjouir du fait :
+                    </p>
+                    <ol>
+                        <li>L'URL est formée pour qu'elle soit facilement compréhensible par les utilisateurs non initiés d'internet.</li>
+                        <li>
+                            <b>La compréhension de l'URL améliore grandement le référencement</b>. En effet, si le moteur de recherche index la page, il indexera aussi l'URL. 
+                            Or, l'utilisateur, dans sa recherche, écrit des mots compréhensibles par des humains. Ceci fait donc que la concordance entre ce qu'un humain écrit et nos URLs sera assez bonne.
+                            Ainsi, on améliore notre SEO.
+                        </li>
+                        <li>Cela nous permet de changer (facilement et rapidement) nos URL du coté du FE sans pour autant modifier la logique beaucoup plus complexe et rigide du coté du serveur.</li>
+                    </ol>
+                </div>
+                <table id="tb-url-rules">
+                    <tr>
+                        <th class="tb-elt-medium">Section</th>
+                        <th class="tb-elt-vlong">Observations</th>
+                    </tr>
+                    <tr>
+                        <td><b>USER</b></td>
+                        <td class='left'>
+                            Le peusdo de l'utilisateur ciblé par l'utilisateur actif. Cette donnée est facultative pour WOS. Cependant, elle peut l'être pour certain WORKERs. 
+                            En effet, lorsqu'on veut atteindre une page de type <q>restricted</q>, il devient <b class='red'>obligatoire de spécifier l'utilisateur cible</b>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>PAGE</b></td>
+                        <td class='left'>
+                            La page ciblé par l'utilisateur. Cette information est <b class='red'>obligatoire pour WOS</b>. Cependant, il ne s'agit que d'un élément d'appréciation de l'URL mais aussi de compréhension pour l'utilisateur. 
+                            En effet, les pages peuvent êtres traduites ce qui nous permet d'avoir un SEO multilingue.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>URQID</b></td>
+                        <td class='left'>
+                            L'identifiant dans la table des processus du la requete unique à exécuter. Cette donnée est très certainement la plus IMPORTANTE. Il est donc facilement compréhension qu'elle soit <b class='red'>OBLI-GA-TOIRE pour WOS</b>.
+                            Elle permet d'acquerir TOUTES les informations sur la requête. Des informations qui seront par la suite utilisée par les autres modules. Par exemple, l'URQID nous permet d'informer WOS que la requpete est de type Restricted.
+                            Ou encore, URQID nous permet de savoir à qu'elle page est liée la rêquete. On comprend encore mieux pourquoi la section PAGE n'est pas vraiment d'une importance capitale pour WOS.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>UPS</b></td>
+                        <td class='left'>
+                            UPS est l'acronyme de <b>U</b>qr-<b>P</b>arameter-<b>S</b>.<br/>
+                            Il s'agit de paramètres uspplémentaires qui viennent <q>enrichir</q> l'URL. L'UPQ permet donc d'éviter la rigidité du concept de formalisme d'URL. On peut faire passer autant de paramètres que l'on veut au niveau de l'UPS.<br/>
+                            
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>TODO write content</div>
+            <div id="ups_rules">
+                <h3>Formalisme sur UPS</h3>
+                <p>Pour faciliter le traitement des différents processus sur la plateforme, j'ai pensé qu'un formalisme des identifiants des couples dans UPS était nécessaire.</p>
+                <p>
+                    Ce formaliste permet ainsi à n'importe quel module qui souhaiterait manipuler les URL de les comprendre aisement. L'avantage ainsi double :(1) Simplification pour le système (2) Simplification pour le développeur.<br/>
+                    Cependant, un autre avantage peut être tiré de ce formalisme. En effet, nous pouvons changer autant qu'on veut les identifiants de façon ordonné et efficace. Aussi, d'une version à l'autre, les clés peuvent changer mais le listing nous permet de ne pas nous perdre.
+                    Pourquoi ? Grace au listing, nous pouvons mettre une politique de redirection de manière plus efficace car on a toutes les clés possibles dans le tableau en limitant le risque d'oublie.<br/>
+                    Enfin, on pourrait aussi prendre en compte que notre politique est de limiter au maximum l'indexation de certaines pages. Raisons : 
+                </p>
+                <ul>
+                    <li>Eviter d'indexer des pages sensibles quand bien même elles sont protégées</li>
+                    <li>Rendre la tâche plus difficile à ceux qui essayera d'utiliser le produit à leurs fins personnelles. Il rencontrerait alors le problème des mises à jour, ce qui - nous l'espérons - les découragera.</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th id="ups_table_k" class="tb-elt-medium">Clé</th>
+                        <th class="tb-elt-medium">Libellé</th>
+                        <th class="tb-elt-medium">Type de données</th>
+                        <th class="tb-elt-long">Observations</th>
+                    </tr>
+                    <tr>
+                        <td>a</td>
+                        <td>Article</td>
+                        <td>[\w\-\d]+</td>
+                        <td>L'identifiant externe de l'article</td>
+                    </tr>
+                    <tr>
+                        <td>sk</td>
+                        <td>Session_Key</td>
+                        <td><span class="red">system</span></td>
+                        <td>L'identifiant de la session en cours</td>
+                    </tr>
+                    <tr>
+                        <td>tt</td>
+                        <td>Trend_Title</td>
+                        <td>-</td>
+                        <td>Le titre de la Tendance</td>
+                    </tr>
+                    <tr>
+                        <td>ttei</td>
+                        <td>Trend_Title_External_Id</td>
+                        <td>-</td>
+                        <td>L'identifiant externe de la Tendance</td>
+                    </tr>
+                    <tr>
+                        <td>u</td>
+                        <td>User</td>
+                        <td>-</td>
+                        <td>Le pseudo de l'utilisateur</td>
+                    </tr>
+                    <tr>
+                        <td>uei</td>
+                        <td>User_External_Id</td>
+                        <td>-</td>
+                        <td>L'identifiant externe de l'utilisateur</td>
+                    </tr>
+                    <tr>
+                        <td>uem</td>
+                        <td>User_EMail</td>
+                        <td>-</td>
+                        <td>L'email d'un utilisateur</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+    </body>
+</html>

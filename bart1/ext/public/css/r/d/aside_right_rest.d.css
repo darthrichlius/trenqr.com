@@ -1,0 +1,552 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16 janv. 2014, 16:05:52
+    Author     : arsphinx
+*/
+/*
+@font-face {
+    font-family: "ABeeZee";
+    src: url('../../../../mods/ABeeZee/ABeeZee-Regular.ttf');
+}
+*/
+
+#asR_wait_on_trade {
+    /*border: 1px solid red;*/
+    border-radius: 3px;
+    height : 322px; 
+    width: 700px;
+    margin: 260px 0 0 -181px;
+    padding: 0px 0 0 0;
+    background-color: #fff;
+    
+    writing-mode: tb-rl;
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    white-space: nowrap;
+    
+    color: #444;
+    font-family: Arial, sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    /*vertical-align: middle;*/
+}
+
+/************* NEW ADS BOX ************/
+
+#asR_ads_box_max {
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    padding: 10px;
+    /*margin: 54px 0 0 8px;*/
+    margin: 40px 0 0 7px;
+    height: 660px;
+    width: 302px;
+    background-color: #fff;
+    
+    position: relative;
+}
+
+.asR_ads_box_elt {
+}
+
+#asR_ads_box_rmpub {
+    border: 1px solid rgba(198,128,0,0.2);
+    border-radius: 4px;
+    padding: 5px;
+    margin: 0 0 20px 0;
+    background: rgba(100%, 73%, 25%, 1);
+    
+    font-family: Calibri, Arial, sans-serif;
+}
+
+.a_a_b_r_lk {
+    /*color: #02BAFF;*/
+    /*color: orange;*/
+    color: #fff;
+    text-decoration: none;
+}
+
+.a_a_b_r_lk:hover {
+    text-decoration: underline;
+}
+
+.asR_ads_box_ads {
+    border: 1px solid #ccc;
+    height: 250px;
+    width: 300px;
+}
+
+.tp_asr_ads_hv {
+    display: block;
+    background-color: rgba(0,0,0,0.1);
+    
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 250px;
+}
+
+.tp_asr_ads_hv:hover  {
+    background-color: rgba(0,0,0,0.2);
+}
+
+#asR_ads_box_ads_sep {
+    /*border-bottom: 1px solid #ddd;*/
+    margin: 5px 0px;
+    
+    color: #036;
+    font-family: Calibri, Arial, sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+#asR_ads_box_ads_sep span:before {
+    content: "\2014\00a0";
+}
+
+#asR_ads_box_ads_sep span:after {
+    content: "\00a0\2014";
+}
+
+#asR_ads_box_ftr {
+    width: 322px;
+    
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+    text-align: center;
+} 
+
+#asr_y_ads {
+    margin: 0 0 2px 0;
+    
+    color: #09C;
+    font-family: Arial !important;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+#a_a_b_f_ttl {
+    border-radius: 0 0 4px 4px;
+    padding: 6px 0;
+    background-color: #bbb;
+    
+    color: #333;
+    font-family: Calibri, "Myriad Pro", Arial, sans-serif;
+    
+}
+/***************************************/
+
+.asR_com_elmnt {
+    width: 300px;
+    margin: 0 auto;
+}
+
+#asR_nav_friend_testy {
+    margin-top: 30px;
+    
+    color: #fff;
+    font-family: Georgia, Calibri, Arial, sans-serif;
+    font-style: normal;
+    font-size: 15px;
+}
+
+#asR_nav_friend_testy_fr {
+    text-align: right;
+}
+
+#asR_nav_friend_testy_fr_a {
+    
+    color: grey;
+    font-family: Arial, Calibri, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+#asR_nav_friend_testy_fr_a:hover {
+    text-decoration: underline;
+}
+
+#asR_nav_start_writn {
+    /*border: 1px solid red;*/
+    margin: 0;
+    padding: 0 0 0 15px;
+}
+
+#asR_nav_start_writn_a {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+#asR_nav_start_writn_a:hover {
+    text-decoration: none;
+}
+
+#asR_nav_menu {
+    border: 1px solid black;
+    margin-top: 48px;
+}
+
+#asR_list_ms {
+    /*border: 1px solid lightgrey;*/
+    background-color: white;
+    border-radius: 4px;
+    padding: 4px 0 3px 0;
+    margin: 0;
+    list-style: none;
+    
+    overflow: hidden;
+}
+
+#asR_list_ms li {
+    width: 100px;
+    float: left;
+}
+
+.com_asRm_sel {
+    /*border-bottom: 3px solid #09C;*/
+    font-weight: bold;
+}
+
+.com_asRm {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 0;
+    width: 100%;
+    height: 100%;
+    
+    color: #09C;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.com_asRm_mdl {
+    border-right: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    /*padding-left: 3px;*/
+    width: 80% !important;
+}
+
+/**********************************************************************************************************/
+/************************************** ASIDE INFOS BLOCKS ************************************************/
+
+/************************************** SUGGEST ON PEOPLE && POST */ 
+#asR_nav_infos_max {
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.asR_nav_com_sug {
+    background-color: white;
+    padding: 3px 0 0 0;
+    border-radius: 4px;
+}
+
+#asR_nav_sug_ppl {
+    
+}
+
+#sug_ppl_title {
+    /*border-bottom: 1px solid lightgrey;*/
+    margin: 0;
+    padding: 3px 0 10px 0;
+    
+    font-family: "ABeeZee", Calibri, Arial, sans-serif;
+    /*font-weight: bold;*/
+    text-align: center;
+}
+
+.sug_ppl_mdl, .sug_post_mdl {
+    border-bottom: 1px solid lightgrey;
+    padding: 5px 8px;
+}
+
+.sug_ppl_mdl_top {
+    height: 50px;
+}
+
+.sug_post_mdl_top {
+    /*height: 50px;*/
+    padding-top: 5px;
+    position: relative;
+}
+
+.sug_ppl_mdl_header {
+    margin: 0;
+    padding: 0;
+    height: 17px;
+    position: relative;
+}
+
+.sug_post_mdl_header {
+    margin: 0 0 0 8px;
+    padding: 0;
+    height: 17px;
+    position: relative;
+}
+
+.sug_post_time {
+    margin: 158px 6px 0 0;
+    float: left; 
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    color: grey;
+    font-family: Arial, calibri, sans_serif;
+    font-size: 11px;
+}
+
+.sug_post_img {
+    /*border: 1px solid red;*/
+    padding: 0 0 0 60px;
+    margin: 0;
+}
+
+.sug_post_img_a {
+    border: none;
+    outline: 0;
+}
+
+.sug_post_img_prevw {
+    border: none;
+    outline: 0;
+    border-radius: 2px;
+}
+
+.group_ppl_user {
+    /*border: 1px solid green;*/
+    height: 17px;
+    
+    text-decoration: none;
+    margin-left: 8px;
+}
+
+.sug_ppl_user_pic {
+    /*border: 1px solid lightgrey;*/
+    border: none;
+    border-radius: 3px;
+    float: left;
+    
+    outline: 0;
+}
+
+.sug_ppl_user_psd {
+    /*border: 1px solid black;*/
+    position: relative;
+    top: -5px;
+    
+    color: grey;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+}
+
+.sug_ppl_mdl_listHtgs {
+    /*border: 1px solid red;*/
+    margin: 0 ;
+    padding: 0 0 0 8px;
+    height: 16px;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    line-height: 14px;
+}
+
+.sug_post_mdl_listHtgs {
+    /*border: 1px solid red;*/
+    margin: 0 0 0 55px ;
+    padding: 0 0 0 5px;
+    height: 16px;
+    width: 224px;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    line-height: 14px;
+}
+
+.sug_u_intr {
+    text-decoration: none;
+    
+    color: #0bbbee;
+    font-family: arial, sans-serif;
+    font-size: 12px;
+}
+
+.sug_u_intr:hover {
+    text-decoration: underline;
+}
+
+.sug_purpose, .sug_tr_purp { 
+    /*border: 1px solid red;*/
+    margin: 0;
+    padding: 0 0 0 59px;
+    height: 16px;
+    width: 224px;
+    
+    white-space: nowrap;
+    overflow: visible;
+    text-overflow: ellipsis;
+    
+    color: grey;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+.sug_tr_purp { 
+    padding: 0 !important;
+}
+
+.sug_purpose a, .sug_tr_purp a {
+    color: grey;
+    text-decoration: none;
+}
+
+.sug_purpose a:hover, .sug_tr_purp a:hover {
+    text-decoration: underline;
+}
+
+.sug_post_tr_title {
+    padding: 0;
+    margin: 3px 0;
+    width: 290px;
+    height: 17px;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    /*color: #050;*/
+    color: rgb(0, 85, 187);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.sug_ppl_mdl_down {
+    position: relative;
+    margin-top: 5px;
+}
+
+.sug_post_mdl_down {
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.sug_ppl_action {
+    margin-left: 210px !important;
+}
+
+.reload_sug {
+    /*border-top: 1px solid lightgrey;*/
+    margin: 0;
+    padding: 7px 0;
+    
+    color: grey;
+    font-family: Arial, Calibri, sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+
+.reload_sug_a {
+    color: grey;
+    text-decoration: none;
+}
+
+.reload_sug_a:hover {
+    text-decoration: underline;
+}
+
+/************************************** SUGGEST ON TREND */ 
+.sug_tr_title {
+    margin: 0;
+    padding: 0 0 5px 0;
+    
+    /*white-space: nowrap;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.sug_tr_title_a {
+    color: rgb(60,60,60);
+    font-family: "ABeeZee", Calibri, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sug_tr_sample_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: auto;
+}
+
+.sug_tr_sample_elmnt {
+    margin: 0 1px 0 0;
+    float: left;
+}
+
+.sug_tr_sample_a {
+    border: none;
+    outline: 0;
+    /*opacity: 0.8;*/
+    
+    text-decoration: none;
+}
+
+
+.sug_tr_sample_a:hover {
+    opacity: 1;
+}
+
+.sug_tr_sample_img {
+    border: 1px solid lightgrey;
+    outline: 0;
+    border-radius: 3px;
+    
+}
+
+.sug_tr_specs {
+    margin: 0;
+    padding: 2px 0;
+    overflow: auto;
+    
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 13px;
+}
+
+.sug_tr_specs_flnb {
+    
+}
+
+.sug_tr_specs_flind {
+    
+}
+
+.sug_tr_specs_type {
+    padding-right: 3px;
+    float: right;
+    
+    /*color: grey;*/
+    color: #28b957;
+    font-weight: bold;
+}

@@ -1,0 +1,219 @@
+#home_list_trs {
+    background-color: white !important;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+#home_top_tr {
+    /*border: 1px solid black;*/
+    width: 700px;
+    height: 300px;
+    margin: 0 auto 5px auto;
+    background-image: url(http://lorempixel.com/700/300);
+}
+
+#home_top_tr p {
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 60px;
+    width: 660px;
+    margin: 200px 0 0 0;
+    padding: 20px;
+        
+    text-align: justify;
+    color: white;
+    font-family: Georgia, "National Bold", Calibri;
+    font-size: 23px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+#home_top_tr-title {
+    /*border: 1px solid black;*/
+    width: 700px;
+    height: 45px;
+    margin: 0 auto;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    line-height: 45px;
+}
+
+#home_top_tr-title a {
+    text-decoration: none;
+    color: #111;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "National Bold", "Lucida Grande", Georgia, Arial, Helvetica;
+}
+
+#home_top_tr-title a:hover {
+    color: grey;
+}
+
+.home_top_tr_specs {
+    /*border: 1px solid black;*/
+    margin: 10px 0 0 0;
+    padding: 0;
+    /*height: 27px;*/
+    
+    /*line-height: 27px;*/
+    list-style: none;
+    overflow: auto;
+}
+
+.home_top_tr_specs > li {
+    float: left;
+    margin-right: 15px;
+    height: 30px;
+    
+    line-height: 30px;
+}
+
+.home_top_tr_specs p {
+    margin-top: -5px !important;
+    height: 30px !important;
+}
+
+.home_tr_in_list {
+    margin-top: 0px !important;
+}
+
+#home_list_trs > ul {
+    
+    background-color: white !important;
+    padding: 0;
+    margin: 0 auto;
+    width: 700px;
+    /*height: 500px;*/
+    list-style: none;
+    
+}
+
+.home_tr_in_list_mdl {
+    /*border: 1px solid black;*/
+    padding: 20px 0;
+    height: 83px;
+}
+
+.as_tr_after {
+    border-top: 1px solid lightgrey;
+    width: 700px;
+}
+
+.h_t_i_l_ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.h_t_i_l_ul > li {
+    float: left;
+}
+
+.tr_img {
+    width: 125px;
+    height: 83px;
+    background-image: url("http://lorempixel.com/125/83");
+}
+
+.art_as_tr {
+    /*border: 1px solid black;*/
+    width: 435px;
+    padding: 0 25px 0 15px;
+}
+
+.art_as_tr_title {
+    margin: 0;
+    padding: 0;
+}
+
+.art_as_tr_title a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    color: #111;
+    font-family: "National Bold", "Lucida Grande", Georgia, Arial, Helvetica;
+    font-size: 19px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.art_as_tr_title a:hover {
+    color: grey;
+    /*text-decoration: underline;*/
+}
+
+.art_as_tr_desc {
+    margin: 5px 0 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    /*font-weight: bold;*/
+    font-size: 13px;
+    text-align: justify;
+    font-family: Arial, Calibri, Helvetica;
+}
+
+.art_as_tr_specs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.art_as_tr_specs > li {
+    float: left;
+    margin-right: 15px;
+}
+
+.tr_specs_psd a, .tr_specs_time {
+    color: rgb(180,180,180);
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.tr_specs_psd a:hover {
+    text-decoration: underline;
+}
+
+.tr_specs_pst p {
+    /*border: 1px solid black;*/
+    margin: -12px 0 0 0;
+    
+    font-family: Calibri;
+    font-weight: bold;
+    color: rgb(10,10,10);
+}
+
+.tr_specs_nb {
+    font-size: 25px !important;
+}
+
+.tr_specs_cat_pst {
+    color: blue;
+    font-size: 12px !important;
+}
+
+.tr_specs_folws p {
+    /*border: 1px solid black;*/
+    margin: -12px 0 0 0;
+    
+    font-family: Calibri;
+    font-weight: bold;
+    color: rgb(10,10,10);
+}
+
+.tr_specs_nb {
+    font-size: 25px !important;
+}
+
+.tr_specs_cat_folws {
+    color: grey;
+    font-size: 12px !important;
+}

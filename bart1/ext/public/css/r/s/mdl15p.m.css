@@ -1,0 +1,125 @@
+/* 
+    Created on : 14 juin 2014, 21:37:41
+    Author     : arsphinx
+*/
+body {
+    background-color: #EDF0F2 !important;
+    /*background-color: #EBEBEB !important;*/
+}
+
+#p-l-c-main {
+    border-right: none !important;
+    border-left: none !important;
+    margin-left: 45px !important;
+    box-shadow: none !important;
+}
+
+#p-l-c-main.tmlnr {
+    min-height: 979px !important;
+}
+
+#p-l-c-main.tpgr {
+    min-height: 979px !important;
+}
+
+#main-header {
+    border-bottom: none !important;
+}
+/*
+#header-logo {
+    margin-left: 40px !important;
+}
+*/
+#header-logo-container {
+    left: 20px;
+}
+
+#pfl-hdr-max {
+    border: none !important;
+}
+
+/***************** ARP ***/
+/*
+.arp-solo-in-acclist {
+    left: 5px;
+}
+*/
+/***************** ASIDE ***/
+/*
+#aside {
+    height: 376px !important;
+    min-height: 376px !important;
+}
+
+#asdr-w-mx {
+    width: 318px !important;
+    margin-left: 3px !important;
+}
+
+#aside-mods.iamhigh {
+    transform: scale(0.95,0.95);
+    transform-origin: bottom right;
+}
+
+#design-legals {
+    margin-left: 0px !important;
+}
+
+#asd-gdbx-mx {
+    width: 340px !important;
+    margin-left: 0px !important;
+}
+
+.asd-gdbx-h-b-color[data-position='6'] {
+    width: 46px;
+}
+
+#asd-chbx-mx {
+    width: 338px !important;
+    margin: 90px 0px 0px 0px !important;
+}
+
+#asd-sr-ftr{
+    border-bottom: 1px solid #ccc !important;
+}
+
+#asd-srch-max {
+    margin: 90px 0px 0px 0px !important;
+    width: 340px !important;
+}
+
+#asd-sr-hdr-ipt-ipt {
+    width: 243px !important;
+}
+
+#asR_wait_on_trade {
+    display: none !important;
+}
+
+.css_utimate_foll {
+    margin-left: 0px !important;
+}
+
+#legals:not(.wlc) {
+    border: 1px solid #ccc !important;
+    border-radius: 0px 0px 4px 4px !important;
+    width: 338px !important;
+    margin: -41px 0px 0px 0px !important;
+    /*margin: -25px 0px 0px 0px !important;*
+    background-color: #FFFFFF !important;
+}
+
+
+#legals.wlc {
+    border: 1px solid #ccc !important;
+    border-radius: 0px 0px 4px 4px !important;
+    width: 338px !important;
+    margin: 10px 0px 0px 0px !important;
+    background-color: #FFFFFF !important;
+}
+*/
+/*********************************************** TRPG ******************************************/
+
+#a-h-t-top-tr-title {
+     /*border: 1px solid #D3D3D3;*/
+}

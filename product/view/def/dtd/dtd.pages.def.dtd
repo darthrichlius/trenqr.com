@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT def.pages (page+) >
+    <!ELEMENT page (creadate,last_mod_date,page.id,page.view.model,page.name,page.icon,page.title,page.keywords,page.description,page.author?,page.copyright?,page.meta.tq?,page.meta.og?,page.meta.twitter?,page.robots,page.pragma,page.cache_control,page.customs?) >
+        <!ATTLIST page id ID #REQUIRED>
+<!-- RecursFinder (l'algo qui recupèrre les données et les trie) ne nous permet pas d'avoir id. De plus, l'architecture du code ne nous le permet pas non plus  -->
+<!-- Modifier l'archi serait plus compliqué et fastidieux que de modifier ce fichier  -->
+        <!ELEMENT creadate EMPTY>
+                <!ATTLIST creadate value CDATA #REQUIRED>
+        <!ELEMENT last_mod_date EMPTY>
+                <!ATTLIST last_mod_date value CDATA #REQUIRED>
+        <!ELEMENT page.id EMPTY>
+                <!ATTLIST page.id value CDATA #REQUIRED>
+        <!-- On part du constat que plusieurs pages peuvent avoir un même modèle.
+             Aussi, on crèe le concept de 'modèle'. Ce modèle s'affranchit du paradigme 'langue'. 
+             La logique admet la succession suivante : page_id ->(1) modele ->(*) DVT(lang) ->BDD (pour les données en sortie)   
+         -->
+        <!ELEMENT page.view.model EMPTY>
+            <!ATTLIST page.view.model value CDATA #REQUIRED>
+        <!ELEMENT page.name (lang+)> 
+            <!ELEMENT lang EMPTY>
+                <!ATTLIST lang id CDATA #REQUIRED>
+                <!ATTLIST lang value CDATA #REQUIRED>
+        <!ELEMENT page.icon EMPTY>
+                <!ATTLIST page.icon value CDATA #REQUIRED>
+        
+        <!ELEMENT page.title (lang+)>
+
+        <!ELEMENT page.keywords (lang+)>
+
+        <!ELEMENT page.description (lang+)>
+
+        <!ELEMENT page.author EMPTY>
+                <!ATTLIST page.author value CDATA #REQUIRED>
+        <!ELEMENT page.copyright EMPTY>
+                <!ATTLIST page.copyright value CDATA #REQUIRED>
+		
+        <!ELEMENT page.meta.tq (tq.meta*)>
+            <!ELEMENT tq.meta EMPTY>
+                <!ATTLIST tq.meta id CDATA #REQUIRED>
+                <!ATTLIST tq.meta value CDATA #REQUIRED>
+
+        <!ELEMENT page.meta.og (og.meta*)>
+            <!ELEMENT og.meta EMPTY>
+                <!ATTLIST og.meta id CDATA #REQUIRED>
+                <!ATTLIST og.meta value CDATA #REQUIRED>
+
+        <!ELEMENT page.meta.twitter (twt.meta*)>
+            <!ELEMENT twt.meta EMPTY>
+                <!ATTLIST twt.meta id CDATA #REQUIRED>
+                <!ATTLIST twt.meta value CDATA #REQUIRED>
+				
+
+        <!ELEMENT page.robots EMPTY>
+                <!ATTLIST page.robots value CDATA #REQUIRED>
+        <!ELEMENT page.pragma EMPTY>
+                <!ATTLIST page.pragma value CDATA #REQUIRED>
+        <!ELEMENT page.cache_control EMPTY>
+                <!ATTLIST page.cache_control value CDATA #REQUIRED>   
+
+        <!-- 
+            [DEPUIS 25-09-15] @author BOR 
+                Permet de laisser la liberté à l'utilisateur de spécifier des balises.
+        -->
+        <!ELEMENT page.customs (page.custom*)>
+            <!ELEMENT page.custom EMPTY>
+                <!ATTLIST page.custom id CDATA #REQUIRED>
+                <!ATTLIST page.custom value CDATA #REQUIRED>

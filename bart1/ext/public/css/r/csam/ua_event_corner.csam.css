@@ -1,0 +1,96 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12 avr. 2014, 21:26:37
+    Author     : arsphinx
+*/
+
+#notify_event {
+    border: 2px solid #02BAFF;
+    border-radius: 5px;
+    /*margin: 85px 5px 0 0;*/
+    margin: 10px auto 0 -305px;
+    padding: 5px;
+    background-color: #fff;
+/*    width: 310px;*/
+    width: 610px;
+    /*height: 100px;*/
+    
+    position: fixed;
+    top: 0;
+    right: 50%;
+    left: 50%;
+    z-index: 1050;
+    
+    text-align: center;
+}
+
+#notify_event.ise {
+    border: 2px solid #f00;
+}
+
+#notify_event_text, #notify_event_err {
+    padding: 10px;
+    margin: 0;
+    /*line-height: 100px;*/
+    
+    color: #000;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 14px;
+}
+
+/*
+.net_onepsd_max {
+    color: #000;
+}*/
+
+.net_onepsd_link, .net_onepsd_max {
+    margin: 0 0 0 -1px;
+    
+    color: #02BAFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.net_onepsd_link:hover {
+    text-decoration: underline;
+}
+
+#ua_ntfmsgerr {
+    color : #ff0000;
+}
+
+#ua_ntfmsgerr a {
+    color : #ff0000;
+}
+
+/* Permet d'animer la disparition horizontale du bloc */
+.ua_notf_gotop {
+    /* 100 permet d'avoir assez de marge et ce quelque soit la height de la div */
+    margin-top: -100px !important;
+}
+
+.ua_trtitle_in_notf {
+    
+    color: #830ad3; 
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.ua_trtitle_in_notf:hover {
+    text-decoration: underline;
+}
+
+.ua_user_in_notf {
+    
+    color: rgba(0,153,153,0.8); 
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.ua_user_in_notf:hover {
+    text-decoration: underline;
+}

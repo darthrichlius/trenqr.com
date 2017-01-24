@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE definition.dvt SYSTEM "../dtd/dtd.dvt.def.dtd">
+<!-- ATTENTION : This file can be modify by a robot. That's why the content It may not be beautiful. -->
+
+<!-- RULES : 
+    * Si le DVT concerne un CSAM, il faut ajouter le préfixe "csam.". FACT_VIEW s'en sert pour repérer de manière propre les CSAM.
+        Ne pas le faire risque d'induire les entités travaillant au niveau de FACT_VIEW en erreur et les pousser à ne pas afficher les CSAM
+    * 
+-->
+<definition.dvt>
+    <!-- CSAM DEFINITIONS -->
+
+	<dvt id="nwfd">
+            <dvt.id value="nwfd" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/newsfeed.csam.css" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="error_bar_max">
+            <dvt.id value="error_bar_max" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="evalbox_vl">
+            <!-- vl = VersionLight avec un seul type d evaluation -->
+            <dvt.id value="evalbox_vl" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/evalbox.csam.css" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="evalbox_vf">
+            <!-- vf = VersionFull avec les trois types d evaluation -->
+            <dvt.id value="evalbox_vf" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/evalbox.csam.css" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+        <dvt id="unq">
+            <dvt.id value="unq" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/unique-art.csam.css" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="unq_ru">
+            <dvt.id value="unq_ru" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/unique-art.csam.css" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="unq_ro">
+            <dvt.id value="unq_ro" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/unique-art.csam.css" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="evalbox_light">
+            <dvt.id value="evalbox_light" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/evalbox.csam.css?{wos/systx:now}" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="evalbox_full">
+            <dvt.id value="evalbox_full" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/evalbox.csam.css?{wos/systx:now}" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="asd_search">
+            <dvt.id value="asd_search" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std>
+                    <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/search.csam.css?{wos/systx:now}" /> -->
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="srh_hvy">
+            <dvt.id value="srh_hvy" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std>
+                    <!-- On suppose que le fichier a déjà été ajouté avec MIN -->
+                    <!--<file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/search.csam.css?{wos/systx:now}" />-->
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+        <dvt id="notify_ua">
+            <dvt.id value="notify_ua" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std>
+                    <!-- Fichier de style ajouté avec la page -->
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	
+	<dvt id="bugzy">
+            <dvt.id value="bugzy" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/bugzy.csam.css?{wos/systx:now}" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	
+	<dvt id="kxlib_dlg">
+            <dvt.id value="kxlib_dlg" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	
+	<dvt id="asd_chbx">
+            <dvt.id value="asd_chbx" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std>
+                        <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/chbx.csam.css?{wos/systx:now}" /> -->
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	
+	<dvt id="postman">
+            <dvt.id value="postman" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/postman.csam.css?{wos/systx:now}" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	
+	<dvt id="asd_gdbx">
+            <dvt.id value="asd_gdbx" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+    
+	<dvt id="cnxsgn_ovly">
+            <dvt.id value="cnxsgn_ovly" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+        
+        <dvt id="pflbioplus">
+            <dvt.id value="pflbioplus" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                    <std></std>
+            </dvt.files.js>
+	</dvt>
+        
+	<dvt id="fstdvry">
+            <dvt.id value="fstdvry" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+        
+	<dvt id="aside_rich">
+            <dvt.id value="aside_rich" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+        
+	<dvt id="dontmiss">
+            <dvt.id value="dontmiss" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+        
+	<dvt id="shortcuts">
+            <dvt.id value="shortcuts" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+        
+	<dvt id="email_confirm">
+            <dvt.id value="email_confirm" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+        
+	<dvt id="tia">
+            <dvt.id value="tia" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="skycrpr">
+            <dvt.id value="skycrpr" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+        <dvt id="tia2">
+            <dvt.id value="tia2" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+        <dvt id="tkbvwr">
+            <dvt.id value="tkbvwr" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+        <dvt id="ltc">
+            <dvt.id value="ltc" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+        <dvt id="nwfd_snitcher">
+            <dvt.id value="nwfd_snitcher" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+        <dvt id="rlc">
+            <dvt.id value="rlc" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+        <dvt id="asd_room">
+            <dvt.id value="asd_room" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std>
+                    <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/search.csam.css?{wos/systx:now}" /> -->
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+        <dvt id="expl_room">
+            <dvt.id value="expl_room" />
+            <dvt.type value="csam" />
+            <dvt.files.css>
+                <std>
+                    <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/search.csam.css?{wos/systx:now}" /> -->
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+        
+    <!-- DVT DEFINITIONS -->
+	
+	<dvt id="pg_mypg">
+            <dvt.id value="pg_mypg" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="pg_mytrds">
+            <dvt.id value="pg_mytrds" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/pg_mytrds.d.css" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="header_wu">
+            <dvt.id value="header_wu" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/hdr-with-co.d.css" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="header_ro">
+            <dvt.id value="header_ro" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/hdr-with-co.d.css" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="header_ro_nomn">
+            <dvt.id value="header_ro_nomn" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/hdr-with-co.d.css" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                    <std></std>
+            </dvt.files.js>
+	</dvt>
+        <dvt id="welcbox">
+            <dvt.id value="welcbox" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/welcbox.d.css" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+        <dvt id="userbox">
+            <dvt.id value="userbox" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <!-- <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/hdr-with-co.d.css" /> -->
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="frdcenter">
+            <dvt.id value="frdcenter" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/friends.csam.css" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="frdrules">
+            <dvt.id value="frdrules" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/frdrules.d.css?{wos/systx:now}" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="brainslave">
+            <dvt.id value="brainslave" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="aside_ads">
+            <dvt.id value="aside_ads" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/aside_right_rest.d.css?{wos/systx:now}" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="legals">
+            <dvt.id value="legals" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/legals.d.css" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="bigfail">
+            <dvt.id value="bigfail" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/csam/bigfail.csam.css?{wos/systx:now}" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="trpg_ovly_create">
+            <dvt.id value="trpg_ovly_create" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/trpg-edit-cr-trend.d.css?{wos/systx:now}" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="trpg_ovly_edit">
+            <dvt.id value="trpg_ovly_edit" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/trpg-edit-cr-trend.d.css?{wos/systx:now}" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="cockpit">
+            <dvt.id value="cockpit" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/trend_cockpit.d.css?{wos/systx:now}" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="asdr_w">
+            <dvt.id value="asdr_w" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/asdr_w.d.css?{wos/systx:now}" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="nolang">
+            <dvt.id value="nolang" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/w/d/nolang.d.css?{wos/systx:now}" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="trpg_warning">
+            <dvt.id value="trpg_warning" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="tqr_betawrng">
+            <dvt.id value="tqr_betawrng" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="econfirm">
+            <dvt.id value="econfirm" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="tqr_btm_lock">
+            <dvt.id value="tqr_btm_lock" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="whyacc">
+            <dvt.id value="whyacc" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+        <dvt id="pg_myfavs">
+            <dvt.id value="pg_myfavs" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+        <dvt id="pg_aboutme">
+            <dvt.id value="pg_aboutme" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std></std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	
+   <!-- DVT - ART MODEL DEFINITIONS -->     
+        <dvt id="tmlnr_iml_fa">
+            <dvt.id value="tmlnr_iml_fa" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/list_posts_in_tmlnr.d.css" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+        </dvt>
+        <dvt id="tmlnr_iml_ltd">
+            <dvt.id value="tmlnr_iml_ltd" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/list_posts_in_tmlnr.d.css" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+        </dvt>
+        <dvt id="tmlnr_iml_lck">
+            <dvt.id value="tmlnr_iml_lck" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/list_posts_in_tmlnr.d.css" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+        </dvt>
+        <dvt id="tmlnr_itr">
+            <dvt.id value="tmlnr_itr" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/list_posts_in_tmlnr.d.css" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+		</dvt>
+        <dvt id="trpg_itr">
+            <dvt.id value="trpg_itr" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <!--<file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/list_posts_in_tmlnr.d.css" />-->
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+        <dvt id="nwfd_iml">
+            <dvt.id value="nwfd_iml" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/list_posts_in_tmlnr.d.css" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="nwfd_iml_moz">
+            <dvt.id value="nwfd_iml_moz" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/list_posts_in_tmlnr.d.css" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="nwfd_itr">
+            <dvt.id value="nwfd_itr" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/list_posts_in_tmlnr.d.css" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	<dvt id="nwfd_itr_moz">
+            <dvt.id value="nwfd_itr_moz" />
+            <dvt.type value="dvt" />
+            <dvt.files.css>
+                <std>
+                    <file name="std" value="{wos/sysdir:stylesheet_dir_uri}/r/d/list_posts_in_tmlnr.d.css" />
+                </std>
+            </dvt.files.css>
+            <dvt.files.js>
+                <std></std>
+            </dvt.files.js>
+	</dvt>
+	
+	
+<!-- ************************************************************************************************************************** -->
+<!-- ******************************************* TQR SCOPE (WELCOME & GESTION)  *********************************************** -->
+<!-- ************************************************************************************************************************** -->
+
+    <dvt id="faq_header">
+        <dvt.id value="faq_header" />
+        <dvt.type value="dvt" />
+        <dvt.files.css>
+            <std>
+            </std>
+        </dvt.files.css>
+        <dvt.files.js>
+            <std></std>
+        </dvt.files.js>
+    </dvt>
+
+    <dvt id="faq_breadcrumb">
+        <dvt.id value="faq_breadcrumb" />
+        <dvt.type value="dvt" />
+        <dvt.files.css>
+            <std>
+            </std>
+        </dvt.files.css>
+        <dvt.files.js>
+            <std></std>
+        </dvt.files.js>
+    </dvt>
+
+    <dvt id="faq_xs_leftbar">
+        <dvt.id value="faq_xs_leftbar" />
+        <dvt.type value="dvt" />
+        <dvt.files.css>
+            <std>
+            </std>
+        </dvt.files.css>
+        <dvt.files.js>
+            <std></std>
+        </dvt.files.js>
+    </dvt>
+
+    <dvt id="faq_leftlinks">
+        <dvt.id value="faq_leftlinks" />
+        <dvt.type value="dvt" />
+        <dvt.files.css>
+            <std>
+            </std>
+        </dvt.files.css>
+        <dvt.files.js>
+            <std></std>
+        </dvt.files.js>
+    </dvt>
+	
+    <dvt id="faq_footer">
+        <dvt.id value="faq_footer" />
+        <dvt.type value="dvt" />
+        <dvt.files.css>
+            <std>
+            </std>
+        </dvt.files.css>
+        <dvt.files.js>
+            <std></std>
+        </dvt.files.js>
+    </dvt>
+        
+<!-- ******************************************************************************************************************* -->
+<!-- **************************************************** PIERRE ******************************************************* -->
+<!-- ******************************************************************************************************************* -->
+
+    <dvt id="profile_footer">
+        <dvt.id value="profile_footer" />
+        <dvt.type value="dvt" />
+        <dvt.files.css>
+            <std></std>
+        </dvt.files.css>
+        <dvt.files.js>
+            <std></std>
+        </dvt.files.js>
+    </dvt>
+
+    <dvt id="profile_rightbar">
+        <dvt.id value="profile_rightbar" />
+        <dvt.type value="dvt" />
+        <dvt.files.css>
+            <std></std>
+        </dvt.files.css>
+        <dvt.files.js>
+            <std></std>
+        </dvt.files.js>
+    </dvt>
+
+    <dvt id="header_default">
+        <dvt.id value="header_default" />
+        <dvt.type value="dvt" />
+        <dvt.files.css>
+            <std></std>
+        </dvt.files.css>
+        <dvt.files.js>
+            <std></std>
+        </dvt.files.js>
+    </dvt>
+
+    <dvt id="footer_default">
+        <dvt.id value="footer_default" />
+        <dvt.type value="dvt" />
+        <dvt.files.css>
+            <std></std>
+        </dvt.files.css>
+        <dvt.files.js>
+            <std></std>
+        </dvt.files.js>
+    </dvt>
+
+    <dvt id="cnxpage_append_superuser">
+        <dvt.id value="cnxpage_append_superuser" />
+        <dvt.type value="dvt" />
+        <dvt.files.css>
+            <std></std>
+        </dvt.files.css>
+        <dvt.files.js>
+            <std></std>
+        </dvt.files.js>
+    </dvt>
+
+    <dvt id="cnxpage_append_thirdcrit">
+        <dvt.id value="cnxpage_append_thirdcrit" />
+        <dvt.type value="dvt" />
+        <dvt.files.css>
+            <std></std>
+        </dvt.files.css>
+        <dvt.files.js>
+            <std></std>
+        </dvt.files.js>
+    </dvt>
+
+    <dvt id="cancel_deleteay_overlay">
+        <dvt.id value="cnxpage_append_thirdcrit" />
+        <dvt.type value="dvt" />
+        <dvt.files.css>
+            <std></std>
+        </dvt.files.css>
+        <dvt.files.js>
+            <std></std>
+        </dvt.files.js>
+    </dvt>
+	
+</definition.dvt>

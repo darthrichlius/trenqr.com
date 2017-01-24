@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE url_library SYSTEM "../dtd/dtd.url.def.dtd">
+
+<!--
+Le choix d'utiliser des url traduites plutot que d'utiliser celles avec un paramètre qui permet de definir la langue est motivé par les raisons ci-après :
+1- Plus facile et rapide d'impleter la solution avec les fichiers XML. La modification du code backend se fait d'elle même (suite de copier/coller/modifier)
+2- Cela permet d'avoir pour un seul contenu (une page) autant d'indexation qu'il y a de langues installées.
+Cela permet d'optimiser le travail des moteurs de recherches et de toucher un public polus large.
+3- Faciliter la compréhension des pages auprès des utilisateurs. Ils voient une page traduite dans leur langue, il comprenne mieux et sont plus aptes à choisir par rapport à une autre.
+4- Rassurer l'utilisateur ont lui présentant une url de sa langue. Il se dira qu'il sera plus à l'aise sur notre site plutot qu'un autre.
+-->
+<url_library>
+    <url id="test_url_id1">
+        <lang id="en" value="http://dsly.projects/ttplus.dev/index.php?page=hello&amp;urqid=uqid_testn1"/>
+        <lang id="fr" value="http://dsly.projects/ttplus.dev/index.php?page=bienvenue&amp;urqid=uqid_testn1"/>
+    </url>
+    <url id="test_url_id2">
+        <lang id="en" value="http://dsly.projects/ttplus.dev/index.php?page=wpage&amp;urqid=uqid_testn2"/>
+        <lang id="fr" value="http://dsly.projects/ttplus.dev/index.php?page=pagew&amp;urqid=uqid_testn2"/>
+    </url>
+	<url id="test_url_id3">
+        <lang id="en" value="http://dsly.projects/ttplus.dev/index.php?page=my_account&amp;urqid=uqid_testn3"/>
+        <lang id="fr" value="http://dsly.projects/ttplus.dev/index.php?page=mon_compte&amp;urqid=uqid_testn3"/>
+    </url>
+	<url id="test_url_id4">
+        <lang id="en" value="http://dsly.projects/ttplus.dev/index.php?page=prod_home&amp;urqid=uqid_testn4"/>
+        <lang id="fr" value="http://dsly.projects/ttplus.dev/index.php?page=prod_accueil&amp;urqid=uqid_testn4"/>
+    </url>
+	<url id="test_url_id5">
+        <lang id="en" value="http://dsly.projects/ttplus.dev/index.php?page=auth&amp;urqid=uqid_testn5"/>
+        <lang id="fr" value="http://dsly.projects/ttplus.dev/index.php?page=connexion&amp;urqid=uqid_testn5"/>
+    </url>
+</url_library>

@@ -1,0 +1,1 @@
+window.FeatRules={"UNQ_AKX_DEL_ANYREACT":{"code":"UNQ_AKX_DEL_ANYREACT","enafor":"rco"},"UNQ_AKX_DEL_REACT":{"code":"UNQ_AKX_DEL_REACT","enafor":"rco,rmco"},"UNQ_DEL_REACT":{"code":"UNQ_DEL_REACT","enafor":"rco,rmco"},"UNQ_AKX_DEL_ART":{"code":"UNQ_AKX_DEL_ART","enafor":"rco"},"UNQ_DEL_ART":{"code":"UNQ_DEL_ART","enafor":"rco"}};

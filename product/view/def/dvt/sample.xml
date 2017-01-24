@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE definition.dvt SYSTEM "../dtd/dtd.dvt.def.dtd">
+
+<definition.dvt>
+    <dvt id="__DVT_ID1__">
+        <dvt.files.css>
+            <all value="__PATH_TO_CSS__" />
+            <spec>
+                <brz id="__ANY_BRZ_ID1__" value="__PATH_TO_CSS__" />
+                <brz id="__ANY_BRZ_ID2__" value="__PATH_TO_CSS__" />
+            </spec>
+        </dvt.files.css>
+        <dvt.files.js>
+            <all value="__PATH_TO_JS__" />
+            <spec>
+                <brz id="__ANY_BRZ_ID1__" value="__PATH_TO_JS__" />
+                <brz id="__ANY_BRZ_ID2__" value="__PATH_TO_JS__" />
+            </spec>
+        </dvt.files.js>
+    </dvt>
+    <dvt id="__DVT_ID2__">
+        <dvt.files.css>
+            <all value="__PATH_TO_CSS__" />
+            <spec>
+                <brz id="__ANY_BRZ_ID1__" value="__PATH_TO_CSS__" />
+                <brz id="__ANY_BRZ_ID2__" value="__PATH_TO_CSS__" />
+            </spec>
+        </dvt.files.css>
+        <dvt.files.js>
+            <all value="__PATH_TO_JS__" />
+            <spec>
+                <brz id="__ANY_BRZ_ID1__" value="__PATH_TO_JS__" />
+                <brz id="__ANY_BRZ_ID2__" value="__PATH_TO_JS__" />
+            </spec>
+        </dvt.files.js>
+    </dvt>
+</definition.dvt>

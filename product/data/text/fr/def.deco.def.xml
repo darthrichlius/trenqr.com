@@ -1,0 +1,1497 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE text_library SYSTEM "../../dtd/dtd.deco.def.dtd">
+
+<text_library>
+    <text id="hello_wolrd">
+        Bonjour !
+    </text>
+    
+    <!-- TRENQR HEAD -->
+    <text id="_head_description_alt">
+        Ne ratez rien du quotidien en images et des Salons de @%{pseudo}%
+    </text>
+    
+    <!-- TRENQR VERSIONS -->
+    <text id="_Stopped">
+        Arrêté
+    </text>
+    <text id="_InDev">
+        En Marche, En développement
+    </text>
+    <text id="_Testing">
+        En Marche, En Test
+    </text>
+    <text id="_Running">
+        En Marche, Fonctionne normalement
+    </text>
+    <text id="_Maintenance">
+        En Maintenance 
+    </text>
+    
+    <!-- DIVERS -->
+    <text id="_and">
+        et
+    </text>
+    <text id="_in">
+        dans
+    </text>
+    <text id="_Yes">
+        Oui
+    </text>
+    <text id="_No">
+        Non
+    </text>
+    <text id="_Dsma">
+        Ne plus afficher
+    </text>
+    <text id="_cancel">
+        annuler
+    </text>
+    <text id="_Cancel">
+        Annuler
+    </text>
+    <text id="_save">
+        sauvegarder
+    </text>
+    <text id="_Save">
+        Sauvegarder
+    </text>
+    <text id="_delete">
+        supprimer
+    </text>
+    <text id="_Delete">
+        Supprimer
+    </text>
+    <text id="_Change">
+        Changer
+    </text>
+    <text id="_reset_form">
+        Réinitialiser le formulaire
+    </text>
+    <text id="_Reset">
+        Réinitialiser
+    </text>
+    <text id="_Close">
+        Fermer
+    </text>
+    <text id="_Back">
+        Retour
+    </text>
+    <text id="_Private">
+        Privé
+    </text>
+    <text id="_Public">
+        Public
+    </text>
+    <text id="_part_pri_code">
+        pri
+    </text>
+    <text id="_part_pub_code">
+        pub
+    </text>
+    <text id="_Enable">
+        Activée
+    </text>
+    <text id="_Disable">
+        Désactivée
+    </text>
+    <text id="_points">
+        points
+    </text>
+    <text id="_Points">
+        Points
+    </text>
+    <text id="_Title">
+        Titre
+    </text>
+    <text id="_Description">
+        Description
+    </text>
+    <text id="_Gratification">
+        Gratification
+    </text>
+    <text id="_Participation">
+        Participation
+    </text>
+    <text id="_Category">
+        Catégorie
+    </text>
+    <text id="_Learn_more">
+        En savoir plus
+    </text>
+    <text id="_Wait">
+        Patientez
+    </text>
+    <text id="_days">
+        jours
+    </text>
+    <text id="_hours">
+        heures
+    </text>
+    <text id="_minutes">
+        minutes
+    </text>
+	
+    <!-- TRENQR COMMONS -->
+    
+    <text id="_beta_warning">
+        Vous utilisez actuellement une version dite beta du site. Elle est susceptible de comporter plusieurs bogues. Pour plus d'informations, cliquez ici :
+    </text>
+    <text id="_beta_kezako">
+        Qu'est ce qu'une Beta
+    </text>
+    <text id="_login">
+        Connexion
+    </text>
+    <text id="_login_title1">
+        Se connecter et accéder à son compte
+    </text>
+    <text id="_logout">
+        Deconnexion
+    </text>
+    <text id="_signup">
+        Inscription
+    </text>
+    <text id="_signup_title1">
+        Ouvrir un compte sur Trenqr
+    </text>
+    <text id="_capital">
+        Karma
+    </text>
+    <text id="_AboFollowers">
+        Abonnés
+    </text>
+    <text id="_AboFollowing">
+        Abonnements
+    </text>
+    <text id="_posts">
+        publications
+    </text>
+    <text id="_Posts">
+        Publications
+    </text>
+    <text id="_related_posts">
+        Posts liés
+    </text>
+    <text id="_trends">
+        Salons
+    </text>
+    <text id="_related_trends">
+        Salons liés
+    </text>
+	<!-- Social, fun et bien + -->
+    <text id="_header_slogan">
+        Social, Real, Fun and +
+    </text>
+    <text id="_iniml">
+        MaVie
+    </text>
+    <text id="_intr">
+        Salon
+    </text>
+	<text id="_Load_more_newer">
+        nouvelles publications
+    </text>
+    <text id="_Load_more_pd">
+        En voir plus
+    </text>
+    <text id="_Load_more">
+        Voir plus
+    </text>
+    <text id="_Follow_me">
+        Suivre
+    </text>
+    <text id="_Following">
+        Abonné
+    </text>
+    <text id="_Add_react">
+        Ajouter un commentaire
+    </text>
+    <text id="_Add_react_alt">
+        Ajouter un nouveau commentaire sur Trenqr
+    </text>
+    <text id="_Save_uppic_alt">
+        Sauvegarder la photo de profil sur Trenqr
+    </text>
+    <text id="_Bttf">
+        Retour vers le futur
+    </text>
+    <text id="_moz_view">
+        Voir en mode Mosaique
+    </text>
+    <text id="_list_view">
+        Voir en mode Liste
+    </text>
+    <text id="_GoFriend">
+        Demander en ami
+    </text>
+    <text id="_Go_unfriend">
+        Bye bye l'ami
+    </text>
+    
+    
+    <!-- ***  TMLNR ***  -->
+    <text id="_tmlnr_Home">
+        Chez Moi
+    </text>
+    <text id="_Fols_You">
+        Vous Suit
+    </text>
+    <text id="_Change_Cover">
+        Editer la bannière
+    </text>
+        
+    <!-- BRAINOMG -->
+    <text id="_brain_Open">
+        Ouvrir Brain
+    </text>
+    <text id="_brain_Intro">
+        Brain vous permet de piloter votre compte.&lt;br/&gt; Sélectionnez un menu pour commencer.
+    </text>
+    <text id="_brain_See_Folws">
+        Mes abonnés
+    </text>
+    <text id="_brain_See_Folg">
+        Mes abonnements
+    </text>
+    <text id="_brain_New_post">
+        Publier
+    </text>
+    <text id="_brain_thnpost_desc">
+        Ajoutez une nouvelle publication en rapport avec un événement de votre vie, pour vous et vos amis.
+    </text>
+    <text id="_brain_story_desc">
+        Ajoutez une nouvelle publication éphémère en rapport avec un événement de votre journée.
+    </text>
+    <text id="_brain_thnwtr_desc">
+        Ajoutez une nouvelle publication dans un Salon que vous gérer ou que vous suivez.
+    </text>  
+    <text id="_brain_hosted_desc">
+        Ajoutez une nouvelle publication non répertoriée visible par vous et ceux qui connaissent son URL.
+    </text>
+    <text id="_brain_thaboutTr_header">
+        Le Concept Des Salons
+    </text>
+    <text id="_brain_thmytr_header">
+        Mes Salons
+    </text>
+    <text id="_brain_thfolgtr_header">
+        Salons Suivis
+    </text>
+    <text id="_brain_thfolws_header">
+        Abonnés
+    </text>
+    <text id="_brain_thfolws_desc">
+        Affichez les Relations qui vous suivent.
+    </text>
+    <text id="_brain_thfolg_header">
+        Abonnements
+    </text>
+    <text id="_brain_thfolg_desc">
+        Affichez les Relations que vous suivez.
+    </text>
+    <text id="_brain_thnewtr_header">
+        Créer un nouveau Salon
+    </text>
+    <text id="_brain_thnewtr_title_ph">
+        Le titre de votre Salon
+    </text>
+    <text id="_brain_thnewtr_desc_ph">
+        Entrez une description pour votre Salon
+    </text>
+    <text id="_brain_Create_tr">
+        Lancez-vous !
+    </text>
+    <!-- TREND CATEGORY -->
+    <text id="_NTR_CATG_ANIMALS">
+        Animaux
+    </text>
+    <text id="_NTR_CATG_AUTOMOBILE">
+        Automobile
+    </text>
+    <text id="_NTR_CATG_ART">
+        Art
+    </text>
+	<text id="_NTR_CATG_BIZARRE">
+        Insolite
+    </text>
+    <text id="_NTR_CATG_BUSINESS">
+        Business
+    </text>
+    <text id="_NTR_CATG_CHALLENGE">
+        Challenge
+    </text>
+    <text id="_NTR_CATG_CINEMA">
+        Cinéma
+    </text>
+	<text id="_NTR_CATG_CONFLICT">
+        Conflits
+    </text>
+    <text id="_NTR_CATG_COOKING">
+        Cuisine
+    </text>
+    <text id="_NTR_CATG_EDUCATION">
+        Education
+    </text>
+    <text id="_NTR_CATG_ENTERTAINMENT">
+        Divertissement
+    </text>
+    <text id="_NTR_CATG_FASHION">
+        Mode
+    </text>
+    <text id="_NTR_CATG_FITNESS">
+        Fitness
+    </text>
+    <text id="_NTR_CATG_HEALTH">
+        Santé
+    </text>
+    <text id="_NTR_CATG_HUMANITARIAN">
+        Humanitaire
+    </text>
+    <text id="_NTR_CATG_HUMOR">
+        Humour
+    </text>
+    <text id="_NTR_CATG_LEISURE">
+        Loisirs
+    </text>
+    <text id="_NTR_CATG_GEEK">
+        Geek
+    </text>
+    <text id="_NTR_CATG_LITERATURE">
+        Littérature
+    </text>
+    <text id="_NTR_CATG_MEME">
+        Mème Internet
+    </text>
+    <text id="_NTR_CATG_MUSIC">
+        Musique
+    </text>
+    <text id="_NTR_CATG_NONPROFIT">
+        But Non Lucratif
+    </text>
+    <text id="_NTR_CATG_PEOPLE">
+        People
+    </text>
+    <text id="_NTR_CATG_PLACES">
+        Lieux autour du monde
+    </text>
+    <text id="_NTR_CATG_PHOTOBOMBS">
+        PhotoBombs
+    </text>
+    <text id="_NTR_CATG_POLITICS">
+        Politique
+    </text>
+    <text id="_NTR_CATG_SCIENCE">
+        Science
+    </text>
+    <text id="_NTR_CATG_SELFIES">
+        Selfies
+    </text>
+	<text id="_NTR_CATG_SEXY">
+        Sexy
+    </text>
+    <text id="_NTR_CATG_SPORT">
+        Sport
+    </text>
+    <text id="_NTR_CATG_SOCIETY">
+        Société
+    </text>
+    <text id="_NTR_CATG_TECHNOLOGY">
+        Technologie
+    </text>
+    <text id="_NTR_CATG_THEOLOGY">
+        Réligion
+    </text>
+    <text id="_NTR_CATG_TOURISM">
+        Tourisme
+    </text>
+    <text id="_NTR_CATG_TUTOS_TRENQR">
+        Tutos Trenqr
+    </text>
+    <text id="_NTR_CATG_VIDEOGAME">
+        Jeux Video
+    </text>
+    <text id="_NTR_CATG_WAR">
+        Guerre
+    </text>
+    <text id="_NTR_CATG_WEB">
+        Trucs du Web
+    </text>
+    
+    
+    <!-- *** TREND_PAGE *** -->
+    <text id="_trpg_Desc_ph">
+        Entrez une description afin d'aider à sa compréhension
+    </text>
+    <text id="_trpg_Vip">
+        Qui parmi les abonnés ?
+    </text>
+    <text id="_trpg_Grat_guide">
+        Connectez-vous à cette Salon et gagner
+    </text>
+    <text id="_trpg_Create_tr">
+        Créer un Salon
+    </text>
+    <text id="_trpg_Edit_tr">
+        Paramètres
+    </text>
+    <text id="_trpg_Change_cover">
+        Changer la Couverture
+    </text><text id="_trpg_Delete_cover">
+        Supprimer la Couverture
+    </text>
+    <text id="_trpg_Create_header">
+        Créer Votre Salon
+    </text>
+    <text id="_trpg_Create_intro">
+        Remplissez le formulaire et entrez dans le cercle des propriétaires de Salons !
+    </text>
+    <text id="_trpg_Create_part_about">
+        En savoir plus au sujet du mode de participation
+    </text>
+    <text id="_trpg_Create_grat_about">
+        En savoir plus au sujet du concept des gratifications
+    </text>
+    
+    
+    
+    <!-- *** NEWSFEED *** -->
+    
+    <text id="_nwfd_Nwfd">
+        Trenqr Newsfeed
+    </text>
+    <text id="_nwfd_intro">
+        La fenêtre Newsfeed vous permet de ne rien manquer de l'activité de votre réseau. Vos Relations, Amis et les Salons auxquels vous participez, tout en un seul endroit.
+    </text>
+    <text id="_nwfd_menu_Team">
+        Equipe
+    </text>
+    <text id="_nwfd_menu_Comy">
+        Mon Réseau
+    </text>
+    <text id="_nwfd_menu_Bzfeed">
+        A la Une
+    </text>
+    
+    <!-- HREF -->
+    
+    
+    
+    <!-- USERBOX -->
+    <text id="_userbox_Start">
+        Éditer
+    </text>
+    <text id="_userbox_Start_alt">
+        Bouton pour accéder au menu de gestion de compte
+    </text>
+    <text id="_userbox_Start_title">
+        Éditer
+    </text>
+    <!-- *** -->
+    <text id="_userbox_Settings">
+        Gérer mon Compte
+    </text>
+    <text id="_userbox_Settings_alt">
+        Lien pour modifier les paramètres d'un compte Trenqr
+    </text>
+    <text id="_userbox_Settings_title">
+        Modifier les paramètres de votre compte Trenqr
+    </text>
+    <!-- *** -->
+    <text id="_userbox_Security">
+        Sécurité
+    </text>
+    <text id="_userbox_Security_alt">
+        Lien pour modifier les paramètres de sécurité d'un compte Trenqr
+    </text>
+    <text id="_userbox_Security_title">
+        Modifier les paramètres de sécurité de votre compte Trenqr
+    </text>
+    <!-- *** -->
+    <text id="_userbox_Logout">
+        Déconnexion
+    </text>
+    <text id="_userbox_Logout_alt">
+        Lien pour terminer la session de son compte Trenqr
+    </text>
+    <text id="_userbox_Logout_title">
+        Se déconnecter
+    </text>
+    <!-- *** -->
+    <text id="_userbox_Team">
+        L'Equipe
+    </text>
+    <text id="_userbox_Team_alt">
+        Lien pour accéder au compte Trenqr de L'Equipe
+    </text>
+    <text id="_userbox_Team_title">
+        Accéder au compte Trenqr de L'Equipe
+    </text>
+    <!-- *** -->
+    <text id="_userbox_FC">
+        Friends Center
+    </text>
+    <text id="_userbox_FC_alt">
+        Lien pour accéder au module 'Friends Center' qui permet de gérer la liste d'amis d'un utilisateur ayant son compte sur Trenqr et les demandes d'amis en attente
+    </text>
+    <text id="_userbox_FC_title">
+        Gérer votre liste d'amis et bien plus
+    </text>
+    <!-- *** -->
+    <text id="_userbox_BR">
+        Signaler un bug
+    </text>
+    <text id="_userbox_BR_alt">
+        Lien pour accéder au module de signalement de bugs sur Trenqr
+    </text>
+    <text id="_userbox_BR_title">
+        Signaler un dysfonctionnement ou une faille de sécurité
+    </text>
+    <!-- *** -->
+    <text id="_userbox_About">
+        A propos
+    </text>
+    <text id="_userbox_About_alt">
+        Lien pour accéder aux informations primaires sur Trenqr
+    </text>
+    <text id="_userbox_About_title">
+        A propos de Trenqr
+    </text>
+    
+    
+    <!-- LEGALS -->
+    <text id="_legals_about">
+        A Propos
+    </text>
+    <text id="_legals_help">
+        Aide
+    </text>
+    <text id="_legals_terms">
+        CGU
+    </text>
+    <text id="_legals_privacy">
+        Confidentialité
+    </text>
+    <text id="_legals_cookies">
+        Cookies
+    </text>
+    <text id="_legals_blog">
+        Blog
+    </text>
+    <text id="_legals_jobs">
+        Emploi
+    </text>
+    <text id="_legals_media">
+        Media
+    </text>
+    <text id="_legals_why_ads">
+        Pourquoi la publicité
+    </text>
+    <text id="_legals_report_bug">
+        Signaler un bug
+    </text>
+    
+    <!-- EVALUATIONS -->
+    <text id="_eval_spcool">
+        J'aime beaucoup
+    </text>
+    <text id="_eval_cool">
+        J'adhère
+    </text>
+    <text id="_eval_dslk">
+        J'adhère pas
+    </text>
+    <text id="_eval_others">
+        ont trouvé ça plus ou moins coo!
+    </text>
+    
+    <!-- ARTICLES -->
+    <text id="_art_noone">
+        Aucune publication ... Pour l'instant !
+    </text>
+    <text id="_comments1">
+        commentaires
+    </text>
+    <text id="_comments2">
+        Commentaires
+    </text>
+    <text id="_Do_it">
+        Réagir
+    </text>
+    <text id="_arp_close_title">
+        Fermer cette vue
+    </text>
+    
+    <!-- IMAGES -->
+    <text id="_img_missing">
+        Source introuvable
+    </text>
+    
+    <!-- SALONS -->
+    <text id="_tr_title">
+        Titre du Salon
+    </text>
+    
+    <!-- DELETE ACCOUNT -->
+    <text id="_HIKW_SCHOOL">
+        On en parlait dans mon école.
+    </text>
+    <text id="_HIKW_WORKPL">
+        On en parlait sur mon lieu de travail.
+    </text>
+    <text id="_HIKW_RELATIVE">
+        Par le biais d'une personne de mon entourage.
+    </text>
+    <text id="_HIKW_SOCNET">
+        Sur un autre réseau social.
+    </text>
+    <text id="_HIKW_WEBSIT">
+        Par hasard, en visitant un site web qui l'avait mentionné (blog, forum, annuaire, chaine de video en ligne, etc.).
+    </text>
+    <text id="_HIKW_MEDIA">
+        Par le bien des médias (tv, presse, radio, médias en ligne, etc.).
+    </text>
+    <!-- *** -->
+    <text id="_YILV_MSFUNC">
+        La version actuelle de Trenqr n'est pas encore assez aboutie. Je reviendrai quand Trenqr sera plus riche.
+    </text>
+    <text id="_YILV_MSPHONE">
+        J'aurais voulu avoir une version pour smartphone.
+    </text>
+    <text id="_YILV_MSENTOURAGE">
+        Je me sens seul(e) sur Trenqr. J'aimerais que plus de personnes de mon entourage y soient, avant de retenter l'aventure.
+    </text>
+    <text id="_YILV_ERRNBG">
+        J'ai constaté trop d'erreurs et de bogues qui ne me permettent pas d'utiliser Trenqr de manière sereine.
+    </text>
+    <text id="_YILV_MSFAV">
+        Je me sens trop dépaysé par rapport à mon réseau social favori.
+    </text>
+    <text id="_YILV_DESIGN">
+        Le design de Trenqr ne me correspond pas.
+    </text>
+    <text id="_YILV_CONCEPT">
+        Le concept qui régit Trenqr ne me correspond pas, je n'y trouve pas d'intérêt.
+    </text>
+    <text id="_YILV_HTRUN">
+        Je ne comprends pas comment fonctionne Trenqr, j'ai du mal à l'utiliser.
+    </text>
+    <text id="_YILV_OTHER">
+        Autre raison
+    </text>
+    
+    <!-- HVIEW : HSH MODO DESCRIPTION -->
+    <text id="_HVIEW_HMDSC_THEBOREDOMKILLER">
+        Fait référence au surnom donné à la version vb2.0 de &lt;a class='hash' href='/hview/q=trenqr&amp;src=hash'&gt;#trenqr&lt;/a&gt;. C'est une tradition sur Trenqr que de donner des surnoms à chaque nouvelle version.
+    </text>
+    <text id="_HVIEW_HMDSC_PRAYFORPARIS">
+        Fait référence aux attaques terroristes menées par l'organisation &lt;a class='hash' href='/hview/q=EtatIslamique&amp;src=hash'&gt;#EtatIslamique&lt;/a&gt; 
+        (ou &lt;a class='hash' href='/hview/q=daesh&amp;src=hash'&gt;#daesh&lt;/a&gt;) à Paris en date du Vendredi 13 Novembre 2015.
+    </text>
+    <text id="_HVIEW_HMDSC_PORTEOUVERTE">
+        Fait référence à une opération menée par certains habitants de la ville de &lt;a class='hash' href='/hview/q=Paris&amp;src=hash'&gt;#Paris&lt;/a&gt;, pour permettre aux Parisiens de se mettre à l'abri.
+    </text>
+    
+    <!-- ***************************************************************************************************************************************************** -->
+    <!-- ******************************************************************** MOD : POSTMAN ******************************************************************** -->
+    
+    <text id="_PM_UAT_XRCT_AD_oMA">
+	a &lt;b&gt;commenté&lt;/b&gt; &lt;a class='pm-mdl-txt-mst jb-pm-mdl-txt-mst jb-pm-mdl-gvstd-hfr' href='%prmlk%' target='_blank'&gt;votre publication&lt;/a&gt;
+    </text>
+    <text id="_PM_UAT_XUSTG_ART">
+	a ajouté une &lt;a class='pm-mdl-txt-mst jb-pm-mdl-txt-mst jb-pm-mdl-gvstd-hfr' href='%prmlk%' target='_blank'&gt;publication&lt;/a&gt; et vous y a &lt;b&gt;marqué&lt;/b&gt;
+    </text>
+    <text id="_PM_UAT_XUSTG_RCT">
+	a &lt;b&gt;commenté&lt;/b&gt; &lt;a class='pm-mdl-txt-mst jb-pm-mdl-txt-mst jb-pm-mdl-gvstd-hfr' href='%prmlk%' target='_blank'&gt;cette publication&lt;/a&gt;, et vous y a &lt;b&gt;marqué&lt;/b&gt;
+    </text>
+    <text id="_PM_UAT_XEVL_GOEVL_oMA">
+	a donné &lt;b&gt;un avis&lt;/b&gt; à &lt;a class='pm-mdl-txt-mst jb-pm-mdl-txt-mst jb-pm-mdl-gvstd-hfr' href='%prmlk%' target='_blank'&gt;votre publication&lt;/a&gt;
+    </text>
+    <text id="_PM_UAT_XEVL_GOEVL_oMA_SP">
+	a donné &lt;b&gt;un avis&lt;/b&gt; à &lt;a class='pm-mdl-txt-mst jb-pm-mdl-txt-mst jb-pm-mdl-gvstd-hfr' href='%prmlk%' target='_blank'&gt;votre publication&lt;/a&gt; : &lt;q&gt;J'aime Beaucoup !&lt;/q&gt;.
+    </text>
+    <text id="_PM_UAT_XEVL_GOEVL_oMA_CL">
+	a donné &lt;b&gt;un avis&lt;/b&gt; à &lt;a class='pm-mdl-txt-mst jb-pm-mdl-txt-mst jb-pm-mdl-gvstd-hfr' href='%prmlk%' target='_blank'&gt;votre publication&lt;/a&gt; : &lt;q&gt;C'est Cool !&lt;/q&gt;.
+    </text>
+    <text id="_PM_UAT_XEVL_GOEVL_oMA_DL">
+	a donné &lt;b&gt;un avis&lt;/b&gt; à &lt;a class='pm-mdl-txt-mst jb-pm-mdl-txt-mst jb-pm-mdl-gvstd-hfr' href='%prmlk%' target='_blank'&gt;votre publication&lt;/a&gt; : &lt;q&gt;Pas top !&lt;/q&gt;.
+    </text>
+    <text id="_PM_UAT_XUSTG_MEoTSM">
+	a &lt;b&gt;ajouté&lt;/b&gt; un nouveau statut et vous y a &lt;b&gt;marqué&lt;/b&gt;
+    </text>
+    <text id="_PM_UAT_XUSTG_MEoTSR">
+	a &lt;b&gt;commenté&lt;/b&gt; ce statut et vous y a &lt;b&gt;marqué&lt;/b&gt;
+    </text>
+    <text id="_PM_UAT_XTSTY_AD_SBoMTBD">
+	vous a laissé un mot
+    </text>
+    <text id="_PM_UAT_XTSTY_TSR_SBoMTSM">
+	a &lt;b&gt;commenté&lt;/b&gt; votre statut
+    </text>
+    <text id="_PM_UAT_XTSTY_TSL_SBoMTSM">
+	a aimé votre statut
+    </text>
+    <text id="_PM_UAT_XREL_NWAB">
+	vous suit désormais
+    </text>
+    <text id="_PM_UAT_XMTRD_NWABO">
+	s'est abonné(e) à votre &lt;a class='pm-mdl-txt-mst jb-pm-mdl-txt-mst jb-pm-mdl-gvstd-hfr' href='%prmlk%' target='_blank'&gt;Salon&lt;/a&gt;
+    </text>
+    <text id="_PM_XTRA_ART_DNY_AKX_LCK_TLE">
+	Vous ne disposez pas des droits pour accéder à la publication liée
+    </text>
+    <text id="_PM_XTRA_TST_DNY_AKX_LCK_TLE">
+	Vous ne disposez pas des droits pour accéder à la publication liée
+    </text>
+    <text id="_PM_UAT_NO_PRVW">
+	Aucun aperçu n'est disponible pour cette action
+    </text>
+    <!-- TQR.VB31 -->
+    <text id="_PM_UAT_XFAV_ART_FVoMI_PU">
+        a ajouté en favori &lt;a class='pm-mdl-txt-mst jb-pm-mdl-txt-mst jb-pm-mdl-gvstd-hfr' href='%prmlk%' target='_blank'&gt;votre publication&lt;/a&gt;, en &lt;b&gt;mode public&lt;/b&gt;
+    </text>
+    <text id="_PM_UAT_XFAV_ART_FVoMI_PRI">
+        a ajouté en favori &lt;a class='pm-mdl-txt-mst jb-pm-mdl-txt-mst jb-pm-mdl-gvstd-hfr' href='%prmlk%' target='_blank'&gt;votre publication&lt;/a&gt;, en &lt;b&gt;mode privé&lt;/b&gt;
+    </text>
+    <text id="_PM_PREM_OBJ_PRE_001">
+        Vous avez une nouvelle notification de 
+    </text>
+    
+    <!-- ***************************************************************************************************************************************************** -->
+    <!-- ******************************************************************** PAGE : HOME ******************************************************************** -->
+    
+    <text id="_PG_HOME_TX001">
+        Le réseau social fun, utile et authentique
+    </text>
+    <text id="_PG_HOME_TX002">
+        News
+    </text>
+    <text id="_PG_HOME_TX003">
+        Surprenez-moi !
+    </text>
+    <text id="_PG_HOME_TX004">
+        Se connecter
+    </text>
+    <text id="_PG_HOME_TX005">
+        3 Bonnes raisons d'aimer partager sa vie et ses passions
+    </text>
+    <text id="_PG_HOME_TX006">
+        Visiter
+    </text>
+    <text id="_PG_HOME_TX007">
+        Inscris-toi
+    </text>
+    <text id="_PG_HOME_TX008">
+        C'est à jamais gratuit 
+    </text>
+    <text id="_PG_HOME_TX009">
+        Nom complet 
+    </text>
+    <text id="_PG_HOME_TX010">
+        Pseudo
+    </text>
+    <text id="_PG_HOME_TX011">
+        Adresse email
+    </text>
+    <text id="_PG_HOME_TX012">
+        Mot de passe
+    </text>
+    <text id="_PG_HOME_TX013">
+        S'inscrire
+    </text>
+    <text id="_PG_HOME_TX014">
+        S'inscrire via
+    </text>
+    <text id="_PG_HOME_TX015">
+        De quoi il s'agit ?
+    </text>
+    <text id="_PG_HOME_TX016">
+        Cliquez pour tout comprendre
+    </text>
+    <text id="_PG_HOME_TX017">
+        Trenqr, Let's talk !
+    </text>
+    <text id="_PG_HOME_TX018">
+        Blog
+    </text>
+    <text id="_PG_HOME_TX019">
+        Trenqr Studio
+    </text>
+    <text id="_PG_HOME_TX020">
+        Tutotiels
+    </text>
+    <text id="_PG_HOME_TX021">
+        CGU
+    </text>
+    <text id="_PG_HOME_TX022">
+        Cookies
+    </text>
+    <text id="_PG_HOME_TX023">
+        Confidentialité
+    </text>
+    <text id="_PG_HOME_TX023_LK">
+        Confidentialite
+    </text>
+    <text id="_PG_HOME_TX024">
+        Qu'est ce que Trenqr ?
+    </text>
+    <text id="_PG_HOME_TX025">
+        Le manisfeste
+    </text>
+    <text id="_PG_HOME_TX026">
+        F.A.Q
+    </text>
+    <text id="_PG_HOME_TX0027">
+        Visitez nos salons
+    </text>
+    
+    <!-- *************************************************************** SECTION : HOME_DISCUSS ************************************************************** -->
+    
+    <text id="_PG_HOME_SC_DISCUSS_TX001">
+        Alors, &lt;strong class="bold plus_viz"&gt;Trenqr&lt;/strong&gt; qu'est-ce que c'est ?
+    </text>
+    <text id="_PG_HOME_SC_DISCUSS_TX002">
+<!--        Plus &lt;strong class="bold plus_viz"&gt;convivial&lt;/strong&gt; que Facebook et bien plus &lt;strong class="bold plus_viz"&gt;neutre&lt;/strong&gt; et &lt;strong class="bold plus_viz"&gt;utile&lt;/strong&gt; que Twitter, 
+        Trenqr est une plateforme d'&lt;strong class="bold plus_viz"&gt;échange&lt;/strong&gt; qui vous fait vivre à travers ses fonctionnalités innovantes et sa &lt;strong class="bold plus_viz"&gt;philosophie&lt;/strong&gt; d'ouverture, 
+        une expérience &lt;strong class="bold plus_viz"&gt;fun&lt;/strong&gt; et &lt;strong class="bold plus_viz"&gt;authentique&lt;/strong&gt;. Notre slogan est : &lt;strong class="bold plus_viz"&gt;Let's talk !&lt;/strong&gt;
+        &lt;br/&gt;-->
+        Trenqr est un &lt;strong class="bold plus_viz on_blue"&gt;juste milieu entre Facebook et Twitter&lt;/strong&gt;. &lt;br/&gt;&lt;br/&gt;
+        Sur &lt;strong class="bold plus_viz on_blue"&gt;Facebook&lt;/strong&gt; vous tournez en rond indéfiniment avec vos "5000 amis" et le très amical "T'es qui ?" : 
+        toujours les mêmes têtes, qui font toujours les mêmes choses. &lt;br/&gt;&lt;br/&gt;
+        Sur &lt;strong class="bold plus_viz on_blue"&gt;Twitter&lt;/strong&gt; vous rencontrez plus de monde, c'est vrai. 
+        Mais ils ne s'interessent à vous que l'espace d'un instant. Sauf si vous avez une Ferrari F488 Spider dans votre garage. Non ? C'est dommage ...&lt;br/&gt;&lt;br/&gt;
+        Sur Trenqr c'est une philosophie différente. Vous êtes ici pour 
+        &lt;strong class="bold plus_viz on_blue"&gt;rencontrer&lt;/strong&gt; des personnes par affinité, 
+        &lt;strong class="bold plus_viz on_blue"&gt;découvrir&lt;/strong&gt; ce qu'ils font et ce qu'ils aiment,
+        puis en faire &lt;strong class="bold plus_viz on_blue"&gt;des amis voire des meilleurs amis&lt;/strong&gt;.
+        &lt;strong class="bold plus_viz on_blue"&gt;Vu comme ça, c'est bien plus intéressant !&lt;/strong&gt; 
+    </text>
+    <text id="_PG_HOME_SC_DISCUSS_TX003">
+        <!--Quels sont les &lt;strong class="bold plus_viz"&gt;3&lt;/strong&gt; points essentiels qui devraient m'encourager à m'inscrire et rejoindre Trenqr ?-->
+        Comment ça marche ?
+    </text>
+    <text id="_PG_HOME_SC_DISCUSS_TX004">
+<!--        &lt;strong class="bold plus_viz"&gt;1 |&lt;/strong&gt; Trenqr c'est une &lt;strong class="bold plus_viz"&gt;facette plus fun&lt;/strong&gt; des réseaux sociaux. 
+        Cela passe par un design plus joyeux et des &lt;strong class="bold plus_viz"&gt;idées originales&lt;/strong&gt;. 
+        N'allez plus sur les réseaux sociaux pour vous agacer, venez sur Trenqr pour apprendre, découvrir et partager, dans un univers plus &lt;strong class="bold plus_viz"&gt;authentique !&lt;/strong&gt;-->
+        
+        &lt;strong class="bold plus_viz ol"&gt;1 |&lt;/strong&gt;Les &lt;u&gt;Salons&lt;/u&gt; (ou Groupes de passionnés) sont les vitrines de vos passions. 
+        &lt;u&gt;Visitez et contribuez aux Salons&lt;/u&gt; qui vous plaisent ou créez en un ! 
+        Vous pourrez au choix, en être le seul contributeur ou faire participer vos adeptes. 
+    </text>
+    <text id="_PG_HOME_SC_DISCUSS_TX005">
+<!--        &lt;strong class="bold plus_viz"&gt;2 |&lt;/strong&gt; Trenqr vous permet de &lt;strong class="bold plus_viz"&gt;partager&lt;/strong&gt; votre &lt;strong class="bold plus_viz"&gt;vie&lt;/strong&gt; et vos &lt;strong class="bold plus_viz"&gt;passions&lt;/strong&gt; de manière 
+        &lt;strong class="bold plus_viz"&gt;plus simple&lt;/strong&gt; et &lt;strong class="bold plus_viz"&gt;efficace&lt;/strong&gt;. 
+        Partagez vie privée, votre vie publique et vos passions avec plus de cohérence et de facilité !-->
+        
+        &lt;strong class="bold plus_viz ol"&gt;2 |&lt;/strong&gt; &lt;u&gt;Connectez-vous au Chat du Salon et échangez&lt;/u&gt; avec qui vous voulez. 
+        Allez y, n'hésitez pas. Ils ont autant d'appréhension que vous.
+    </text>
+    <text id="_PG_HOME_SC_DISCUSS_TX006">
+<!--        &lt;strong class="bold plus_viz"&gt;3 |&lt;/strong&gt; 
+        Sur Trenqr vous profitez d'une interface applicative dédiée au &lt;strong class="bold plus_viz"&gt;jeu&lt;/strong&gt; et à la &lt;strong class="bold plus_viz"&gt;productivité&lt;/strong&gt;. 
+        Ce sont des applications &lt;strong class="bold plus_viz"&gt;utiles&lt;/strong&gt; pour gérer votre vie sur le réseau social et &lt;strong class="bold plus_viz"&gt;pratique&lt;/strong&gt; pour la vie au quotidien. 
+        L'avantage c'est que c'est &lt;strong class="bold plus_viz"&gt;gratuit&lt;/strong&gt; et que vous disposez constamment de nouvelles applications !-->
+        
+        &lt;strong class="bold plus_viz ol"&gt;3 |&lt;/strong&gt;&lt;u&gt;Prenez contact&lt;/u&gt; avec les personnes avec lesquelles vous accrochez le plus et &lt;u&gt;suivez-vous&lt;/u&gt; mutuellement pour mieux faire connaissance.
+    </text>
+    <text id="_PG_HOME_SC_DISCUSS_TX008">
+<!--        &lt;strong class="bold plus_viz"&gt;3 |&lt;/strong&gt; 
+        Sur Trenqr vous profitez d'une interface applicative dédiée au &lt;strong class="bold plus_viz"&gt;jeu&lt;/strong&gt; et à la &lt;strong class="bold plus_viz"&gt;productivité&lt;/strong&gt;. 
+        Ce sont des applications &lt;strong class="bold plus_viz"&gt;utiles&lt;/strong&gt; pour gérer votre vie sur le réseau social et &lt;strong class="bold plus_viz"&gt;pratique&lt;/strong&gt; pour la vie au quotidien. 
+        L'avantage c'est que c'est &lt;strong class="bold plus_viz"&gt;gratuit&lt;/strong&gt; et que vous disposez constamment de nouvelles applications !-->
+        
+        &lt;strong class="bold plus_viz ol"&gt;4 |&lt;/strong&gt;Si au bout de 7 jours, vous ne vous êtes pas éloignés (vous vous suivez toujours), 
+        vous pouvez vous &lt;u&gt;demander en ami&lt;/u&gt;. Un à la fois, pas la peine de se précipiter :)
+    </text>
+    <text id="_PG_HOME_SC_DISCUSS_TX009">
+<!--        &lt;strong class="bold plus_viz"&gt;3 |&lt;/strong&gt; 
+        Sur Trenqr vous profitez d'une interface applicative dédiée au &lt;strong class="bold plus_viz"&gt;jeu&lt;/strong&gt; et à la &lt;strong class="bold plus_viz"&gt;productivité&lt;/strong&gt;. 
+        Ce sont des applications &lt;strong class="bold plus_viz"&gt;utiles&lt;/strong&gt; pour gérer votre vie sur le réseau social et &lt;strong class="bold plus_viz"&gt;pratique&lt;/strong&gt; pour la vie au quotidien. 
+        L'avantage c'est que c'est &lt;strong class="bold plus_viz"&gt;gratuit&lt;/strong&gt; et que vous disposez constamment de nouvelles applications !-->
+        
+        &lt;strong class="bold plus_viz ol"&gt;5 |&lt;/strong&gt;Choisissez parmi vos amis, ceux ou celles que &lt;u&gt;vous voulez désigner en tant que "meilleur(e) ami(e)"&lt;/u&gt;, pour partagez encore plus ! (Fonctionnalité en cours de développement)
+    </text>
+    <text id="_PG_HOME_SC_DISCUSS_TX007">
+        Vous
+    </text>
+    
+    <!-- **************************************************************** SECTION : HOME_NEWS **************************************************************** -->
+    
+    <text id="_PG_HOME_SC_NEWS_TX001">
+        Annonce
+    </text>
+    <text id="_PG_HOME_SC_NEWS_TX002">
+        Dernières actualités de Trenqr
+    </text>
+    <text id="_PG_HOME_SC_NEWS_TX003_001">
+        25 Sept. 2015
+    </text>
+    <text id="_PG_HOME_SC_NEWS_TX003_002">
+        Sortie officielle de la première version publique. La plateforme a été publiée sous la version beta vb1.0 (alias "Christophe Colomb").
+    </text>
+    <text id="_PG_HOME_SC_NEWS_TX004_001">
+        25 Nov. 2015
+    </text>
+    <text id="_PG_HOME_SC_NEWS_TX004_002">
+        Sortie de la version beta : vb2.0 (alias "The Boredom Killer").
+    </text>
+    <text id="_PG_HOME_SC_NEWS_TX005_001">
+        04 Juillet 2016
+    </text>
+    <text id="_PG_HOME_SC_NEWS_TX005_002">
+        Sortie de la version beta évoluée : vb3.0 (alias "USS Entreprise"). &lt;a target='_blank' href='http://blog.trenqr.com/'&gt;Qu'est-ce qu'il y a de nouveau ?&lt;/a&gt;
+    </text>
+    <text id="_PG_HOME_SC_NEWS_TX006_001">
+        04 Juillet 2016
+    </text>
+    <text id="_PG_HOME_SC_NEWS_TX006_002">
+        Sortie du &lt;a target="_blank" href="http://blog.trenqr.com/"&gt;blog officiel&lt;/a&gt; « Trenqr, the cool vibe for all ».
+    </text>
+    
+    <!-- ************************************************************** SECTION : HOME_MANIFESTO ************************************************************* -->
+    
+    <text id="_PG_HOME_SC_MANIF_TX001">
+        Trenqr est le nouveau réseau social qui va vous plaire. Pourquoi ?
+    </text>
+    <text id="_PG_HOME_SC_MANIF_TX002">
+        Parce que Trenqr est bien plus qu’un simple réseau social, &lt;span class='en-avant'&gt;c’est une philosophie :)&lt;/span&gt;
+    </text>
+    <text id="_PG_HOME_SC_MANIF_TX003">
+        Quand vous venez sur Trenqr, vous pénétrez dans un univers différent. 
+        Un univers avec ses codes, guidé par des principes établis et des &lt;span class='en-avant'&gt;valeurs communes&lt;/span&gt;. 
+        Parce qu’au-delà des fonctionnalités, qu’est-ce qu’un réseau social si ce n’est &lt;span class='en-avant'&gt;une histoire d’affinité, un modèle de société et de vivre-ensemble&lt;/span&gt; ? 
+    </text>
+    <text id="_PG_HOME_SC_MANIF_TX004">
+        Voici ce que nous vous proposons.
+    </text>
+    <text id="_PG_HOME_SC_MANIF_TX005">
+        Et si on revenait aux choses simples : aux « bonjours », aux discussions, aux nouvelles rencontres et aux nouvelles expériences ? 
+        Et si nous nous activions à créer une &lt;span class='en-avant'&gt;communauté ouverte&lt;/span&gt;, &lt;span class='en-avant'&gt;faiblement politisé&lt;/span&gt;, 
+        ayant une culture basée sur la liberté, le respect et la diversité ? 
+        Une culture qui encourage la légèreté, la découverte et le dialogue malgré nos différences. Peu de politique, pas de parti pris ! 
+        &lt;span class='en-avant'&gt;Juste parler, échanger, s'amuser, profiter des uns des autres et c'est tout !&lt;/span&gt;
+    </text>
+    <text id="_PG_HOME_SC_MANIF_TX006">
+        Comment y arriver ?
+    </text>
+    <text id="_PG_HOME_SC_MANIF_TX007">
+        Pour atteindre ces objectifs, nous misons sur un &lt;span class='en-avant'&gt;esprit&lt;/span&gt; authentique et ludique tel qu'évoqué plus haut, 
+        mais aussi sur des &lt;span class='en-avant'&gt;fonctionnalités&lt;/span&gt; innovantes, utiles, simples et pratiques pour que vous puissiez vous &lt;span class='en-avant'&gt;concentrer sur l'essentiel&lt;/span&gt;.
+    </text>
+    <text id="_PG_HOME_SC_MANIF_TX008">
+        Alors qu'est-ce que Trenqr a à vous offrir ? Rien de plus que l'univers cool et amicale que vous attendiez ! 
+        Et ça, &lt;span class='en-avant'&gt;seul Trenqr vous le propose&lt;/span&gt; vraiment !
+    </text>
+    <text id="_PG_HOME_SC_MANIF_TX009">
+        Lou Carther, Fondateur de Trenqr.
+    </text>
+    
+    <!-- ************************************************************** SECTION : HOME_FAQ ************************************************************* -->
+    
+    <text id="_PG_HOME_SC_FAQ_TX001">
+        Est-ce que je peux rendre mon compte privé ?
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX002">
+        Non, vous ne pouvez pas rendre votre compte privé, mais nous avons conçu Trenqr de telle sorte que vous n'ayez pas besoin de le faire.
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX003">
+        En effet, lorsque vous ajoutez une publication sur Trenqr, vous choisissez le public vers lequel vous voulez dévoiler votre photo ou vidéo. 
+        Vous pouvez décider de l'ajouter dans &lt;span class="bold highlight"&gt;votre univers privé&lt;/span&gt;, qui n'est accessible qu'à vos amis, ou de le &lt;span class="bold highlight"&gt;rendre public&lt;/span&gt;, 
+        en tant qu'une de &lt;span class="bold highlight"&gt;vos photos (ou vidéos) du jour&lt;/span&gt;.
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX004">
+        Tout cela, se fait de manière intuitive et sans réglages complexes additionnels. Vous verrez, dès que vous l'aurez adopter, vous ne pourrez plus vous en passer :)
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX005">
+        C'est quoi une "Photo du jour" ?
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX006">
+        Il s'agit d'un concept qui fait que lorsque vous publiez une photo ou une vidéo, elle est visible par tous et reste &lt;span class="bold highlight"&gt;disponible dans le Newsfeed pendant 24 heures&lt;/span&gt;. 
+        Au delà, les personnes interessées devront venir la revoir sur votre page.
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX007">
+        Le principal intérêt est de transformer vos publications, en un ensemble de &lt;span class="bold highlight"&gt;stories&lt;/span&gt; relatant votre quotidien. 
+        De cette manière, l'expérience devient tout de suite plus &lt;span class="bold highlight"&gt;ludique et interessante&lt;/span&gt;.
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX008">
+        Le second avantage est celui de vous encourager à visiter les pages d'autres utilisateurs, ce qui participe à créer plus d'affinités et de liens sociaux. 
+        En clair, c'est un concept original et ludique, en adéquation avec l'esprit Trenqr !
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX009">
+        J'ai peu d'amis et je suis plutôt solitaire, Trenqr pourrait-il me convenir ?
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX010">
+        Biensûr ! Contrairement à d'autres réseaux sociaux, vous n'avez pas besoin d'avoir 5000 "amis" pour profiter de Trenqr. 
+        Par exemple, grâce à notre suite d'applications intégrées, vous pouvez utiliser Trenqr pour son côté utilitaire en attendant de vous faire de nouveaux amis ;)
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX011">
+        Rencontrer, s'amuser et découvrir, c'est une des raisons pour lesquelles Trenqr existe. 
+        Mais vous proposez des solutions pratiques et utiles, en est une autre tout aussi importante. 
+        &lt;span class="bold highlight"&gt;C'est ça l'esprit Trenqr !&lt;/span&gt;
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX012">
+        Que faites vous des données et informations que j'ajoute sur Trenqr ? Vous les vendez ? :(
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX013">
+        Non, nous ne vendons pas les données de nos utilisateurs. 
+        D'ailleurs, aucun réseau social digne de ce nom ne vendrait les données de ses utilisateurs.
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX014">
+        Si vos inquiétudes font référence au &lt;a href="https://en.wikipedia.org/wiki/PRISM_(surveillance_program)"&gt;scandale sur le programme de surveillance américain PRISM&lt;/a&gt;, 
+        sachez que nous ne partageons sous aucun prétexte, vos données avec des agences gouvernementales. 
+        De plus, contrairement aux entreprises qui ont été citées dans cette affaire, Trenqr n'étant pas un site américain, nous ne sommes pas soumis au "Patriot Act".
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX015">
+        Enfin, de manière générale, nous récoltons, traitons et enregistrons vos données dans le strict respect de la loi et de notre 
+        &lt;a href="/cgu"&gt;politique sur la gestion des données&lt;/a&gt;.
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX016">
+        Mes données et mes communications sont-elles sécurisées ?
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX017">
+        Oui ! Nous utilisons la technologie de cryptage SSL, pour protéger vos données lors des échanges avec nos serveurs. 
+        Pour le reste, il vous incombe de veiller à la sécurité de votre compte en adoptant les bons reflexes.
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX018">
+        À ce titre, nous vous recommandons de suivre les &lt;a href="http://blog.trenqr.com/bonnes-pratiques-ameliorer-securite-compte"&gt;règles de sécuirté&lt;/a&gt; suivantes, pour améliorer la sécurité de votre compte et de &lt;a href="http://blog.trenqr.com/tutoriel-construire-facilement-mot-de-passe-securise"&gt;votre mot de passe&lt;/a&gt;.
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX019">
+        Vous parlez souvent de liberté et de respect. Avez-vous des mécanismes de régulations automatiques ou sémi-automatiques pour vous en assurer ?
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX020">
+        Non car cela s'apparenterait à de la censure aveugle et c'est contraire à nos principes.
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX021">
+        Ce que nous faisons c'est créer un environnement propice à la convivialité et à la diversité des points de vue. 
+        Pour ce faire, nous misons sur des fonctionnalités et des services pour créer un environnement ludique et communautaire.
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX022">
+        Enfin, nous encourageons nos utilisateurs à respecter les valeurs de la communauté. 
+        En cas d'excès grave, il possible qu'un compte face l'objet d'une procédure disciplinaire. 
+        Mais personne ne souhaite en arriver là et nous comptons sur votre participation pour construire cet environnement.
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX023">
+        J'ai 14 ans ! Est ce que je peux m'inscrire sur Trenqr ?
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX024">
+        Oui, biensûr ! Trenqr est ouvert à l'inscription pour toutes personnes agées d'au moins 12 ans.
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX025">
+        Cependant, si la loi de votre pays considère que vous êtes mineur, nous vous conseillons de demander l'autorisation à vos parents avant de vous inscrire.
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX026">
+        Je vis au Canada. Est-ce que je vais trouver ma place sur Trenqr ?
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX027">
+        Bien entendu ! Trenqr n'a pas d'attache nationale. C'est un projet qui vit au-delà des frontières. 
+        En effet, Trenqr appartient à ceux et à celles qui participent à la faire vivre.
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX028">
+        Nous avons l'habitude de dire : "Bien que le soleil se lève à l'Est et se couche à l'Ouest, ce n'est pas pour autant qu'il ne luit pas au Sud et au Nord". 
+        Oui Trenqr vient d'Europe mais vous y êtes le(la) bienvenu(e) quelque soit votre nationalité, votre réligion ou vos opinions.
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX029">
+        Facebook a bloqué mon compte parce que je voulais rentrer en contact avec des personnes que je ne connaissais pas. Ce scénario est-il possible sur Trenqr ?
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX030">
+        Non, nous ne sommes pas de ce genre là ! Parce que cela est contraire à notre philosophie, 
+        qui &lt;span class="bold highlight"&gt;encourage les échanges entre utilisateurs et les nouvelles expériences&lt;/span&gt;.
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX031">
+        D'ailleurs, Trenqr a été étudié pour que nous n'ayons pas besoin de bloquer des utilisateurs qui pourraient se montrer trop insistants.
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX032">
+        En effet, pour effectuer votre demande d'ami, vous devez respecter certaines conditions. 
+        Cette méthode permet de rendre la &lt;span class="bold highlight"&gt;notion d'ami sur Trenqr plus authentique&lt;/span&gt;, tout en protégeant nos utilisateurs contre le harcelement en ligne.
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX033">
+        J'aimerais obtenir de l'aide pour utiliser Trenqr, avez vous un mode d'emploi ?
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX034">
+        Trenqr est très facile d'utilisation. Vous ne devriez pas rencontrer de difficultés majeures à l'utiliser. 
+        De plus, vous avez la possibilité de lancer à tout moment, un tutoriel interactif qui vous permettra d'acquérir toutes les bases pour comprendre et utiliser Trenqr.
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX035">
+        Ensuite, si vous voulez aller encore plus loin, sachez &lt;a href="http://blog.trenqr.com/"&gt;nous avons un blog&lt;/a&gt; où vous trouverez de l'actualité mais aussi des &lt;a href="http://blog.trenqr.com/category/trenqr-tutorials/"&gt;tutoriels et des vidéos&lt;/a&gt; pour vous aider à prendre en main votre compte.
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX036">
+        Enfin, si nos guides et tutoriels n'ont pas réussi à répondre à vos questions, vous pouvez trouver de l'aide auprès de la communauté sur notre forum.
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX037">
+        Trenqr est-il un réseau social "politiquement correct" ? Est-ce que je peux me faire bannir ?
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX038">
+        Tout dépend de ce que vous appelez par "politiquement correct" !
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX039">
+        Si vous comptez utiliser Trenqr afin de propager des idées extremistes incitant à des actes de terreur, à la haine ou la violence physique et/ou morale, 
+        envers une personne ou un groupe de personnes, votre compte risque d'etre suspendu conformément à nos &lt;a href="/cgu"&gt;conditions d'utilisation&lt;/a&gt;.
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX040">
+        Dans le cas contraire, contrairement à certains réseaux sociaux, nous n'agissons pas en tant qu'autorité morale. 
+        Aussi, dans tous les autres cas, vous êtes libre et responsable de vos opinions même si elles ne sont pas majoritaires.
+    </text>
+    <text id="_PG_HOME_SC_FAQ_TX041">
+        Toutefois, souvenez-vous que Trenqr reste un lieu public. 
+        Cela veut dire que tout ce que vous dites est visible par tous et peut vous causer du tord, au vu des lois régissant votre lieu de résidence.
+    </text>
+
+        
+    <!-- ***************************************************************************************************************************************************** -->
+    <!-- ******************************************************************** PAGE : LOG IN ****************************************************************** -->
+    
+    <text id="_PG_LOGIN_TX001">
+        &lt;b class='bold'&gt;Vous devez vous connecter&lt;/b&gt; ou &lt;b class='bold'&gt;créer un compte&lt;/b&gt; pour &lt;b class='bold'&gt;accéder à la totalité des fonctionnalités et des données&lt;/b&gt; de Trenqr. Ça ne vous prendra que &lt;b class='bold'&gt;très peu de temps&lt;/b&gt; et &lt;b class='bold'&gt;c'est gratuit&lt;/b&gt; !
+    </text>
+    <text id="_PG_LOGIN_TX002">
+        Connexion
+    </text>
+    <text id="_PG_LOGIN_TX003">
+        Pseudo ou Email
+    </text>
+    <text id="_PG_LOGIN_TX004">
+        Mot de passe
+    </text>
+    <text id="_PG_LOGIN_TX005">
+        Mot de passe oublié ?
+    </text>
+    <text id="_PG_LOGIN_TX006">
+        S'inscrire
+    </text>
+    <text id="_PG_LOGIN_TX007">
+        Bienvenue sur Trenqr, bienvenue chez vous ! Ou presque ...
+    </text>
+        
+        
+    <!-- ***************************************************************************************************************************************************** -->
+    <!-- ******************************************************************** PAGE : SIGN UP ***************************************************************** -->
+    
+    <text id="_PG_SIGNUP_TX001">
+        Ton &lt;span class="ins-tle-spe-hot-dzgn"&gt;compte&lt;/span&gt; gratuit sur Trenqr en &lt;span class="ins-tle-spe-hot-dzgn"&gt;3 minutes&lt;/span&gt;
+    </text>
+    <text id="_PG_SIGNUP_TX002">
+        &lt;span class="bold"&gt;Accélerez&lt;/span&gt; votre inscription en utilisant votre compte sur : 
+    </text>
+    <text id="_PG_SIGNUP_TX003">
+        OU
+    </text>
+    <text id="_PG_SIGNUP_TX004">
+        &lt;span class="bold"&gt;Inscrivez-vous&lt;/span&gt; en utilisant votre email
+    </text>
+    <text id="_PG_SIGNUP_TX005">
+        Nom complet
+    </text>
+    <text id="_PG_SIGNUP_TX006">
+        Nom et Prénom
+    </text>
+    <text id="_PG_SIGNUP_TX007">
+        Date de naissance
+    </text>
+    <text id="_PG_SIGNUP_TX008">
+        Jour
+    </text>
+    <text id="_PG_SIGNUP_TX009">
+        Mois
+    </text>
+    <text id="_PG_SIGNUP_TX010">
+        Année
+    </text>
+    <text id="_PG_SIGNUP_TX011">
+        Genre
+    </text>
+    <text id="_PG_SIGNUP_TX012">
+        Homme
+    </text>
+    <text id="_PG_SIGNUP_TX013">
+        Femme
+    </text>
+    <text id="_PG_SIGNUP_TX014">
+        Ville
+    </text>
+    <text id="_PG_SIGNUP_TX015">
+        Votre ville de résidence principale
+    </text>
+    <text id="_PG_SIGNUP_TX016">
+        Pseudo
+    </text>
+    <text id="_PG_SIGNUP_TX017">
+        Comment voulez-vous être reconnu sur Trenqr ?
+    </text>
+    <text id="_PG_SIGNUP_TX018">
+        Adresse email
+    </text>
+    <text id="_PG_SIGNUP_TX019">
+        Une adresse email valide et sécurisée
+    </text>
+    <text id="_PG_SIGNUP_TX020">
+        Mot de passe
+    </text>
+    <text id="_PG_SIGNUP_TX021">
+        Plus c'est complexe, mieux c'est !
+    </text>
+    <text id="_PG_SIGNUP_TX022">
+        Je ne suis pas un robot
+    </text>
+    <text id="_PG_SIGNUP_TX023">
+        J'accepte les &lt;a href="/terms" target="_blank"&gt;conditions générales d'utilisation&lt;/a&gt; ainsi que la politique sur l'utilisation des &lt;a href="/cookies" target="_blank"&gt;cookies&lt;/a&gt; et je certifie avoir pris connaissance de la &lt;a href="/privacy" target="_blank"&gt;politique de confidentialité&lt;/a&gt;.
+    </text>
+    <text id="_PG_SIGNUP_TX024">
+        S'inscrire
+    </text>
+    <text id="_PG_SIGNUP_TX025">
+        À propos
+    </text>
+    <text id="_PG_SIGNUP_TX026">
+        Conditions d'utilisation
+    </text>
+    <text id="_PG_SIGNUP_TX027">
+        Cookies
+    </text>
+    <text id="_PG_SIGNUP_TX028">
+        Confidentialité
+    </text>
+    <text id="_PG_SIGNUP_TX029">
+        Veuillez patienter ...
+    </text>
+    <text id="_PG_SIGNUP_TX030">
+        Nous traitons votre requête
+    </text>
+    <text id="_PG_SIGNUP_TX031">
+        Il existe plusieurs villes de ce nom. Pour trouver la votre, aidez-vous du pays et du nombre d'habitants
+    </text>
+    
+    <text id="_PG_SIGNUP_TX032">
+        jan
+    </text>
+    <text id="_PG_SIGNUP_TX033">
+        fev
+    </text>
+    <text id="_PG_SIGNUP_TX034">
+        mar
+    </text>
+    <text id="_PG_SIGNUP_TX035">
+        avr
+    </text>
+    <text id="_PG_SIGNUP_TX036">
+        mai
+    </text>
+    <text id="_PG_SIGNUP_TX037">
+        juin
+    </text>
+    <text id="_PG_SIGNUP_TX038">
+        juil
+    </text>
+    <text id="_PG_SIGNUP_TX039">
+        aoû
+    </text>
+    <text id="_PG_SIGNUP_TX040">
+        sep
+    </text>
+    <text id="_PG_SIGNUP_TX041">
+        oct
+    </text>
+    <text id="_PG_SIGNUP_TX042">
+        nov
+    </text>
+    <text id="_PG_SIGNUP_TX043">
+        dec
+    </text>
+    
+    <!-- ******************************************************************** SECTION : SIGNUP_CONFIRM ***************************************************************** -->
+    
+    <text id="_PG_SIGNUP_CNFRM_TX001">
+        Récapitulatif de vos informations
+    </text>
+    <text id="_PG_SIGNUP_CNFRM_TX002">
+        Êtes-vous certain de l'exactitude de ces données ?
+    </text>
+    <text id="_PG_SIGNUP_CNFRM_TX003">
+        Vous seul(e) le connaissez
+    </text>
+    <text id="_PG_SIGNUP_CNFRM_TX004">
+        Précedent
+    </text>
+    <text id="_PG_SIGNUP_CNFRM_TX005">
+        Je confirme
+    </text>
+    
+    <!-- ******************************************************************** SECTION : SIGNUP_PROCESSING ***************************************************************** -->
+    
+    <text id="_PG_SIGNUP_PRCSG_TX001">
+        Création de votre compte
+    </text>
+    <text id="_PG_SIGNUP_PRCSG_TX002">
+        Validation du formulaire d'inscription
+    </text>
+    <text id="_PG_SIGNUP_PRCSG_TX003">
+        Création de votre compte
+    </text>
+    <text id="_PG_SIGNUP_PRCSG_TX004">
+        Ourah, compte créé !
+    </text>
+    <text id="_PG_SIGNUP_PRCSG_TX005">
+        Que souhaitez-vous faire maintenant ?
+    </text>
+    <text id="_PG_SIGNUP_PRCSG_TX006">
+        Inviter des amis
+    </text>
+    <text id="_PG_SIGNUP_PRCSG_TX007">
+        Visiter un Salon populaire
+    </text>
+    <text id="_PG_SIGNUP_PRCSG_TX008">
+        Aller vers votre compte
+    </text>
+    
+    <!-- ******************************************************************** SECTION : SIGNUP_INTRO ***************************************************************** -->
+    
+    <text id="_PG_SIGNUP_INTRO_TX001">
+        Passer l'intro
+    </text>
+    <text id="_PG_SIGNUP_INTRO_TX002">
+        La séquence qui va suivre comporte des allusions choquantes et abrutissantes que nous n’assumons pas.
+    </text>
+    <text id="_PG_SIGNUP_INTRO_TX003">
+        Voulez-vous quand même les voir ?
+    </text>
+    <text id="_PG_SIGNUP_INTRO_TX004">
+        Non, j'ai peur...
+    </text>
+    <text id="_PG_SIGNUP_INTRO_TX005">
+        Oui, je veux bien :)
+    </text>
+    <text id="_PG_SIGNUP_INTRO_TX006">
+        Choisissez votre camp jeune padawan.&lt;br/&gt; Mais attention, faites le bon choix, car il n'y aura pas de retour en arrière !
+    </text>
+    <text id="_PG_SIGNUP_INTRO_TX007">
+        De quel côté de la force vous sentez-vous le plus proche ?
+    </text>
+    <text id="_PG_SIGNUP_INTRO_TX008">
+        Je n'ai aucune âme et je suis un petit looser
+    </text>
+    <text id="_PG_SIGNUP_INTRO_TX009">
+        Le côté obscure
+    </text>
+    <text id="_PG_SIGNUP_INTRO_TX010">
+        Je suis un pétochard trop lâche pour assumer sa vraie nature
+    </text>
+    <text id="_PG_SIGNUP_INTRO_TX011">
+        Le côté lumineux
+    </text>
+    <text id="_PG_SIGNUP_INTRO_TX012">
+        Je suis un opportuniste et j'aime les victoires faciles !
+    </text>
+    
+    
+    <!-- ***************************************************************************************************************************************************** -->
+    <!-- ******************************************************************** PAGE : FKSA ******************************************************************** -->
+    
+    <text id="_PG_FKSA_TX001">
+        Connexion
+    </text>
+    <text id="_PG_FKSA_TX002">
+        Inscription
+    </text>
+    <text id="_PG_FKSA_TX003">
+        Chez moi
+    </text>
+    <text id="_PG_FKSA_TX004">
+        Salon
+    </text>
+    <text id="_PG_FKSA_TX005">
+        Du même auteur
+    </text>
+    <text id="_PG_FKSA_TX006">
+        Afficher plus de photos et de vidéos similaires
+    </text>
+    <text id="_PG_FKSA_TX007">
+        Sponsorisé
+    </text>
+    <text id="_PG_FKSA_TX008">
+        Publicité
+    </text>
+    <text id="_PG_FKSA_TX009">
+        Ailleurs sur Trenqr
+    </text>
+    <text id="_PG_FKSA_TX010">
+        Trenqr ce sont des photos, des amis, du fun mais pas seulement. C'est la nouvelle communauté coo&lt;i&gt;!&lt;/i&gt; et #Tendance d'internet
+    </text>
+    <text id="_PG_FKSA_TX011">
+        S'inscrire
+    </text>
+    <text id="_PG_FKSA_TX012">
+        Se connecter
+    </text>
+    
+    
+    
+    <!-- ***************************************************************************************************************************************************** -->
+    <!-- ****************************************************************** MODUUE : DONTMISS **************************************************************** -->
+    
+    <text id="_DVT_DONTMISS_TX001">
+        Accédez à plus d'actualités en suivant
+    </text>
+    <text id="_DVT_DONTMISS_TX002">
+        Suivre
+    </text>
+    
+    
+    <!-- **************************************************************************************************************************************************** -->
+    <!-- ****************************************************************** MODUUE : WHYACC **************************************************************** -->
+    
+    <text id="_DVT_WHYACC_TX001">
+        10 raisons pour lesquelles vous allez aimer Trenqr
+    </text>
+    <text id="_DVT_WHYACC_TX002">
+        Trenqr est nouveau et différent !
+    </text>
+    <text id="_DVT_WHYACC_TX003">
+        Trenqr c'est le dernier-né et le plus cool des &lt;u&gt;réseaux sociaux francais&lt;/u&gt;. Adoptez-le vite !
+    </text>
+    <text id="_DVT_WHYACC_TX004">
+        Du côté de l'environnement social
+    </text>
+    <text id="_DVT_WHYACC_TX005">
+        Un environnement &lt;u&gt;moins politisé&lt;/u&gt; : Trenqr c'est plus de dialogue, de découverte et de partage
+    </text>
+    <text id="_DVT_WHYACC_TX006">
+        Contrairement à Facebook, sur Trenqr vous vous faites surtout de &lt;u&gt;nouveaux amis&lt;/u&gt;, par affinité !
+    </text>
+    <text id="_DVT_WHYACC_TX007">
+        Faites en plus avec vos photos et vos vidéos !
+    </text>
+    <text id="_DVT_WHYACC_TX008">
+        Ludique, vos photos et vos vidéos vous feront &lt;u&gt;gagner des points en récompense&lt;/u&gt; !
+    </text>
+    <text id="_DVT_WHYACC_TX009">
+        &lt;u&gt;Mettez en favori vos coups de coeur&lt;/u&gt; et partagez les avec vos admirateurs
+    </text>
+    <text id="_DVT_WHYACC_TX010">
+        Publiez &lt;u&gt;avec simplicité&lt;/u&gt; vos photos et vidéos, &lt;u&gt;en privé&lt;/u&gt; pour vos amis, ou &lt;u&gt;en public&lt;/u&gt; pour les autres
+    </text>
+    <text id="_DVT_WHYACC_TX011">
+        Des services et des applications pratiques et utiles au quotidien
+    </text>
+    <text id="_DVT_WHYACC_TX012">
+        Gérez plus efficacement toutes vos photos et vidéos grâce à votre Photothèque
+    </text>
+    <text id="_DVT_WHYACC_TX013">
+        Utilisez Trenqr pour &lt;u&gt;héberger votre photo ou vidéo&lt;/u&gt; et dévoilez-la en partageant son Url
+    </text>
+    <text id="_DVT_WHYACC_TX014">
+        Redimensionnez, Embellissez et Personnalisez n'importe laquelle de vos photos grâce à Studio
+    </text>
+    <text id="_DVT_WHYACC_TX015">
+        Sauvegargez les liens de vos sites web préférés, grâce à l'application MyFAVLINK
+    </text>
+    <text id="_DVT_WHYACC_TX016">
+        BONUS : Connectez-vous ou inscrivez-vous pour naviguer sans publicité
+    </text>
+    <text id="_DVT_WHYACC_TX017">
+        Je &lt;strong&gt;m'inscris&lt;/strong&gt;
+    </text>
+    <text id="_DVT_WHYACC_TX018">
+        Je &lt;strong&gt;découvre&lt;/strong&gt;
+    </text>
+    
+</text_library>

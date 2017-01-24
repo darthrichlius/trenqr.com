@@ -1,0 +1,27 @@
+<!Doctype>
+<html ng-app="pg-angular">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Index AngularJS playground</title>
+    </head>
+    <body>
+    	<div ng-controller="main">
+	        <h1>Test des fonctionnalités AngularJS</h1>
+	        <div>
+	            <label>
+	                <span>Say hello word</span>
+	                <input type="text" name="" ng-model="user_pseudo">
+	            </label>
+	        </div>
+	        <div>
+	            <span>Votre pseudo est : </span>
+	            {{user_pseudo}}
+	        </div>
+	        <div>
+	        	<button ng-click="alertThis(user_pseudo)">Display</button>
+	        </div>
+	        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	        <script type="text/javascript" src="script.js"></script>
+        </div>
+    </body>
+</html>

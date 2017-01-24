@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sys_error_table SYSTEM "../dtd/dtd.err_table.conf.dtd">
+
+<!-- *************** DEV NOTE : --> 
+<!-- *-> Putting en (lang) in the id is only for lisibility and comprehensible matters. -->
+<!-- *-> We write lx to be able to change the level very easy and quickly without changing the code number when we want to. 
+For instance, if we want to switch PCC to l4. we got l32, if we replace all the l3 we got now l43. -->
+
+<sys_error_table>
+    <!-- ************************************************************************************************************************* -->
+    <!-- ************************************************* COMMON ERRORS TABLE l0 ************************************************ -->
+    <error id="err_sys_spnoerrid">
+        <errno value="err_sys_spnoerrid" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_anyerr">
+        <errno value="err_sys_anyerr" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="An error occurred. HINT : This error exists because the developer didn't want to create a specific error definition for this error definitely or for now." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_noloop">
+        <errno value="err_sys_noloop" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="An error occurred but Error Handler can't deal with it in a standard way. This error is anti-loop for. HINT : An error has occurred into Error_Handler." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l00">
+        <errno value="err_sys_l00" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="A problem occurred when trying to use the $entry_param. It seems to be not set." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l01">
+        <errno value="err_sys_l01" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="A problem occurred when we tried to get the dom for a xml file. Check XML_TOOLS or 'Caller' source." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l02">
+        <errno value="err_sys_l02" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="A problem occurred when we tried to connect to the database. Hint : Read bugtrace report to see who called the DATABASE Utility and check either the query or qparams. " /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l03">
+        <errno value="err_sys_l03" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="WOS_DATABASE : signals it couldn't init because the 'caller' never sent the dbname." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l04">
+        <errno value="err_sys_l04" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="No solution has been found somewhere. This error should not occurred. HINT : Maybe the problem concerns an 'else' or 'else if' not well-treated." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+     <error id="err_sys_l05">
+        <errno value="err_sys_l05" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="WOS_DATABASE : NO datas available for this query. HINT: Does the id exist ? If more than two tables involved, does the references to a record in the other database exist ?." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l06">
+        <errno value="err_sys_l06" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="Caller signals : It's very weird but the results contains more than 1 line. It's impossible considering the rules !" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l07">
+        <errno value="err_sys_l07" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="Caller signals : The number of records expected doesn't match with the number of records provided by the DB !" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l08">
+        <errno value="err_sys_l08" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="Xml tool signals : Considering the triple action, file doesn't exist ! Check debug print trace to see who is the caller." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l09">
+        <errno value="err_sys_l09" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="Xml tool signals : Considering the triple action, we couldn't be able to load the dom ! Check debug print trace to see who is the caller." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l010">
+        <errno value="err_sys_l10" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="Xml tool signals : Considering the triple action, we couldn't validate the xml file ! Check debug print trace to see who is the caller." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l011">
+        <errno value="err_sys_l011" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="The Caller signals : One or many mandatory engines have off for w_status." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l012">
+        <errno value="err_sys_l012" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="The Caller signals : File doesn't exist." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l013">
+        <errno value="err_sys_l013" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="The Caller signals : The xml_scope_into_array is not defined or void. HINT : The id supplied might be wrong, checki it ! Moreover if a foreach is concerned, check if each id gets a xml scope defined somewhere" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l014">
+        <errno value="err_sys_l014" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="Caller signals : SESSION or STO or a param within is not defined when it should at this point. It reveals that the architecture doesn't follow what thought on the conception !" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l015">
+        <errno value="err_sys_l015" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="QObject signals : QObject type is 'get' no err_code is defined to treat a no result. Moreover strict mode has been activated. HINT : If you don't want that a no result throw an error, remove strict_mode" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l016">
+        <errno value="err_sys_l016" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="QObject signals : It's a prepared query but no qparams is defined. HINT : See caller." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l016">
+        <errno value="err_sys_l016" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="QObject signals : One of excepted keys is missing. HINT : Either you forgot to init that key (See Caller)or you could alter qbody." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l017">
+        <errno value="err_sys_l017" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="Caller signals : Number of rows excepted don't match with results. HINT : (1) In case of QObject, check if database architecture is well formed so that we could have the correct number of rows. (2) Check if the keys list_params_in and qparams_in_values match each other declared by the caller." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l018">
+        <errno value="err_user_l018" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="Caller signals : The provided email is not valid. HINT : Check your regex if you decided to not use the default validation  params." /> <!-- CDATA -->
+        <user_errmsg value="Cet émail n'est pas valide, petit padawan !" /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l019">
+        <errno value="err_sys_l019" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="Caller signals : A property can't be updated without load the current instance." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite durant la modification. Nous nous en occupons. Reste coo&lt;i&gt;!&lt;/i&gt; petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l020">
+        <errno value="err_sys_l020" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="Caller signals : Can't open the file." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite durant la modification. Nous nous en occupons. Reste coo&lt;i&gt;!&lt;/i&gt; petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l021">
+        <errno value="err_sys_l021" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="Caller signals : Can't WRITE in the file." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite durant la modification. Nous nous en occupons. Reste coo&lt;i&gt;!&lt;/i&gt; petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l022">
+        <errno value="err_sys_l022" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="Caller signals : Can't save XML file." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ... Le processus s'est arreté à cause d'une erreur. Nous nous en occupons. A bientôt, petit padawan. " /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l023">
+        <errno value="err_sys_l023" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="Caller signals : Can't found the specified file." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ... Le processus s'est arreté à cause d'une erreur. Nous nous en occupons. A bientôt, petit padawan. " /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l024">
+        <errno value="err_sys_l024" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="Caller signals : Can't found the specified class checked by name. HINT : That issue could refer to a Worker! Make sure you defined the correct class by its name, matching the filename of the file !" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ... Le processus s'est arreté à cause d'une erreur. Nous nous en occupons. A bientôt, petit padawan. " /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l025">
+        <errno value="err_sys_l025" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="REDIR or VPARSER signals : One of several default pages are not defined in prod configuration !" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ... Le processus s'est arreté à cause d'une erreur. Nous nous en occupons. A bientôt, petit padawan. " /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l026">
+        <errno value="err_sys_l026" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="CALLER signals : Index has never been found in array !" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ... Le processus s'est arreté à cause d'une erreur. Nous nous en occupons. A bientôt, petit padawan. " /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l027">
+        <errno value="err_sys_l027" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="CALLER signals : The default page you want to reach is not defined in default_page range !" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ... Le processus s'est arreté à cause d'une erreur. Nous nous en occupons. A bientôt, petit padawan. " /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l028">
+        <errno value="err_sys_l028" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="WOS_DATABASE Signals. We could been able to identified the given database. Hint : Remember the PROD_VER version of this file is different from the DEV_VER. " /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l029">
+        <errno value="err_sys_l029" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="FTP_HANDLER : signals it couldn't init because the 'caller' never sent the srvname." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l030">
+        <errno value="err_sys_l030" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="FTP_HANDLER : signals it couldn't init because the SRVNAME IS UNKNOW." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <!-- ***************************************************************************************************************************************************** -->
+    <!-- ***************************************************************** INDEX SCOPE LEVEL l1 ************************************************************** -->
+    
+    <error id="err_sys_l10">
+        <errno value="err_sys_l10" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="There was a problem when trying to get xml_prod_conf_file into array. HINT : Maybe the xml_file is no found, no loaded, or no validate ..." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l11">
+        <errno value="err_sys_l11" />
+        <errtype value="E_USER_WARNING" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="Index could not get want_tidy ... It's weird. See URL_HANDLER in order to have a clue. Or, simply the url passed by the visitor is not well formed is not fine." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Impossible de trouver la ressource." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l12">
+        <errno value="err_sys_l12" />
+        <errtype value="E_USER_WARNING" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="The visitor just asked for the product but it is not installed on this server. HINT : Check Prod_conf, you could change the value of 'is_installed' and turn it to 'yes' ! " /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Le service demandé n'est pas accessible. S'il s'agit d'une erreur, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l13">
+        <errno value="err_sys_l13" />
+        <errtype value="E_USER_WARNING" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="The visitor just asked for the product but it is not working. HINT : Check Prod_conf, you could change the value of 'w_status' and turn it to 'on' ! " /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Le service demandé n'est pas accessible. S'il s'agit d'une erreur, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l14">
+        <errno value="err_sys_l14" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="It seems INDEX couldn't be able to resolv the issue about setEnvRunning. 
+        No Case found. Maybe a problem with the array (tidyWant). Remember : 
+        when a node has childs = creation of a NEW array included in the mother array." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l15">
+        <errno value="err_user_l15" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="URL_HANDLER : Signals the url is not well-formed. It's a visitor's matter not our." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Impossible de trouver la ressource." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l16">
+        <errno value="err_sys_l16" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="INDEX  : It seems xml_conf_file is not found, not load or not valid." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l17">
+        <errno value="err_sys_l17" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="INDEX  : It seems we couldnt obtain an array from the xml file. (No hint)" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l18">
+        <errno value="err_user_l18" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="URL_HANDLER signals : The visitor didn't give all the required parameters for url as defined for the minima in prod_conf." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Impossible de trouver la ressource." /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l19">
+        <errno value="err_user_l19" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="URL_HANDLER signals : The visitor tried to insert url_params which are not defined in url_scope. Or one of optional var is empty." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Impossible de trouver la ressource." /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l110">
+        <errno value="err_user_l110" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="URL_HANDLER signals : There is a problem with a composed url_param. It doesn't seem to follow the nomenclature. Hint : (1) It's an old url. (2) User entered a bad url !" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Impossible de trouver la ressource." /> <!-- CDATA -->
+    </error>
+    
+    <!-- Note : Rappel, on a supprimer le router (l2) dans cette version. Aussi, on passe de l1 à l3. -->
+    <!-- ******************************************************************************************************************************************************** -->
+    <!-- ************************************************************* CONTROLLER SCOPE LEVEL l3 **************************************************************** -->
+    <error id="err_sys_l30">
+        <errno value="err_sys_l30" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="The PCC signals : it can not start because want_tidy OR app_conf_tidy are not defined = not defined as an array or !void" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l31">
+        <errno value="err_sys_l31" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ACTORS signals : we never got WTO, it's null or the type doesn't match. Or the want_tidy is not corrected set WTF!" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l32">
+        <errno value="err_sys_l32" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ACTORS signals : the visitor couldn't be identified. HINT : Maybe a pb with the database or in the sourcing." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Le service s'est interrompu à la suite d'une erreur." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l33">
+        <errno value="err_sys_l33" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ACTORS signals : An error occurred when trying to identify the visitor. We couldn't get neither his nenid or his grwsid. Check the source or the database. HINT : Maybe a problem with the source of Contact." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l34">
+        <errno value="err_user_l34" />
+        <errtype value="E_USER_WARNING" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="URQ_CHECKER signals : A problem occurred when we tried to get urqtab via xml_tools. HINT : Maybe the array is not defined or empty. Maybe the visitor entered a bad urqid. " /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Impossible de trouver la ressource." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l35">
+        <errno value="err_sys_l35" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="URQ_CHECKER signals : The param 'urq_is_pg_required' for urq is not set..." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l36">
+        <errno value="err_sys_l36" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="URQ_CHECKER signals : A page is required in urqtab configuration but no page is defined in urqtab." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l37">
+        <errno value="err_user_l37" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="URQ_CHECKER signals : The page given in url doesn't match with the urq. A dumbass is trying to test our abilities to repulse hacking threats." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Impossible de trouver la ressource." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l38">
+        <errno value="err_sys_l38" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="URQ_CHECKER signals : 'urq_target_type.' is not set... It's almost impossible because DTD has check the file ..." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l39">
+        <errno value="err_sys_l39" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="URQ_CHECKER signals : This is special because we are in version 0.1.0.0 but a urqtab is defined as it requires an app target_type. Check the urqtab" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l310">
+        <errno value="err_user_l310" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="URQ_CHECKER signals : urqtab requires some ups but the req doesn't supply ups. Maybe user tried to insert bad characteres into url." /> <!-- CDATA -->
+        <user_errmsg value="Erreur 404 : Nous avons cherché partout, mais cette &lt;b&gt;ressource est introuvable&lt;/b&gt;. Même Dieu ne l'aurait pas trouvé &lt;i&gt;!&lt;/i&gt;" /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l311">
+        <errno value="err_sys_l311" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="URQ_CHECKER signals : A problem occurred when we tried to get pages_names xmlscope via xml_tools. pgid given by URQTABLE doesn't match with any PAGES_NAMES. HINT: Check both file ! " /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l312">
+        <errno value="err_user_l312" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="URQ_CHECKER signals : The visitor tried to insert ups which are not defined in urq_scope. Or one of optional var is empty." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Impossible de trouver la ressource." /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l313">
+        <errno value="err_user_l313" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ACTORS signals : The visitor's field in SESSION is NULL when a SESSION has been set up. It shouldn't be possible. Check out the source." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l314">
+        <errno value="err_sys_l314" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="SESSION UTILITY signals : The regeneration of the session_id has failed. 
+        Hint : This error is very rare and we can't come up with solution unless praying for it to shan't occur." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l315">
+        <errno value="err_sys_l315" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="SESSION UTILITY signals : It couldn't be able to destroy a Session. 
+        Hint : This error is very rare and we can't come up with solution unless praying for it to shan't occur." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l316">
+        <errno value="err_user_l316" />
+        <errtype value="E_USER_WARNING" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ACTOR_AUC signals : The Giusname given by the user doesn't match with any Account in the DB." /> <!-- CDATA -->
+        <user_errmsg value="Erreur 404 : Nous avons cherché partout, mais ce &lt;b&gt;compte est introuvable&lt;/b&gt;. Même Dieu ne l'aurait pas trouvé &lt;i&gt;!&lt;/i&gt;" /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l317">
+        <errno value="err_user_l317" />
+        <errtype value="E_USER_WARNING" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ACC_AUC signals : The Giusname given by the user is not secured..." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Impossible de trouver la ressource." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l318">
+        <errno value="err_sys_l318" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ACTOR or SESSION signals : Either no content or multiple contents into $_SESSION. The rule is to have only one content." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l319">
+        <errno value="err_sys_l319" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ACTOR or SESSION signals : Either no 'sto' is not present into $_SESSION or 'sto'. In 'P_RM_PRM' it is impossible. HINT : If debug, get ssid; remove SESSION FILE." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l320">
+        <errno value="err_sys_l320" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ACTOR or SESSION signals : The object defined in $_SESSION is not an 'sto' or 'str_rest'. In 'P_RM_PRM' it is impossible. HINT : If debug, get ssid; remove SESSION FILE." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l321">
+        <errno value="err_sys_l321" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ACTOR or SESSION signals : 'Visitor_Infos' in STO is NULL or not an Actor Class. In 'P_RM_PRM' it is impossible. HINT : If debug, get ssid; remove SESSION FILE." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l322">
+        <errno value="err_sys_l322" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ACTOR or SESSION signals : An Actor has been found in SESSION but had not had a valid ID. In 'P_RM_PRM' it is impossible HINT : If debug, get ssid; remove SESSION FILE." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l323">
+        <errno value="err_sys_l323" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="WOS_DATABASE signals : It seems the PDOStatment couldn't been created. HINT : See if the querry is correct. Check the 'Caller'." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l324">
+        <errno value="err_sys_l324" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="AUC_ACC signals : The acc_id I got didn't match with any account into database when the process have already checked the existence of the account... Very weird. This is so rare no hint provided !" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l325">
+        <errno value="err_sys_l325" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="AUC_GNR signals : The gnr_id I got didn't match with any account into database when the process have already checked the existence of the account... Very weird. This is so rare no hint provided !" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l326">
+        <errno value="err_sys_l326" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="SRVC_ACG signals : The code provided to get acg lib has not been found into the array full of acg datas. HINT : Did you change the code into DB? It's strange because ids come from db ..." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l327">
+        <errno value="err_sys_l327" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="SRVC_SNITCHER signals : Ip address provided is not well-formed." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l328">
+        <errno value="err_sys_l328" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="WATCHMAN (at CONTROLLER) signals : The user considered here as visitor has no legitimate right to get access to the page." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Impossible de trouver la ressource." /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l329">
+        <errno value="err_user_l329" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="WOS_DATABASE signals : Ipv4 used by the user is banned. It's not because of system but user doings. He has been noticed. " /> <!-- CDATA -->
+        <user_errmsg value="Oh ! ... Impossible de répondre à votre requête." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l330">
+        <errno value="err_sys_l330" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="LANG_HANDLER (at CONTROLLER) signals : RSTO is defined is SESSION but uspklang is not defined. It's not really an error but reveals the architecture doesn't follow what thought on the conception !" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l331">
+        <errno value="err_sys_l331" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="WATCHMAN (at CONTROLLER) signals : We couldn't defined a 'visitor_type'. This is not really an error. We could just give a default 'visitor_type' in this kind of case. But for now it's an error !" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l332">
+        <errno value="err_sys_l332" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="WATCHMAN (at CONTROLLER) signals : We can't process URQ because it's defined as DENIED !" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Impossible de trouver la ressource." /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l333">
+        <errno value="err_user_l333" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="CALLER signals : A 'HTTP_REFERER' is expected but value is empty !" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ... Le processus s'est arreté à cause d'une erreur. Nous nous en occupons. A bientôt, petit padawan. " /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l334">
+        <errno value="err_user_l334" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="CALLER signals : A 'HTTP_REFERER' is expected when the value doesn't match with which is expected !" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ... Le processus s'est arreté à cause d'une erreur. Nous nous en occupons. A bientôt, petit padawan. " /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l335">
+        <errno value="err_sys_l335" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="WATCHMAN signals : This urq is made so that the system must receive some POST datas. But there are none !" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ... Le processus s'est arreté à cause d'une erreur. Nous nous en occupons. A bientôt, petit padawan. " /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l336">
+        <errno value="err_sys_l336" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="WATCHMAN signals : This urq is made so that the system must receive some POST datas. But one or several POST datas don't match with urqtab definition !" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ... Le processus s'est arreté à cause d'une erreur. Nous nous en occupons. A bientôt, petit padawan. " /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l337">
+        <errno value="err_sys_l337" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="SESSION UTILITY signals : Can't construct() RSTO Object because CALLER didn't give an object that is an instance of PROD_ACC." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l338">
+        <errno value="err_sys_l338" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="WOS_DATABASE signals : Considering dealing with execProc, the type of one of given variables is diffrent from STR, INT or BOOL. We are handling with any other type of variables." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l339">
+        <errno value="err_sys_l339" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="WOS_DATABASE signals : Considering dealing with execProcWithReturn, we couldn't find at least one variable typed OUTPUT (opt_[NAME])" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <!-- ************************************************************************************************************************************************** -->
+    <!-- **************************************************************  ENTITY SCOPE LEVEL l4 ************************************************************ -->
+    
+    <error id="err_sys_l4comn1">
+        <errno value="err_sys_l4comn1" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : No occurrence exists for the id supplied." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l4comn2">
+        <errno value="err_sys_l4comn2" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : Couldn't been able to load entity because entry_params does not comply. HINT : (1) (In case of key) Check if key is correctly spelled in the CALLER area. (2) Check if the value passed is NOT EMPTY." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l4comn3">
+        <errno value="err_sys_l4comn3" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : Couldn't been able to store data into $all_properties. Key doesn't exist into $prop_keys" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l4comn4">
+        <errno value="err_sys_l4comn4" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : $prop_entity must be initialised and not empty. It's a secure way to maximaze the reliability of the Entity and then of your product." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l4comn5">
+        <errno value="err_sys_l4comn5" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : Couldn't been able to init properties of the current Entity because one or multiple datas are missing when there are mandatory." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l4comn6">
+        <errno value="err_user_l4comn6" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : Couldn't been able to load entity because the Entity is missing." /> <!-- CDATA -->
+        <user_errmsg value="Erreur 404 : Nous avons cherché partout, mais cette &lt;b&gt;ressource est introuvable&lt;/b&gt;. Même Dieu ne l'aurait pas trouvé &lt;i&gt;!&lt;/i&gt;" /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l4comn7">
+        <errno value="err_sys_l4comn7" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : Couldn't been able to load entity because one of extras. Possible origins : (1) extras datas is not defined (2) An error occurred when trying to acquiere the datas." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l4comn8">
+        <errno value="err_sys_l4comn8" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : It seems the occurrence is cracked. An mandatory key is define but the mathing value is unset or void. It's a CRITICAL ISSUE because the occurence should habe not been saved into database. You should maybe repair all the PRODUCT." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l6comn8">
+        <errno value="err_user_l6comn8" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : The current user is trying to perform an action that is not allowed in its case.." /> <!-- CDATA -->
+        <user_errmsg value="Erreur 403 : Vous n'etes &lt;b&gt;pas autorisé&lt;/b&gt; à accéder à cette requête. C'est ballot &lt;i&gt;!&lt;/i&gt;" /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l4comn9">
+        <errno value="err_sys_l4comn9" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : All properties needed in order to create (or UPDATE) the occurrence are not available or set or following rules." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l4comn10">
+        <errno value="err_user_l4comn10" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : Couldn't been able to create the entity because entry_params does not comply or don't follow rules. HINT : Maybe CurrentUser disabled JS or trying to hack" /> <!-- CDATA -->
+        <user_errmsg value="Une erreur est survenue durant le traitement de l'opération." /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l4comn11">
+        <errno value="err_user_l4comn11" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : CU is trying to perform an action when its account is gone or to_delete. HINT : Maybe it's an another SESSION." /> <!-- CDATA -->
+        <user_errmsg value="L'opération a été rejetée par le serveur. Le compte de référence est inaccessible." /> <!-- CDATA -->
+    </error>
+     <error id="err_user_l4comn12">
+        <errno value="err_user_l4comn12" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : CU is trying to perform an action when he doesn't have GRANT ACCESS. HINT : JS should have had blocked that operation." /> <!-- CDATA -->
+        <user_errmsg value="L'opération a été rejetée." /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l4comn13">
+        <errno value="err_user_l4comn13" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : CU is trying to change CATG when authorization delay is passed. HINT : JS should have had blocked that operation." /> <!-- CDATA -->
+        <user_errmsg value="La modification n'est pas autorisée." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l4comn14">
+        <errno value="err_sys_l4comn14" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : You can't use this method without having loaded the instance." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l4comn15">
+        <errno value="err_user_l4comn15" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : Couldn't been able to alter the entity because entry_params does not comply or don't follow rules. HINT : Maybe CurrentUser disabled JS or trying to hack" /> <!-- CDATA -->
+        <user_errmsg value="Une erreur est survenue durant le traitement de l'opération." /> <!-- CDATA -->
+    </error>
+    
+    <!-- *********** ARTICLE *********** -->
+    <error id="err_user_l4artn1">
+        <errno value="err_user_l4artn1" />
+        <errtype value="E_USER_ERROR" />  <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ARTICLE signals : The text accompanying the post does not comply (length)." /> <!-- CDATA -->
+        <user_errmsg value="Une erreur s'est produite durant le traitement." />  <!-- CDATA -->
+    </error>
+    <error id="err_user_l4artn2">
+        <errno value="err_user_l4artn2" />
+        <errtype value="E_USER_ERROR" />  <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ARTICLE signals : An error occurred when we tried to encode the text accompagnying the post. HINT : (Problably) The string is not valid. This is very weird." /> <!-- CDATA -->
+        <user_errmsg value="Une erreur s'est produite durant le traitement." />  <!-- CDATA --> 
+    </error>
+    <error id="err_sys_l4artn3">
+        <errno value="err_sys_l4artn3" />
+        <errtype value="E_USER_ERROR" />  <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ARTICLE signals : An error occurred during the wiping process. HINT : Image linked to the Article is physically gone or we couldn't delete it." /> <!-- CDATA -->
+        <user_errmsg value="Une erreur s'est produite durant le traitement." />  <!-- CDATA --> 
+    </error>
+    
+    <!-- *********** ARTICLE_TR *********** -->
+    
+    <error id="err_user_l4trartn1">
+        <errno value="err_user_l4trartn1" />
+        <errtype value="E_USER_ERROR" />  <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="TR_ART signals : Can't add ART_TR because we counldn't been able to create an occurrence of ARTICLE." /> <!-- CDATA -->
+        <user_errmsg value="Une erreur s'est produite durant le traitement." />  <!-- CDATA -->
+    </error>
+    <error id="err_user_l4trartn2">
+        <errno value="err_user_l4trartn2" />
+        <errtype value="E_USER_ERROR" />  <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="TR_ART signals : Couldn't been able to add new ART_TR due to no trartid returned by BDD. HINT : Maybe ARTICLE doesn't exist." /> <!-- CDATA -->
+        <user_errmsg value="Une erreur s'est produite durant le traitement." />  <!-- CDATA -->
+    </error>
+    
+    <!-- ******* ARTICLE - IMAGE ******** -->
+    <error id="err_user_l4ain1">
+        <errno value="err_user_l4ain1" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : The file is not an image." /> <!-- CDATA -->
+        <user_errmsg value="Une erreur s'est produite durant le traitement du fichier." /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l4ain2">
+        <errno value="err_user_l4ain2" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : The file given by user does not comply (type, size or dimensions). HINT : CU maybe turned off JS." /> <!-- CDATA -->
+        <user_errmsg value="Votre fichier n'est pas conforme." /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l4ain3">
+        <errno value="err_user_l4ain3" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : An error occured when we tried to parse the pic_string from string to image." /> <!-- CDATA -->
+        <user_errmsg value="Une erreur s'est produite durant le traitement du fichier. Le fichier n'a pas été sauvegardé." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l4ain4">
+        <errno value="err_sys_l4ain4" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : Couldn't been able to determine image size. It's one of the weirdest thing." /> <!-- CDATA -->
+        <user_errmsg value="Une erreur s'est produite durant le traitement du fichier. Le fichier n'a pas été sauvegardé." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l4ain5">
+        <errno value="err_sys_l4ain5" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : The path given in order to store the file doesn't exist. HINT : (1) Path given by CALLER id false (2) (And) An attempt to create the file failed (3) WOS don't have permission to create the dir onto the current server" /> <!-- CDATA -->
+        <user_errmsg value="Une erreur s'est produite durant le traitement du fichier. Le fichier n'a pas été sauvegardé." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l4ain6">
+        <errno value="err_sys_l4ain6" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : An error occured when we tried to write the file. HINT : (1) Check if the string supplied is decoded from base64. (2) Check if we only have the 'body' of the supplied pic_string. (3) (In case of GIF) Check if it special status is correctly processed." /> <!-- CDATA -->
+        <user_errmsg value="Une erreur s'est produite durant le traitement du fichier. Le fichier n'a pas été sauvegardé." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l4ain7">
+        <errno value="err_sys_l4ain7" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : An error occured when we tried to write the file. PATH_TO_FILE is not defined. HINT : (1) CALLER didn't give Path (2) (And Then) DEFAULT_PATH is also WRONG " /> <!-- CDATA -->
+        <user_errmsg value="Une erreur s'est produite durant le traitement du fichier. Le fichier n'a pas été sauvegardé." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l4ain8">
+        <errno value="err_sys_l4ain8" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : An error occured when we tried to set the 'pic_prod_fn' of a file. rename() failed when dirname was okay. It should never have happened. HINT : (1) Check path (2) Check separator. " /> <!-- CDATA -->
+        <user_errmsg value="Une erreur s'est produite durant le traitement du fichier." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l4ain9">
+        <errno value="err_sys_l4ain9" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : An error occured when we tried to delete the temp file. HINT : NO HINT." /> <!-- CDATA -->
+        <user_errmsg value="Une erreur s'est produite durant le traitement du fichier." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l4ain10">
+        <errno value="err_sys_l4ain10" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : The file hasn't been created onto the remote sevrer. HINT : NO HINT." /> <!-- CDATA -->
+        <user_errmsg value="Une erreur s'est produite durant le traitement du fichier." /> <!-- CDATA -->
+    </error>
+    
+    <!-- *********** EVALUATION *********** -->
+    
+    <error id="err_sys_l4evaln1">
+        <errno value="err_sys_l4evaln1" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ENTITY signals : This Article should have 3 valid EVAL (greater than or equal 0 and NOT NULL as 0 is the default value) and a valid eval_tot" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    
+    <!-- *********** TENDANCE *********** -->
+    <error id="err_sys_l4trdn1">
+        <errno value="err_sys_l4artn1" />
+        <errtype value="E_USER_ERROR" />  <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="TREND signals : Trend couldn't been created for unknow reasons. HINT : Make evolve your code to catch and send this error to developpers." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." />  <!-- CDATA -->
+    </error>
+    <error id="err_sys_l4trdn2">
+        <errno value="err_sys_l4artn2" />
+        <errtype value="E_USER_ERROR" />  <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="TREND signals : Multiple enabled covers for a Trend. IT SHOULD BE IMPOSSIBLE. HINT : Developper forgot to set endena time after altering TR_COVER." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." />  <!-- CDATA -->
+    </error>
+    <error id="err_user_l4trdn3">
+        <errno value="err_user_l4artn3" />
+        <errtype value="E_USER_ERROR" />  <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="TREND signals : Trend is gone." /> <!-- CDATA -->
+        <user_errmsg value="Erreur 404 : Nous avons cherché partout, mais cette &lt;b&gt;Tendance est introuvable&lt;/b&gt;. Même Dieu ne l'aurait pas trouvé &lt;i&gt;!&lt;/i&gt;" />  <!-- CDATA -->
+    </error>
+    <error id="err_user_l4trdn4">
+        <errno value="err_user_l4artn4" />
+        <errtype value="E_USER_ERROR" />  <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="TREND signals : OWNER tried to subscribe to its trend." /> <!-- CDATA -->
+        <user_errmsg value="Hum ! C'est assez inatendu." />  <!-- CDATA -->
+    </error>
+    <error id="err_user_l4trdn5">
+        <errno value="err_user_l4artn5" />
+        <errtype value="E_USER_ERROR" />  <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="TREND signals : OWNER tried to add a new Article when TREND is Private and he is not the owner." /> <!-- CDATA -->
+        <user_errmsg value="Désolé !... Cette Tendance étant privée, seul son propriétaire peut y ajouter une publication." />  <!-- CDATA -->
+    </error>
+    <error id="err_sys_l4trdn6">
+        <errno value="err_sys_l4artn6" />
+        <errtype value="E_USER_ERROR" />  <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="TREND signals : CALLER gave a bad FLAG. We were waiting for a FLAG in order to get filtered ARTICLES for a TREND. HINT : Check CALLER and put a correct FLAG as defined in TREND ENTITY!" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." />  <!-- CDATA -->
+    </error>
+    
+    <!-- *********** RELATION *********** -->
+    <error id="err_sys_l4reln1">
+        <errno value="err_sys_l4reln1" />
+        <errtype value="E_USER_ERROR" />  <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="REL signals : CALLER want me to create new REL but did't send an array that complies." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." />  <!-- CDATA -->
+    </error>
+    <error id="err_sys_l4reln2">
+        <errno value="err_sys_l4reln2" />
+        <errtype value="E_USER_ERROR" />  <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="REL signals : An case came up when it wasn't expected. HINT : The logic of your code is probably WRONG. " /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." />  <!-- CDATA -->
+    </error>
+    <error id="err_sys_l4reln3">
+        <errno value="err_sys_l4reln3" />
+        <errtype value="E_USER_ERROR" />  <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="REL signals : Failed when tried to save or update data into VM. You should put the account into maintenance and analyze the case " /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." />  <!-- CDATA -->
+    </error>
+    
+    <!-- *********** PROD_ACCOUNT (or COMMON ACCOUNT)  *********** -->
+    <error id="err_sys_l4comaccn1">
+        <errno value="err_sys_l4comaccn1" />
+        <errtype value="E_USER_ERROR" />  <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="ACC signals : ACC sems to exist in PRODUCT_DB but not in ACCOUNT_DB." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." />  <!-- CDATA -->
+    </error>
+    <error id="err_sys_l4pdaccn1">
+        <errno value="err_sys_l4pdaccn1" />
+        <errtype value="E_USER_ERROR" />  <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="PDACC signals : ." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." />  <!-- CDATA -->
+    </error>
+    
+
+    <!-- ************************************************************************************************************************************************** -->
+    <!-- ********************************************************** WORKER_DATA SCOPE LEVEL l5 ******************************************************* -->
+    <error id="err_sys_l50">
+        <errno value="err_sys_l50" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="QUERY signals : The Handler tries to insert qdata_aray but the number of params doesn't match " /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l51">
+        <errno value="err_sys_l51" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="WORKER_DATA signals : Query object has some params_in but no qparam_handler_fid is found. HINT : (1) Check the caller (2) Check in the query definition if the id is defined. It needs the id to build the path to the file. ADVIVCE : Check manually if a matching file exists !" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l5e403_art">
+        <errno value="err_user_l5e403_art" />
+        <errtype value="E_USER_WARNING" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="FORBIDDEN ARTICLE" /> <!-- CDATA -->
+        <user_errmsg value="Erreur 403 : Vous n'etes &lt;b&gt;pas autorisé&lt;/b&gt; à accéder à cette requête. C'est ballot &lt;i&gt;!&lt;/i&gt;" /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l5e404_user">
+        <errno value="err_user_l5e404_user" />
+        <errtype value="E_USER_WARNING" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="USER NOT FOUND" /> <!-- CDATA -->
+        <user_errmsg value="Erreur 404 : Nous avons cherché partout, mais ce &lt;b&gt;compte est introuvable&lt;/b&gt;. Même Dieu ne l'aurait pas trouvé &lt;i&gt;!&lt;/i&gt;" /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l5e404_trend">
+        <errno value="err_user_l5e404_trend" />
+        <errtype value="E_USER_WARNING" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="TREND NOT FOUND" /> <!-- CDATA -->
+        <user_errmsg value="Erreur 404 : Nous avons cherché partout, mais cette &lt;b&gt;Tendance est introuvable&lt;/b&gt;. Même Dieu ne l'aurait pas trouvé &lt;i&gt;!&lt;/i&gt;" /> <!-- CDATA -->
+    </error>
+    <error id="err_user_l5e404_any">
+        <errno value="err_user_l5e404_any" />
+        <errtype value="E_USER_WARNING" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="CONTENT NOT FOUND" /> <!-- CDATA -->
+        <user_errmsg value="Erreur 404 : Nous avons cherché partout, mais cette &lt;b&gt;ressource est introuvable&lt;/b&gt;. Même Dieu ne l'aurait pas trouvé &lt;i&gt;!&lt;/i&gt;" /> <!-- CDATA -->
+    </error>
+    <!-- ************************************************************************************************************************************************** -->
+    <!-- *********************************************************** WORKER_VIEW SCOPE LEVEL l6 *********************************************************** -->    
+    <error id="err_sys_l60">
+        <errno value="err_sys_l60" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="VPARSER signals : You can't use this method of VPARSER without having loaded the instance." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l61">
+        <errno value="err_sys_l61" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="VPARSER signals : The system couldn't be able to find the DVT file corresponding to the dvt_id. HINT : Check SKELETON source file and make sure the DVT given is defined and/or well spelled just as in DVT_DEF file. (2) Make sure the file we want to reach has the correct filename matching the definition in DVT_DEF file (3) Change the definition in DVT_DEF OR change the filename OR Correct definition in SKELETON source file." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l62">
+        <errno value="err_sys_l62" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="VIEW - BROWSCAP signals : An error occurred when trying to get browser infos. Hint : (1) Check the url ($remoteIniUrl, $remoteVerUrl) inside Browscap Class to unsure it's reachable. (2) Check if browscap.ini exists and is up to date. (3) Check if /common/modules/Browscap.php exists." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l63">
+        <errno value="err_sys_l63" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="VIEW - PAGE signals : An error occurred when trying to display the page. Hint : (1) eval() couldn't been able to parse the PHP_SOURCE. Il you are in PROD_MODE alter fact_index setPlatformRunningEnv() and say you want to see errors. Then DEBUG it." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    
+    <!-- ************************************************************************************************************************************************** -->
+    <!-- ********************************************************** WORKER_PROCESSOR SCOPE LEVEL l7 ******************************************************* -->
+    <error id="err_sys_l7comn1">
+        <errno value="err_sys_l7comn1" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="WORKER signals : Can't start the processing  because datas missing. Quite hilarous because it almost impossible. WOS should block that request. HINT : NO HINT " /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l7comn2">
+        <errno value="err_sys_l7comn2" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="WORKER signals : Couldn't able to run because something went wrong. HINT : Just check the line you should be undertand easily. This error could happen for various reasons. " /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l7artn1">
+        <errno value="err_sys_l7artn1" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="WORKER signals : An error occurred when trying to read Article. HINT : (1) $args doesn't contain a row with with the correct index. (2) one or multiple params are missing." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l7comn3">
+        <errno value="err_sys_l7comn3" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="WORKER signals : Can't start the processing  because no session is available. It almost impossible ! HINT : Check Session manager file, lib_session file or find in the project if something is wiping it." /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur s'est produite. Nous nous en occupons, le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <!-- EMAIL CONFIRMATION SCOPE -->
+    <error id="err_sys_l7emcnfn1">
+        <errno value="err_sys_l7emcnfn1" />
+        <errtype value="E_USER_ERROR" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="WORKER signals : An error occurred when trying to deal with an email confirmation operation. HINT : (1) Sending email operation, (2) User_Gone error, (3) Error on email model (4) Issue with datas linked to email model" /> <!-- CDATA -->
+        <user_errmsg value="Désolé ! ... Une erreur inhabituelle liée à la vérification de l'email de votre compte s'est produite. Pas de panique ! Le problème devrait être réglé dans peu de temps. A bientôt, petit padawan." /> <!-- CDATA -->
+    </error>
+    <error id="err_sys_l7emcnfn2">
+        <errno value="err_sys_l7emcnfn2" />
+        <errtype value="E_USER_WARNING" /> <!-- E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE -->
+        <sys_errmsg value="WORKER signals : An error occurred when trying to deal with an final email confirmation operation. HINT : (1) User wants to hack" /> <!-- CDATA -->
+        <user_errmsg value="Erreur 404 : L'url que vous avez saisie ne nous permet pas de mener l'opération à son terme." /> <!-- CDATA -->
+    </error>
+</sys_error_table>

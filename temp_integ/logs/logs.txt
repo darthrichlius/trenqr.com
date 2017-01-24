@@ -1,0 +1,2 @@
+[13-09-15] BOR
+	-> J'ai du ajouté le drapeau "B" au niveau des règles concernant les Tendances à cause de la présence de caractères spéciaux

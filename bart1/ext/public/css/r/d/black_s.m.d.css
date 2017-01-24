@@ -1,0 +1,207 @@
+.p_m_aside_cooln {
+    border-bottom: 1px solid black;
+    height: 100px;
+    width: 300px;
+    background-color: lightgoldenrodyellow;
+}
+
+.p_m_aside_cooln > span {
+    margin: 0px 0 0 205px;
+    /*padding: 5px;*/
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 16px;
+}
+
+.p_m_aside_cooln p {
+    margin: 0px 0 0 0;
+    padding: 10px 0 0 0;
+    
+    text-align: center;
+    font-family: Georgia, Calibri, Arial, sans-serif;
+    font-style: italic;
+    font-size: 52px;
+}
+
+.p_m_aside_ppl, .p_m_aside_mv {
+    height: 95px;
+}
+
+form label {
+    /*background-color: rgba(0,0,0,0.2);*/
+    cursor: pointer; 
+    
+    font-family: Arial, Calibri;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.p_m_aside_ppl p, .p_m_aside_mv p {
+    margin: 0 0 5px 0;
+    
+    color: grey;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 15px;
+    height: 20px;
+}
+
+.p_m_aside_mv {
+    /*margin-top: 10px;*/
+}
+
+.p_m_aside_ppl {
+    /*margin-top: 10px;*/
+}
+
+
+.p_m_aside_mv p {
+    /*margin-top: 15px;*/
+}
+
+.rd-reset-up, .rd-reset-dwn {
+    text-align: right;
+    margin: 3px 0;
+}
+
+.rd-reset-up a, .rd-reset-dwn a {
+    padding-right: 10px;
+    
+    color: blue;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 16px;
+    /*color: grey;*/
+    text-decoration: none;
+}
+
+.rd-reset-dwn {
+    
+}
+
+.infos_box {
+    border-top: 1px solid black;
+    height: 75px;
+}
+
+.my_circle {
+    /*border: 1px solid black;*/
+    /*border-top: 1px solid black;*/
+    padding: 5px;
+    margin: 0;
+    
+    font-family: Arial;
+    font-size: 14px;
+    color: grey;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.lucky {
+    margin: -5px 10px 0 0;
+    padding: 0;
+    
+    font-family: Calibri, Arial, Georgia;
+    font-size: 14px;
+    /*text-indent: 5px;*/
+    text-align: right;
+}
+
+.lucky .nb {
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.psd-in-clb-u {
+    text-decoration: none;
+    font-family: calibri !important;
+    font-size: 15px !important;
+    font-weight: bold;
+    color: rgb(63, 114, 155);
+}
+
+.psd-in-clb-u:hover {
+    text-decoration: underline;
+}
+
+.p_m_aside_go {
+    /*border: 1px solid black;*/
+    margin-top: 9px;
+    padding: 5px;
+    height: 74px;
+    background-color: black;
+    border-radius: 0 0 4px 0;
+}
+
+.earn-txt {
+    margin: 0;
+    
+    color: orange;
+    text-indent: 5px;
+    font-family: calibri, Arial;
+    font-size: 15px;
+}
+
+/****************** EXTENSION *******************/
+.ver_btn {
+    border: 1px solid white;
+    /*padding: 5px 30px;*/
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    margin: 15px auto 0 auto;
+}
+
+.ver_btn a {
+    display: block;
+    background-color: orange;
+    height: 100%;
+    border-radius: 4px;
+    
+    line-height: 30px;
+    color: black;
+    text-decoration: none;
+    font-family: calibri, arial;
+    font-size: 14px;
+    text-align: center;
+    
+    font-weight: bold;
+}
+
+.p-appr-2 {
+    display: block;
+    margin: 0px 0 0 7px;
+    padding: 0;
+    background-color: orange;
+    border: 1px solid gray;
+    border-radius: 6px;
+    height: 18px;
+    width: 51px;
+    box-shadow: 0px 0px 2px rgba(15,15,15,0.8);
+    
+    text-decoration: none;
+    line-height: 14px;
+    color: black;
+    /*text-align: center;*/
+    font-weight: bold;
+    @import url("http://fonts.googleapis.com/css?family=Lily+Script+One");
+    
+    font-family: 'Lily Script One', cursive;
+    
+    font-style: normal;
+}
+
+
+.appr-ind {
+    margin-left: 6px;
+    font-size: 15px;
+    /*font-weight: bold;*/
+    font-family: calibri;
+    font-style: italic !important;
+}
+
+.appr-p1 {
+    margin-left: -1px;
+    /*font-weight: bold;*/
+    font-size: 13px;
+}

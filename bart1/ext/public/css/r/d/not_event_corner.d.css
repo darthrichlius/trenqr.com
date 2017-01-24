@@ -1,0 +1,64 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12 avr. 2014, 21:26:37
+    Author     : arsphinx
+*/
+
+#notify_event {
+    border: 2px solid #02BAFF;
+    border-radius: 5px;
+    margin: 85px 5px 0 0;
+    padding: 5px;
+    background-color: #fff;
+    width: 310px;
+    /*height: 100px;*/
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#notify_event_text, #notify_event_err {
+    padding: 10px;
+    margin: 0;
+    /*line-height: 100px;*/
+    
+    color: #000;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 14px;
+}
+
+/*
+.net_onepsd_max {
+    color: #000;
+}*/
+
+.net_onepsd_link, .net_onepsd_max {
+    margin: 0 0 0 -1px;
+    
+    color: #02BAFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.net_onepsd_link:hover {
+    text-decoration: underline;
+}
+
+#ua_ntfmsgerr {
+    color : #ff0000;
+}
+
+#ua_ntfmsgerr a {
+    color : #ff0000;
+}
+
+/* Permet d'animer la disparition horizontale du bloc */
+.ua_notf_goleft {
+    margin-left: -330px !important;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO define your own vocabulary/syntax. Example follows:  -->
+<!ELEMENT queries (query*) >
+    <!ELEMENT query (query.body,query.dbname,query.type,query.note,query.params.in,query.params.out) >
+    <!ATTLIST query id ID #REQUIRED>
+    <!ELEMENT query.body EMPTY>
+        <!ATTLIST query.body value CDATA #REQUIRED>
+    <!ELEMENT query.dbname EMPTY>
+        <!ATTLIST query.dbname value CDATA #REQUIRED>
+    <!ELEMENT query.type EMPTY>
+        <!ATTLIST query.type value (get|set|update|delete|drop|sqlproc|sqlproc_r) #REQUIRED>
+    <!ELEMENT query.note EMPTY>
+        <!ATTLIST query.note value CDATA #REQUIRED>
+    <!ELEMENT query.params.in (qparam*) >
+    <!-- Ce sont les paramètres présent dans la variable $_SESSION. Elles sont présentes de façon continue quelque soit la requete. Souvent elles sont insérées lors de la connexion de l'utilisateur  -->
+        <!ELEMENT qparam EMPTY>
+            <!ATTLIST qparam id CDATA #REQUIRED>
+            <!ATTLIST qparam value CDATA #REQUIRED>
+    <!ELEMENT query.params.out (qparam*) >
+    <!-- Ce sont les paramètres utilisés au sein du carrier present dans la variable gloabale $_SESSION. Les valeurs de ces params sont utilisées par les dvt_struct -->
+    <!-- A la version au sept 13 elles ne servent encore à rien -->

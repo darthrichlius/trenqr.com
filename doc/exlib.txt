@@ -1,0 +1,22 @@
+Ce document regroupe un inventaire des différentes librairies utilisées pour les versions mentionnées.
+
+----------- TQR.VB3.0
+- FFMPEG : 
+	Installer sur les serveurs DEV et PROD.
+	La bibliothèque permet de traiter les vidéos.
+	Elle permet differente fonctionnalités comme : compression, rotation, redimensionnement, extraction de frame, etc ...
+	Lien :http://ffmpeg.org/
+	
+- PHP-FFMpeg :
+	Ensemble de classe permettant de manipuler FFMPEG plus aidement depuis PHP.
+	L'auteur nous permet donc d'utiliser FFMPEG sans maitriser la librairie et sans passer par un executeur de commande.
+	Lien : https://github.com/PHP-FFMpeg/PHP-FFMpeg
+	IMPORTANT : J'ai modifié la manière d'encoder avec X264. En effet, la classe X264 utilisait par défaut la bibliothèque libfaac qui causait des problèmes car elle n'était pas disponible de base avec FFMPEG.
+	Cette indisponibilité était du à des problèmes de licence. Il faut donc utiliser une autre bibliothèque disponible bien qu'ayant une moins bonne qualité : 'libmp3lame'
+	
+----------- SOUS-LE-COUDE
+- Ratchet :
+	Ratchet is a loosely coupled PHP library providing developers with tools to create real time, bi-directional applications between clients and servers over WebSockets.
+	Ratchet facilite la mise en place d'application real-time comme des chat
+- Monolog :
+	
